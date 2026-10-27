@@ -1,0 +1,51 @@
+{
+  "acceptance_criteria": {
+    "policy_version": "v5.1-heldout-acceptance-1",
+    "post_relevance_pilot_gate": {
+      "maximum_structural_oracle_regressions": 0,
+      "required_configuration": "E1_V5",
+      "required_oracle_all_checks_pass_rate": 1.0,
+      "required_scenario_count": 30
+    },
+    "pre_registered_before_heldout_run": true,
+    "prohibited_interpretation": [
+      "farm_outcome_accuracy",
+      "irrigation_accuracy",
+      "fertilizer_dose_accuracy",
+      "disease_diagnosis_accuracy",
+      "yield_impact"
+    ],
+    "relevance_thresholds": {
+      "maximum_fallback_rate": 0.02,
+      "maximum_invalid_structured_output_rate": 0.02,
+      "minimum_fact_selection_precision": 0.8,
+      "minimum_fact_selection_recall": 0.8,
+      "minimum_passage_precision": 0.75,
+      "minimum_passage_recall": 0.75,
+      "minimum_safe_empty_selection_accuracy": 0.8
+    }
+  },
+  "all_relevance_thresholds_pass": true,
+  "artifact_type": "final_heldout_relevance_acceptance_report",
+  "checks": {
+    "fact_selection_precision": true,
+    "fact_selection_recall": true,
+    "fallback_rate": true,
+    "invalid_structured_output_rate": true,
+    "passage_precision": true,
+    "passage_recall": true,
+    "safe_empty_selection_accuracy": true
+  },
+  "next_step_if_fail": "Report this final held-out outcome. Do not tune v5.1 against this set; any future change requires a separately versioned development and held-out protocol.",
+  "next_step_if_pass": "Run the separate E1-v5 30-site full-MAS pilot.",
+  "policy_version": "v5.1-heldout-acceptance-1",
+  "post_relevance_pilot_gate": {
+    "maximum_structural_oracle_regressions": 0,
+    "required_configuration": "E1_V5",
+    "required_oracle_all_checks_pass_rate": 1.0,
+    "required_scenario_count": 30
+  },
+  "question_count": 96,
+  "undefined_metric_policy": "fail_closed",
+  "usage": "final_heldout_evaluation_after_v5_development_freeze"
+}

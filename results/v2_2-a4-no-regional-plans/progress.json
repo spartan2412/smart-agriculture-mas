@@ -1,0 +1,8 @@
+{
+  "completed_scenario_count": 300,
+  "last_completed_scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20260331",
+  "last_sequence": 300,
+  "run_id": "v2_2-a4-no-regional-plans",
+  "status": "completed_evaluation_only_with_oracle_failures",
+  "total_scenario_count": 300
+}

@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "wheat",
+    "decision_date": "2026-04-30",
+    "district": "Mansa",
+    "scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+    "season": "rabi",
+    "site_id": "PF_PB_MANSA_WHEAT_RABI",
+    "state": "Punjab"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "7135f9265f0a79f4e09984c75b794b083d4969e49a62156fcf72364d7ee59cb7;75a4fdaa53cb4665c87ffe5b15860730848d4ea45d9e783d8df574c4187faa6d",
+    "source_url": "https://icar-crida.res.in/CCP/PB/Mansa/1.7.pdf;https://icar-crida.res.in/CCP/PB/Mansa/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "cbd7f9a41e9916ef50cd0aec693168add6eb79262b38e5461c137bd11fa6ab4d",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_14_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_scenario_binding_mismatch",
+  "overlay": {
+    "base_value": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+    "field": "scenario_id",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

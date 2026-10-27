@@ -1,0 +1,85 @@
+{
+  "base_scenario": {
+    "crop": "soybean",
+    "decision_date": "2025-10-31",
+    "district": "Jhalawar",
+    "scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+    "season": "kharif",
+    "site_id": "PF_RJ_JHALAWAR_SOYBEAN_KHARIF",
+    "state": "Rajasthan"
+  },
+  "base_source": {
+    "locator": "District CCP crop profile and sowing-window PDFs",
+    "official_url": "https://icar-crida.res.in/CCP/RJ/Jhalawar/1.7.pdf;https://icar-crida.res.in/CCP/RJ/Jhalawar/1.12.pdf",
+    "raw_sha256": "e9b668fd0102ebe4e9fdd06130b76cab4b0caa7b0eb2ff0c0da94c191bf32d4c",
+    "source_document_id": "ICAR_CRIDA_CCP"
+  },
+  "claims": [
+    {
+      "agent_name": "fixture_weather_context_agent",
+      "allowed_use": "context_only",
+      "block_reason": null,
+      "claim": "Evaluation-only weather context claim; not an agricultural instruction.",
+      "claim_role": "weather_context",
+      "confidence": 0.5,
+      "decision_domain": "weather_context",
+      "disposition": "context",
+      "gate_result": "pass",
+      "metadata": {
+        "fixture_claim_role": "weather_context",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence"
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "Weather and market are distinct decision domains and must not be manufactured into a conflict.",
+      "source": {
+        "locator": "District CCP crop profile and sowing-window PDFs",
+        "official_url": "https://icar-crida.res.in/CCP/RJ/Jhalawar/1.7.pdf;https://icar-crida.res.in/CCP/RJ/Jhalawar/1.12.pdf",
+        "raw_sha256": "e9b668fd0102ebe4e9fdd06130b76cab4b0caa7b0eb2ff0c0da94c191bf32d4c",
+        "source_document_id": "ICAR_CRIDA_CCP",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "representative-cell context in Jhalawar, Rajasthan",
+      "summary": "Controlled non-comparable weather context.",
+      "temporal_scope": "historical frozen decision window ending 2025-10-31"
+    },
+    {
+      "agent_name": "fixture_market_context_agent",
+      "allowed_use": "context_only",
+      "block_reason": null,
+      "claim": "Evaluation-only market context claim; not an agricultural instruction.",
+      "claim_role": "market_context",
+      "confidence": 0.5,
+      "decision_domain": "market_context",
+      "disposition": "context",
+      "gate_result": "pass",
+      "metadata": {
+        "fixture_claim_role": "market_context",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence"
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "Historical market context is not an action conflict with weather context.",
+      "source": {
+        "locator": "District CCP crop profile and sowing-window PDFs",
+        "official_url": "https://icar-crida.res.in/CCP/RJ/Jhalawar/1.7.pdf;https://icar-crida.res.in/CCP/RJ/Jhalawar/1.12.pdf",
+        "raw_sha256": "e9b668fd0102ebe4e9fdd06130b76cab4b0caa7b0eb2ff0c0da94c191bf32d4c",
+        "source_document_id": "ICAR_CRIDA_CCP",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "historical nearest-mandi context for Jhalawar, Rajasthan",
+      "summary": "Controlled non-comparable market context.",
+      "temporal_scope": "historical frozen decision window ending 2025-10-31"
+    }
+  ],
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "decision_status": "context_only_no_direct_farm_action",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "9eea377a423a9da00c03edad66b985dd858416f0dd00187f28c8a9ceb0f8230e",
+  "fixture_family": "negative_control_no_comparable_conflict",
+  "fixture_id": "CF_SOYBEAN_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "unrelated_weather_and_market_context_not_conflict"
+}

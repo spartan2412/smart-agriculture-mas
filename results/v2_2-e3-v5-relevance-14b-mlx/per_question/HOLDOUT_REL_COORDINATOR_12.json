@@ -1,0 +1,278 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__calendar_window",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage.; source_document_ids=ICAR_RABI_STATE_ADVISORIES_2021_22; lane=regional_calendar; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=The declared rabi window for this crop and district is Oct-Mar; the scenario date falls in the middle part of that window."
+    },
+    {
+      "fact_id": "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__fertilizer_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Hybrid tomato under documented drip fertigation only; use the diagnosis-triggered early-blight bundle and not a routine spray.; source_document_ids=TNAU_TOMATO_FERTIGATION_2014; lane=regional_nutrient_policy; source=TNAU_TOMATO_FERTIGATION_2014; text=Use the cited Tamil Nadu tomato regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Hybrid tomato under documented drip fertigation only; use the diagnosis-triggered early-blight bundle and not a routine spray.; source_document_ids=TNAU_TOMATO_EARLY_BLIGHT_2023; lane=regional_crop_protection_policy; source=TNAU_TOMATO_EARLY_BLIGHT_2023; text=Use the cited Tamil Nadu tomato regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_SELECT_MATURITY_FOR_MARKET",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Only after observing fruit maturity and knowing the intended market; neither is in the scenario. | actual_fruit_maturity_and_intended_market_not_observed; source_document_ids=TNAU_TOMATO_POSTHARVEST_HARVESTING; lane=harvest_readiness; source=TNAU_TOMATO_POSTHARVEST_HARVESTING; text=Match tomato harvest maturity to the intended market and transport distance."
+    },
+    {
+      "fact_id": "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_GRADE_SOUND_FRUIT",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Only after a harvested lot is available for physical inspection. | actual_harvested_lot_quality_not_observed; source_document_ids=TNAU_TOMATO_POSTHARVEST_HARVESTING; lane=grading; source=TNAU_TOMATO_POSTHARVEST_HARVESTING; text=Remove damaged, rotten, and cracked tomatoes before grading sound fruit."
+    }
+  ],
+  "question": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "allowed_fact_ids": [
+      "decision:operation",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__calendar_window",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__fertilizer_policy",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy",
+      "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_SELECT_MATURITY_FOR_MARKET",
+      "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_GRADE_SOUND_FRUIT"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "A source-quoted post-harvest technical operation is crop scoped, but its stated lot/harvest precondition is not observed in this frozen scenario."
+        ],
+        "fact_id": "decision:operation",
+        "fact_kind": "decision_trace",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "FROZEN_SCENARIO_MANIFEST"
+        ],
+        "source_locators": [],
+        "text": "status=conditional_operation_pending_field_precondition; operation_status=not_issued_as_direct_farm_action; direct_farm_action_issued=False; citations=AGMARKNET_MONTHLY_REPORT,CIBRC_FUNGICIDE_2026,FROZEN_SCENARIO_MANIFEST,ICAR_RABI_STATE_ADVISORIES_2021_22,MAS_ENRICHMENT_CONTRACT,NASA_POWER_HISTORICAL_WINDOW,NATURAL_SIGNAL_DIVERGENCE,NHB_ICAP_GEO_FACILITIES,SENTINEL2_L2A,SOILGRIDS,TNAU_TOMATO_EARLY_BLIGHT_2023,TNAU_TOMATO_FERTIGATION_2014,TNAU_TOMATO_FRUIT_BORER_2023,TNAU_TOMATO_POSTHARVEST_HARVESTING"
+      },
+      {
+        "conditions": [
+          "The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage."
+        ],
+        "fact_id": "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__calendar_window",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__calendar_window"
+        ],
+        "source_document_ids": [
+          "ICAR_RABI_STATE_ADVISORIES_2021_22"
+        ],
+        "source_locators": [
+          "PDF pp. 388 and 394-395 Tamil Nadu and Puducherry Rabi tomato chapter"
+        ],
+        "text": "lane=regional_calendar; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=The declared rabi window for this crop and district is Oct-Mar; the scenario date falls in the middle part of that window."
+      },
+      {
+        "conditions": [
+          "Hybrid tomato under documented drip fertigation only; use the diagnosis-triggered early-blight bundle and not a routine spray."
+        ],
+        "fact_id": "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__fertilizer_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__fertilizer_policy"
+        ],
+        "source_document_ids": [
+          "TNAU_TOMATO_FERTIGATION_2014"
+        ],
+        "source_locators": [
+          "PDF p. 1 hybrid tomato drip-fertigation schedule"
+        ],
+        "text": "lane=regional_nutrient_policy; source=TNAU_TOMATO_FERTIGATION_2014; text=Use the cited Tamil Nadu tomato regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Hybrid tomato under documented drip fertigation only; use the diagnosis-triggered early-blight bundle and not a routine spray."
+        ],
+        "fact_id": "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+        ],
+        "source_document_ids": [
+          "TNAU_TOMATO_EARLY_BLIGHT_2023"
+        ],
+        "source_locators": [
+          "HTML early-blight integrated management page"
+        ],
+        "text": "lane=regional_crop_protection_policy; source=TNAU_TOMATO_EARLY_BLIGHT_2023; text=Use the cited Tamil Nadu tomato regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Only after observing fruit maturity and knowing the intended market; neither is in the scenario.",
+          "actual_fruit_maturity_and_intended_market_not_observed"
+        ],
+        "fact_id": "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_SELECT_MATURITY_FOR_MARKET",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "POSTHARVEST_TOMATO_SELECT_MATURITY_FOR_MARKET",
+          "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_SELECT_MATURITY_FOR_MARKET"
+        ],
+        "source_document_ids": [
+          "TNAU_TOMATO_POSTHARVEST_HARVESTING"
+        ],
+        "source_locators": [
+          "html_paragraphs_171_to_173"
+        ],
+        "text": "lane=harvest_readiness; source=TNAU_TOMATO_POSTHARVEST_HARVESTING; text=Match tomato harvest maturity to the intended market and transport distance."
+      },
+      {
+        "conditions": [
+          "Only after a harvested lot is available for physical inspection.",
+          "actual_harvested_lot_quality_not_observed"
+        ],
+        "fact_id": "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_GRADE_SOUND_FRUIT",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "POSTHARVEST_TOMATO_GRADE_SOUND_FRUIT",
+          "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_GRADE_SOUND_FRUIT"
+        ],
+        "source_document_ids": [
+          "TNAU_TOMATO_POSTHARVEST_HARVESTING"
+        ],
+        "source_locators": [
+          "html_paragraph_176"
+        ],
+        "text": "lane=grading; source=TNAU_TOMATO_POSTHARVEST_HARVESTING; text=Remove damaged, rotten, and cracked tomatoes before grading sound fruit."
+      }
+    ],
+    "allowed_passage_ids": [],
+    "allowed_source_document_ids": [
+      "FROZEN_SCENARIO_MANIFEST",
+      "ICAR_RABI_STATE_ADVISORIES_2021_22",
+      "TNAU_TOMATO_EARLY_BLIGHT_2023",
+      "TNAU_TOMATO_FERTIGATION_2014",
+      "TNAU_TOMATO_POSTHARVEST_HARVESTING"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "disallowed_distractor_ids": [
+      "decision:operation",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__calendar_window",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__fertilizer_policy",
+      "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_SELECT_MATURITY_FOR_MARKET",
+      "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_GRADE_SOUND_FRUIT"
+    ],
+    "expected_admissible_fact_ids": [
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+    ],
+    "expected_admissible_passage_ids": [],
+    "expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "Which one documented regional crop-protection card should be displayed first for Tomato in Coimbatore, Tamil Nadu, during the rabi decision window ending 2024-12-31? Select only that one plan card; do not select a decision trace, another lane, or post-harvest context.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "coordinator_single_primary_regional_crop_protection_policy",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_12",
+    "required_conditions": [
+      "Hybrid tomato under documented drip fertigation only; use the diagnosis-triggered early-blight bundle and not a routine spray."
+    ],
+    "role_instruction_sha256": "8c099c7e5320410b773bd9057ec02502af44c63e74059c7029c505abd8ad2ab7",
+    "scenario_context": {
+      "crop": "tomato",
+      "decision_date": "2024-12-31",
+      "decision_window_utc": "2024-12-01T00:00:00Z/2024-12-31T23:59:59Z",
+      "district": "Coimbatore",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Tamil Nadu"
+    },
+    "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_TN_COIMBATORE_TOMATO_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "bounded_llm": {
+      "agent_name": "provenance_aware_coordinator_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "ab9732837752418ad7f91a0f73f645bcfe7cc1753979dbd385102464ea576a96",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "approved_plan_cards_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_primary_plan_card"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+    ],
+    "expected_passage_count": 0,
+    "expected_passage_ids": [],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 12577,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+    ],
+    "original_allowed_fact_ids": [
+      "decision:operation",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__calendar_window",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__fertilizer_policy",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy",
+      "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_SELECT_MATURITY_FOR_MARKET",
+      "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_GRADE_SOUND_FRUIT"
+    ],
+    "packaged_candidate_fact_ids": [
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__calendar_window",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__fertilizer_policy",
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy",
+      "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_SELECT_MATURITY_FOR_MARKET",
+      "postharvest:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__postharvest__POSTHARVEST_TOMATO_GRADE_SOUND_FRUIT"
+    ],
+    "passage_intersection_count": 0,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 1292550144,
+    "prompt_sha256": "ab9732837752418ad7f91a0f73f645bcfe7cc1753979dbd385102464ea576a96",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_12",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "plan:SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+    ],
+    "selected_passage_count": 0,
+    "selected_passage_ids": [],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231__protection_policy"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "approved_plan_cards_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_primary_plan_card"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__calendar_window",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage.; source_document_ids=ICAR_CRIDA_CCP; lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared kharif window for this crop and district is Jun-Nov; the scenario date falls in the late part of that window."
+    },
+    {
+      "fact_id": "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Regional fallback only; PAU soil-test conditions and diagnosis thresholds remain mandatory.; source_document_ids=PAU_KHARIF_2026; lane=regional_nutrient_policy; source=PAU_KHARIF_2026; text=Use the cited Punjab rice regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__protection_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Regional fallback only; PAU soil-test conditions and diagnosis thresholds remain mandatory.; source_document_ids=PAU_KHARIF_2026; lane=regional_crop_protection_policy; source=PAU_KHARIF_2026; text=Use the cited Punjab rice regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_HARVEST_MATURITY",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Use only when the rice crop's proper variety-specific maturity is actually observed. | actual_crop_maturity_and_harvest_readiness_not_observed; source_document_ids=PAU_KHARIF_2026; lane=harvest_readiness; source=PAU_KHARIF_2026; text=Harvest at proper maturity and variety-wise; avoid night harvesting."
+    },
+    {
+      "fact_id": "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_DRY_AND_STORE",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Only after harvest and a lot-specific moisture/quality check; this does not establish the actual lot moisture. | harvested_lot_moisture_and_storage_condition_not_observed; source_document_ids=PAU_KHARIF_2026; lane=dry_storage; source=PAU_KHARIF_2026; text=Dry the harvested produce well before storage; keep produce intended for storage in appropriate bins."
+    }
+  ],
+  "question": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "allowed_fact_ids": [
+      "decision:operation",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__calendar_window",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__protection_policy",
+      "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_HARVEST_MATURITY",
+      "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_DRY_AND_STORE"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "A source-quoted post-harvest technical operation is crop scoped, but its stated lot/harvest precondition is not observed in this frozen scenario."
+        ],
+        "fact_id": "decision:operation",
+        "fact_kind": "decision_trace",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "FROZEN_SCENARIO_MANIFEST"
+        ],
+        "source_locators": [],
+        "text": "status=conditional_operation_pending_field_precondition; operation_status=not_issued_as_direct_farm_action; direct_farm_action_issued=False; citations=AGMARKNET_MONTHLY_REPORT,CIBRC_INSECTICIDE_2026,FROZEN_SCENARIO_MANIFEST,ICAR_CRIDA_CCP,ICAR_CRIDA_PB_BATHINDA_CONTINGENCY,MAS_ENRICHMENT_CONTRACT,NASA_POWER_HISTORICAL_WINDOW,NATURAL_SIGNAL_DIVERGENCE,PAU_ARCHIVE_KHARIF_2024,PAU_KHARIF_2026,SENTINEL2_L2A,SOILGRIDS,WDRA_REGISTERED_WAREHOUSES_PUNJAB"
+      },
+      {
+        "conditions": [
+          "The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage."
+        ],
+        "fact_id": "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__calendar_window",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__calendar_window"
+        ],
+        "source_document_ids": [
+          "ICAR_CRIDA_CCP"
+        ],
+        "source_locators": [
+          "District CCP crop profile and sowing-window PDFs"
+        ],
+        "text": "lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared kharif window for this crop and district is Jun-Nov; the scenario date falls in the late part of that window."
+      },
+      {
+        "conditions": [
+          "Regional fallback only; PAU soil-test conditions and diagnosis thresholds remain mandatory."
+        ],
+        "fact_id": "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+        ],
+        "source_document_ids": [
+          "PAU_KHARIF_2026"
+        ],
+        "source_locators": [
+          "PDF p. 10 rice nutrient schedule"
+        ],
+        "text": "lane=regional_nutrient_policy; source=PAU_KHARIF_2026; text=Use the cited Punjab rice regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Regional fallback only; PAU soil-test conditions and diagnosis thresholds remain mandatory."
+        ],
+        "fact_id": "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__protection_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__protection_policy"
+        ],
+        "source_document_ids": [
+          "PAU_KHARIF_2026"
+        ],
+        "source_locators": [
+          "PDF pp. 14-15 stem-borer ETL and p. 17 sheath-blight action"
+        ],
+        "text": "lane=regional_crop_protection_policy; source=PAU_KHARIF_2026; text=Use the cited Punjab rice regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Use only when the rice crop's proper variety-specific maturity is actually observed.",
+          "actual_crop_maturity_and_harvest_readiness_not_observed"
+        ],
+        "fact_id": "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_HARVEST_MATURITY",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "POSTHARVEST_RICE_HARVEST_MATURITY",
+          "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_HARVEST_MATURITY"
+        ],
+        "source_document_ids": [
+          "PAU_KHARIF_2026"
+        ],
+        "source_locators": [
+          "pdf_page_9"
+        ],
+        "text": "lane=harvest_readiness; source=PAU_KHARIF_2026; text=Harvest at proper maturity and variety-wise; avoid night harvesting."
+      },
+      {
+        "conditions": [
+          "Only after harvest and a lot-specific moisture/quality check; this does not establish the actual lot moisture.",
+          "harvested_lot_moisture_and_storage_condition_not_observed"
+        ],
+        "fact_id": "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_DRY_AND_STORE",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "POSTHARVEST_RICE_DRY_AND_STORE",
+          "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_DRY_AND_STORE"
+        ],
+        "source_document_ids": [
+          "PAU_KHARIF_2026"
+        ],
+        "source_locators": [
+          "pdf_page_20"
+        ],
+        "text": "lane=dry_storage; source=PAU_KHARIF_2026; text=Dry the harvested produce well before storage; keep produce intended for storage in appropriate bins."
+      }
+    ],
+    "allowed_passage_ids": [],
+    "allowed_source_document_ids": [
+      "FROZEN_SCENARIO_MANIFEST",
+      "ICAR_CRIDA_CCP",
+      "PAU_KHARIF_2026"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "disallowed_distractor_ids": [
+      "decision:operation",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__calendar_window",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__protection_policy",
+      "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_HARVEST_MATURITY",
+      "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_DRY_AND_STORE"
+    ],
+    "expected_admissible_fact_ids": [
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+    ],
+    "expected_admissible_passage_ids": [],
+    "expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "Which one documented regional nutrient-policy card should be displayed first for Rice in Bathinda, Punjab, during the kharif decision window ending 2024-11-30? Select only that one plan card; do not select a decision trace, another lane, or post-harvest context.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "coordinator_single_primary_regional_nutrient_policy",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_02",
+    "required_conditions": [
+      "Regional fallback only; PAU soil-test conditions and diagnosis thresholds remain mandatory."
+    ],
+    "role_instruction_sha256": "8c099c7e5320410b773bd9057ec02502af44c63e74059c7029c505abd8ad2ab7",
+    "scenario_context": {
+      "crop": "rice",
+      "decision_date": "2024-11-30",
+      "decision_window_utc": "2024-11-01T00:00:00Z/2024-11-30T23:59:59Z",
+      "district": "Bathinda",
+      "geometry_scope": "documented_representative_cell",
+      "season": "kharif",
+      "state": "Punjab"
+    },
+    "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_PB_BATHINDA_RICE_KHARIF",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "bounded_llm": {
+      "agent_name": "provenance_aware_coordinator_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "b27a39afa2f34bcf793462156836bc8840955732eddc03bdf79962656b30a376",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "approved_plan_cards_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_primary_plan_card"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+    ],
+    "expected_passage_count": 0,
+    "expected_passage_ids": [],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "latency_ms": 4328,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+    ],
+    "original_allowed_fact_ids": [
+      "decision:operation",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__calendar_window",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__protection_policy",
+      "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_HARVEST_MATURITY",
+      "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_DRY_AND_STORE"
+    ],
+    "packaged_candidate_fact_ids": [
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__calendar_window",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__protection_policy",
+      "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_HARVEST_MATURITY",
+      "postharvest:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__postharvest__POSTHARVEST_RICE_DRY_AND_STORE"
+    ],
+    "passage_intersection_count": 0,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 102219776,
+    "prompt_sha256": "b27a39afa2f34bcf793462156836bc8840955732eddc03bdf79962656b30a376",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_02",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+    ],
+    "selected_passage_count": 0,
+    "selected_passage_ids": [],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130__fertilizer_policy"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "approved_plan_cards_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_primary_plan_card"
+    },
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  }
+}

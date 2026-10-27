@@ -1,0 +1,9 @@
+layer,expected_rows,actual_rows,passing_rows,unavailable_rows,result,detail
+official_source_selection_scope,17,17,14,3,pass,validated
+official_source_retrieval_and_hashes,14,14,14,0,pass,validated
+structured_official_action_records,18,18,18,0,pass,validated
+scenario_operation_bindings,5400,5400,5400,0,pass,validated
+metadata_filtered_rag_scope,4200,4200,231,3969,pass,validated
+archived_district_advisory_access_and_scope,300,300,0,300,pass,validated
+predecision_sentinel_ndvi_timeseries,300,300,255,45,pass,validated
+natural_cross_source_signal_divergence,300,300,43,257,pass,validated

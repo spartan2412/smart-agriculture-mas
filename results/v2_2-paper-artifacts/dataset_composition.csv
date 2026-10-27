@@ -1,0 +1,8 @@
+layer,what_is_counted,count,source_artifact,research_role
+Frozen study registry,Admitted crop × district × season sites,30,data/registry/final_study_sites.csv,Locks location-aligned study sites before scenario generation.
+Canonical scenario benchmark,Aligned historical decision contexts,300,data/scenarios/manifests/scenario_manifest.csv,"The fixed six-crop, 30-site test population."
+First / second enrichment contract,Scenario capability and evidence contracts,300,data/scenarios/enriched/mas_enrichment_contract.csv,Makes context availability and action restrictions explicit.
+Third enrichment: regional plans,"Source-linked calendar, nutrient, IPM, and conditional operation plan items",1507,data/scenarios/enriched/regional_operation_plan_items.csv,Includes 607 conditional items across 229 scenarios.
+Official operation recovery,Source-quoted operation records,41,data/scenarios/enriched/official_action_records_all.csv,Provides scope- and condition-bound operational evidence.
+Scoped official RAG,Admitted official source documents,92,data/scenarios/enriched/official_rag_corpus_catalog.csv,Metadata-gated corpus with 4582 indexed chunks.
+Fourth enrichment: post-harvest,Conditional crop-scoped handling plan items,700,data/scenarios/enriched/scenario_postharvest_plan_items.csv,Paired with 14 exact-crop passages and 300 site contexts.

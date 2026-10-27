@@ -1,0 +1,8 @@
+system_id,label,comparison_role,evaluation_only,run_status,scenario_count,fully_passing_scenario_count,overall_structural_pass_rate,elapsed_seconds,bounded_llm_invocation_count,direct_farm_action_count,run_commit
+A0,A0 Full MAS,Proposed farmer-facing reference,False,completed,300,300,1.0,4.0,0,0,636254d97ee6bfcb5cd62925560256e8861e7a7f
+A1,A1 Regional plan only,Coordinated-MAS baseline,True,completed_evaluation_only_with_oracle_failures,300,0,0.0,2.0,0,0,3628e006491832b56af894da0e3f6947d3f3bb94
+A2,A2 Centralized RAG,Multi-agent decomposition baseline,True,completed_evaluation_only_with_oracle_failures,300,0,0.0,3.0,0,0,3628e006491832b56af894da0e3f6947d3f3bb94
+A3,A3 No scoped RAG,Scoped retrieval / operation recovery ablation,True,completed_evaluation_only_with_oracle_failures,300,71,0.23666666666666666,3.0,0,0,3628e006491832b56af894da0e3f6947d3f3bb94
+A4,A4 No regional plans,Third-enrichment ablation,True,completed_evaluation_only_with_oracle_failures,300,0,0.0,2.0,0,0,3628e006491832b56af894da0e3f6947d3f3bb94
+A5,A5 No alignment gates,Integrity-gate ablation; evaluation only,True,completed,300,300,1.0,4.0,0,0,3628e006491832b56af894da0e3f6947d3f3bb94
+A6,A6 No conflict coordinator,Conflict-resolution ablation,True,completed_evaluation_only_with_oracle_failures,300,257,0.8566666666666667,4.0,0,0,3628e006491832b56af894da0e3f6947d3f3bb94

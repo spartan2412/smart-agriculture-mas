@@ -1,0 +1,232 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "passage_1",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only when the wheat is fully ripe.; source_document_ids=PAU_ARCHIVE_RABI_2023_24; source=PAU_ARCHIVE_RABI_2023_24; locator=pdf_page_26; layer=source_scoped_operation; text=Harvest and thresh wheat as soon as fully ripe, to avoid grain shattering. Harvest manually, with a combine, or with a tractor-operated vertical conveyer reaper windrower as documented in the source. Only when the wheat is fully ripe. Harvest and thresh wheat as soon as fully ripe, to avoid grain shattering. Delayed harvesting results in high grain losses."
+    }
+  ],
+  "question": {
+    "agent_name": "official_operations_rag_agent",
+    "allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "Only when the wheat is fully ripe."
+        ],
+        "fact_id": "passage_1",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "PAU_ARCHIVE_2023_24_WHEAT_HARVEST_FULLY_RIPE"
+        ],
+        "source_document_ids": [
+          "PAU_ARCHIVE_RABI_2023_24"
+        ],
+        "source_locators": [
+          "pdf_page_26"
+        ],
+        "text": "source=PAU_ARCHIVE_RABI_2023_24; locator=pdf_page_26; layer=source_scoped_operation; text=Harvest and thresh wheat as soon as fully ripe, to avoid grain shattering. Harvest manually, with a combine, or with a tractor-operated vertical conveyer reaper windrower as documented in the source. Only when the wheat is fully ripe. Harvest and thresh wheat as soon as fully ripe, to avoid grain shattering. Delayed harvesting results in high grain losses."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_2",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "pdf_page_25"
+        ],
+        "text": "source=PAU_RABI_2025_26; locator=pdf_page_25; layer=postharvest_exact_crop; text=Harvest and thresh wheat as soon as fully ripe, to avoid grain shattering. Delayed harvesting results in high grain losses."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_3",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "pdf_page_25"
+        ],
+        "text": "source=PAU_RABI_2025_26; locator=pdf_page_25; layer=postharvest_exact_crop; text=In case the grain contains more than 10 per cent moisture, it should be dried before storing, otherwise it would be spoiled by moulds and excessive heat that develops during storage."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_4",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_CRIDA_PB_BATHINDA_CONTINGENCY"
+        ],
+        "source_locators": [
+          "pdf_page_2"
+        ],
+        "text": "source=ICAR_CRIDA_PB_BATHINDA_CONTINGENCY; locator=pdf_page_2; layer=official_rag; text=(500ml)/Tilt (200ml) per acre to con trol False smut;Spray Tilt @ 200ml/acre against sheath blight ,Sheath rot and Bunt diseases. Wheat Spray pesticide to control pink boll worm especially in rice fields. Spray Nuvacron @150ml/acre to control sucking pest (Aphid) Spray Nuvacron @150ml/acre to control Aphid, Ekalux for Army worm (@400 ml); Bollworm (800 ml) per acre and Tilt @200ml/acre to check Karnal bunt & rusts. Treat the produce meant for seed with 250gmMalathion dust (5%) and disinfest 10gunny bags with 5 ml cymbush/10 litres water, Godowns with 100 ml ythion/10 litres water. Horticulture Citrus Chemical control of phytophthora / foot rot with Ridomil -MZ/ Alliette as per recommendation, Control of sucking pests with systemic pesticides Chemical control of phytophthora / foot rot with Ridomil -MZ/ Alliette as per recommendation, Control of sucking pests with systemic pesticides Che…"
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_5",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_CRIDA_PB_BATHINDA_CONTINGENCY"
+        ],
+        "source_locators": [
+          "pdf_page_1"
+        ],
+        "text": "source=ICAR_CRIDA_PB_BATHINDA_CONTINGENCY; locator=pdf_page_1; layer=official_rag; text=Outbreak of pests and diseases due to unseasonal rains Vegetative stage Flowering stage Crop maturity stage Post harvest Cotton Spray Larwin@250g Or Ekalux 800ml/acre to check Mealy bug 1. Insect/Pests: Spray Imedachloprid 40 ml/ Pride20ml/acre for Jassid; Hostathion 600 ml/acreagainst white fly; Larwin@250gOr Ekalux 800ml/acre to check Mealy bug; synthetic pyrethroids / Carbamate insecticides against Pink/ spotted /American(small size) boll worm ; Organophosphate/Naturalite/oxaddiazine against Ameri can(big size) boll worm and Carbamate/ Organochlorinate/ Organophosphates against Tobacco boll worm. 2. Diseases: grow LH 144/LH 2076 against Leaf curl;; Cobalt chloride(COCl 2) to check para wilt disease,Spray blitox + streptocycline against Bacterial Blight and Blitox/ Captan for control of Anthrcnose, leaf blightand leaf spot . Storage of produce in dry place Rice Spray Nuvacron/Monocil@…"
+      }
+    ],
+    "allowed_passage_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_source_document_ids": [
+      "ICAR_CRIDA_PB_BATHINDA_CONTINGENCY",
+      "PAU_ARCHIVE_RABI_2023_24",
+      "PAU_RABI_2025_26"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "disallowed_distractor_ids": [
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "expected_admissible_fact_ids": [
+      "passage_1"
+    ],
+    "expected_admissible_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_or_operation_ids": [
+      "PAU_ARCHIVE_2023_24_WHEAT_HARVEST_FULLY_RIPE"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "For Wheat in Bathinda, Punjab, during the rabi decision window ending 2024-04-30, which exact source-scoped official passage records this operation: ‘Harvest and thresh wheat as soon as fully ripe, to avoid grain shattering.’? Select the passage that retains this required condition: ‘Only when the wheat is fully ripe.’. Do not select a neighboring operation, generic context, or a second passage.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "exact_named_source_scoped_operation_selection",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_04",
+    "required_conditions": [
+      "Only when the wheat is fully ripe."
+    ],
+    "role_instruction_sha256": "f7ccf98792aba075f0537b87aeb2c34b16a5630a09166dadfe94881bb789fde9",
+    "scenario_context": {
+      "crop": "wheat",
+      "decision_date": "2024-04-30",
+      "decision_window_utc": "2024-04-01T00:00:00Z/2024-04-30T23:59:59Z",
+      "district": "Bathinda",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Punjab"
+    },
+    "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_PB_BATHINDA_WHEAT_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "official_operations_rag_agent",
+    "bounded_llm": {
+      "agent_name": "official_operations_rag_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "881e1b079766f44047e7739d474dc58a93f68c9958630210fdc8c846124d30b6",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "passage_1"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "admitted_passages_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_exact_source_scoped_operation"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "passage_1"
+    ],
+    "expected_passage_count": 1,
+    "expected_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "PAU_ARCHIVE_2023_24_WHEAT_HARVEST_FULLY_RIPE"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 4814,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "PAU_ARCHIVE_2023_24_WHEAT_HARVEST_FULLY_RIPE"
+    ],
+    "original_allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "packaged_candidate_fact_ids": [
+      "passage_1"
+    ],
+    "passage_intersection_count": 1,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 108773376,
+    "prompt_sha256": "881e1b079766f44047e7739d474dc58a93f68c9958630210fdc8c846124d30b6",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_04",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "passage_1"
+    ],
+    "selected_passage_count": 1,
+    "selected_passage_ids": [
+      "passage_1"
+    ],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "PAU_ARCHIVE_2023_24_WHEAT_HARVEST_FULLY_RIPE"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "admitted_passages_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_exact_source_scoped_operation"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

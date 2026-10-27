@@ -1,0 +1,134 @@
+{
+  "fully_passing_scenario_count": 257,
+  "metrics": [
+    {
+      "name": "abstention_reason_coverage",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "bounded_llm_trace_compliance",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "citation_traceability",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "claim_scope_contract_compliance",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "conditional_operation_completeness",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "conflict_resolution_citation_fidelity",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "conflict_trace_completeness_and_exclusion",
+      "passed": 257,
+      "rate": 0.8566666666666667,
+      "total": 300
+    },
+    {
+      "name": "context_source_provenance_binding",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "farmer_message_condition_and_citation_fidelity",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "farmer_message_source_detail_and_facility_fidelity",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "grounded_plan_coverage",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "input_lineage_integrity",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "natural_ndvi_weather_divergence_policy",
+      "passed": 257,
+      "rate": 0.8566666666666667,
+      "total": 300
+    },
+    {
+      "name": "operation_binding_and_condition_compliance",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "overall_structural_pass",
+      "passed": 257,
+      "rate": 0.8566666666666667,
+      "total": 300
+    },
+    {
+      "name": "plan_and_selected_operation_citation_coverage",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "rag_scope_compliance",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "source_quote_locator_hash_fidelity",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "stable_claim_identity_fidelity",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "unsupported_action_prevention_and_agent_permissions",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    },
+    {
+      "name": "vision_no_data_boundary",
+      "passed": 300,
+      "rate": 1.0,
+      "total": 300
+    }
+  ],
+  "oracle_version": "1.4",
+  "overall_structural_pass_rate": 0.8566666666666667,
+  "scenario_count": 300
+}

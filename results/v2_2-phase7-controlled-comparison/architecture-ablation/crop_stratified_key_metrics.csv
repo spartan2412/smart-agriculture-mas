@@ -1,0 +1,169 @@
+system_id,crop,metric,metric_label,passed,total,rate
+A0,chickpea,overall_structural_pass,All structural checks,50,50,1.0
+A0,chickpea,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A0,chickpea,conditional_operation_completeness,Conditional operations,50,50,1.0
+A0,chickpea,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A0,maize,overall_structural_pass,All structural checks,50,50,1.0
+A0,maize,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A0,maize,conditional_operation_completeness,Conditional operations,50,50,1.0
+A0,maize,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A0,rice,overall_structural_pass,All structural checks,50,50,1.0
+A0,rice,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A0,rice,conditional_operation_completeness,Conditional operations,50,50,1.0
+A0,rice,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A0,soybean,overall_structural_pass,All structural checks,50,50,1.0
+A0,soybean,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A0,soybean,conditional_operation_completeness,Conditional operations,50,50,1.0
+A0,soybean,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A0,tomato,overall_structural_pass,All structural checks,50,50,1.0
+A0,tomato,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A0,tomato,conditional_operation_completeness,Conditional operations,50,50,1.0
+A0,tomato,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A0,wheat,overall_structural_pass,All structural checks,50,50,1.0
+A0,wheat,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A0,wheat,conditional_operation_completeness,Conditional operations,50,50,1.0
+A0,wheat,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A1,chickpea,overall_structural_pass,All structural checks,0,50,0.0
+A1,chickpea,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A1,chickpea,conditional_operation_completeness,Conditional operations,0,50,0.0
+A1,chickpea,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A1,maize,overall_structural_pass,All structural checks,0,50,0.0
+A1,maize,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A1,maize,conditional_operation_completeness,Conditional operations,0,50,0.0
+A1,maize,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A1,rice,overall_structural_pass,All structural checks,0,50,0.0
+A1,rice,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A1,rice,conditional_operation_completeness,Conditional operations,0,50,0.0
+A1,rice,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A1,soybean,overall_structural_pass,All structural checks,0,50,0.0
+A1,soybean,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A1,soybean,conditional_operation_completeness,Conditional operations,0,50,0.0
+A1,soybean,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A1,tomato,overall_structural_pass,All structural checks,0,50,0.0
+A1,tomato,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A1,tomato,conditional_operation_completeness,Conditional operations,0,50,0.0
+A1,tomato,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A1,wheat,overall_structural_pass,All structural checks,0,50,0.0
+A1,wheat,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A1,wheat,conditional_operation_completeness,Conditional operations,0,50,0.0
+A1,wheat,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A2,chickpea,overall_structural_pass,All structural checks,0,50,0.0
+A2,chickpea,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A2,chickpea,conditional_operation_completeness,Conditional operations,0,50,0.0
+A2,chickpea,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A2,maize,overall_structural_pass,All structural checks,0,50,0.0
+A2,maize,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A2,maize,conditional_operation_completeness,Conditional operations,0,50,0.0
+A2,maize,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A2,rice,overall_structural_pass,All structural checks,0,50,0.0
+A2,rice,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A2,rice,conditional_operation_completeness,Conditional operations,0,50,0.0
+A2,rice,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A2,soybean,overall_structural_pass,All structural checks,0,50,0.0
+A2,soybean,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A2,soybean,conditional_operation_completeness,Conditional operations,0,50,0.0
+A2,soybean,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A2,tomato,overall_structural_pass,All structural checks,0,50,0.0
+A2,tomato,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A2,tomato,conditional_operation_completeness,Conditional operations,0,50,0.0
+A2,tomato,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A2,wheat,overall_structural_pass,All structural checks,0,50,0.0
+A2,wheat,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A2,wheat,conditional_operation_completeness,Conditional operations,0,50,0.0
+A2,wheat,operation_binding_and_condition_compliance,Operation binding + condition,0,50,0.0
+A3,chickpea,overall_structural_pass,All structural checks,0,50,0.0
+A3,chickpea,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A3,chickpea,conditional_operation_completeness,Conditional operations,0,50,0.0
+A3,chickpea,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A3,maize,overall_structural_pass,All structural checks,4,50,0.08
+A3,maize,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A3,maize,conditional_operation_completeness,Conditional operations,4,50,0.08
+A3,maize,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A3,rice,overall_structural_pass,All structural checks,16,50,0.32
+A3,rice,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A3,rice,conditional_operation_completeness,Conditional operations,16,50,0.32
+A3,rice,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A3,soybean,overall_structural_pass,All structural checks,22,50,0.44
+A3,soybean,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A3,soybean,conditional_operation_completeness,Conditional operations,22,50,0.44
+A3,soybean,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A3,tomato,overall_structural_pass,All structural checks,0,50,0.0
+A3,tomato,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A3,tomato,conditional_operation_completeness,Conditional operations,0,50,0.0
+A3,tomato,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A3,wheat,overall_structural_pass,All structural checks,29,50,0.58
+A3,wheat,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A3,wheat,conditional_operation_completeness,Conditional operations,29,50,0.58
+A3,wheat,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A4,chickpea,overall_structural_pass,All structural checks,0,50,0.0
+A4,chickpea,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A4,chickpea,conditional_operation_completeness,Conditional operations,0,50,0.0
+A4,chickpea,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A4,maize,overall_structural_pass,All structural checks,0,50,0.0
+A4,maize,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A4,maize,conditional_operation_completeness,Conditional operations,4,50,0.08
+A4,maize,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A4,rice,overall_structural_pass,All structural checks,0,50,0.0
+A4,rice,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A4,rice,conditional_operation_completeness,Conditional operations,16,50,0.32
+A4,rice,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A4,soybean,overall_structural_pass,All structural checks,0,50,0.0
+A4,soybean,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A4,soybean,conditional_operation_completeness,Conditional operations,22,50,0.44
+A4,soybean,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A4,tomato,overall_structural_pass,All structural checks,0,50,0.0
+A4,tomato,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A4,tomato,conditional_operation_completeness,Conditional operations,0,50,0.0
+A4,tomato,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A4,wheat,overall_structural_pass,All structural checks,0,50,0.0
+A4,wheat,grounded_plan_coverage,Grounded plan coverage,0,50,0.0
+A4,wheat,conditional_operation_completeness,Conditional operations,29,50,0.58
+A4,wheat,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A5,chickpea,overall_structural_pass,All structural checks,50,50,1.0
+A5,chickpea,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A5,chickpea,conditional_operation_completeness,Conditional operations,50,50,1.0
+A5,chickpea,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A5,maize,overall_structural_pass,All structural checks,50,50,1.0
+A5,maize,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A5,maize,conditional_operation_completeness,Conditional operations,50,50,1.0
+A5,maize,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A5,rice,overall_structural_pass,All structural checks,50,50,1.0
+A5,rice,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A5,rice,conditional_operation_completeness,Conditional operations,50,50,1.0
+A5,rice,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A5,soybean,overall_structural_pass,All structural checks,50,50,1.0
+A5,soybean,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A5,soybean,conditional_operation_completeness,Conditional operations,50,50,1.0
+A5,soybean,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A5,tomato,overall_structural_pass,All structural checks,50,50,1.0
+A5,tomato,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A5,tomato,conditional_operation_completeness,Conditional operations,50,50,1.0
+A5,tomato,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A5,wheat,overall_structural_pass,All structural checks,50,50,1.0
+A5,wheat,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A5,wheat,conditional_operation_completeness,Conditional operations,50,50,1.0
+A5,wheat,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A6,chickpea,overall_structural_pass,All structural checks,37,50,0.74
+A6,chickpea,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A6,chickpea,conditional_operation_completeness,Conditional operations,50,50,1.0
+A6,chickpea,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A6,maize,overall_structural_pass,All structural checks,39,50,0.78
+A6,maize,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A6,maize,conditional_operation_completeness,Conditional operations,50,50,1.0
+A6,maize,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A6,rice,overall_structural_pass,All structural checks,44,50,0.88
+A6,rice,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A6,rice,conditional_operation_completeness,Conditional operations,50,50,1.0
+A6,rice,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A6,soybean,overall_structural_pass,All structural checks,49,50,0.98
+A6,soybean,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A6,soybean,conditional_operation_completeness,Conditional operations,50,50,1.0
+A6,soybean,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A6,tomato,overall_structural_pass,All structural checks,43,50,0.86
+A6,tomato,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A6,tomato,conditional_operation_completeness,Conditional operations,50,50,1.0
+A6,tomato,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0
+A6,wheat,overall_structural_pass,All structural checks,45,50,0.9
+A6,wheat,grounded_plan_coverage,Grounded plan coverage,50,50,1.0
+A6,wheat,conditional_operation_completeness,Conditional operations,50,50,1.0
+A6,wheat,operation_binding_and_condition_compliance,Operation binding + condition,50,50,1.0

@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "rice",
+    "decision_date": "2025-11-30",
+    "district": "Bathinda",
+    "scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+    "season": "kharif",
+    "site_id": "PF_PB_BATHINDA_RICE_KHARIF",
+    "state": "Punjab"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "bf049e6ab7eb4857be9bb795120c725839d0dfb641c021111f57f29e1c2effaa;c1db7ac568cfc7eee51c5b1598e94485b6f56c6224adfcb06a26007ad0d2aca2",
+    "source_url": "https://icar-crida.res.in/CCP/PB/Bathinda/1.7.pdf;https://icar-crida.res.in/CCP/PB/Bathinda/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "92f96d9d258f72ddd16a818bf5215c5720de14c057fe7e99ba19c61c0cdaf584",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_09_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_season_scope_mismatch",
+  "overlay": {
+    "base_value": "kharif",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "rabi",
+    "field": "season",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

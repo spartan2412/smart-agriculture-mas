@@ -1,0 +1,319 @@
+{
+  "comparison_population": "fixed_300_source_gated_scenarios",
+  "fixture_protocol_summary": [
+    {
+      "denominator": 60,
+      "interpretation": "Full resolver follows all stored conflict-policy cases.",
+      "measure": "A0 reference-policy matches",
+      "numerator": 60,
+      "protocol": "Conflict policy fixtures",
+      "rate": 1.0,
+      "system": "A0"
+    },
+    {
+      "denominator": 60,
+      "interpretation": "Detector/safety remain intact while coordination is intentionally withheld.",
+      "measure": "A6 expected ablation behaviour",
+      "numerator": 60,
+      "protocol": "Conflict policy fixtures",
+      "rate": 1.0,
+      "system": "A6"
+    },
+    {
+      "denominator": 48,
+      "interpretation": "All coordinator-required same-domain conflicts remain visible to the detector.",
+      "measure": "A6 eligible conflict detection",
+      "numerator": 48,
+      "protocol": "Conflict policy fixtures",
+      "rate": 1.0,
+      "system": "A6"
+    },
+    {
+      "denominator": 48,
+      "interpretation": "Zero by design: the A6 coordinator receives no conflicts.",
+      "measure": "A6 coordinator resolution",
+      "numerator": 0,
+      "protocol": "Conflict policy fixtures",
+      "rate": 0.0,
+      "system": "A6"
+    },
+    {
+      "denominator": 60,
+      "interpretation": "No controlled conflict fixture issues a direct farm action.",
+      "measure": "A6 direct-action safety",
+      "numerator": 60,
+      "protocol": "Conflict policy fixtures",
+      "rate": 1.0,
+      "system": "A6"
+    },
+    {
+      "denominator": 50,
+      "interpretation": "A0 blocks controlled plan identity/binding mismatches before downstream agents.",
+      "measure": "A0 alignment blocks",
+      "numerator": 50,
+      "protocol": "Provenance/alignment integrity fixtures",
+      "rate": 1.0,
+      "system": "A0"
+    },
+    {
+      "denominator": 50,
+      "interpretation": "Expected evaluation-only exposure after removing the alignment validator; runner halts there.",
+      "measure": "A5 omitted-gate exposure observed",
+      "numerator": 50,
+      "protocol": "Provenance/alignment integrity fixtures",
+      "rate": 1.0,
+      "system": "A5"
+    },
+    {
+      "denominator": 10,
+      "interpretation": "Immutable raw-payload hash verification is a shared loader boundary.",
+      "measure": "Shared loader payload-hash blocks",
+      "numerator": 10,
+      "protocol": "Provenance/alignment integrity fixtures",
+      "rate": 1.0,
+      "system": "A0 and A5"
+    },
+    {
+      "denominator": 60,
+      "interpretation": "The invalid-bundle runner creates no decision or direct action.",
+      "measure": "Direct-action safety",
+      "numerator": 60,
+      "protocol": "Provenance/alignment integrity fixtures",
+      "rate": 1.0,
+      "system": "A0 and A5"
+    }
+  ],
+  "generated_outputs": [
+    "FIGURE_1_ORACLE_METRIC_HEATMAP.pdf",
+    "FIGURE_1_ORACLE_METRIC_HEATMAP.png",
+    "FIGURE_2_KEY_ABLATION_METRICS.pdf",
+    "FIGURE_2_KEY_ABLATION_METRICS.png",
+    "FIGURE_3_CONTROLLED_FIXTURE_PROTOCOLS.pdf",
+    "FIGURE_3_CONTROLLED_FIXTURE_PROTOCOLS.png",
+    "README.md",
+    "TABLE_0_BENCHMARK_COMPOSITION.md",
+    "TABLE_1_SYSTEM_COMPARISON.md",
+    "TABLE_2_KEY_ORACLE_ABLATIONS.md",
+    "TABLE_3_CONTROLLED_FIXTURE_PROTOCOLS.md",
+    "TABLE_4_CROP_STRATIFICATION.md",
+    "TABLE_5_DISTRICT_STRATIFICATION.md",
+    "benchmark_composition.csv",
+    "comparison_manifest.json",
+    "crop_stratified_key_metrics.csv",
+    "district_stratified_key_metrics.csv",
+    "fixture_protocol_results.csv",
+    "oracle_metric_rates.csv",
+    "system_summary.csv",
+    "comparison_manifest.json"
+  ],
+  "generation_git": {
+    "clean": true,
+    "commit": "d396cdaeda630faa8ab2ac3e02c99bc2ee0c1a98",
+    "status": ""
+  },
+  "interpretation": {
+    "conflict_fixtures": "Controlled conflict-policy evaluation; not farm outcomes.",
+    "integrity_fixtures": "Controlled A0/A5 gate-boundary evaluation; invalid bundles stop before farmer output.",
+    "normal_oracle": "Structural source/provenance/safety conformance; not agricultural outcome accuracy."
+  },
+  "normal_scenario_count": 300,
+  "schema_version": "1.0",
+  "shared_frozen_artifact_hashes": {
+    "agents/benchmark/base.py": "1462070d04ca149633fb229ff8db92c389a291e1e77ac5f710eee45969068dcc",
+    "agents/benchmark/benchmark_evaluator.py": "b36bcf848827be0fe7b248bfa0223a3f2e6404901c834288735285ae91326de4",
+    "agents/benchmark/crop_district_season_alignment_validator.py": "fcac7aff9f7fcc489ffd28a1bf2620cedde51a734976e558f7413fc266bc07dc",
+    "agents/benchmark/crop_protection_safety.py": "7d1cc8031a0c44644a0953b66fed017fe673474e18a4441d6def493c1be5739e",
+    "agents/benchmark/evidence_provenance.py": "b216ad63a02f2758acfab4d6561075564341ac3898adc262c244124fbb661dee",
+    "agents/benchmark/farmer_explanation_citation.py": "c5be47dae63c4b6bde1306b198ed19f5750b135e0a989a3556af2eaf29d11797",
+    "agents/benchmark/fertilizer_baseline.py": "17ec0119d1be3ceb1729fa2ae8f68c7b05d7acd38c3b557df825fb6f647f80fd",
+    "agents/benchmark/market_evidence.py": "247b7422ddb5bd5900fc1ae9ba0f30b824d7d15f7c2e4748fccd4e54fe969dbb",
+    "agents/benchmark/provenance_aware_coordinator.py": "f526426e41ec87f9798406feb96613097543da0e24f54f320fba9028224b1b18",
+    "agents/benchmark/satellite_ndvi_context.py": "2b648feae270831cc27132359d7d22376adcc7030b9e7e74c0bf03b53715d2aa",
+    "agents/benchmark/scenario_evidence_router.py": "48dfc4dec936109b8dedec2dedcf57319eae4ca90803ec3252180161a6e50648",
+    "data/benchmark_loader.py": "c8289318416b9430ae9117371815f92d866f0ff0ba7ccfad95420a2533dcf96a",
+    "data/conflict_fixture_registry/conflict_fixture_manifest.csv": "2e5433fb4a1f32d0cda5d7fa34ee2e52fceae36d93db2baad0118487d760d601",
+    "data/llm_relevance_benchmark/manifest.json": "8f97947a4c5ac06bcb80a7e3b12f0fa18a8b19069163d3bed3b9eba2f926fdcc",
+    "data/llm_relevance_benchmark/relevance_questions.jsonl": "d076e1801fdedf162ca9e90925f4144497ce85d868fd4a2be4cc0ccebd7f79e0",
+    "data/pilot_sets/apple_gpu_30_anchor_scenarios/manifest.json": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+    "data/pilot_sets/apple_gpu_30_anchor_scenarios/scenario_ids.csv": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+    "data/registry/final_study_sites.csv": "25299d916ff4ab741afc3cd5e0afa462ed39459b107c20f565f34cd884563a6a",
+    "data/registry/source_scoped_final_site_admission.csv": "17421f3054739463d923caebbbd38f3b71c731d263ddc34b68c77346092340dc",
+    "data/scenarios/enriched/agmarknet_embedded_market_context_features.csv": "a76571d9f3874e29e184d952b132525a79c43b5ae74ce2449421215943505987",
+    "data/scenarios/enriched/agmarknet_embedded_market_context_manifest.csv": "5a8f88304365b1631e405de1aebfcefa73c0abdf2f1c3ab8eefd83f88c12e4d5",
+    "data/scenarios/enriched/mas_enrichment_contract.csv": "bd3403287150588299e0e59c7ebada7a82354f8ddccd9f1b406467e85ef6f40f",
+    "data/scenarios/enriched/nasa_power_water_context_features.csv": "a6348b220ec896cf45a58b8d95a2c286c555246fca5b3067b3a79709044d1e84",
+    "data/scenarios/enriched/official_action_records_all.csv": "cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376",
+    "data/scenarios/enriched/official_rag_corpus_all_chunks.csv": "784a277a086bb6beacb02e9f7ad9c69f74afa99b3674cc27bfcbf05db79b5292",
+    "data/scenarios/enriched/official_rag_corpus_catalog.csv": "7a5bb3b0843adb5488bad6cdf5e83f2928227e206d45d31b69955449a62b9e82",
+    "data/scenarios/enriched/postharvest_source_inventory.csv": "6ea7ae6b6103cbfd5f084d2db14ec41a18e44161fd990417a9b822b8a3a3c12d",
+    "data/scenarios/enriched/regional_operation_plan_items.csv": "a2da4712d9797f3d49417d3bd618997d1fd99c04fe7f452e6914d5f50b9c674a",
+    "data/scenarios/enriched/regional_operation_plan_summary.csv": "ea68448b1cc31b94d62c309820230e1835db0395d5544549b544e3d0b051187f",
+    "data/scenarios/enriched/regional_policy_detail_cards.csv": "a4a76ec8627a45e28e84a1b4276b288d05a117e70751f12b4c4d497b508f99c6",
+    "data/scenarios/enriched/scenario_official_action_bindings_all.csv": "43b8f4dc95a2df74338675239904c21a6565925246b449f555e204723f0eff46",
+    "data/scenarios/enriched/scenario_official_rag_scope_all.csv": "c7f8fa27934f6293cb207c46bbf582fba21c62ccc5a71734c348263eb7684dc5",
+    "data/scenarios/enriched/scenario_postharvest_logistics_context.csv": "cdf3085088899b8409bcd4b95b0cd75afdf75cef810dd5c76563d777864369fa",
+    "data/scenarios/enriched/scenario_postharvest_plan_items.csv": "57283b0c88a40d752d7d8f9eb64c77076b3f51f16702b1a908e5286617613533",
+    "data/scenarios/enriched/scenario_postharvest_rag_scope.csv": "4ab723195ab4764090ca95f993008a7d7ba960600c1ca9ff40618bf91b31dcc8",
+    "data/scenarios/enriched/sentinel_ndvi_context_features.csv": "680af4ba94357ec8a02da4fa9c3121031cdc198ec49ade2707b19bed60259ab4",
+    "data/scenarios/enriched/sentinel_ndvi_context_manifest.csv": "601999dbcb4dc1b68191f5eefd7ad9a8dadfb80984332460b312d17ca9059c45",
+    "data/scenarios/enriched/sentinel_ndvi_timeseries_features.csv": "168c63b0aa9dacc56fc5b91052e006e9f7222ce1cdb06656fc394a0e4b20a87e",
+    "data/scenarios/evidence/scenario_evidence_status.csv": "40574caf600e5bb73af2abdb7282ca381ecc76055826eb592097b03c0702e115",
+    "data/scenarios/manifests/scenario_manifest.csv": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284",
+    "data/scenarios/processed/scenario_features.csv": "5ce7a88a19eb659ffe7f7fd63ee9b91d235acf698166f1dcc44fd86de4f89f8a",
+    "evaluation/apple_gpu_preflight.py": "d5219004d87c465bf2d1df8ac18eec40d39f1d8f5611c67590067daf20eb20a2",
+    "evaluation/benchmark_batch_runner.py": "65d8c1fcdf7b67764611bb399dac0c8ada03fd012589c38bc7f167fde00a27bc",
+    "evaluation/benchmark_contract.py": "0ff17d730aa92ded352b7b7e559c0555efe5840dfd418359da52855cadf66a51",
+    "evaluation/benchmark_oracle.py": "70d295c850b132adab189bfd6a0c6cc7730a0db45615c3725c50235c91a1880f",
+    "evaluation/bounded_llm_relevance.py": "c49778b4a4ebf28b900aeefc768c595dc5c68d5a44e65a22fbcf0799a4f4a0d5",
+    "evaluation/bounded_llm_relevance_v5_heldout.py": "e2c5e3a236ff805fd2db1e2ce94111f97ca9010ec3dc95d71d7a6d269ea75d25",
+    "graph/benchmark_workflow.py": "71b7134af848357be316741cce3a9d597c52d54d9a34819b11f821d9edb0b9b2",
+    "graph/benchmark_workflow_v5.py": "04806d9f9f73c3792ca530777fec102c8d141bce879175c966c035c779d23327",
+    "llm/benchmark_llm_client.py": "6a349d6b8847e1c9be6b34f896c8dcd57713aecac6fd81c3908920931325ac66",
+    "llm/bounded_selection_v5.py": "ad17c067d6897a8fe70b81803ed625df9457b10214532d09c02b713b52098af7",
+    "results/e1-v5-heldout-final/aggregate_final_heldout_metrics.json": "5a53af5776c568a89cc0c1e187d6fa04489864289cc247b3340adf4a96d985b7",
+    "results/e1-v5-heldout-final/final_acceptance_report.json": "d263f14eb57e024f17127cac930c4ee96863f59a02a9563d78484e481758fa8d",
+    "results/e1-v5-heldout-final/run_manifest.json": "de68cdc15054b5ab0e71bdd38ccd8f1d70e8475789285ed56f9eb52010bf695e",
+    "results/e1-v5-heldout-preflight/experiment_manifest.json": "07017dd4f9fc37e5caff2eee4731455e4dd7dd477229400b463662aba5e08026",
+    "scripts/build_apple_gpu_pilot_set.py": "abab81c5fd529651c0eb24a0e038c5f65300e03c6b36cd3399e14c33485e7007",
+    "scripts/build_bounded_llm_relevance_benchmark.py": "b53b4bb5567553cbff0ce6ef203d23a3c323082ac70f5fd5999faa07452a4c31"
+  },
+  "source_artifacts": [
+    {
+      "path": "results/v2_2-e0-full-mas/run_manifest.json",
+      "sha256": "5558291fd5cb66f18dbc776fe0eb2a29aac8c0b1bbabbaf7a42a17778ec4f474"
+    },
+    {
+      "path": "results/v2_2-e0-full-mas/aggregate_oracle_result.json",
+      "sha256": "92019d5ff0922a2b32ac08dd3c50378e1164ff840fbd38679aafcfe5a6b57c13"
+    },
+    {
+      "path": "results/v2_2-e0-full-mas/stratified_oracle_result.json",
+      "sha256": "fca51a8297b4b21a0a9f12fd94e5a2fb00b55b58cda7522f6f0c76903831af19"
+    },
+    {
+      "path": "results/v2_2-e0-full-mas/batch_summary.json",
+      "sha256": "953f5d320e0758fc2f6cca12bfbeb54463fb860a78906758514c18ede4cbcc93"
+    },
+    {
+      "path": "results/v2_2-a1-regional-plan-only/run_manifest.json",
+      "sha256": "5d58cb0aad2df77fa05afe99faaec4859698eea7856f802b9bd3f01799d664e1"
+    },
+    {
+      "path": "results/v2_2-a1-regional-plan-only/aggregate_oracle_result.json",
+      "sha256": "d577b271d720b58bbcf95c9735b2f95d00502a89bc20c385835b0696ab42e00d"
+    },
+    {
+      "path": "results/v2_2-a1-regional-plan-only/stratified_oracle_result.json",
+      "sha256": "2a2cc0bc4ee715e061f5c43556b8661d9b371d9e6060c21044955552c1ad09bf"
+    },
+    {
+      "path": "results/v2_2-a1-regional-plan-only/batch_summary.json",
+      "sha256": "b02cb9d6984f37a3f5f63eec9228e694ef20668cc45a485cb4c62d8cec230a66"
+    },
+    {
+      "path": "results/v2_2-a2-centralized-rag/run_manifest.json",
+      "sha256": "d739159d8e59d8dc4b7a101825db9c38ad128135eb50c4bddfb518fbac2aa202"
+    },
+    {
+      "path": "results/v2_2-a2-centralized-rag/aggregate_oracle_result.json",
+      "sha256": "a149f34aa6099836c88afcfe260a1474a64213476fb6f65030677171c1e77f9c"
+    },
+    {
+      "path": "results/v2_2-a2-centralized-rag/stratified_oracle_result.json",
+      "sha256": "b3b30a64638f34713511b8ad9edab1b7b6c23df429c2dfad2b7065d798031ae7"
+    },
+    {
+      "path": "results/v2_2-a2-centralized-rag/batch_summary.json",
+      "sha256": "3ddccffe8dfb3b63e12cdf4dddff25c610b579cbf197f2d345d8ba415fb4c0f7"
+    },
+    {
+      "path": "results/v2_2-a3-no-scoped-rag/run_manifest.json",
+      "sha256": "711f548c6e4c08a80c27dd5b6f61d35b8b5b5d630c2c6a60c11fc323b6c0e9eb"
+    },
+    {
+      "path": "results/v2_2-a3-no-scoped-rag/aggregate_oracle_result.json",
+      "sha256": "a719ed28a500309a230dcc23c65b5b150a4bb0504cb05f3c6101c3b2e394d6ec"
+    },
+    {
+      "path": "results/v2_2-a3-no-scoped-rag/stratified_oracle_result.json",
+      "sha256": "ac8ae74874485e268444902c7c2de0dbcc1037902fdd6dca3d7f43807371e2ec"
+    },
+    {
+      "path": "results/v2_2-a3-no-scoped-rag/batch_summary.json",
+      "sha256": "7d09295602ce7f7a8242aa1c0e3be814cb80008ebe263b13c9aa5a886f3a9174"
+    },
+    {
+      "path": "results/v2_2-a4-no-regional-plans/run_manifest.json",
+      "sha256": "522d40e366bd8628d7a54e1c2a708e83786491bfd586691567a017519841c896"
+    },
+    {
+      "path": "results/v2_2-a4-no-regional-plans/aggregate_oracle_result.json",
+      "sha256": "efaa7bb18fd6c7f5fe6f510fd996ace91cf65fb8886b5d3025f2c5197106c99f"
+    },
+    {
+      "path": "results/v2_2-a4-no-regional-plans/stratified_oracle_result.json",
+      "sha256": "5e84fc5ddff7fce49641d67b0bc50b820c2596a7ed2f78539b2b5a309d117cd3"
+    },
+    {
+      "path": "results/v2_2-a4-no-regional-plans/batch_summary.json",
+      "sha256": "075aaf53304991c9765a027c7339c9342cc03ab3e0e3835eb2acc48711e45d22"
+    },
+    {
+      "path": "results/v2_2-a5-no-provenance-gates/run_manifest.json",
+      "sha256": "a49d50acd08ab53ebc8233dd50797ca1c8f2e0457538fa4a32eb29824d30f651"
+    },
+    {
+      "path": "results/v2_2-a5-no-provenance-gates/aggregate_oracle_result.json",
+      "sha256": "92019d5ff0922a2b32ac08dd3c50378e1164ff840fbd38679aafcfe5a6b57c13"
+    },
+    {
+      "path": "results/v2_2-a5-no-provenance-gates/stratified_oracle_result.json",
+      "sha256": "fca51a8297b4b21a0a9f12fd94e5a2fb00b55b58cda7522f6f0c76903831af19"
+    },
+    {
+      "path": "results/v2_2-a5-no-provenance-gates/batch_summary.json",
+      "sha256": "a71a9fe51a58610a92b4859e846a27ddb41543bc64344da59cf954f889584307"
+    },
+    {
+      "path": "results/v2_2-a6-conflict-ablation/run_manifest.json",
+      "sha256": "9a78bc88e732aea88bc64e00e7c01a8c21c07cb991305e118e3bad77f66f6b77"
+    },
+    {
+      "path": "results/v2_2-a6-conflict-ablation/aggregate_oracle_result.json",
+      "sha256": "fe4770eae4b9ba6bf83271cc06066d3e348daa84c290e339bd2bec8f2af2d9fb"
+    },
+    {
+      "path": "results/v2_2-a6-conflict-ablation/stratified_oracle_result.json",
+      "sha256": "f6bb080908dca675fd27506dbee39fff159fb430475896202230152fb4e3a462"
+    },
+    {
+      "path": "results/v2_2-a6-conflict-ablation/batch_summary.json",
+      "sha256": "a3b5956311ff09018386b71baf3d25e21dad669c283a7fecf63be8e0c68cf83f"
+    },
+    {
+      "path": "results/v2_2-e0-full-mas/fixture_oracle_result.json",
+      "sha256": "a4a2b384c2c2931f27e307fb2e02bdaeef22c61e728f1165623e5f03901e95a3"
+    },
+    {
+      "path": "results/v2_2-a6-conflict-ablation/conflict_fixture_runs.json",
+      "sha256": "d668320951c9d6dc4a6cf7edd7ee087a8964d8a910d8906c2fa2610a503457cc"
+    },
+    {
+      "path": "results/v2_2-provenance-gate-fixtures/provenance_fixture_oracle_result.json",
+      "sha256": "e578057fea2427844efc48fd140227e3c73f3586a7f51a44bbf28108ef18158e"
+    },
+    {
+      "path": "data/scenarios/manifests/scenario_manifest.csv",
+      "sha256": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284"
+    }
+  ],
+  "systems": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6"
+  ]
+}

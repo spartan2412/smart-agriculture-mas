@@ -1,0 +1,110 @@
+{
+  "base_scenario": {
+    "crop": "soybean",
+    "decision_date": "2025-10-31",
+    "district": "Indore",
+    "scenario_id": "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+    "season": "kharif",
+    "site_id": "PF_MP_INDORE_SOYBEAN_KHARIF",
+    "state": "Madhya Pradesh"
+  },
+  "base_source": {
+    "locator": "District CCP crop profile and sowing-window PDFs",
+    "official_url": "https://icar-crida.res.in/CCP/MP/Indore/1.7.pdf;https://icar-crida.res.in/CCP/MP/Indore/1.12.pdf",
+    "raw_sha256": "fb9099ee944d5a0ffe61a5d3d375675b0a51d75cb56fea103ac6d7da5a8160f5",
+    "source_document_id": "ICAR_CRIDA_CCP"
+  },
+  "claims": [
+    {
+      "agent_name": "fixture_current_source_agent",
+      "allowed_use": "conditional_operation_only",
+      "block_reason": null,
+      "claim": "Evaluation-only supports claim for deterministic provenance-conflict testing; not an agricultural instruction.",
+      "claim_role": "preferred",
+      "confidence": 0.5,
+      "decision_domain": "official_operation",
+      "disposition": "conditional_operation",
+      "gate_result": "abstain",
+      "metadata": {
+        "assertion_polarity": "supports",
+        "base_source_document_id": "ICAR_CRIDA_CCP",
+        "base_source_raw_sha256": "fb9099ee944d5a0ffe61a5d3d375675b0a51d75cb56fea103ac6d7da5a8160f5",
+        "decision_target": "evaluation_only:ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031:temporal_current_over_expired",
+        "direct_farm_action_issued": false,
+        "fixture_claim_role": "preferred",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+        "resolution_source_rank": 5,
+        "resolution_spatial_rank": 4,
+        "resolution_temporal_rank": 4,
+        "safety_restriction": false
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "This claim changes only declared evidence scope, validity, provenance, or safety metadata. It does not add weather, disease, soil, market, maturity, or farm observations.",
+      "source": {
+        "locator": "District CCP crop profile and sowing-window PDFs",
+        "official_url": "https://icar-crida.res.in/CCP/MP/Indore/1.7.pdf;https://icar-crida.res.in/CCP/MP/Indore/1.12.pdf",
+        "raw_sha256": "fb9099ee944d5a0ffe61a5d3d375675b0a51d75cb56fea103ac6d7da5a8160f5",
+        "source_document_id": "ICAR_CRIDA_CCP",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "district-scoped evaluation overlay for Indore, Madhya Pradesh",
+      "summary": "Controlled provenance/gate overlay over a real frozen scenario.",
+      "temporal_scope": "exact frozen decision window ending 2025-10-31"
+    },
+    {
+      "agent_name": "fixture_expired_source_agent",
+      "allowed_use": "conditional_operation_only",
+      "block_reason": null,
+      "claim": "Evaluation-only opposes claim for deterministic provenance-conflict testing; not an agricultural instruction.",
+      "claim_role": "rejected",
+      "confidence": 0.5,
+      "decision_domain": "official_operation",
+      "disposition": "conditional_operation",
+      "gate_result": "abstain",
+      "metadata": {
+        "assertion_polarity": "opposes",
+        "base_source_document_id": "ICAR_CRIDA_CCP",
+        "base_source_raw_sha256": "fb9099ee944d5a0ffe61a5d3d375675b0a51d75cb56fea103ac6d7da5a8160f5",
+        "decision_target": "evaluation_only:ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031:temporal_current_over_expired",
+        "direct_farm_action_issued": false,
+        "fixture_claim_role": "rejected",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+        "resolution_source_rank": 4,
+        "resolution_spatial_rank": 4,
+        "resolution_temporal_rank": 1,
+        "safety_restriction": false
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "This claim changes only declared evidence scope, validity, provenance, or safety metadata. It does not add weather, disease, soil, market, maturity, or farm observations.",
+      "source": {
+        "locator": null,
+        "official_url": null,
+        "raw_sha256": null,
+        "source_document_id": "EVALUATION_COUNTERFACTUAL_PROVENANCE_OVERLAY",
+        "source_role": "evaluation_only_counterfactual_provenance_overlay"
+      },
+      "spatial_scope": "district-scoped evaluation overlay for Indore, Madhya Pradesh",
+      "summary": "Controlled provenance/gate overlay over a real frozen scenario.",
+      "temporal_scope": "expired controlled window ending before 2025-10-31"
+    }
+  ],
+  "controlled_change_only": true,
+  "decision_target": "evaluation_only:ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031:temporal_current_over_expired",
+  "expected": {
+    "accepted_roles": [
+      "preferred"
+    ],
+    "conflict_count": 1,
+    "direct_farm_action_issued": false,
+    "rejected_roles": [
+      "rejected"
+    ],
+    "resolution_status": "resolved_by_provenance_precedence"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "6627d80668997c9187b02d7d203f78371f14759c016cb1d6bd8ea599e965fd56",
+  "fixture_family": "coordinator_resolution",
+  "fixture_id": "CF_SOYBEAN_04_TEMPORAL_CURRENT_OVER_EXPIRED",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "temporal_current_over_expired"
+}

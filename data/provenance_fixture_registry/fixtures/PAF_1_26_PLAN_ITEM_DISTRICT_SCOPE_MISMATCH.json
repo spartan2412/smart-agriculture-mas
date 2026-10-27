@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "maize",
+    "decision_date": "2026-03-31",
+    "district": "Erode",
+    "scenario_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_TN_ERODE_MAIZE_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "ae38de6d489c600669e1907f8a86c388a757e1b81499b1186afb67e8a7e5bbfb;ea77830228d307a69d6a6b37acc6eb4981e63e2383d5aa6a380f8b7e60b04435",
+    "source_url": "https://icar-crida.res.in/CCP/TN/Erode/1.7.pdf;https://icar-crida.res.in/CCP/TN/Erode/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "d3eab8e4b7eb5d01c86c0d964bb294004aca5f682bfdbd77fcf89ed5a90ddc57",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_26_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_district_scope_mismatch",
+  "overlay": {
+    "base_value": "Erode",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "Ludhiana",
+    "field": "district",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

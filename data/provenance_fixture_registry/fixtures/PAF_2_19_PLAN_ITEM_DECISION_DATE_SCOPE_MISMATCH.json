@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "soybean",
+    "decision_date": "2025-10-31",
+    "district": "Baran",
+    "scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+    "season": "kharif",
+    "site_id": "PF_RJ_BARAN_SOYBEAN_KHARIF",
+    "state": "Rajasthan"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "baeb7658889a092bb079745e47968f3c4620924c31f880f3295e83583a445bfb;44288d923bcb5d377ac589c2f2bef18e597c1dd44049a09be2350f036a6a3e4c",
+    "source_url": "https://icar-crida.res.in/CCP/RJ/Baran/1.7.pdf;https://icar-crida.res.in/CCP/RJ/Baran/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "0cbe966d4c7592440df20b32aa3216d34a26ee44ce34e5363a80e138777f80a0",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_19_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_decision_date_scope_mismatch",
+  "overlay": {
+    "base_value": "2025-10-31",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "2025-11-30",
+    "field": "decision_date",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

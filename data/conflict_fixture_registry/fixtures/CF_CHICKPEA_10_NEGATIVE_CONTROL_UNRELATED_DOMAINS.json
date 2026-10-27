@@ -1,0 +1,85 @@
+{
+  "base_scenario": {
+    "crop": "chickpea",
+    "decision_date": "2026-03-31",
+    "district": "Parbhani",
+    "scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_MH_PARBHANI_CHICKPEA_RABI",
+    "state": "Maharashtra"
+  },
+  "base_source": {
+    "locator": "District CCP crop profile and sowing-window PDFs",
+    "official_url": "https://icar-crida.res.in/CCP/MH/Parbhani/1.7.pdf;https://icar-crida.res.in/CCP/MH/Parbhani/1.12.pdf",
+    "raw_sha256": "d32272bfc7b9505bd9f67f37d892e1ba626e3771581beaf864d884d3558157cb",
+    "source_document_id": "ICAR_CRIDA_CCP"
+  },
+  "claims": [
+    {
+      "agent_name": "fixture_weather_context_agent",
+      "allowed_use": "context_only",
+      "block_reason": null,
+      "claim": "Evaluation-only weather context claim; not an agricultural instruction.",
+      "claim_role": "weather_context",
+      "confidence": 0.5,
+      "decision_domain": "weather_context",
+      "disposition": "context",
+      "gate_result": "pass",
+      "metadata": {
+        "fixture_claim_role": "weather_context",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence"
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "Weather and market are distinct decision domains and must not be manufactured into a conflict.",
+      "source": {
+        "locator": "District CCP crop profile and sowing-window PDFs",
+        "official_url": "https://icar-crida.res.in/CCP/MH/Parbhani/1.7.pdf;https://icar-crida.res.in/CCP/MH/Parbhani/1.12.pdf",
+        "raw_sha256": "d32272bfc7b9505bd9f67f37d892e1ba626e3771581beaf864d884d3558157cb",
+        "source_document_id": "ICAR_CRIDA_CCP",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "representative-cell context in Parbhani, Maharashtra",
+      "summary": "Controlled non-comparable weather context.",
+      "temporal_scope": "historical frozen decision window ending 2026-03-31"
+    },
+    {
+      "agent_name": "fixture_market_context_agent",
+      "allowed_use": "context_only",
+      "block_reason": null,
+      "claim": "Evaluation-only market context claim; not an agricultural instruction.",
+      "claim_role": "market_context",
+      "confidence": 0.5,
+      "decision_domain": "market_context",
+      "disposition": "context",
+      "gate_result": "pass",
+      "metadata": {
+        "fixture_claim_role": "market_context",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence"
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "Historical market context is not an action conflict with weather context.",
+      "source": {
+        "locator": "District CCP crop profile and sowing-window PDFs",
+        "official_url": "https://icar-crida.res.in/CCP/MH/Parbhani/1.7.pdf;https://icar-crida.res.in/CCP/MH/Parbhani/1.12.pdf",
+        "raw_sha256": "d32272bfc7b9505bd9f67f37d892e1ba626e3771581beaf864d884d3558157cb",
+        "source_document_id": "ICAR_CRIDA_CCP",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "historical nearest-mandi context for Parbhani, Maharashtra",
+      "summary": "Controlled non-comparable market context.",
+      "temporal_scope": "historical frozen decision window ending 2026-03-31"
+    }
+  ],
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "decision_status": "context_only_no_direct_farm_action",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "b6c9f1b9ee3fcc34aa31440d0f4ac1b72065166fa0c7af83cb8270259cf6442a",
+  "fixture_family": "negative_control_no_comparable_conflict",
+  "fixture_id": "CF_CHICKPEA_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "unrelated_weather_and_market_context_not_conflict"
+}

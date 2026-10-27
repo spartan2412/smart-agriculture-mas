@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "tomato",
+    "decision_date": "2025-12-31",
+    "district": "Coimbatore",
+    "scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+    "season": "rabi",
+    "site_id": "PF_TN_COIMBATORE_TOMATO_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+    "source_location": "PDF pp. 388 and 394-395 Tamil Nadu and Puducherry Rabi tomato chapter",
+    "source_raw_sha256": "f193fa2960b55c08a75efdcdd3342d8828ca5cf63a39bfdb4b55a2f80d2dd995;fabe4fbc10431466d62a2a3bf68dbc60bb9d1287480ef260ba683b597856c65f",
+    "source_url": "https://icar-crida.res.in/CCP/TN/Coimbatore/1.7.pdf;https://icar-crida.res.in/CCP/TN/Coimbatore/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "25aa7f0c9b94dbc4d7a72ef5b960a2d27b7ae1ef2d4f2cec76654717dbb4f1ab",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_23_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_district_scope_mismatch",
+  "overlay": {
+    "base_value": "Coimbatore",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "Ludhiana",
+    "field": "district",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

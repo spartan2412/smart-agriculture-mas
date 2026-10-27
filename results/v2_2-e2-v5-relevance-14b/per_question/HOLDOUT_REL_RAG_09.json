@@ -1,0 +1,230 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "passage_1",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only at sowing and only as a regional baseline; a personalised dose requires a soil test.; source_document_ids=ICAR_IISR_SOYBEAN_BULLETIN_2023; source=ICAR_IISR_SOYBEAN_BULLETIN_2023; locator=pdf_page_28; layer=source_scoped_operation; text=Use fertilizer only as basal application; do not use fertilizer in a standing crop unless recommended by scientists. Basal application at sowing. No farm-specific dose; the source says the dose should be tailored after soil testing. Only at sowing and only as a regional baseline; a personalised dose requires a soil test. In soybean, use of fertilizers is recommended only as basal application. Therefore, farmers are advised not to use any fertilizers in standing crop unless being recommended by the scientists."
+    }
+  ],
+  "question": {
+    "agent_name": "official_operations_rag_agent",
+    "allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "Only at sowing and only as a regional baseline; a personalised dose requires a soil test."
+        ],
+        "fact_id": "passage_1",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "IISR_SOYBEAN_BASAL_NUTRIENT_TIMING"
+        ],
+        "source_document_ids": [
+          "ICAR_IISR_SOYBEAN_BULLETIN_2023"
+        ],
+        "source_locators": [
+          "pdf_page_28"
+        ],
+        "text": "source=ICAR_IISR_SOYBEAN_BULLETIN_2023; locator=pdf_page_28; layer=source_scoped_operation; text=Use fertilizer only as basal application; do not use fertilizer in a standing crop unless recommended by scientists. Basal application at sowing. No farm-specific dose; the source says the dose should be tailored after soil testing. Only at sowing and only as a regional baseline; a personalised dose requires a soil test. In soybean, use of fertilizers is recommended only as basal application. Therefore, farmers are advised not to use any fertilizers in standing crop unless being recommended by the scientists."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_2",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_IISR_SOYBEAN_BULLETIN_2023"
+        ],
+        "source_locators": [
+          "pdf_page_28"
+        ],
+        "text": "source=ICAR_IISR_SOYBEAN_BULLETIN_2023; locator=pdf_page_28; layer=official_rag; text=fertilizers is recommended only as basal application. Therefore, farmers are advised not to use any fertilizers in standing crop unless being recommended by the scientists. In general, for harvesting good soybean yield, it requires recommended nutritional dose which can be accordingly tailored after soil testing. (19) Farmers are also advised not to mix fertilizers along with seed during sowing of soybean. In close contact with fertilizer it gets rotten in the soil. They should ensure the placement of seed at 2-3 cm and the fertilizer placement at 5 cm in the soil. 25"
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_3",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_IISR_SOYBEAN_BULLETIN_2023"
+        ],
+        "source_locators": [
+          "pdf_page_38"
+        ],
+        "text": "source=ICAR_IISR_SOYBEAN_BULLETIN_2023; locator=pdf_page_38; layer=official_rag; text=Use adequate quantity of water (500 litre) during spray of herbicides. Use only flat fan or flood jet nozzle for spraying of herbicides. Avoid spray of herbicides on dry soil. Ensure uniform spray of herbicide throughout the field. Follow herbicide rotation. Do not repeat the herbicide every time. Use only recommended herbicides in soybean as per lable claim. Ensure that the purchased herbicide is within the expiry date. Do not mix two or more herbicides and/or herbicides which are not compatible/recommended. In case the PPI or PE herbicide is used, use of dora/kulpa at 20-25 days after sowing is advised. It is also advised to select any one of the recommended herbicide considering the type of weeds i.e. monocot/dicot prevalent in his field. Pre- mix formulations are also recommended for control of both type of weeds. Instead of using same herbicides every year, herbicide rotation is de…"
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_4",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_IISR_SOYBEAN_BULLETIN_2023"
+        ],
+        "source_locators": [
+          "pdf_page_55"
+        ],
+        "text": "source=ICAR_IISR_SOYBEAN_BULLETIN_2023; locator=pdf_page_55; layer=official_rag; text=Soybean is, by and large, grown as a rainfed crop during kharif season. Since last few years, the distribution of rainfall was found to be uneven and erratic. Farmers are advised to use BBF or Ridge and Furrow for soybean planting in order to mitigate the climatic adversities. In case of flat sowing, if there is a long dry spell, particularly during critical growth stages affect the yield adversely. Hence, farmers are also advised to apply life saving irrigation during these critical stages in order to sustain yield levels. The institute has developed sub-soiler which is useful for more infiltration of rainwater/conservation of soil moisture. Use of this machine has recently been recommended considering the long dry spells/drought situation prevailing in most of the areas. Therefore, depending upon the availability of this machine, one can go for this operation once in 4-5 years at 10 m…"
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_5",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_IISR_SOYBEAN_BULLETIN_2023"
+        ],
+        "source_locators": [
+          "pdf_page_57"
+        ],
+        "text": "source=ICAR_IISR_SOYBEAN_BULLETIN_2023; locator=pdf_page_57; layer=official_rag; text=Application of organic manure (through FYM, Poultry Manure/ Vermicompost) in order to maintain the soil fertility. Tailoring the fertilizer dose after soil testing. Application of seed rate depending upon the minimum germination percentage of seed (70%) as well as seed size. Follow the correct sequence of seed treatment chemicals and bio-inoculants which should be FIR (Fungicide, Insecticide and Rhizobium/PSB/Micorrhiza). Do not mix fertilizer with seed while sowing. Instead, use of Ferti-seed-drill is advised. As far as possible, sowing may be done during the recommended time (Second week of June to First week of July) while ensuring at least 100 mm monsoon rainfall. For weed management in soybean, the most efficient measures include Manual Weeding, Inter-cultivation using Dora/Kulpa and Use of chemical herbicides. The priority for the same may be accorded as per the suitability. Use o…"
+      }
+    ],
+    "allowed_passage_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_source_document_ids": [
+      "ICAR_IISR_SOYBEAN_BULLETIN_2023"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "disallowed_distractor_ids": [
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "expected_admissible_fact_ids": [
+      "passage_1"
+    ],
+    "expected_admissible_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_or_operation_ids": [
+      "IISR_SOYBEAN_BASAL_NUTRIENT_TIMING"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "For Soybean in Baran, Rajasthan, during the kharif decision window ending 2025-10-31, which exact source-scoped official passage records this operation: ‘Use fertilizer only as basal application; do not use fertilizer in a standing crop unless recommended by scientists.’? Select the passage that retains this required condition: ‘Only at sowing and only as a regional baseline; a personalised dose requires a soil test.’. Do not select a neighboring operation, generic context, or a second passage.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "exact_named_source_scoped_operation_selection",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_09",
+    "required_conditions": [
+      "Only at sowing and only as a regional baseline; a personalised dose requires a soil test."
+    ],
+    "role_instruction_sha256": "f7ccf98792aba075f0537b87aeb2c34b16a5630a09166dadfe94881bb789fde9",
+    "scenario_context": {
+      "crop": "soybean",
+      "decision_date": "2025-10-31",
+      "decision_window_utc": "2025-10-01T00:00:00Z/2025-10-31T23:59:59Z",
+      "district": "Baran",
+      "geometry_scope": "documented_representative_cell",
+      "season": "kharif",
+      "state": "Rajasthan"
+    },
+    "scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_RJ_BARAN_SOYBEAN_KHARIF",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "official_operations_rag_agent",
+    "bounded_llm": {
+      "agent_name": "official_operations_rag_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "659c08c047ca161af6dfc3e0349f878629e753b0f3b677dfb93b94e54efddc96",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "passage_1"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "admitted_passages_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_exact_source_scoped_operation"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "passage_1"
+    ],
+    "expected_passage_count": 1,
+    "expected_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "IISR_SOYBEAN_BASAL_NUTRIENT_TIMING"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 5590,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "IISR_SOYBEAN_BASAL_NUTRIENT_TIMING"
+    ],
+    "original_allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "packaged_candidate_fact_ids": [
+      "passage_1"
+    ],
+    "passage_intersection_count": 1,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 108773376,
+    "prompt_sha256": "659c08c047ca161af6dfc3e0349f878629e753b0f3b677dfb93b94e54efddc96",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_09",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "passage_1"
+    ],
+    "selected_passage_count": 1,
+    "selected_passage_ids": [
+      "passage_1"
+    ],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "IISR_SOYBEAN_BASAL_NUTRIENT_TIMING"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "admitted_passages_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_exact_source_scoped_operation"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "chickpea",
+    "decision_date": "2026-03-31",
+    "district": "Jalna",
+    "scenario_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_MH_JALNA_CHICKPEA_RABI",
+    "state": "Maharashtra"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "daf877562819f096853d467ec415728eea0cfb56c23a46cf923882122e0a00a7;e0139355a79cafb2e38ed4054fab7062a2056a4eb8d134baa32e37ab607ba63c",
+    "source_url": "https://icar-crida.res.in/CCP/MH/Jalna/1.7.pdf;https://icar-crida.res.in/CCP/MH/Jalna/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "4d57c0ed637de3b63aedf7e836a471641d27dd196305126c1b61692da71bf2de",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_02_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_district_scope_mismatch",
+  "overlay": {
+    "base_value": "Jalna",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "Ludhiana",
+    "field": "district",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

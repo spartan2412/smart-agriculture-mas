@@ -1,0 +1,6 @@
+check,expected,actual,result,detail
+archive_provenance_and_hashes,3,3,pass,validated
+verbatim_wheat_operations_and_maturity_gate,3,3,pass,validated
+full_temporal_scope_matrix_and_stage_gate,900,900,pass,validated
+combined_catalog_projection,903,903,pass,validated
+no_direct_farm_action,0,0,pass,validated

@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "rice",
+    "decision_date": "2025-11-30",
+    "district": "Sangrur",
+    "scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+    "season": "kharif",
+    "site_id": "PF_PB_SANGRUR_RICE_KHARIF",
+    "state": "Punjab"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "1db26575a926b6ec0863ff8916667ee57a039431691ba6898aede4008c4fb447;b46e49a92e30d9bd8a7a116ac241b6f111327b9afe384da2bf7e8034d05a5d52",
+    "source_url": "https://icar-crida.res.in/CCP/PB/Sangrur/1.7.pdf;https://icar-crida.res.in/CCP/PB/Sangrur/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "03b4fe1af4ad3b7d6f664df1185645b612d115e1a41c1fc61a5dfd3536c1ed81",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_17_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_district_scope_mismatch",
+  "overlay": {
+    "base_value": "Sangrur",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "Ludhiana",
+    "field": "district",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

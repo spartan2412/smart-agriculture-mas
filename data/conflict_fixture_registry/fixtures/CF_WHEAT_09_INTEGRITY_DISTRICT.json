@@ -1,0 +1,29 @@
+{
+  "base_scenario": {
+    "crop": "wheat",
+    "decision_date": "2026-04-30",
+    "district": "Sangrur",
+    "scenario_id": "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+    "season": "rabi",
+    "site_id": "PF_PB_SANGRUR_WHEAT_RABI",
+    "state": "Punjab"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "direct_farm_action_issued": false,
+    "integrity_status": "blocked_before_conflict_detection_and_coordination"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "6da7e901563e3cda7d6040cc854550530511d88c4b99f467dc08fc4acb108946",
+  "fixture_family": "pre_resolution_integrity_rejection",
+  "fixture_id": "CF_WHEAT_09_INTEGRITY_DISTRICT",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "wrong_district_blocked_before_coordination",
+  "integrity_overlay": {
+    "base_value": "Sangrur",
+    "classification": "controlled_identity_or_hash_mutation_not_real_evidence",
+    "counterfactual_value": "counterfactual_invalid_district",
+    "field": "district"
+  }
+}

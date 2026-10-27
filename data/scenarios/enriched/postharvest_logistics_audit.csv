@@ -1,0 +1,9 @@
+check,expected,actual,result,detail
+source_snapshot_integrity,16,16,pass,validated
+six_crop_profiles_and_direct_action_guard,6,6,pass,validated
+source_quoted_operations,14,14,pass,validated
+collection_date_infrastructure_integrity,6931,6931,pass,validated
+site_context_identity_and_safety,30,30,pass,validated
+static_route_context_integrity,15,15,pass,validated
+all_300_scenario_bindings,700,700,pass,validated
+crop_filtered_postharvest_rag_scope,700,700,pass,validated

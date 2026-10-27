@@ -1,0 +1,42 @@
+# Core
+python-dotenv>=1.0.0
+pydantic>=2.7
+requests>=2.31
+
+# Orchestration
+langgraph>=0.2.20
+langchain-core>=0.2.30
+
+# LLM backends (free options)
+ollama>=0.3.0            # local, free, no key — requires the separate Ollama app, see README
+# Optional E3 Apple-Silicon backend. Platform markers keep Windows/Linux setup
+# unchanged; it is required only for the MLX-LM deployment-backend experiment.
+mlx>=0.22; platform_system == "Darwin" and platform_machine == "arm64"
+mlx-lm>=0.22; platform_system == "Darwin" and platform_machine == "arm64"
+groq>=0.9.0                # optional free-tier cloud alternative, no local install needed
+openai>=1.40               # supported by llm/llm_client.py
+anthropic>=0.34            # supported by llm/llm_client.py
+
+# RAG (kept lightweight / free — no embedding API required)
+# Unpinned so pip selects a prebuilt wheel matching your Python version instead of
+# trying to compile from source (this is what caused the meson/Cython build error).
+scikit-learn
+numpy
+
+# Vision (disease detection) — optional, only needed if you train/run the vision model
+torch>=2.2
+torchvision>=0.17
+Pillow>=10.0
+grad-cam>=1.5
+matplotlib>=3.8    # for confusion matrix heatmap in vision/evaluate_checkpoint.py
+
+# Evaluation / utils
+pandas>=2.1
+tqdm>=4.66
+pypdf>=5.0                 # extract text and metadata from official registry evidence PDFs
+
+# Public satellite-enrichment COG point sampling
+rasterio>=1.4,<2
+
+# Testing
+pytest>=8.0

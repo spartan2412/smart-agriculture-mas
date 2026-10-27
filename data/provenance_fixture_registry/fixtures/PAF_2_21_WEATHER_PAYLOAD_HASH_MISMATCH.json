@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "maize",
+    "decision_date": "2026-03-31",
+    "district": "Ariyalur",
+    "scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_TN_ARIYALUR_MAIZE_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source_reference": {
+    "source_document_id": "FROZEN_SCENARIO_MANIFEST",
+    "source_location": "raw/nasa_power/ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331.json",
+    "source_raw_sha256": "d6958335d9859477050ba679c83798c8b62d60f22e907dd066db06f73e87d9db",
+    "source_url": ""
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_loader_payload_hash_verifier",
+    "a5_status": "blocked_by_loader_payload_hash_verifier",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "8092e87fd987b89a7d0fd267074810010cf8ec7359dc94ee6f7622ad03c4593e",
+  "fixture_family": "loader_payload_integrity_rejection",
+  "fixture_id": "PAF_2_21_WEATHER_PAYLOAD_HASH_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "weather_payload_hash_mismatch",
+  "overlay": {
+    "base_value": "d6958335d9859477050ba679c83798c8b62d60f22e907dd066db06f73e87d9db",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "field": "weather_current_response_sha256",
+    "selector": {
+      "scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331"
+    },
+    "target_layer": "manifest"
+  }
+}

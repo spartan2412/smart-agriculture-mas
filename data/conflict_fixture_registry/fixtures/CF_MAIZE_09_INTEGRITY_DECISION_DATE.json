@@ -1,0 +1,29 @@
+{
+  "base_scenario": {
+    "crop": "maize",
+    "decision_date": "2026-03-31",
+    "district": "Salem",
+    "scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_TN_SALEM_MAIZE_RABI",
+    "state": "Tamil Nadu"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "direct_farm_action_issued": false,
+    "integrity_status": "blocked_before_conflict_detection_and_coordination"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "b61dc8b37ae8412bcd4a734e428a3b719d32230844947bf31ca006d465cd8564",
+  "fixture_family": "pre_resolution_integrity_rejection",
+  "fixture_id": "CF_MAIZE_09_INTEGRITY_DECISION_DATE",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "wrong_decision_date_blocked_before_coordination",
+  "integrity_overlay": {
+    "base_value": "2026-03-31",
+    "classification": "controlled_identity_or_hash_mutation_not_real_evidence",
+    "counterfactual_value": "1900-01-01",
+    "field": "decision_date"
+  }
+}

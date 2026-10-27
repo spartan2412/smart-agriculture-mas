@@ -1,0 +1,240 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "passage_1",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only after supported FAW diagnosis/threshold and confirmed 15–20 days-after-emergence stage, with labelled/regulatory verification.; source_document_ids=TNAU_MAIZE_FAW_2023; source=TNAU_MAIZE_FAW_2023; locator=html_document; layer=source_scoped_operation; text=Use a source-listed FAW treatment only at the documented early stage. Spray one of the listed source formulations. Azadirachtin 1500 ppm 2.5 L/ha; or chlorantraniliprole 18.5 SC 200 ml/ha; or flubendiamide 480 SC 250 ml/ha. Only after supported FAW diagnosis/threshold and confirmed 15–20 days-after-emergence stage, with labelled/regulatory verification. Spray azadirachtin 1500 ppm @ 2.5 lit/ha or chlorantraniliprole 18.5 SC @ 200ml/ha (or) flubendiamide 480SC@ 250ml/ha at early stage (15 - 20 DAE)."
+    },
+    {
+      "fact_id": "passage_4",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only for an existing maize crop when the implementation stage is documented.; source_document_ids=TNAU_MAIZE_FAW_2023; source=TNAU_MAIZE_FAW_2023; locator=html_document; layer=source_scoped_operation; text=Set up FAW pheromone traps. 12 traps/ha. Only for an existing maize crop when the implementation stage is documented. Set up FAW pheromone traps @ 12 nos./ha"
+    }
+  ],
+  "question": {
+    "agent_name": "official_operations_rag_agent",
+    "allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "Only after supported FAW diagnosis/threshold and confirmed 15–20 days-after-emergence stage, with labelled/regulatory verification."
+        ],
+        "fact_id": "passage_1",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT"
+        ],
+        "source_document_ids": [
+          "TNAU_MAIZE_FAW_2023"
+        ],
+        "source_locators": [
+          "html_document"
+        ],
+        "text": "source=TNAU_MAIZE_FAW_2023; locator=html_document; layer=source_scoped_operation; text=Use a source-listed FAW treatment only at the documented early stage. Spray one of the listed source formulations. Azadirachtin 1500 ppm 2.5 L/ha; or chlorantraniliprole 18.5 SC 200 ml/ha; or flubendiamide 480 SC 250 ml/ha. Only after supported FAW diagnosis/threshold and confirmed 15–20 days-after-emergence stage, with labelled/regulatory verification. Spray azadirachtin 1500 ppm @ 2.5 lit/ha or chlorantraniliprole 18.5 SC @ 200ml/ha (or) flubendiamide 480SC@ 250ml/ha at early stage (15 - 20 DAE)."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_2",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_RABI_STATE_ADVISORIES_2021_22"
+        ],
+        "source_locators": [
+          "pdf_page_151"
+        ],
+        "text": "source=ICAR_RABI_STATE_ADVISORIES_2021_22; locator=pdf_page_151; layer=postharvest_exact_crop; text=Maize is ready for harvesting even when the stacks and leaves are somewhat green, but the husk cover has dried and turned brown. Shell Maize when the moisture content ranges between 15-20%."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_3",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_RABI_STATE_ADVISORIES_2021_22"
+        ],
+        "source_locators": [
+          "pdf_page_151"
+        ],
+        "text": "source=ICAR_RABI_STATE_ADVISORIES_2021_22; locator=pdf_page_151; layer=postharvest_exact_crop; text=The Maize ears should preferably be dried for 3-4 days after harvesting to improve grain recoveries and reduce breakage losses."
+      },
+      {
+        "conditions": [
+          "Only for an existing maize crop when the implementation stage is documented."
+        ],
+        "fact_id": "passage_4",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "TNAU_MAIZE_FAW_PHEROMONE_TRAPS"
+        ],
+        "source_document_ids": [
+          "TNAU_MAIZE_FAW_2023"
+        ],
+        "source_locators": [
+          "html_document"
+        ],
+        "text": "source=TNAU_MAIZE_FAW_2023; locator=html_document; layer=source_scoped_operation; text=Set up FAW pheromone traps. 12 traps/ha. Only for an existing maize crop when the implementation stage is documented. Set up FAW pheromone traps @ 12 nos./ha"
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_5",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "TNAU_MAIZE_FAW_2023"
+        ],
+        "source_locators": [
+          "html_document"
+        ],
+        "text": "source=TNAU_MAIZE_FAW_2023; locator=html_document; layer=official_rag; text=TNAU Agritech Portal :: Crop Protection Home | About Us | Success Stories | Farmers Association | Farmers' Innovation | Publications | Contact TNAU Agritech Portal :: Crop Protection Fall armyworm, Spodoptera frugiperda Symptom of damage: Scrapping of leaf surface by young larvae. Older larvae, feeds upon central whorl, causing extensive defoliation. Whorl, tassel and cob fed by larva. Identification of the pest: Egg masses (120-150 eggs/ egg mass) covered with scales Larvae wit h 4 black spots arranged (in square shape) on 8th and 9th abdominal segment Larvae with inverted “Y” shaped mark on head Male adult moth forewing brown with triangular white spots; females’ forewing grayish brown. Management: Apply neem cake @ 250 kg/ha at the time of last ploughing. Seed treatment with cyantraniliprole 19.8% + thiamethoxam 19.8% FS @ 4 ml/kg seed. Border cropping with cowpea, gingelly, redgram…"
+      }
+    ],
+    "allowed_passage_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_source_document_ids": [
+      "ICAR_RABI_STATE_ADVISORIES_2021_22",
+      "TNAU_MAIZE_FAW_2023"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "disallowed_distractor_ids": [
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "expected_admissible_fact_ids": [
+      "passage_1"
+    ],
+    "expected_admissible_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_or_operation_ids": [
+      "TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "For Maize in Ariyalur, Tamil Nadu, during the rabi decision window ending 2024-03-31, which exact source-scoped official passage records this operation: ‘Use a source-listed FAW treatment only at the documented early stage.’? Select the passage that retains this required condition: ‘Only after supported FAW diagnosis/threshold and confirmed 15–20 days-after-emergence stage, with labelled/regulatory verification.’. Do not select a neighboring operation, generic context, or a second passage.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "exact_named_source_scoped_operation_selection",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_06",
+    "required_conditions": [
+      "Only after supported FAW diagnosis/threshold and confirmed 15–20 days-after-emergence stage, with labelled/regulatory verification."
+    ],
+    "role_instruction_sha256": "f7ccf98792aba075f0537b87aeb2c34b16a5630a09166dadfe94881bb789fde9",
+    "scenario_context": {
+      "crop": "maize",
+      "decision_date": "2024-03-31",
+      "decision_window_utc": "2024-03-01T00:00:00Z/2024-03-31T23:59:59Z",
+      "district": "Ariyalur",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Tamil Nadu"
+    },
+    "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20240331",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_TN_ARIYALUR_MAIZE_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "official_operations_rag_agent",
+    "bounded_llm": {
+      "agent_name": "official_operations_rag_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "4c624bf03a81c59239ca899e9bdb7b817de181f96c230e60a5ad8f98d605d9d5",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "passage_1"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "admitted_passages_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_exact_source_scoped_operation"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "passage_1"
+    ],
+    "expected_passage_count": 1,
+    "expected_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 7497,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT"
+    ],
+    "original_allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "packaged_candidate_fact_ids": [
+      "passage_1",
+      "passage_4"
+    ],
+    "passage_intersection_count": 1,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 1292550144,
+    "prompt_sha256": "4c624bf03a81c59239ca899e9bdb7b817de181f96c230e60a5ad8f98d605d9d5",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_06",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20240331",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "passage_1"
+    ],
+    "selected_passage_count": 1,
+    "selected_passage_ids": [
+      "passage_1"
+    ],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "admitted_passages_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_exact_source_scoped_operation"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

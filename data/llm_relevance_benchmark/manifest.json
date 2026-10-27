@@ -1,0 +1,88 @@
+{
+  "benchmark_status": "frozen_source_derived_questions_pending_model_runs",
+  "benchmark_version": "1.0",
+  "builder": {
+    "git": {
+      "clean": "false",
+      "commit": "10c4b9c0e312f7f917dce8a42e925dfc0d1e333d"
+    },
+    "module": "evaluation/bounded_llm_relevance.py",
+    "module_sha256": "0d47ed8287b8c5acb6ab46db2bd2d449723ee3eb2929ab881b623e704f87cede"
+  },
+  "canonical_scenario_ids": [
+    "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+    "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+    "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+    "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+    "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+    "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+    "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+    "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+    "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+    "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+    "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+    "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231"
+  ],
+  "focused_crop_count": 6,
+  "label_policy": {
+    "direct_farm_actions_permitted": false,
+    "farm_outcome_ground_truth": false,
+    "same_scenario_distractors_only": true,
+    "source_backed_candidates_only": true
+  },
+  "prompt_template_version": "bounded-selection-v4-structured-relevance-prompts",
+  "question_count": 96,
+  "question_file": "relevance_questions.jsonl",
+  "question_file_sha256": "d076e1801fdedf162ca9e90925f4144497ce85d868fd4a2be4cc0ccebd7f79e0",
+  "questions_per_role": 12,
+  "role_question_counts": {
+    "farmer_explanation_citation_agent": 12,
+    "fertilizer_baseline_agent": 12,
+    "market_evidence_agent": 12,
+    "official_operations_rag_agent": 12,
+    "provenance_aware_coordinator_agent": 12,
+    "satellite_ndvi_context_agent": 12,
+    "soil_context_agent": 12,
+    "weather_context_agent": 12
+  },
+  "roles": [
+    "weather_context_agent",
+    "soil_context_agent",
+    "satellite_ndvi_context_agent",
+    "market_evidence_agent",
+    "fertilizer_baseline_agent",
+    "official_operations_rag_agent",
+    "provenance_aware_coordinator_agent",
+    "farmer_explanation_citation_agent"
+  ],
+  "selection_limit": 3,
+  "source_artifact_sha256": {
+    "agents/benchmark/farmer_explanation_citation.py": "6c1634725c32f3fa872aa68d9ef1aa6b46421d9a26138504eef0da4ae1b24b85",
+    "agents/benchmark/fertilizer_baseline.py": "3d5187402b6ad82ee93acfd8f17db551cdb539eddc073a3cbe5a5dc14b749e6e",
+    "agents/benchmark/market_evidence.py": "1f14d0595dd9a3dbfcdbd61f3a1c78f5f7d0614b439a05f1adde851848e8ff0b",
+    "agents/benchmark/official_operations_rag.py": "6cccf1533310210d848ade214ba99be228fd8f315668b107a62018dfa7de55b4",
+    "agents/benchmark/provenance_aware_coordinator.py": "60ee23b4c7111929ca95d32e4af283c3a6b05f493dc4a4209a26c451f4afe26b",
+    "agents/benchmark/satellite_ndvi_context.py": "76eccc7ef52325b0d3c37444b41df168933a2b157ba01d0bbccfd6e089909653",
+    "agents/benchmark/soil_context.py": "3f41bc2c47ca09121fa030ba62596112c7fff2e1d9a8f390d47b56a65e34e20c",
+    "agents/benchmark/weather_context.py": "52bec17c84dabd9e41f2c088eaa09b8fdbee412dc051a509904df54607cbb4fc",
+    "data/benchmark_loader.py": "e2046614aedf4b93b6a0cb72b08eaab95201935bad52a0d310cd6786b417ea26",
+    "data/registry/final_study_sites.csv": "25299d916ff4ab741afc3cd5e0afa462ed39459b107c20f565f34cd884563a6a",
+    "data/scenarios/enriched/agmarknet_embedded_market_context_features.csv": "a76571d9f3874e29e184d952b132525a79c43b5ae74ce2449421215943505987",
+    "data/scenarios/enriched/mas_enrichment_contract.csv": "bd3403287150588299e0e59c7ebada7a82354f8ddccd9f1b406467e85ef6f40f",
+    "data/scenarios/enriched/nasa_power_water_context_features.csv": "a6348b220ec896cf45a58b8d95a2c286c555246fca5b3067b3a79709044d1e84",
+    "data/scenarios/enriched/official_action_records_all.csv": "cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376",
+    "data/scenarios/enriched/official_rag_corpus_all_chunks.csv": "784a277a086bb6beacb02e9f7ad9c69f74afa99b3674cc27bfcbf05db79b5292",
+    "data/scenarios/enriched/regional_operation_plan_items.csv": "a2da4712d9797f3d49417d3bd618997d1fd99c04fe7f452e6914d5f50b9c674a",
+    "data/scenarios/enriched/scenario_official_action_bindings_all.csv": "43b8f4dc95a2df74338675239904c21a6565925246b449f555e204723f0eff46",
+    "data/scenarios/enriched/scenario_official_rag_scope_all.csv": "c7f8fa27934f6293cb207c46bbf582fba21c62ccc5a71734c348263eb7684dc5",
+    "data/scenarios/enriched/scenario_postharvest_plan_items.csv": "57283b0c88a40d752d7d8f9eb64c77076b3f51f16702b1a908e5286617613533",
+    "data/scenarios/enriched/scenario_postharvest_rag_scope.csv": "4ab723195ab4764090ca95f993008a7d7ba960600c1ca9ff40618bf91b31dcc8",
+    "data/scenarios/enriched/sentinel_ndvi_context_features.csv": "680af4ba94357ec8a02da4fa9c3121031cdc198ec49ade2707b19bed60259ab4",
+    "data/scenarios/enriched/sentinel_ndvi_timeseries_features.csv": "168c63b0aa9dacc56fc5b91052e006e9f7222ce1cdb06656fc394a0e4b20a87e",
+    "data/scenarios/evidence/scenario_evidence_status.csv": "40574caf600e5bb73af2abdb7282ca381ecc76055826eb592097b03c0702e115",
+    "data/scenarios/manifests/scenario_manifest.csv": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284",
+    "data/scenarios/processed/scenario_features.csv": "5ce7a88a19eb659ffe7f7fd63ee9b91d235acf698166f1dcc44fd86de4f89f8a",
+    "graph/benchmark_workflow.py": "f3adaac9a6853e581341b83c691a97e555bc34f86afb5f6102555e95144158d7",
+    "llm/benchmark_llm_client.py": "6a349d6b8847e1c9be6b34f896c8dcd57713aecac6fd81c3908920931325ac66"
+  }
+}

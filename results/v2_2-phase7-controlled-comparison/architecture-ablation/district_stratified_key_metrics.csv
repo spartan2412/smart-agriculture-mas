@@ -1,0 +1,645 @@
+system_id,district,metric,metric_label,passed,total,rate
+A0,Ariyalur,overall_structural_pass,All structural checks,10,10,1.0
+A0,Ariyalur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Ariyalur,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Ariyalur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Baran,overall_structural_pass,All structural checks,10,10,1.0
+A0,Baran,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Baran,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Baran,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Bathinda,overall_structural_pass,All structural checks,20,20,1.0
+A0,Bathinda,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A0,Bathinda,conditional_operation_completeness,Conditional operations,20,20,1.0
+A0,Bathinda,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A0,Beed,overall_structural_pass,All structural checks,10,10,1.0
+A0,Beed,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Beed,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Beed,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Coimbatore,overall_structural_pass,All structural checks,20,20,1.0
+A0,Coimbatore,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A0,Coimbatore,conditional_operation_completeness,Conditional operations,20,20,1.0
+A0,Coimbatore,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A0,Dewas,overall_structural_pass,All structural checks,10,10,1.0
+A0,Dewas,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Dewas,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Dewas,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Dharmapuri,overall_structural_pass,All structural checks,10,10,1.0
+A0,Dharmapuri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Dharmapuri,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Dharmapuri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Dindigul,overall_structural_pass,All structural checks,10,10,1.0
+A0,Dindigul,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Dindigul,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Dindigul,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Erode,overall_structural_pass,All structural checks,10,10,1.0
+A0,Erode,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Erode,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Erode,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Indore,overall_structural_pass,All structural checks,10,10,1.0
+A0,Indore,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Indore,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Indore,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Jalna,overall_structural_pass,All structural checks,10,10,1.0
+A0,Jalna,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Jalna,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Jalna,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Jhalawar,overall_structural_pass,All structural checks,10,10,1.0
+A0,Jhalawar,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Jhalawar,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Jhalawar,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Krishnagiri,overall_structural_pass,All structural checks,10,10,1.0
+A0,Krishnagiri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Krishnagiri,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Krishnagiri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Latur,overall_structural_pass,All structural checks,10,10,1.0
+A0,Latur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Latur,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Latur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Ludhiana,overall_structural_pass,All structural checks,20,20,1.0
+A0,Ludhiana,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A0,Ludhiana,conditional_operation_completeness,Conditional operations,20,20,1.0
+A0,Ludhiana,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A0,Mansa,overall_structural_pass,All structural checks,20,20,1.0
+A0,Mansa,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A0,Mansa,conditional_operation_completeness,Conditional operations,20,20,1.0
+A0,Mansa,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A0,Namakkal,overall_structural_pass,All structural checks,10,10,1.0
+A0,Namakkal,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Namakkal,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Namakkal,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Nanded,overall_structural_pass,All structural checks,10,10,1.0
+A0,Nanded,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Nanded,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Nanded,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Parbhani,overall_structural_pass,All structural checks,10,10,1.0
+A0,Parbhani,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Parbhani,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Parbhani,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A0,Patiala,overall_structural_pass,All structural checks,20,20,1.0
+A0,Patiala,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A0,Patiala,conditional_operation_completeness,Conditional operations,20,20,1.0
+A0,Patiala,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A0,Salem,overall_structural_pass,All structural checks,20,20,1.0
+A0,Salem,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A0,Salem,conditional_operation_completeness,Conditional operations,20,20,1.0
+A0,Salem,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A0,Sangrur,overall_structural_pass,All structural checks,20,20,1.0
+A0,Sangrur,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A0,Sangrur,conditional_operation_completeness,Conditional operations,20,20,1.0
+A0,Sangrur,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A0,Ujjain,overall_structural_pass,All structural checks,10,10,1.0
+A0,Ujjain,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A0,Ujjain,conditional_operation_completeness,Conditional operations,10,10,1.0
+A0,Ujjain,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A1,Ariyalur,overall_structural_pass,All structural checks,0,10,0.0
+A1,Ariyalur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Ariyalur,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Ariyalur,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Baran,overall_structural_pass,All structural checks,0,10,0.0
+A1,Baran,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Baran,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Baran,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Bathinda,overall_structural_pass,All structural checks,0,20,0.0
+A1,Bathinda,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A1,Bathinda,conditional_operation_completeness,Conditional operations,0,20,0.0
+A1,Bathinda,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A1,Beed,overall_structural_pass,All structural checks,0,10,0.0
+A1,Beed,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Beed,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Beed,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Coimbatore,overall_structural_pass,All structural checks,0,20,0.0
+A1,Coimbatore,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A1,Coimbatore,conditional_operation_completeness,Conditional operations,0,20,0.0
+A1,Coimbatore,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A1,Dewas,overall_structural_pass,All structural checks,0,10,0.0
+A1,Dewas,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Dewas,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Dewas,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Dharmapuri,overall_structural_pass,All structural checks,0,10,0.0
+A1,Dharmapuri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Dharmapuri,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Dharmapuri,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Dindigul,overall_structural_pass,All structural checks,0,10,0.0
+A1,Dindigul,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Dindigul,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Dindigul,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Erode,overall_structural_pass,All structural checks,0,10,0.0
+A1,Erode,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Erode,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Erode,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Indore,overall_structural_pass,All structural checks,0,10,0.0
+A1,Indore,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Indore,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Indore,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Jalna,overall_structural_pass,All structural checks,0,10,0.0
+A1,Jalna,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Jalna,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Jalna,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Jhalawar,overall_structural_pass,All structural checks,0,10,0.0
+A1,Jhalawar,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Jhalawar,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Jhalawar,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Krishnagiri,overall_structural_pass,All structural checks,0,10,0.0
+A1,Krishnagiri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Krishnagiri,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Krishnagiri,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Latur,overall_structural_pass,All structural checks,0,10,0.0
+A1,Latur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Latur,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Latur,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Ludhiana,overall_structural_pass,All structural checks,0,20,0.0
+A1,Ludhiana,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A1,Ludhiana,conditional_operation_completeness,Conditional operations,0,20,0.0
+A1,Ludhiana,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A1,Mansa,overall_structural_pass,All structural checks,0,20,0.0
+A1,Mansa,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A1,Mansa,conditional_operation_completeness,Conditional operations,0,20,0.0
+A1,Mansa,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A1,Namakkal,overall_structural_pass,All structural checks,0,10,0.0
+A1,Namakkal,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Namakkal,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Namakkal,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Nanded,overall_structural_pass,All structural checks,0,10,0.0
+A1,Nanded,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Nanded,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Nanded,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Parbhani,overall_structural_pass,All structural checks,0,10,0.0
+A1,Parbhani,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Parbhani,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Parbhani,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A1,Patiala,overall_structural_pass,All structural checks,0,20,0.0
+A1,Patiala,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A1,Patiala,conditional_operation_completeness,Conditional operations,0,20,0.0
+A1,Patiala,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A1,Salem,overall_structural_pass,All structural checks,0,20,0.0
+A1,Salem,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A1,Salem,conditional_operation_completeness,Conditional operations,0,20,0.0
+A1,Salem,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A1,Sangrur,overall_structural_pass,All structural checks,0,20,0.0
+A1,Sangrur,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A1,Sangrur,conditional_operation_completeness,Conditional operations,0,20,0.0
+A1,Sangrur,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A1,Ujjain,overall_structural_pass,All structural checks,0,10,0.0
+A1,Ujjain,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A1,Ujjain,conditional_operation_completeness,Conditional operations,0,10,0.0
+A1,Ujjain,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Ariyalur,overall_structural_pass,All structural checks,0,10,0.0
+A2,Ariyalur,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Ariyalur,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Ariyalur,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Baran,overall_structural_pass,All structural checks,0,10,0.0
+A2,Baran,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Baran,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Baran,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Bathinda,overall_structural_pass,All structural checks,0,20,0.0
+A2,Bathinda,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A2,Bathinda,conditional_operation_completeness,Conditional operations,0,20,0.0
+A2,Bathinda,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A2,Beed,overall_structural_pass,All structural checks,0,10,0.0
+A2,Beed,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Beed,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Beed,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Coimbatore,overall_structural_pass,All structural checks,0,20,0.0
+A2,Coimbatore,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A2,Coimbatore,conditional_operation_completeness,Conditional operations,0,20,0.0
+A2,Coimbatore,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A2,Dewas,overall_structural_pass,All structural checks,0,10,0.0
+A2,Dewas,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Dewas,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Dewas,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Dharmapuri,overall_structural_pass,All structural checks,0,10,0.0
+A2,Dharmapuri,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Dharmapuri,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Dharmapuri,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Dindigul,overall_structural_pass,All structural checks,0,10,0.0
+A2,Dindigul,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Dindigul,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Dindigul,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Erode,overall_structural_pass,All structural checks,0,10,0.0
+A2,Erode,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Erode,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Erode,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Indore,overall_structural_pass,All structural checks,0,10,0.0
+A2,Indore,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Indore,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Indore,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Jalna,overall_structural_pass,All structural checks,0,10,0.0
+A2,Jalna,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Jalna,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Jalna,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Jhalawar,overall_structural_pass,All structural checks,0,10,0.0
+A2,Jhalawar,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Jhalawar,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Jhalawar,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Krishnagiri,overall_structural_pass,All structural checks,0,10,0.0
+A2,Krishnagiri,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Krishnagiri,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Krishnagiri,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Latur,overall_structural_pass,All structural checks,0,10,0.0
+A2,Latur,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Latur,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Latur,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Ludhiana,overall_structural_pass,All structural checks,0,20,0.0
+A2,Ludhiana,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A2,Ludhiana,conditional_operation_completeness,Conditional operations,0,20,0.0
+A2,Ludhiana,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A2,Mansa,overall_structural_pass,All structural checks,0,20,0.0
+A2,Mansa,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A2,Mansa,conditional_operation_completeness,Conditional operations,0,20,0.0
+A2,Mansa,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A2,Namakkal,overall_structural_pass,All structural checks,0,10,0.0
+A2,Namakkal,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Namakkal,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Namakkal,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Nanded,overall_structural_pass,All structural checks,0,10,0.0
+A2,Nanded,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Nanded,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Nanded,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Parbhani,overall_structural_pass,All structural checks,0,10,0.0
+A2,Parbhani,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Parbhani,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Parbhani,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A2,Patiala,overall_structural_pass,All structural checks,0,20,0.0
+A2,Patiala,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A2,Patiala,conditional_operation_completeness,Conditional operations,0,20,0.0
+A2,Patiala,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A2,Salem,overall_structural_pass,All structural checks,0,20,0.0
+A2,Salem,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A2,Salem,conditional_operation_completeness,Conditional operations,0,20,0.0
+A2,Salem,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A2,Sangrur,overall_structural_pass,All structural checks,0,20,0.0
+A2,Sangrur,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A2,Sangrur,conditional_operation_completeness,Conditional operations,0,20,0.0
+A2,Sangrur,operation_binding_and_condition_compliance,Operation binding + condition,0,20,0.0
+A2,Ujjain,overall_structural_pass,All structural checks,0,10,0.0
+A2,Ujjain,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A2,Ujjain,conditional_operation_completeness,Conditional operations,0,10,0.0
+A2,Ujjain,operation_binding_and_condition_compliance,Operation binding + condition,0,10,0.0
+A3,Ariyalur,overall_structural_pass,All structural checks,4,10,0.4
+A3,Ariyalur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Ariyalur,conditional_operation_completeness,Conditional operations,4,10,0.4
+A3,Ariyalur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Baran,overall_structural_pass,All structural checks,3,10,0.3
+A3,Baran,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Baran,conditional_operation_completeness,Conditional operations,3,10,0.3
+A3,Baran,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Bathinda,overall_structural_pass,All structural checks,10,20,0.5
+A3,Bathinda,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A3,Bathinda,conditional_operation_completeness,Conditional operations,10,20,0.5
+A3,Bathinda,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A3,Beed,overall_structural_pass,All structural checks,0,10,0.0
+A3,Beed,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Beed,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Beed,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Coimbatore,overall_structural_pass,All structural checks,0,20,0.0
+A3,Coimbatore,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A3,Coimbatore,conditional_operation_completeness,Conditional operations,0,20,0.0
+A3,Coimbatore,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A3,Dewas,overall_structural_pass,All structural checks,5,10,0.5
+A3,Dewas,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Dewas,conditional_operation_completeness,Conditional operations,5,10,0.5
+A3,Dewas,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Dharmapuri,overall_structural_pass,All structural checks,0,10,0.0
+A3,Dharmapuri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Dharmapuri,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Dharmapuri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Dindigul,overall_structural_pass,All structural checks,0,10,0.0
+A3,Dindigul,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Dindigul,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Dindigul,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Erode,overall_structural_pass,All structural checks,0,10,0.0
+A3,Erode,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Erode,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Erode,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Indore,overall_structural_pass,All structural checks,5,10,0.5
+A3,Indore,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Indore,conditional_operation_completeness,Conditional operations,5,10,0.5
+A3,Indore,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Jalna,overall_structural_pass,All structural checks,0,10,0.0
+A3,Jalna,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Jalna,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Jalna,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Jhalawar,overall_structural_pass,All structural checks,4,10,0.4
+A3,Jhalawar,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Jhalawar,conditional_operation_completeness,Conditional operations,4,10,0.4
+A3,Jhalawar,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Krishnagiri,overall_structural_pass,All structural checks,0,10,0.0
+A3,Krishnagiri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Krishnagiri,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Krishnagiri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Latur,overall_structural_pass,All structural checks,0,10,0.0
+A3,Latur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Latur,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Latur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Ludhiana,overall_structural_pass,All structural checks,9,20,0.45
+A3,Ludhiana,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A3,Ludhiana,conditional_operation_completeness,Conditional operations,9,20,0.45
+A3,Ludhiana,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A3,Mansa,overall_structural_pass,All structural checks,9,20,0.45
+A3,Mansa,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A3,Mansa,conditional_operation_completeness,Conditional operations,9,20,0.45
+A3,Mansa,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A3,Namakkal,overall_structural_pass,All structural checks,0,10,0.0
+A3,Namakkal,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Namakkal,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Namakkal,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Nanded,overall_structural_pass,All structural checks,0,10,0.0
+A3,Nanded,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Nanded,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Nanded,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Parbhani,overall_structural_pass,All structural checks,0,10,0.0
+A3,Parbhani,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Parbhani,conditional_operation_completeness,Conditional operations,0,10,0.0
+A3,Parbhani,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A3,Patiala,overall_structural_pass,All structural checks,8,20,0.4
+A3,Patiala,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A3,Patiala,conditional_operation_completeness,Conditional operations,8,20,0.4
+A3,Patiala,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A3,Salem,overall_structural_pass,All structural checks,0,20,0.0
+A3,Salem,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A3,Salem,conditional_operation_completeness,Conditional operations,0,20,0.0
+A3,Salem,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A3,Sangrur,overall_structural_pass,All structural checks,9,20,0.45
+A3,Sangrur,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A3,Sangrur,conditional_operation_completeness,Conditional operations,9,20,0.45
+A3,Sangrur,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A3,Ujjain,overall_structural_pass,All structural checks,5,10,0.5
+A3,Ujjain,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A3,Ujjain,conditional_operation_completeness,Conditional operations,5,10,0.5
+A3,Ujjain,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Ariyalur,overall_structural_pass,All structural checks,0,10,0.0
+A4,Ariyalur,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Ariyalur,conditional_operation_completeness,Conditional operations,4,10,0.4
+A4,Ariyalur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Baran,overall_structural_pass,All structural checks,0,10,0.0
+A4,Baran,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Baran,conditional_operation_completeness,Conditional operations,3,10,0.3
+A4,Baran,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Bathinda,overall_structural_pass,All structural checks,0,20,0.0
+A4,Bathinda,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A4,Bathinda,conditional_operation_completeness,Conditional operations,10,20,0.5
+A4,Bathinda,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A4,Beed,overall_structural_pass,All structural checks,0,10,0.0
+A4,Beed,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Beed,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Beed,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Coimbatore,overall_structural_pass,All structural checks,0,20,0.0
+A4,Coimbatore,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A4,Coimbatore,conditional_operation_completeness,Conditional operations,0,20,0.0
+A4,Coimbatore,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A4,Dewas,overall_structural_pass,All structural checks,0,10,0.0
+A4,Dewas,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Dewas,conditional_operation_completeness,Conditional operations,5,10,0.5
+A4,Dewas,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Dharmapuri,overall_structural_pass,All structural checks,0,10,0.0
+A4,Dharmapuri,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Dharmapuri,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Dharmapuri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Dindigul,overall_structural_pass,All structural checks,0,10,0.0
+A4,Dindigul,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Dindigul,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Dindigul,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Erode,overall_structural_pass,All structural checks,0,10,0.0
+A4,Erode,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Erode,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Erode,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Indore,overall_structural_pass,All structural checks,0,10,0.0
+A4,Indore,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Indore,conditional_operation_completeness,Conditional operations,5,10,0.5
+A4,Indore,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Jalna,overall_structural_pass,All structural checks,0,10,0.0
+A4,Jalna,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Jalna,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Jalna,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Jhalawar,overall_structural_pass,All structural checks,0,10,0.0
+A4,Jhalawar,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Jhalawar,conditional_operation_completeness,Conditional operations,4,10,0.4
+A4,Jhalawar,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Krishnagiri,overall_structural_pass,All structural checks,0,10,0.0
+A4,Krishnagiri,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Krishnagiri,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Krishnagiri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Latur,overall_structural_pass,All structural checks,0,10,0.0
+A4,Latur,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Latur,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Latur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Ludhiana,overall_structural_pass,All structural checks,0,20,0.0
+A4,Ludhiana,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A4,Ludhiana,conditional_operation_completeness,Conditional operations,9,20,0.45
+A4,Ludhiana,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A4,Mansa,overall_structural_pass,All structural checks,0,20,0.0
+A4,Mansa,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A4,Mansa,conditional_operation_completeness,Conditional operations,9,20,0.45
+A4,Mansa,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A4,Namakkal,overall_structural_pass,All structural checks,0,10,0.0
+A4,Namakkal,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Namakkal,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Namakkal,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Nanded,overall_structural_pass,All structural checks,0,10,0.0
+A4,Nanded,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Nanded,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Nanded,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Parbhani,overall_structural_pass,All structural checks,0,10,0.0
+A4,Parbhani,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Parbhani,conditional_operation_completeness,Conditional operations,0,10,0.0
+A4,Parbhani,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A4,Patiala,overall_structural_pass,All structural checks,0,20,0.0
+A4,Patiala,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A4,Patiala,conditional_operation_completeness,Conditional operations,8,20,0.4
+A4,Patiala,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A4,Salem,overall_structural_pass,All structural checks,0,20,0.0
+A4,Salem,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A4,Salem,conditional_operation_completeness,Conditional operations,0,20,0.0
+A4,Salem,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A4,Sangrur,overall_structural_pass,All structural checks,0,20,0.0
+A4,Sangrur,grounded_plan_coverage,Grounded plan coverage,0,20,0.0
+A4,Sangrur,conditional_operation_completeness,Conditional operations,9,20,0.45
+A4,Sangrur,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A4,Ujjain,overall_structural_pass,All structural checks,0,10,0.0
+A4,Ujjain,grounded_plan_coverage,Grounded plan coverage,0,10,0.0
+A4,Ujjain,conditional_operation_completeness,Conditional operations,5,10,0.5
+A4,Ujjain,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Ariyalur,overall_structural_pass,All structural checks,10,10,1.0
+A5,Ariyalur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Ariyalur,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Ariyalur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Baran,overall_structural_pass,All structural checks,10,10,1.0
+A5,Baran,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Baran,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Baran,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Bathinda,overall_structural_pass,All structural checks,20,20,1.0
+A5,Bathinda,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A5,Bathinda,conditional_operation_completeness,Conditional operations,20,20,1.0
+A5,Bathinda,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A5,Beed,overall_structural_pass,All structural checks,10,10,1.0
+A5,Beed,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Beed,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Beed,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Coimbatore,overall_structural_pass,All structural checks,20,20,1.0
+A5,Coimbatore,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A5,Coimbatore,conditional_operation_completeness,Conditional operations,20,20,1.0
+A5,Coimbatore,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A5,Dewas,overall_structural_pass,All structural checks,10,10,1.0
+A5,Dewas,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Dewas,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Dewas,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Dharmapuri,overall_structural_pass,All structural checks,10,10,1.0
+A5,Dharmapuri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Dharmapuri,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Dharmapuri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Dindigul,overall_structural_pass,All structural checks,10,10,1.0
+A5,Dindigul,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Dindigul,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Dindigul,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Erode,overall_structural_pass,All structural checks,10,10,1.0
+A5,Erode,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Erode,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Erode,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Indore,overall_structural_pass,All structural checks,10,10,1.0
+A5,Indore,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Indore,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Indore,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Jalna,overall_structural_pass,All structural checks,10,10,1.0
+A5,Jalna,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Jalna,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Jalna,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Jhalawar,overall_structural_pass,All structural checks,10,10,1.0
+A5,Jhalawar,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Jhalawar,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Jhalawar,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Krishnagiri,overall_structural_pass,All structural checks,10,10,1.0
+A5,Krishnagiri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Krishnagiri,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Krishnagiri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Latur,overall_structural_pass,All structural checks,10,10,1.0
+A5,Latur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Latur,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Latur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Ludhiana,overall_structural_pass,All structural checks,20,20,1.0
+A5,Ludhiana,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A5,Ludhiana,conditional_operation_completeness,Conditional operations,20,20,1.0
+A5,Ludhiana,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A5,Mansa,overall_structural_pass,All structural checks,20,20,1.0
+A5,Mansa,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A5,Mansa,conditional_operation_completeness,Conditional operations,20,20,1.0
+A5,Mansa,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A5,Namakkal,overall_structural_pass,All structural checks,10,10,1.0
+A5,Namakkal,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Namakkal,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Namakkal,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Nanded,overall_structural_pass,All structural checks,10,10,1.0
+A5,Nanded,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Nanded,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Nanded,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Parbhani,overall_structural_pass,All structural checks,10,10,1.0
+A5,Parbhani,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Parbhani,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Parbhani,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A5,Patiala,overall_structural_pass,All structural checks,20,20,1.0
+A5,Patiala,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A5,Patiala,conditional_operation_completeness,Conditional operations,20,20,1.0
+A5,Patiala,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A5,Salem,overall_structural_pass,All structural checks,20,20,1.0
+A5,Salem,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A5,Salem,conditional_operation_completeness,Conditional operations,20,20,1.0
+A5,Salem,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A5,Sangrur,overall_structural_pass,All structural checks,20,20,1.0
+A5,Sangrur,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A5,Sangrur,conditional_operation_completeness,Conditional operations,20,20,1.0
+A5,Sangrur,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A5,Ujjain,overall_structural_pass,All structural checks,10,10,1.0
+A5,Ujjain,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A5,Ujjain,conditional_operation_completeness,Conditional operations,10,10,1.0
+A5,Ujjain,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Ariyalur,overall_structural_pass,All structural checks,8,10,0.8
+A6,Ariyalur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Ariyalur,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Ariyalur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Baran,overall_structural_pass,All structural checks,10,10,1.0
+A6,Baran,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Baran,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Baran,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Bathinda,overall_structural_pass,All structural checks,17,20,0.85
+A6,Bathinda,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A6,Bathinda,conditional_operation_completeness,Conditional operations,20,20,1.0
+A6,Bathinda,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A6,Beed,overall_structural_pass,All structural checks,9,10,0.9
+A6,Beed,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Beed,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Beed,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Coimbatore,overall_structural_pass,All structural checks,20,20,1.0
+A6,Coimbatore,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A6,Coimbatore,conditional_operation_completeness,Conditional operations,20,20,1.0
+A6,Coimbatore,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A6,Dewas,overall_structural_pass,All structural checks,10,10,1.0
+A6,Dewas,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Dewas,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Dewas,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Dharmapuri,overall_structural_pass,All structural checks,8,10,0.8
+A6,Dharmapuri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Dharmapuri,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Dharmapuri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Dindigul,overall_structural_pass,All structural checks,9,10,0.9
+A6,Dindigul,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Dindigul,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Dindigul,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Erode,overall_structural_pass,All structural checks,5,10,0.5
+A6,Erode,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Erode,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Erode,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Indore,overall_structural_pass,All structural checks,9,10,0.9
+A6,Indore,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Indore,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Indore,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Jalna,overall_structural_pass,All structural checks,5,10,0.5
+A6,Jalna,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Jalna,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Jalna,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Jhalawar,overall_structural_pass,All structural checks,10,10,1.0
+A6,Jhalawar,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Jhalawar,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Jhalawar,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Krishnagiri,overall_structural_pass,All structural checks,9,10,0.9
+A6,Krishnagiri,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Krishnagiri,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Krishnagiri,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Latur,overall_structural_pass,All structural checks,5,10,0.5
+A6,Latur,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Latur,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Latur,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Ludhiana,overall_structural_pass,All structural checks,19,20,0.95
+A6,Ludhiana,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A6,Ludhiana,conditional_operation_completeness,Conditional operations,20,20,1.0
+A6,Ludhiana,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A6,Mansa,overall_structural_pass,All structural checks,17,20,0.85
+A6,Mansa,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A6,Mansa,conditional_operation_completeness,Conditional operations,20,20,1.0
+A6,Mansa,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A6,Namakkal,overall_structural_pass,All structural checks,9,10,0.9
+A6,Namakkal,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Namakkal,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Namakkal,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Nanded,overall_structural_pass,All structural checks,9,10,0.9
+A6,Nanded,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Nanded,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Nanded,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Parbhani,overall_structural_pass,All structural checks,9,10,0.9
+A6,Parbhani,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Parbhani,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Parbhani,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0
+A6,Patiala,overall_structural_pass,All structural checks,19,20,0.95
+A6,Patiala,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A6,Patiala,conditional_operation_completeness,Conditional operations,20,20,1.0
+A6,Patiala,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A6,Salem,overall_structural_pass,All structural checks,14,20,0.7
+A6,Salem,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A6,Salem,conditional_operation_completeness,Conditional operations,20,20,1.0
+A6,Salem,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A6,Sangrur,overall_structural_pass,All structural checks,17,20,0.85
+A6,Sangrur,grounded_plan_coverage,Grounded plan coverage,20,20,1.0
+A6,Sangrur,conditional_operation_completeness,Conditional operations,20,20,1.0
+A6,Sangrur,operation_binding_and_condition_compliance,Operation binding + condition,20,20,1.0
+A6,Ujjain,overall_structural_pass,All structural checks,10,10,1.0
+A6,Ujjain,grounded_plan_coverage,Grounded plan coverage,10,10,1.0
+A6,Ujjain,conditional_operation_completeness,Conditional operations,10,10,1.0
+A6,Ujjain,operation_binding_and_condition_compliance,Operation binding + condition,10,10,1.0

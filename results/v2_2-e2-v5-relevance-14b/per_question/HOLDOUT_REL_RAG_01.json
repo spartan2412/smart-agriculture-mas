@@ -1,0 +1,241 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "passage_1",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only when proper maturity is observed for the variety.; source_document_ids=PAU_ARCHIVE_KHARIF_2025; source=PAU_ARCHIVE_KHARIF_2025; locator=pdf_page_11; layer=source_scoped_operation; text=Harvesting should be done at proper maturity and variety-wise. Avoid harvesting during night. Avoid harvesting during night. Only when proper maturity is observed for the variety. Harvesting should be done at proper maturity and variety-wise. Avoid harvesting during night."
+    },
+    {
+      "fact_id": "passage_4",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only when the crop is about a fortnight before maturity.; source_document_ids=PAU_ARCHIVE_KHARIF_2025; source=PAU_ARCHIVE_KHARIF_2025; locator=pdf_page_11; layer=source_scoped_operation; text=Stop irrigation about a fortnight before maturity. Only when the crop is about a fortnight before maturity. Stop irrigation about a fortnight before maturity."
+    }
+  ],
+  "question": {
+    "agent_name": "official_operations_rag_agent",
+    "allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "Only when proper maturity is observed for the variety."
+        ],
+        "fact_id": "passage_1",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "PAU_ARCHIVE_2025_RICE_HARVEST_AT_PROPER_MATURITY"
+        ],
+        "source_document_ids": [
+          "PAU_ARCHIVE_KHARIF_2025"
+        ],
+        "source_locators": [
+          "pdf_page_11"
+        ],
+        "text": "source=PAU_ARCHIVE_KHARIF_2025; locator=pdf_page_11; layer=source_scoped_operation; text=Harvesting should be done at proper maturity and variety-wise. Avoid harvesting during night. Avoid harvesting during night. Only when proper maturity is observed for the variety. Harvesting should be done at proper maturity and variety-wise. Avoid harvesting during night."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_2",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "PAU_KHARIF_2026"
+        ],
+        "source_locators": [
+          "pdf_page_9"
+        ],
+        "text": "source=PAU_KHARIF_2026; locator=pdf_page_9; layer=postharvest_exact_crop; text=Harvesting should be done at proper maturity and variety-wise. Avoid harvesting during night."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_3",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "PAU_KHARIF_2026"
+        ],
+        "source_locators": [
+          "pdf_page_20"
+        ],
+        "text": "source=PAU_KHARIF_2026; locator=pdf_page_20; layer=postharvest_exact_crop; text=Dry the produce well and store separately in disinfested bins. The produce kept for home use should be dried thoroughly in the sun for about a week and stored in bins or kept in a heap inside the room. The optimum moisture content for storage is 12 per cent."
+      },
+      {
+        "conditions": [
+          "Only when the crop is about a fortnight before maturity."
+        ],
+        "fact_id": "passage_4",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "PAU_ARCHIVE_2025_RICE_STOP_IRRIGATION_PRE_MATURITY"
+        ],
+        "source_document_ids": [
+          "PAU_ARCHIVE_KHARIF_2025"
+        ],
+        "source_locators": [
+          "pdf_page_11"
+        ],
+        "text": "source=PAU_ARCHIVE_KHARIF_2025; locator=pdf_page_11; layer=source_scoped_operation; text=Stop irrigation about a fortnight before maturity. Only when the crop is about a fortnight before maturity. Stop irrigation about a fortnight before maturity."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_5",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "ICAR_CRIDA_PB_BATHINDA_CONTINGENCY"
+        ],
+        "source_locators": [
+          "pdf_page_3"
+        ],
+        "text": "source=ICAR_CRIDA_PB_BATHINDA_CONTINGENCY; locator=pdf_page_3; layer=official_rag; text=disease/shot berry etc. Grapes Chemical control of sucking pests Chemical control of sucking pests and diseases like anthracnose. Chemical control of fruit fly and anthracnose of guava. Harvesting at proper maturity level. Storage at proper place Chilli - Pumping out of excess rain water to check wilt Spray Blitox @ 5 g/ l water to check rottening of fruit Keep in dry place Cucurbits - Spray Indofil M 45 @ 3 g/l water against downy mildew Spray Blitox @ 5 g/ l water to check rottening of fruit. Also destroy the infested fruits and spray the crop with Endosulfan @ 8 ml/l or Sevin @ 5 g/l water to control fruit fly -"
+      }
+    ],
+    "allowed_passage_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_source_document_ids": [
+      "ICAR_CRIDA_PB_BATHINDA_CONTINGENCY",
+      "PAU_ARCHIVE_KHARIF_2025",
+      "PAU_KHARIF_2026"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "disallowed_distractor_ids": [
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "expected_admissible_fact_ids": [
+      "passage_1"
+    ],
+    "expected_admissible_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_or_operation_ids": [
+      "PAU_ARCHIVE_2025_RICE_HARVEST_AT_PROPER_MATURITY"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "For Rice in Bathinda, Punjab, during the kharif decision window ending 2025-11-30, which exact source-scoped official passage records this operation: ‘Harvesting should be done at proper maturity and variety-wise. Avoid harvesting during night.’? Select the passage that retains this required condition: ‘Only when proper maturity is observed for the variety.’. Do not select a neighboring operation, generic context, or a second passage.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "exact_named_source_scoped_operation_selection",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_01",
+    "required_conditions": [
+      "Only when proper maturity is observed for the variety."
+    ],
+    "role_instruction_sha256": "f7ccf98792aba075f0537b87aeb2c34b16a5630a09166dadfe94881bb789fde9",
+    "scenario_context": {
+      "crop": "rice",
+      "decision_date": "2025-11-30",
+      "decision_window_utc": "2025-11-01T00:00:00Z/2025-11-30T23:59:59Z",
+      "district": "Bathinda",
+      "geometry_scope": "documented_representative_cell",
+      "season": "kharif",
+      "state": "Punjab"
+    },
+    "scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_PB_BATHINDA_RICE_KHARIF",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "official_operations_rag_agent",
+    "bounded_llm": {
+      "agent_name": "official_operations_rag_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "f3ce4f23e2761f86a43156c39d763031dc2e0a7d954d89f62051730109cbacfb",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "passage_1"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "admitted_passages_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_exact_source_scoped_operation"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "passage_1"
+    ],
+    "expected_passage_count": 1,
+    "expected_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "PAU_ARCHIVE_2025_RICE_HARVEST_AT_PROPER_MATURITY"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 8121,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "PAU_ARCHIVE_2025_RICE_HARVEST_AT_PROPER_MATURITY"
+    ],
+    "original_allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "packaged_candidate_fact_ids": [
+      "passage_1",
+      "passage_4"
+    ],
+    "passage_intersection_count": 1,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 108773376,
+    "prompt_sha256": "f3ce4f23e2761f86a43156c39d763031dc2e0a7d954d89f62051730109cbacfb",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_01",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "passage_1"
+    ],
+    "selected_passage_count": 1,
+    "selected_passage_ids": [
+      "passage_1"
+    ],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "PAU_ARCHIVE_2025_RICE_HARVEST_AT_PROPER_MATURITY"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "admitted_passages_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_exact_source_scoped_operation"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

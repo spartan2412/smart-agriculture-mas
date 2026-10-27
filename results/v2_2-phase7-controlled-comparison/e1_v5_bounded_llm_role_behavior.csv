@@ -1,0 +1,9 @@
+role,call_count,accepted,fallback,invalid_or_rejected,empty_accepted,selected_fact_count,accepted_rate,fallback_rate,invalid_or_rejected_rate
+farmer_explanation_citation_agent,300,300,0,0,0,300,1.0,0.0,0.0
+fertilizer_baseline_agent,300,300,0,0,0,600,1.0,0.0,0.0
+market_evidence_agent,300,300,0,0,7,293,1.0,0.0,0.0
+official_operations_rag_agent,300,300,0,0,0,300,1.0,0.0,0.0
+provenance_aware_coordinator_agent,300,300,0,0,0,300,1.0,0.0,0.0
+satellite_ndvi_context_agent,300,300,0,0,13,287,1.0,0.0,0.0
+soil_context_agent,300,300,0,0,0,300,1.0,0.0,0.0
+weather_context_agent,300,300,0,0,0,300,1.0,0.0,0.0

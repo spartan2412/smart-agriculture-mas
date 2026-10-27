@@ -1,0 +1,76 @@
+{
+  "artifact_type": "frozen_e1_v5_heldout_experiment_boundary",
+  "created_at_utc": "2026-10-10T07:37:31Z",
+  "experiment_status": "frozen_before_final_heldout_model_evaluation",
+  "execution_policy": {
+    "final_heldout_model_calls_completed": 0,
+    "prompt_or_candidate_tuning_permitted": false,
+    "heldout_result_may_be_used_for_tuning": false,
+    "next_permitted_model_action": "one_final_v5_heldout_relevance_evaluation_after_runner_validation"
+  },
+  "git_boundary": {
+    "clean": true,
+    "commit": "0f3ec6db2d0f25cc886764c3cc444a89c18f7074"
+  },
+  "python_environment": {
+    "executable": "/Users/aryandhumal/Project/.venv-macos/bin/python",
+    "installed_distribution_count": 86,
+    "installed_distributions_sha256": "8bb8af8dc06c54e233c79049b9a29af849fac9417d02bc6ad34fa2ceb4e871fe",
+    "prefix": "/Users/aryandhumal/Project/.venv-macos",
+    "version": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "macos_environment": {
+    "kernel_release": "25.6.0",
+    "machine": "arm64",
+    "macos_version": "26.6.2",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "system": "Darwin"
+  },
+  "final_heldout_set": {
+    "acceptance_criteria_path": "data/llm_relevance_heldout/acceptance_criteria.json",
+    "acceptance_criteria_sha256": "d4bb0868de88ea09ca41930086f7aabec500e7f5007b6b86b2ab74457bbc08b6",
+    "manifest_path": "data/llm_relevance_heldout/manifest.json",
+    "manifest_sha256": "b983736f110ca1f28debf91c97d160ce0f6b080c7b6ea896593e7a0a8dbffc0c",
+    "question_count": 96,
+    "questions_path": "data/llm_relevance_heldout/heldout_questions.jsonl",
+    "questions_sha256": "9759733f8a45f9a577a826c68e4d307a77eb067ca8c831bc27bba2e37918bcf3",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "v5_runtime_boundary": {
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "files_sha256": {
+      "evaluation/bounded_llm_relevance_heldout.py": "b34f894e505e5bfb6ab957bfcb7191775726b8b56543d5dc3d7e939ed89ea084",
+      "evaluation/bounded_llm_relevance_v5_development.py": "cf5ee0981e4170538cab9993288fdf8d1557a99c6269877c9cd7a994c83dbe5f",
+      "graph/benchmark_workflow_v5.py": "04806d9f9f73c3792ca530777fec102c8d141bce879175c966c035c779d23327",
+      "llm/bounded_selection_v5.py": "ad17c067d6897a8fe70b81803ed625df9457b10214532d09c02b713b52098af7"
+    },
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2"
+  },
+  "e1_model_and_acceleration_boundary": {
+    "acceleration_evidence_path": "results/e1-apple-gpu-preflight/acceleration_evidence.json",
+    "acceleration_evidence_sha256": "f7c8201b25637a912e726eed1c0d6fc58b8536b54a21dc4399eaeac29c9268f1",
+    "apple_gpu": {
+      "apple_soc": "Apple M5",
+      "observed_gpu_resident_bytes": 4638040390,
+      "observed_model_resident_in_gpu_memory": true,
+      "proof_method": "Ollama local API generation followed by /api/ps size_vram observation; PyTorch MPS is not runtime proof for Ollama.",
+      "unified_memory_gib": 24.0
+    },
+    "backend": "ollama",
+    "generation_settings": {
+      "maximum_selected_fact_ids_global": 3,
+      "maximum_tokens_per_call": 200,
+      "temperature": 0.0
+    },
+    "model": {
+      "artifact_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+      "base_model_name": "Qwen2.5 7B",
+      "ollama_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "quantization": "Q4_K_M",
+      "tag": "qwen2.5:7b-instruct"
+    },
+    "ollama_runtime_version": "0.34.2"
+  },
+  "interpretation": "This manifest freezes the evidence, v5.1 selection boundary, E1 model artifact, execution environment, and Apple-Metal preflight state before the final held-out relevance runner makes any model call. It is not an agricultural result and does not itself certify a later runtime invocation."
+}

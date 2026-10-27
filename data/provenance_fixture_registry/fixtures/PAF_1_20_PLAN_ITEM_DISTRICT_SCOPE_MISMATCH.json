@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "soybean",
+    "decision_date": "2025-10-31",
+    "district": "Jhalawar",
+    "scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+    "season": "kharif",
+    "site_id": "PF_RJ_JHALAWAR_SOYBEAN_KHARIF",
+    "state": "Rajasthan"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "e9b668fd0102ebe4e9fdd06130b76cab4b0caa7b0eb2ff0c0da94c191bf32d4c;dee4b6f5eb031acacc8566246fa16d31cc39cb661f41e51d1080961ddbb08786",
+    "source_url": "https://icar-crida.res.in/CCP/RJ/Jhalawar/1.7.pdf;https://icar-crida.res.in/CCP/RJ/Jhalawar/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "948532b114efaf2bf8cf5f08fb4e1fa612582c52b464f23db87c4ade07db01fe",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_20_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_district_scope_mismatch",
+  "overlay": {
+    "base_value": "Jhalawar",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "Ludhiana",
+    "field": "district",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

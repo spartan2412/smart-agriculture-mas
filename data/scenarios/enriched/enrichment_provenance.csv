@@ -1,0 +1,6 @@
+generated_at_utc,artifact_role,input_path,input_sha256,input_row_count,notes
+2026-09-26T13:38:01+00:00,frozen_scenario_manifest,data/scenarios/manifests/scenario_manifest.csv,d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284,300,Immutable scenario identity and source linkage.
+2026-09-26T13:38:01+00:00,frozen_scenario_evidence,data/scenarios/evidence/scenario_evidence_status.csv,40574caf600e5bb73af2abdb7282ca381ecc76055826eb592097b03c0702e115,300,Mandatory abstentions and policy references.
+2026-09-26T13:38:01+00:00,final_management_bundles,data/registry/preflight_management_bundle_catalog.csv,b71d7d09ada61f4666add99024967f3785f574c13786b83be044008cba39ca7c,6,Final crop-state-season management source bindings.
+2026-09-26T13:38:01+00:00,verified_management_sources,data/registry/regional_management_source_snapshot.csv,178eb8817434ea678f57ea8fd4a6e8c630ca6950c3c6138f479ad3d7d430f2dd,17,Official source metadata and frozen source hashes.
+2026-09-26T13:38:01+00:00,crop_season_evidence,data/registry/preflight_icar_crida_ccp_coverage.csv,b6a51e4bf4def305b5b771582ec7d2d9d22b77294ebae728b8adcf123c060679,30,Official crop profile and sowing-window references.

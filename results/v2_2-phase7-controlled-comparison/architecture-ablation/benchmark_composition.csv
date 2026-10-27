@@ -1,0 +1,7 @@
+crop,scenario_count,site_count,district_count,state_count,season,anchor_count,supplementary_count
+chickpea,50,5,5,1,rabi,5,45
+maize,50,5,5,1,rabi,5,45
+rice,50,5,5,1,kharif,5,45
+soybean,50,5,5,2,kharif,5,45
+tomato,50,5,5,1,rabi,5,45
+wheat,50,5,5,1,rabi,5,45

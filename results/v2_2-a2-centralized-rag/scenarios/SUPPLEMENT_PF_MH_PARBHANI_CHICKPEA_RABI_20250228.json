@@ -1,0 +1,421 @@
+{
+  "benchmark_run": {
+    "claims": [
+      {
+        "agent_name": "official_operations_rag_agent",
+        "allowed_use": "conditional_operation_only",
+        "block_reason": null,
+        "claim": "Metadata-admitted official passages are available for controlled operational reasoning.",
+        "claim_id": "61b47001718d14f36a1ce7c2bfe2d9769d03e394250a002f15ec8203fac730c1",
+        "confidence": 0.9,
+        "decision_domain": "official_operation",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "blocked_scope_count": 90,
+          "passages": [
+            {
+              "corpus_layer": "source_scoped_operation",
+              "locator": "pdf_page_90_visual_operation_transcription",
+              "score": 0.4,
+              "source_document_id": "MPKV_KRISHI_DARSHANI_2023"
+            },
+            {
+              "corpus_layer": "official_rag",
+              "locator": "pdf_page_1",
+              "score": 0.25,
+              "source_document_id": "ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE"
+            },
+            {
+              "corpus_layer": "official_rag",
+              "locator": "pdf_page_1",
+              "score": 0.25,
+              "source_document_id": "ICAR_CRIDA_MH_PARBHANI_SOWING_WINDOW"
+            },
+            {
+              "corpus_layer": "postharvest_exact_crop",
+              "locator": "pdf_page_90_visual_operation_transcription",
+              "score": 0.2,
+              "source_document_id": "MPKV_KRISHI_DARSHANI_2023"
+            },
+            {
+              "corpus_layer": "official_rag",
+              "locator": "pdf_page_2",
+              "score": 0.0,
+              "source_document_id": "ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE"
+            }
+          ],
+          "postharvest_exact_crop_passage_count": 1,
+          "postharvest_scope_decision_count": 1,
+          "question": "",
+          "source_scoped_operation_passage_count": 1
+        },
+        "quality": "metadata-admitted official RAG passages",
+        "reasoning": "Corpus chunks are metadata filtered first. Recovered operation passages enter only after their full source binding passes. Post-harvest passages require an exact-crop scenario scope; retrieval does not itself authorize a farm action, booking, or dispatch.",
+        "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+        "source": {
+          "locator": "pdf_page_90_visual_operation_transcription",
+          "official_url": "https://mpkv.ac.in/Uploads/Publication/Krishi%20Darshani%20%202023_20230607043125.pdf",
+          "raw_path": null,
+          "raw_sha256": "696c24ee37090800490e7aecf42af97f850257c1afd14bb966cfe1145225cd20",
+          "source_document_id": "MPKV_KRISHI_DARSHANI_2023",
+          "source_role": "metadata_admitted_official_rag"
+        },
+        "spatial_scope": "documented_representative_cell; Parbhani, Maharashtra; not a surveyed farm parcel",
+        "summary": "Retrieved 5 scope-admitted passage(s) from 3 source(s).",
+        "temporal_scope": "historical decision window 2025-02-01T00:00:00Z/2025-02-28T23:59:59Z"
+      },
+      {
+        "agent_name": "centralized_source_filtered_rag_baseline",
+        "allowed_use": "context_only",
+        "block_reason": null,
+        "claim": "An evaluation-only baseline produced a source-bounded trace.",
+        "claim_id": "2a317cc8d21b9b999b790d617d94e5db2b44d44c5ad3414749bc7345e76445bf",
+        "confidence": 1.0,
+        "decision_domain": "system_safety",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "retrieved_source_ids": [
+            "ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE",
+            "ICAR_CRIDA_MH_PARBHANI_SOWING_WINDOW",
+            "MPKV_KRISHI_DARSHANI_2023"
+          ],
+          "system_id": "A2"
+        },
+        "quality": "evaluation_only_baseline_not_farmer_facing",
+        "reasoning": "This baseline retains the same prefiltered source scope but removes independent context agents, feasibility, conflict detection, and provenance-aware coordination. Retrieval never authorizes a farm action.",
+        "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+        "source": {
+          "locator": null,
+          "official_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CPRECTOTCORR%2CRH2M%2CWS2M&community=AG&longitude=76.699963&latitude=19.293310&start=20250201&end=20250228&format=JSON",
+          "raw_path": "raw/nasa_power/SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228.json",
+          "raw_sha256": "a2f5eab4d1a4d97ac8bbbc671336b9a560d05093b0c9f6f8493db127456abd37",
+          "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+          "source_role": "centralized_rag_baseline_trace"
+        },
+        "spatial_scope": "documented_representative_cell; Parbhani, Maharashtra; not a surveyed farm parcel",
+        "summary": "A2 retrieved 5 already-admitted passage(s) in one centralized path.",
+        "temporal_scope": "historical decision window 2025-02-01T00:00:00Z/2025-02-28T23:59:59Z"
+      },
+      {
+        "agent_name": "benchmark_evaluator_agent",
+        "allowed_use": "context_only",
+        "block_reason": null,
+        "claim": "The benchmark decision trace has been evaluated for structural grounding and safety.",
+        "claim_id": "3460b26c0c82191a9e3a4cd495a61b38d67637e25cbf64c37a29ab0914b4e96d",
+        "confidence": 1.0,
+        "decision_domain": "system_safety",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "abstention_reason_coverage": 1.0,
+          "citation_coverage": 1.0,
+          "cited_claim_count": 2,
+          "claim_count": 2,
+          "conflict_record_count": 0,
+          "safety_claim_count": 0,
+          "safety_claims_with_reason": 0,
+          "unsupported_action_count": 0
+        },
+        "quality": "trace_structurally_safe",
+        "reasoning": "These are trace-level quality metrics, not field-outcome accuracy or agronomic ground truth.",
+        "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+        "source": {
+          "locator": null,
+          "official_url": null,
+          "raw_path": null,
+          "raw_sha256": null,
+          "source_document_id": "BENCHMARK_EVALUATION_TRACE",
+          "source_role": "offline_structural_evaluation"
+        },
+        "spatial_scope": "documented_representative_cell; Parbhani, Maharashtra; not a surveyed farm parcel",
+        "summary": "trace_structurally_safe; citation coverage 100%; abstention-reason coverage 100%.",
+        "temporal_scope": "historical decision window 2025-02-01T00:00:00Z/2025-02-28T23:59:59Z"
+      }
+    ],
+    "conflicts": [],
+    "decision": {
+      "citations": [
+        "ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE",
+        "ICAR_CRIDA_MH_PARBHANI_SOWING_WINDOW",
+        "MPKV_KRISHI_DARSHANI_2023"
+      ],
+      "conflict_records": [],
+      "conflict_resolution_records": [],
+      "decision_status": "centralized_rag_context_only",
+      "direct_farm_action_issued": false,
+      "operation_status": "retrieval_context_only",
+      "operation_text": "No source-scoped farm operation is issued by the centralized RAG baseline.",
+      "rationale": "A single retriever can surface only already-admitted passages; it does not replace MAS safety gates.",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+      "trace_claim_count": 2,
+      "uncertainty_reasons": [
+        "evaluation_only_baseline_not_farmer_facing"
+      ]
+    },
+    "evaluation": {
+      "abstention_reason_coverage": 1.0,
+      "citation_coverage": 1.0,
+      "cited_claim_count": 2,
+      "claim_count": 2,
+      "conflict_record_count": 0,
+      "direct_farm_action_issued": false,
+      "outcome": "trace_structurally_safe",
+      "safety_claim_count": 0,
+      "safety_claims_with_reason": 0,
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+      "unsupported_action_count": 0
+    },
+    "farmer_message": "Scenario: Chickpea in Parbhani, Maharashtra (2025-02-28).\nCentralized source-filtered RAG baseline: retrieval context only; no farm operation is issued.\nRetrieved source — MPKV_KRISHI_DARSHANI_2023: Harvest and thresh chickpea only after pods are hard; do not harvest while the crop is wet. Harvest only after the documented hard-pod maturity condition is observed. Only when chickpea maturity/hard pods and crop dryness are actually observed. हरभरा पीक ११० ते १२० दिवसांमध्ये तयार होते. पीक ओलसर असताना काढणी करू नये. घाटे कडक झाल्यानंतर मग हरभऱ्याची काढणी करून मळणी करावी.\nRetrieved source — ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE: Area under major field crops & horticulture etc. 1.7 Major Field Crops cultivated Area (‘000 ha) (Average of 2008- 2012) Kharif Rabi Summer Irrigated Rainfed Total Irrigated Rainfed Total Irrigated Total Cotton - 181.2 181.2 - - - - - 181.2 Soybean - 81.8 81.8 - - - - - 81.8 Green gram - 73.8 73.8 - - - - - 73.8 Kharif Sorghum - 66.4 66.4 - - - - - 66.4 Pigeon pea - 55.5 55.5 - - - - - 55.5 Rabi Sorghum - 162.2 162.2 - - 162.2 Gram - - - 46.9 46.9 - - 46.9 Wheat - - - 39.0 - 39.0 - - 39.0 Safflower - - - 26.2 26.2 - - 26.2 Sunflower - - - 5.3 - 5.3 - - 5.3\nRetrieved source — ICAR_CRIDA_MH_PARBHANI_SOWING_WINDOW: 1.12 Sowing window for 5 major crops (start and end of sowing period) Crop 1 : Cotton 2 : Sorghum 3 : Soybean 4 : Green gram 5 : Pigeon pea Kharif - Rainfed June 15 to July 15 June 15 to July 15 June 15 to July 15 June 15 to July 07 June 15 to July 30 Kharif - Irrigated May 15 to June 15 NA NA NA NA Rabi crops Wheat Sorghum Gram Safflower Rabi–Rainfed NA Sept 23 to Oct 15 Oct 1 to 15 Sept 23 to Oct 15 NA Rabi - Irrigated Nov 1 to 20 Oct 15 to Nov 15 Oct 15 to Nov 15 Oct 15 to nov15 NA\nRetrieved source — MPKV_KRISHI_DARSHANI_2023: हरभरा पीक ११० ते १२० दिवसांमध्ये तयार होते. पीक ओलसर असताना काढणी करू नये. घाटे कडक झाल्यानंतर मग हरभऱ्याची काढणी करून मळणी करावी.\nRetrieved source — ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE: Groundnut - - - - - - 5.6 - 5.6 Sugarcane - - - 135.6 135.6 Horticulture crops – Fruits Total area (000 ha) 2008- 09 Irrigated Rainfed Mango 1.28 - - Sweet orange 0.64 - - Orange 0.54 - - Sapota 0.20 - - Lime 0.25 - - Horticulture crops– Vegetables Total area (000 ha) Irrigated Rainfed Brinjal 0.09 - - Tomato 0.06 - - Onion 0.02 - - Okra 0.10 - - Cauliflower 0.01 - -\nEvidence trace: ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE, ICAR_CRIDA_MH_PARBHANI_SOWING_WINDOW, MPKV_KRISHI_DARSHANI_2023.",
+    "retrieved_passages": [
+      {
+        "corpus_layer": "source_scoped_operation",
+        "locator": "pdf_page_90_visual_operation_transcription",
+        "official_url": "https://mpkv.ac.in/Uploads/Publication/Krishi%20Darshani%20%202023_20230607043125.pdf",
+        "score": 0.4,
+        "source_document_id": "MPKV_KRISHI_DARSHANI_2023",
+        "source_raw_sha256": "696c24ee37090800490e7aecf42af97f850257c1afd14bb966cfe1145225cd20",
+        "source_title": "Krishi Darshani 2023",
+        "text": "Harvest and thresh chickpea only after pods are hard; do not harvest while the crop is wet. Harvest only after the documented hard-pod maturity condition is observed. Only when chickpea maturity/hard pods and crop dryness are actually observed. हरभरा पीक ११० ते १२० दिवसांमध्ये तयार होते. पीक ओलसर असताना काढणी करू नये. घाटे कडक झाल्यानंतर मग हरभऱ्याची काढणी करून मळणी करावी."
+      },
+      {
+        "corpus_layer": "official_rag",
+        "locator": "pdf_page_1",
+        "official_url": "https://icar-crida.res.in/CCP/MH/Parbhani/1.7.pdf",
+        "score": 0.25,
+        "source_document_id": "ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE",
+        "source_raw_sha256": "d32272bfc7b9505bd9f67f37d892e1ba626e3771581beaf864d884d3558157cb",
+        "source_title": "ICAR-CRIDA district crop profile document — Parbhani, Maharashtra",
+        "text": "Area under major field crops & horticulture etc. 1.7 Major Field Crops cultivated Area (‘000 ha) (Average of 2008- 2012) Kharif Rabi Summer Irrigated Rainfed Total Irrigated Rainfed Total Irrigated Total Cotton - 181.2 181.2 - - - - - 181.2 Soybean - 81.8 81.8 - - - - - 81.8 Green gram - 73.8 73.8 - - - - - 73.8 Kharif Sorghum - 66.4 66.4 - - - - - 66.4 Pigeon pea - 55.5 55.5 - - - - - 55.5 Rabi Sorghum - 162.2 162.2 - - 162.2 Gram - - - 46.9 46.9 - - 46.9 Wheat - - - 39.0 - 39.0 - - 39.0 Safflower - - - 26.2 26.2 - - 26.2 Sunflower - - - 5.3 - 5.3 - - 5.3"
+      },
+      {
+        "corpus_layer": "official_rag",
+        "locator": "pdf_page_1",
+        "official_url": "https://icar-crida.res.in/CCP/MH/Parbhani/1.12.pdf",
+        "score": 0.25,
+        "source_document_id": "ICAR_CRIDA_MH_PARBHANI_SOWING_WINDOW",
+        "source_raw_sha256": "8b8af9ade03b3f1c169a0270e7eee44b0c5816949d678cdf2a6b656d5da693b4",
+        "source_title": "ICAR-CRIDA district sowing window document — Parbhani, Maharashtra",
+        "text": "1.12 Sowing window for 5 major crops (start and end of sowing period) Crop 1 : Cotton 2 : Sorghum 3 : Soybean 4 : Green gram 5 : Pigeon pea Kharif - Rainfed June 15 to July 15 June 15 to July 15 June 15 to July 15 June 15 to July 07 June 15 to July 30 Kharif - Irrigated May 15 to June 15 NA NA NA NA Rabi crops Wheat Sorghum Gram Safflower Rabi–Rainfed NA Sept 23 to Oct 15 Oct 1 to 15 Sept 23 to Oct 15 NA Rabi - Irrigated Nov 1 to 20 Oct 15 to Nov 15 Oct 15 to Nov 15 Oct 15 to nov15 NA"
+      },
+      {
+        "corpus_layer": "postharvest_exact_crop",
+        "locator": "pdf_page_90_visual_operation_transcription",
+        "official_url": "https://mpkv.ac.in/Uploads/Publication/Krishi%20Darshani%20%202023_20230607043125.pdf",
+        "score": 0.2,
+        "source_document_id": "MPKV_KRISHI_DARSHANI_2023",
+        "source_raw_sha256": "696c24ee37090800490e7aecf42af97f850257c1afd14bb966cfe1145225cd20",
+        "source_title": "Krishi Darshani 2023",
+        "text": "हरभरा पीक ११० ते १२० दिवसांमध्ये तयार होते. पीक ओलसर असताना काढणी करू नये. घाटे कडक झाल्यानंतर मग हरभऱ्याची काढणी करून मळणी करावी."
+      },
+      {
+        "corpus_layer": "official_rag",
+        "locator": "pdf_page_2",
+        "official_url": "https://icar-crida.res.in/CCP/MH/Parbhani/1.7.pdf",
+        "score": 0.0,
+        "source_document_id": "ICAR_CRIDA_MH_PARBHANI_CROP_PROFILE",
+        "source_raw_sha256": "d32272bfc7b9505bd9f67f37d892e1ba626e3771581beaf864d884d3558157cb",
+        "source_title": "ICAR-CRIDA district crop profile document — Parbhani, Maharashtra",
+        "text": "Groundnut - - - - - - 5.6 - 5.6 Sugarcane - - - 135.6 135.6 Horticulture crops – Fruits Total area (000 ha) 2008- 09 Irrigated Rainfed Mango 1.28 - - Sweet orange 0.64 - - Orange 0.54 - - Sapota 0.20 - - Lime 0.25 - - Horticulture crops– Vegetables Total area (000 ha) Irrigated Rainfed Brinjal 0.09 - - Tomato 0.06 - - Onion 0.02 - - Okra 0.10 - - Cauliflower 0.01 - -"
+      }
+    ],
+    "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228"
+  },
+  "runtime": {
+    "elapsed_ms": 2,
+    "process_peak_memory_bytes": 560300032
+  },
+  "scenario_identity": {
+    "crop": "chickpea",
+    "decision_date": "2025-02-28",
+    "decision_window_utc": "2025-02-01T00:00:00Z/2025-02-28T23:59:59Z",
+    "district": "Parbhani",
+    "geometry_scope": "documented_representative_cell",
+    "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+    "season": "rabi",
+    "site_id": "PF_MH_PARBHANI_CHICKPEA_RABI",
+    "state": "Maharashtra"
+  },
+  "scenario_oracle_result": {
+    "checks": [
+      {
+        "detail": "Checks that the completed trace remains bound to one immutable scenario and that an external-source claim retains an official URL or raw-hash lineage.",
+        "expected": "one frozen scenario identity, unique claim IDs, and traceable sourced claims",
+        "name": "input_lineage_integrity",
+        "observed": "run=SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228; claims=3; unique_claim_ids=True; traceable_sources=True",
+        "passed": true
+      },
+      {
+        "detail": "Detects a trace in which an evidence field was changed after claim creation without receiving a new deterministic identity.",
+        "expected": "every typed claim ID equals the SHA-256 identity derived from its current immutable evidence payload, excluding only presentation-only bounded-LLM metadata",
+        "name": "stable_claim_identity_fidelity",
+        "observed": "claims=3; stale_claim_ids=0",
+        "passed": true
+      },
+      {
+        "detail": "Prevents an agent from silently recasting representative-cell evidence as another place or an unbounded present-time farm observation while allowing valid source-specific time semantics.",
+        "expected": "every claim explicitly names the frozen district/state, preserves a non-farm limitation, and has a bounded historical, pre-decision, declared-season, or static source-time scope",
+        "name": "claim_scope_contract_compliance",
+        "observed": "claims=3; wrong_spatial=0; wrong_temporal=0",
+        "passed": true
+      },
+      {
+        "detail": "This is a source-lineage check, not a claim that a citation proves farm-level correctness.",
+        "expected": "every decision citation originates from an emitted claim/passage and is recognised by the immutable scenario source inventory",
+        "name": "citation_traceability",
+        "observed": "decision_citations=3; absent_from_trace=none; absent_from_frozen_evidence=none; blank_citation=False",
+        "passed": true
+      },
+      {
+        "detail": "Prevents a cross-domain request URL from appearing as provenance for an otherwise valid context claim; this is source-binding integrity, not agricultural outcome accuracy.",
+        "expected": "weather, soil, Sentinel, and market claims cite their exact frozen domain source, while internal trace claims carry no borrowed public-source URL",
+        "name": "context_source_provenance_binding",
+        "observed": "errors=weather_context_agent:claim_count=0;soil_context_agent:claim_count=0;satellite_ndvi_context_agent:claim_count=0;market_evidence_agent:claim_count=0",
+        "passed": false
+      },
+      {
+        "detail": "Generic RAG, source-scoped operation, and exact-crop post-harvest passages have separate allow-lists. Retrieval cannot resurrect a blocked source.",
+        "expected": "every retrieved passage is in the scenario's pre-admitted scope for its corpus layer",
+        "name": "rag_scope_compliance",
+        "observed": "retrieved=5; violations=none",
+        "passed": true
+      },
+      {
+        "detail": "Checks canonical action bindings and post-harvest plan items instead of trusting the agent's wording alone.",
+        "expected": "every conditional operation has a valid scenario binding/source and retains its required unobserved field or lot condition",
+        "name": "operation_binding_and_condition_compliance",
+        "observed": "official_conditionals=0; postharvest_conditionals=0; errors=postharvest_plan_coverage:0/1",
+        "passed": false
+      },
+      {
+        "detail": "Completeness is checked against the immutable scenario allow-list, so an unscoped operation cannot improve this metric.",
+        "expected": "each pre-admitted official and crop-scoped post-harvest conditional plan item is emitted exactly once as a conditional claim",
+        "name": "conditional_operation_completeness",
+        "observed": "official=0/1; postharvest=0/1; missing_official=1; unexpected_official=0; missing_postharvest=1; unexpected_postharvest=0; duplicate_official=0; duplicate_postharvest=0",
+        "passed": false
+      },
+      {
+        "detail": "This is a field-level provenance-fidelity check. It detects a correct-looking operation that has been attached to a different source snapshot, location, or quotation.",
+        "expected": "every operational claim preserves the immutable source identifier, official URL, raw SHA-256, locator, and quoted source text",
+        "name": "source_quote_locator_hash_fidelity",
+        "observed": "operational_claims=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Measures source-linked plan coverage, not user satisfaction or agronomic outcome quality.",
+        "expected": "calendar, nutrient-policy, IPM-policy, and all source-linked plan-item IDs are retained",
+        "name": "grounded_plan_coverage",
+        "observed": "regional_lanes=regional_calendar,regional_crop_protection_policy,regional_nutrient_policy,source_quoted_operation; plan_item_ids=0/4; errors=regional_plan_item_exposure:0/4",
+        "passed": false
+      },
+      {
+        "detail": "The coordinator cannot present a plan card while silently dropping its source identity from the structured decision trace.",
+        "expected": "all mandatory regional-plan/post-harvest sources and the selected conditional-operation source are retained in the coordinator citations",
+        "name": "plan_and_selected_operation_citation_coverage",
+        "observed": "required_sources=3; decision_citations=3; missing=ICAR_CRIDA_CCP,ICAR_RABI_STATE_ADVISORIES_2021_22",
+        "passed": false
+      },
+      {
+        "detail": "This checks evidence-to-message fidelity; it does not judge whether an unobserved field condition is true.",
+        "expected": "the farmer message contains only decision-trace citation IDs and, for a selected conditional operation, renders the exact required condition, source ID, and non-direct-action status",
+        "name": "farmer_message_condition_and_citation_fidelity",
+        "observed": "message_chars=2461; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "The check validates self-contained presentation of frozen evidence. It does not convert a regional schedule, conditional operation, context datum, or directory entry into a farm action or live service claim.",
+        "expected": "all non-empty source-backed plan, facility/route, historical/static-context, question-specific RAG, and farmer-relevant conflict fields already admitted to the scenario are rendered directly, with no generic nutrient or crop-protection lookup placeholder",
+        "name": "farmer_message_source_detail_and_facility_fidelity",
+        "observed": "regional_items=4; postharvest_items=1; facility_candidates=3; question_specific_rag=False; conflict_records=0; errors=regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__calendar_window:farmer_visible_text;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__calendar_window:conditions_text;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__calendar_window:source_document_id;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__calendar_window:source_url;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__operation__MPKV_MH_CHICKPEA_HARVEST_AFTER_HARD_PODS:source_url;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__fertilizer_policy:farmer_visible_text;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__fertilizer_policy:conditions_text;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__fertilizer_policy:source_document_id;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__fertilizer_policy:source_url;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__protection_policy:farmer_visible_text;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__protection_policy:conditions_text;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__protection_policy:source_document_id;regional_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__protection_policy:source_url;policy_detail_missing:fertilizer:detail_text;policy_detail_missing:fertilizer:applicability_conditions;policy_detail_missing:fertilizer:non_action_boundary;policy_detail_missing:fertilizer:source_document_id;policy_detail_missing:fertilizer:source_location;policy_detail_missing:crop_protection:detail_text;policy_detail_missing:crop_protection:applicability_conditions;policy_detail_missing:crop_protection:non_action_boundary;policy_detail_missing:crop_protection:source_document_id;policy_detail_missing:crop_protection:source_location;postharvest_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS:conditions_text;postharvest_detail_missing:SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS:source_url;facility_detail_missing:WDRA_MAHARASHTRA_7065600:candidate_id;facility_detail_missing:WDRA_MAHARASHTRA_7065600:candidate_name;facility_detail_missing:WDRA_MAHARASHTRA_7065600:candidate_registry_status;facility_detail_missing:WDRA_MAHARASHTRA_7065600:candidate_capacity_mt;facility_detail_missing:WDRA_MAHARASHTRA_7065600:source_document_id;facility_detail_missing:WDRA_MAHARASHTRA_7065600:source_url;facility_detail_missing:WDRA_MAHARASHTRA_7065600:temporal_interpretation;facility_detail_missing:WDRA_MAHARASHTRA_7065600:not_supported;facility_detail_missing:WDRA_MAHARASHTRA_6579155:candidate_id;facility_detail_missing:WDRA_MAHARASHTRA_6579155:candidate_name;facility_detail_missing:WDRA_MAHARASHTRA_6579155:candidate_registry_status;facility_detail_missing:WDRA_MAHARASHTRA_6579155:candidate_capacity_mt;facility_detail_missing:WDRA_MAHARASHTRA_6579155:source_document_id;facility_detail_missing:WDRA_MAHARASHTRA_6579155:source_url;facility_detail_missing:WDRA_MAHARASHTRA_6579155:temporal_interpretation;facility_detail_missing:WDRA_MAHARASHTRA_6579155:not_supported;facility_detail_missing:WDRA_MAHARASHTRA_6588784:candidate_id;facility_detail_missing:WDRA_MAHARASHTRA_6588784:candidate_name;facility_detail_missing:WDRA_MAHARASHTRA_6588784:candidate_registry_status;facility_detail_missing:WDRA_MAHARASHTRA_6588784:candidate_capacity_mt;facility_detail_missing:WDRA_MAHARASHTRA_6588784:source_document_id;facility_detail_missing:WDRA_MAHARASHTRA_6588784:source_url;facility_detail_missing:WDRA_MAHARASHTRA_6588784:temporal_interpretation;facility_detail_missing:WDRA_MAHARASHTRA_6588784:not_supported;weather_detail_missing:weather_t2m_mean_c;weather_detail_missing:weather_precipitation_total_mm;weather_detail_missing:weather_rh2m_mean_percent;weather_detail_missing:weather_ws2m_mean_m_s;weather_detail_missing:weather_shortwave_mean_mj_m2_day;weather_detail_missing:water_gwetroot_mean_fraction;weather_detail_missing:water_gwetroot_min_fraction;weather_detail_missing:water_gwetroot_max_fraction;weather_detail_missing:water_gwettop_mean_fraction;weather_detail_missing:water_land_evaporation_total_mm;weather_detail_missing:water_precipitation_minus_land_evaporation_mm;weather_detail_missing:water_context_interpretation;weather_source_url_missing;soil_detail_missing:phh2o:metadata_title;soil_detail_missing:phh2o:raw_value;soil_detail_missing:phh2o:conversion_note;soil_detail_missing:phh2o:metadata_request_url;soil_detail_missing:nitrogen:metadata_title;soil_detail_missing:nitrogen:raw_value;soil_detail_missing:nitrogen:conversion_note;soil_detail_missing:nitrogen:metadata_request_url;soil_detail_missing:clay:metadata_title;soil_detail_missing:clay:raw_value;soil_detail_missing:clay:conversion_note;soil_detail_missing:clay:metadata_request_url;soil_detail_missing:sand:metadata_title;soil_detail_missing:sand:raw_value;soil_detail_missing:sand:conversion_note;soil_detail_missing:sand:metadata_request_url;soil_detail_missing:silt:metadata_title;soil_detail_missing:silt:raw_value;soil_detail_missing:silt:conversion_note;soil_detail_missing:silt:metadata_request_url;soil_detail_missing:ocd:metadata_title;soil_detail_missing:ocd:raw_value;soil_detail_missing:ocd:conversion_note;soil_detail_missing:ocd:metadata_request_url;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;market_unavailable_status_header_missing;market_unavailable_status_reason_missing;market_detail_missing:market_current_month_price_mean_as_reported;market_detail_missing:market_comparison_availability;market_source_detail_missing;market_source_detail_missing;facility_live_service_boundary_missing",
+        "passed": false
+      },
+      {
+        "detail": "This is specific to the frozen benchmark capability contract; it does not prohibit a future field-evidence benchmark from defining a different safety policy.",
+        "expected": "current public-only benchmark issues no direct farm action and restricted context agents cannot emit an operational claim",
+        "name": "unsupported_action_prevention_and_agent_permissions",
+        "observed": "decision_direct_action=False; restricted_operational_agents=none; supported_operation_claims=0; metadata_direct_actions=0",
+        "passed": true
+      },
+      {
+        "detail": "Uses the per-scenario capability contract, not a generic assumption about missing evidence.",
+        "expected": "every unavailable claim has a reason and every frozen mandatory capability restriction is retained",
+        "name": "abstention_reason_coverage",
+        "observed": "safety_claims=0; missing_reasons=0; missing_contract_restrictions=abstain_no_aligned_field_leaf_image,abstain_no_dated_diagnosis_or_threshold_event,abstain_no_field_moisture_or_decision_time_forecast,abstain_no_field_soil_test_or_actual_crop_stage,not_observed_no_dated_site_event,not_observed_no_field_phenology_source",
+        "passed": false
+      },
+      {
+        "detail": "Natural NDVI--weather divergences remain non-action trace records and are evaluated with the same completeness requirement.",
+        "expected": "each detected conflict has a rule/rationale trace; rejected or deferred evidence cannot supply an exclusive final citation",
+        "name": "conflict_trace_completeness_and_exclusion",
+        "observed": "conflicts=0; resolution_records=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Prevents a coordinator rationale from borrowing an unrelated source to justify a conflict resolution.",
+        "expected": "each coordinator resolution cites only source IDs carried by the claims in that conflict and those IDs remain in the final decision citation trace",
+        "name": "conflict_resolution_citation_fidelity",
+        "observed": "resolution_records=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Evaluates the 43 natural cross-source candidates as provenance-conflict traces, not as crop stress diagnoses or labels.",
+        "expected": "only an eligible stored NDVI--weather divergence produces one contextual conflict and one non-action resolution; it never authorizes a direct farm action",
+        "name": "natural_ndvi_weather_divergence_policy",
+        "observed": "eligible=False; conflicts=0; resolutions=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "The legacy PlantVillage model remains outside this benchmark because no field-aligned leaf image exists for any frozen scenario.",
+        "expected": "one vision availability claim is no_data/unavailable/abstain with the frozen leaf-image restriction reason",
+        "name": "vision_no_data_boundary",
+        "observed": "vision_claims=0; expected_reason=abstain_no_aligned_field_leaf_image; errors=vision_claim_count:0",
+        "passed": false
+      },
+      {
+        "detail": "Offline deterministic runs produce disabled bounded-call traces; enabled runs remain subject to the same non-authoritative metadata contract.",
+        "expected": "bounded selection metadata is valid and explicitly safety-non-authoritative when present",
+        "name": "bounded_llm_trace_compliance",
+        "observed": "bounded_trace_records=0; errors=none",
+        "passed": true
+      }
+    ],
+    "failing_check_names": [
+      "context_source_provenance_binding",
+      "operation_binding_and_condition_compliance",
+      "conditional_operation_completeness",
+      "grounded_plan_coverage",
+      "plan_and_selected_operation_citation_coverage",
+      "farmer_message_source_detail_and_facility_fidelity",
+      "abstention_reason_coverage",
+      "vision_no_data_boundary"
+    ],
+    "metrics": {
+      "abstention_reason_coverage": 0.0,
+      "bounded_llm_trace_compliance": 1.0,
+      "citation_traceability": 1.0,
+      "claim_scope_contract_compliance": 1.0,
+      "conditional_operation_completeness": 0.0,
+      "conflict_resolution_citation_fidelity": 1.0,
+      "conflict_trace_completeness_and_exclusion": 1.0,
+      "context_source_provenance_binding": 0.0,
+      "farmer_message_condition_and_citation_fidelity": 1.0,
+      "farmer_message_source_detail_and_facility_fidelity": 0.0,
+      "grounded_plan_coverage": 0.0,
+      "input_lineage_integrity": 1.0,
+      "natural_ndvi_weather_divergence_policy": 1.0,
+      "operation_binding_and_condition_compliance": 0.0,
+      "overall_structural_pass": 0.0,
+      "plan_and_selected_operation_citation_coverage": 0.0,
+      "rag_scope_compliance": 1.0,
+      "source_quote_locator_hash_fidelity": 1.0,
+      "stable_claim_identity_fidelity": 1.0,
+      "unsupported_action_prevention_and_agent_permissions": 1.0,
+      "vision_no_data_boundary": 0.0
+    },
+    "oracle_version": "1.4",
+    "overall_passed": false,
+    "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+    "structural_fingerprint": "c5012942938d1748e62267d350669a301b08efbe580b9c9a24ce11982079de49"
+  }
+}

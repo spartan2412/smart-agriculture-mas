@@ -1,0 +1,9 @@
+layer,expected_scenarios,rows,unique_scenario_ids,passing_rows,unavailable_rows,result,detail
+regional_management_policy,300,300,300,300,0,pass,missing=0; extra=0; duplicate_rows=0
+regional_calendar,300,300,300,300,0,pass,missing=0; extra=0; duplicate_rows=0
+nasa_power_water_context,300,300,300,300,0,pass,missing=0; extra=0; duplicate_rows=0; raw_hash_errors=0
+sentinel_scene_context,300,300,300,296,4,pass,missing=0; extra=0; duplicate_rows=0; raw_hash_errors=0; representative_cell_ndvi_rows=286; invalid_feature_ids=0; unavailable_is_preserved_not_imputed
+sentinel_same_window_recovery,14,14,14,6,8,pass,missing=0; extra=0; duplicate_rows=0; raw_hash_errors=0; original_frozen_scene_unchanged
+agmarknet_embedded_market_context,300,300,300,293,7,pass,missing=0; extra=0; duplicate_rows=0; raw_hash_errors=0; unavailable_reports=7
+agmarknet_strict_recovery_feasibility,7,7,7,0,7,pass,missing=0; extra=0; duplicate_rows=0; raw_hash_errors=0; no_nearby_mandi_or_cross_district_substitution
+mas_enrichment_contract,300,300,300,300,0,pass,missing=0; extra=0; duplicate_rows=0; prohibited_direct_action_rows=0

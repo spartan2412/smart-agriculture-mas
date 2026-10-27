@@ -1,0 +1,276 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__calendar_window",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage.; source_document_ids=ICAR_CRIDA_CCP; lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared rabi window for this crop and district is Nov-Apr; the scenario date falls in the late part of that window."
+    },
+    {
+      "fact_id": "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__fertilizer_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Regional fallback only; potassium and treatment decisions retain their source conditions.; source_document_ids=PAU_RABI_2025_26; lane=regional_nutrient_policy; source=PAU_RABI_2025_26; text=Use the cited Punjab wheat regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Regional fallback only; potassium and treatment decisions retain their source conditions.; source_document_ids=PAU_RABI_2025_26; lane=regional_crop_protection_policy; source=PAU_RABI_2025_26; text=Use the cited Punjab wheat regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Only when full wheat maturity is actually observed. | actual_crop_maturity_not_observed; source_document_ids=PAU_RABI_2025_26; lane=harvest_readiness; source=PAU_RABI_2025_26; text=Harvest and thresh wheat as soon as it is fully ripe to avoid shattering losses."
+    },
+    {
+      "fact_id": "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Only after a lot-specific moisture measurement; the benchmark does not contain one. | harvested_lot_moisture_not_observed; source_document_ids=PAU_RABI_2025_26; lane=dry_storage; source=PAU_RABI_2025_26; text=Dry grain before storage when its moisture exceeds the cited threshold."
+    }
+  ],
+  "question": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "allowed_fact_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__calendar_window",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__fertilizer_policy",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy",
+      "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH",
+      "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "A source-quoted post-harvest technical operation is crop scoped, but its stated lot/harvest precondition is not observed in this frozen scenario."
+        ],
+        "fact_id": "decision:operation",
+        "fact_kind": "decision_trace",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "FROZEN_SCENARIO_MANIFEST"
+        ],
+        "source_locators": [],
+        "text": "status=conditional_operation_pending_field_precondition; operation_status=not_issued_as_direct_farm_action; direct_farm_action_issued=False; citations=AGMARKNET_MONTHLY_REPORT,CIBRC_FUNGICIDE_2026,FROZEN_SCENARIO_MANIFEST,ICAR_CRIDA_CCP,MAS_ENRICHMENT_CONTRACT,NASA_POWER_HISTORICAL_WINDOW,NATURAL_SIGNAL_DIVERGENCE,PAU_RABI_2025_26,SENTINEL2_L2A,SOILGRIDS,WDRA_REGISTERED_WAREHOUSES_PUNJAB"
+      },
+      {
+        "conditions": [
+          "The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage."
+        ],
+        "fact_id": "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__calendar_window",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__calendar_window"
+        ],
+        "source_document_ids": [
+          "ICAR_CRIDA_CCP"
+        ],
+        "source_locators": [
+          "District CCP crop profile and sowing-window PDFs"
+        ],
+        "text": "lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared rabi window for this crop and district is Nov-Apr; the scenario date falls in the late part of that window."
+      },
+      {
+        "conditions": [
+          "Regional fallback only; potassium and treatment decisions retain their source conditions."
+        ],
+        "fact_id": "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__fertilizer_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__fertilizer_policy"
+        ],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "PDF pp. 9-10 wheat nutrient schedule"
+        ],
+        "text": "lane=regional_nutrient_policy; source=PAU_RABI_2025_26; text=Use the cited Punjab wheat regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Regional fallback only; potassium and treatment decisions retain their source conditions."
+        ],
+        "fact_id": "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+        ],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "PDF pp. 19-20 yellow-rust action"
+        ],
+        "text": "lane=regional_crop_protection_policy; source=PAU_RABI_2025_26; text=Use the cited Punjab wheat regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Only when full wheat maturity is actually observed.",
+          "actual_crop_maturity_not_observed"
+        ],
+        "fact_id": "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH",
+          "POSTHARVEST_WHEAT_HARVEST_AND_THRESH"
+        ],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "pdf_page_25"
+        ],
+        "text": "lane=harvest_readiness; source=PAU_RABI_2025_26; text=Harvest and thresh wheat as soon as it is fully ripe to avoid shattering losses."
+      },
+      {
+        "conditions": [
+          "Only after a lot-specific moisture measurement; the benchmark does not contain one.",
+          "harvested_lot_moisture_not_observed"
+        ],
+        "fact_id": "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE",
+          "POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE"
+        ],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "pdf_page_25"
+        ],
+        "text": "lane=dry_storage; source=PAU_RABI_2025_26; text=Dry grain before storage when its moisture exceeds the cited threshold."
+      }
+    ],
+    "allowed_passage_ids": [],
+    "allowed_source_document_ids": [
+      "FROZEN_SCENARIO_MANIFEST",
+      "ICAR_CRIDA_CCP",
+      "PAU_RABI_2025_26"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "disallowed_distractor_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__calendar_window",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__fertilizer_policy",
+      "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH",
+      "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE"
+    ],
+    "expected_admissible_fact_ids": [
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+    ],
+    "expected_admissible_passage_ids": [],
+    "expected_plan_or_operation_ids": [
+      "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "Which one documented regional crop-protection card should be displayed first for Wheat in Bathinda, Punjab, during the rabi decision window ending 2026-04-30? Select only that one plan card; do not select a decision trace, another lane, or post-harvest context.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "coordinator_single_primary_regional_crop_protection_policy",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_03",
+    "required_conditions": [
+      "Regional fallback only; potassium and treatment decisions retain their source conditions."
+    ],
+    "role_instruction_sha256": "8c099c7e5320410b773bd9057ec02502af44c63e74059c7029c505abd8ad2ab7",
+    "scenario_context": {
+      "crop": "wheat",
+      "decision_date": "2026-04-30",
+      "decision_window_utc": "2026-04-01T00:00:00Z/2026-04-30T23:59:59Z",
+      "district": "Bathinda",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Punjab"
+    },
+    "scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_PB_BATHINDA_WHEAT_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "bounded_llm": {
+      "agent_name": "provenance_aware_coordinator_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "1be7b7e8211418513841d63f243075a4b26168e0a4c5032dfec8b10b05fbdb8a",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "approved_plan_cards_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_primary_plan_card"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+    ],
+    "expected_passage_count": 0,
+    "expected_passage_ids": [],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 11805,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+    ],
+    "original_allowed_fact_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__calendar_window",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__fertilizer_policy",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy",
+      "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH",
+      "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE"
+    ],
+    "packaged_candidate_fact_ids": [
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__calendar_window",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__fertilizer_policy",
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy",
+      "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH",
+      "postharvest:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE"
+    ],
+    "passage_intersection_count": 0,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 108773376,
+    "prompt_sha256": "1be7b7e8211418513841d63f243075a4b26168e0a4c5032dfec8b10b05fbdb8a",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_03",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "plan:ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+    ],
+    "selected_passage_count": 0,
+    "selected_passage_ids": [],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430__protection_policy"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "approved_plan_cards_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_primary_plan_card"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

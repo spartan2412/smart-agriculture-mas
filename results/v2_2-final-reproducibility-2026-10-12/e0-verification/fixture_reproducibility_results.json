@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "all_passed": true,
+      "all_required_checks_passed": true,
+      "fixture_count": 60,
+      "fixture_suite": "conflict",
+      "normalised_policy_trace_match": true,
+      "reference_directory": "/Users/aryandhumal/Project/results/v2_2-e0-full-mas",
+      "reproduction_directory": "/private/tmp/mas-v2_2-final-repro.kep7Wp/e0-full-mas-reproduction",
+      "semantic_result_match": true
+    },
+    {
+      "all_passed": true,
+      "all_required_checks_passed": true,
+      "fixture_count": 60,
+      "fixture_suite": "provenance",
+      "normalised_policy_trace_match": true,
+      "reference_directory": "/Users/aryandhumal/Project/results/v2_2-provenance-gate-fixtures",
+      "reproduction_directory": "/private/tmp/mas-v2_2-final-repro.kep7Wp/provenance-gate-fixtures-reproduction",
+      "semantic_result_match": true
+    }
+  ]
+}

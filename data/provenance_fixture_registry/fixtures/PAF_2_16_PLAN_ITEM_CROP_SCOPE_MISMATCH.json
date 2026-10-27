@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "wheat",
+    "decision_date": "2026-04-30",
+    "district": "Patiala",
+    "scenario_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+    "season": "rabi",
+    "site_id": "PF_PB_PATIALA_WHEAT_RABI",
+    "state": "Punjab"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "a204280e103239dd474682db028ad39d5421c18438717d98d316ae22e0e8067f;6d7956c9fffd27ba5052b076f11f824d869ab6ed3c5490ffa66a2a3452a6a0dc",
+    "source_url": "https://icar-crida.res.in/CCP/PB/Patiala/1.7.pdf;https://icar-crida.res.in/CCP/PB/Patiala/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "5b9aa2e8292a2420945d0e924e703d960d3701007d701ba16725b4384d7067f3",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_16_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_crop_scope_mismatch",
+  "overlay": {
+    "base_value": "wheat",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "rice",
+    "field": "crop",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

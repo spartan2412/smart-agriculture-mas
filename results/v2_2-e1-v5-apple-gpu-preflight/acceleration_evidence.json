@@ -1,0 +1,129 @@
+{
+  "artifact_integrity": {
+    "git": {
+      "clean": "true",
+      "commit": "42a2518f47b78bc7fbaaa912053d15158cdc6902"
+    },
+    "preflight_module": "evaluation/apple_gpu_preflight.py",
+    "preflight_module_sha256": "d5219004d87c465bf2d1df8ac18eec40d39f1d8f5611c67590067daf20eb20a2",
+    "protocol_path": "evaluation/experiment_protocol.json",
+    "protocol_sha256": "9197b8b544479998378c0d7bcce4dd398b8091a440e3c1352d0c59242c0e4554"
+  },
+  "backend_evidence": {
+    "acceleration": {
+      "evidence": "Ollama /api/ps reported size_vram > 0 for the just-probed configured model.",
+      "observed_context_length": 4096,
+      "observed_gpu_resident_bytes": 4638040390,
+      "observed_model_bytes": 4638040390,
+      "observed_model_resident_in_gpu_memory": true,
+      "pytorch_mps_is_not_runtime_proof": true,
+      "requested_runtime": "Ollama Metal / Apple GPU"
+    },
+    "backend": "ollama",
+    "checks": {
+      "apple_silicon_host": true,
+      "gpu_residency_observed": true,
+      "model_loaded_in_ollama": true,
+      "probe_completed": true,
+      "protocol_blob_hash_matches": true,
+      "protocol_model_digest_prefix_matches": true,
+      "protocol_quantization_matches": true
+    },
+    "generation_parameters": {
+      "benchmark_max_selected_facts": 3,
+      "benchmark_max_tokens_per_call": 200,
+      "benchmark_temperature": 0.0,
+      "probe_keep_alive": "5m",
+      "probe_num_predict": 16,
+      "probe_temperature": 0.0
+    },
+    "model": {
+      "base_model_name": "Qwen2.5 7B",
+      "base_model_repository": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "format": "gguf",
+      "model_blob_file_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+      "model_blob_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+      "model_revision_or_commit": "not_exposed_by_local_ollama_metadata",
+      "model_revision_status": "unavailable_not_inferred",
+      "ollama_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "ollama_digest_prefix": "845dbda0ea48",
+      "parameter_count": 7615616512,
+      "parameter_size": "7.6B",
+      "quantization": "Q4_K_M",
+      "tag": "qwen2.5:7b-instruct"
+    },
+    "probe": {
+      "done": true,
+      "eval_count": 7,
+      "load_duration_ns": 795987542,
+      "prompt_eval_count": 42,
+      "response_json_valid": true,
+      "response_sha256": "c5f966c4d5f7c275b37c2aa91e9e27835665d8416e01f31ac181a098b3d0f35c",
+      "total_duration_ns": 1246025459
+    },
+    "runtime": {
+      "host": "http://localhost:11434",
+      "probe_elapsed_ms": 3854,
+      "runtime_name": "Ollama",
+      "runtime_version": "0.34.2",
+      "verification_method": "local_api_generate_then_api_ps_size_vram"
+    }
+  },
+  "configuration": {
+    "acceleration_requirement": "Ollama Metal/Apple-GPU use must be verified in the 30-scenario pilot.",
+    "backend": "ollama",
+    "benchmark_llm_enabled": true,
+    "benchmark_llm_required": false,
+    "bounded_llm_runtime": "v5.1",
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "installed_model_blob_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+    "installed_ollama_model_id_prefix": "845dbda0ea48",
+    "label": "Ollama local-model v5.1 bounded-selector evaluation",
+    "model_family": "Qwen2.5-7B-Instruct",
+    "ollama_tag": "qwen2.5:7b-instruct",
+    "population": "all_300_normal_scenarios_after_pilot",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "purpose": "Current local bounded-LLM baseline.",
+    "quantization": "Q4_K_M",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "workflow": "graph.benchmark_workflow_v5.BenchmarkMASWorkflowV5"
+  },
+  "configuration_id": "E1",
+  "evidence_schema_version": "1.0",
+  "formal_boundary": {
+    "does_not_prove_pytorch_mps_for_ollama": true,
+    "next_required_run": "Run the fixed 30-scenario MAS pilot only from a clean committed worktree.",
+    "not_an_agricultural_benchmark_run": true
+  },
+  "hardware": {
+    "apple_soc": "Apple M5",
+    "hardware_model": "Mac17,3",
+    "machine": "arm64",
+    "pytorch_mps": {
+      "reason": "Ollama uses its own Metal runtime; only Ollama runtime residency is accepted for E1/E2.",
+      "used_as_ollama_acceleration_proof": false
+    },
+    "release": "25.6.0",
+    "system": "Darwin",
+    "unified_memory_bytes": 25769803776,
+    "unified_memory_gib": 24.0
+  },
+  "pilot_set": {
+    "focused_crops": [
+      "rice",
+      "wheat",
+      "maize",
+      "chickpea",
+      "soybean",
+      "tomato"
+    ],
+    "manifest_sha256": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+    "path": "data/pilot_sets/apple_gpu_30_anchor_scenarios",
+    "pilot_identity_sha256": "412888ee276374880c439c6263ef2d7252fa0c936e14a7d6c95b7d37bcc0840e",
+    "scenario_count": 30,
+    "scenario_file_sha256": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+    "unique_site_count": 30
+  },
+  "recorded_at_utc": "2026-10-11T09:00:33Z",
+  "status": "verified"
+}

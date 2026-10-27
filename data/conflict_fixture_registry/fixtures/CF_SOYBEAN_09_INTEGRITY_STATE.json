@@ -1,0 +1,29 @@
+{
+  "base_scenario": {
+    "crop": "soybean",
+    "decision_date": "2025-10-31",
+    "district": "Jhalawar",
+    "scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+    "season": "kharif",
+    "site_id": "PF_RJ_JHALAWAR_SOYBEAN_KHARIF",
+    "state": "Rajasthan"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "direct_farm_action_issued": false,
+    "integrity_status": "blocked_before_conflict_detection_and_coordination"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "b5befcda592a60a1e3e8cc321545ee190d859cb0c6211cf1b62d2bb50541f9a2",
+  "fixture_family": "pre_resolution_integrity_rejection",
+  "fixture_id": "CF_SOYBEAN_09_INTEGRITY_STATE",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "wrong_state_blocked_before_coordination",
+  "integrity_overlay": {
+    "base_value": "Rajasthan",
+    "classification": "controlled_identity_or_hash_mutation_not_real_evidence",
+    "counterfactual_value": "counterfactual_invalid_state",
+    "field": "state"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "tomato",
+    "decision_date": "2025-12-31",
+    "district": "Krishnagiri",
+    "scenario_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+    "season": "rabi",
+    "site_id": "PF_TN_KRISHNAGIRI_TOMATO_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+    "source_location": "PDF pp. 388 and 394-395 Tamil Nadu and Puducherry Rabi tomato chapter",
+    "source_raw_sha256": "a42e4f94c9c4eaf15d3e78713a5bab6489c34e44d1a0ae414bbf51274b058853;f913a8cca24a0567beeaa109be4d249ecd03c01df14469cb7f23873210d25efc",
+    "source_url": "https://icar-crida.res.in/CCP/TN/Krishnagiri/1.7.pdf;https://icar-crida.res.in/CCP/TN/Krishnagiri/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "3f36db9732704ad11d32566cfea01adababca3321609217ba350e67b240726f3",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_27_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_season_scope_mismatch",
+  "overlay": {
+    "base_value": "rabi",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "kharif",
+    "field": "season",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

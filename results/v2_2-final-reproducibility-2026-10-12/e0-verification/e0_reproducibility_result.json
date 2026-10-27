@@ -1,0 +1,3362 @@
+{
+  "all_required_checks_passed": true,
+  "artifact_hashes_match": true,
+  "bounded_selection_match_count": null,
+  "configuration_id": "E0",
+  "expected_bounded_selection_count": null,
+  "expected_scenario_count": 300,
+  "farmer_decision_match_count": 300,
+  "oracle_check_match_count": 300,
+  "records": [
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "df8aee7e659aae0bc959c42a56536f226a87d91666b87784cb107be4e45989ab",
+      "reproduced_structural_fingerprint": "df8aee7e659aae0bc959c42a56536f226a87d91666b87784cb107be4e45989ab",
+      "scenario_id": "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3f2289abfe5fad58598cc697cbdabf1049497143291e3a18c869e12113a19301",
+      "reproduced_structural_fingerprint": "3f2289abfe5fad58598cc697cbdabf1049497143291e3a18c869e12113a19301",
+      "scenario_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "383ff0befe98364c8c01c403a267b350ed84978c5b0e1930536ab19e462b643e",
+      "reproduced_structural_fingerprint": "383ff0befe98364c8c01c403a267b350ed84978c5b0e1930536ab19e462b643e",
+      "scenario_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7589d61020c54b5d48e094ed0ec94a735290bf00cbc16dad73d250caf5df624c",
+      "reproduced_structural_fingerprint": "7589d61020c54b5d48e094ed0ec94a735290bf00cbc16dad73d250caf5df624c",
+      "scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "db904c2208e4e90acfceae97413b3cea58206d753988a4782cc5cf199cd77e13",
+      "reproduced_structural_fingerprint": "db904c2208e4e90acfceae97413b3cea58206d753988a4782cc5cf199cd77e13",
+      "scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c655550e27e12bea1f70e6d3404b1c3dc668448fa769d66002356a63e9453382",
+      "reproduced_structural_fingerprint": "c655550e27e12bea1f70e6d3404b1c3dc668448fa769d66002356a63e9453382",
+      "scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f4700c7a991d31873e09e89cfa81377349ca8a9ecb8578e2660721eebd6793f5",
+      "reproduced_structural_fingerprint": "f4700c7a991d31873e09e89cfa81377349ca8a9ecb8578e2660721eebd6793f5",
+      "scenario_id": "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f19c44f64e90953a7a83fcb2d83ad9dd11c834834ba176c99c4ec03562df76a7",
+      "reproduced_structural_fingerprint": "f19c44f64e90953a7a83fcb2d83ad9dd11c834834ba176c99c4ec03562df76a7",
+      "scenario_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a1dd789dec969959dc72839d4ed4e84bc3570d1eed3aad200b52c2653928dc4a",
+      "reproduced_structural_fingerprint": "a1dd789dec969959dc72839d4ed4e84bc3570d1eed3aad200b52c2653928dc4a",
+      "scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "750c0b446b5bbaebb814c3b4df9fc94e453dc95ca65048d3561fc3b2b77e80ef",
+      "reproduced_structural_fingerprint": "750c0b446b5bbaebb814c3b4df9fc94e453dc95ca65048d3561fc3b2b77e80ef",
+      "scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "84d77f1f7f90ba9f056f7466ff021c0567cb3b1af517ca356ca6199b8fcb9484",
+      "reproduced_structural_fingerprint": "84d77f1f7f90ba9f056f7466ff021c0567cb3b1af517ca356ca6199b8fcb9484",
+      "scenario_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "15c0fadc8d3ecc6cc588b952af552c021727214fec2927477e27ace42e136b91",
+      "reproduced_structural_fingerprint": "15c0fadc8d3ecc6cc588b952af552c021727214fec2927477e27ace42e136b91",
+      "scenario_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3ab6352a1e3c0b9b58d5b75bd01cb4140d2d191c8cdc5bcd11638fe8dcd8ed9c",
+      "reproduced_structural_fingerprint": "3ab6352a1e3c0b9b58d5b75bd01cb4140d2d191c8cdc5bcd11638fe8dcd8ed9c",
+      "scenario_id": "ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "900461a5b38d2985dc7bb88c30d2294b9902d88a106074f1f629d8de58946f3f",
+      "reproduced_structural_fingerprint": "900461a5b38d2985dc7bb88c30d2294b9902d88a106074f1f629d8de58946f3f",
+      "scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "1d23eeed3d0ca1ddbc7ad84f3bb83350f5ce12f1d279d2e2ec95aef532def3c4",
+      "reproduced_structural_fingerprint": "1d23eeed3d0ca1ddbc7ad84f3bb83350f5ce12f1d279d2e2ec95aef532def3c4",
+      "scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "861a19220b16e358da63580ffde7362d98faff63749258434bee0434a060041a",
+      "reproduced_structural_fingerprint": "861a19220b16e358da63580ffde7362d98faff63749258434bee0434a060041a",
+      "scenario_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "89c4fa4b57fbc8da0dfe94b6ea247a1ed92ede16b6f4d0b8b19c2248db937b2d",
+      "reproduced_structural_fingerprint": "89c4fa4b57fbc8da0dfe94b6ea247a1ed92ede16b6f4d0b8b19c2248db937b2d",
+      "scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "09d03a4308d74bf671286f94e6710ba9f38891e80119fba7981662a1516521a8",
+      "reproduced_structural_fingerprint": "09d03a4308d74bf671286f94e6710ba9f38891e80119fba7981662a1516521a8",
+      "scenario_id": "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3b26432feed384eafb1da61895c04e6cf8928145e24978d7c1ad627bb33b2e41",
+      "reproduced_structural_fingerprint": "3b26432feed384eafb1da61895c04e6cf8928145e24978d7c1ad627bb33b2e41",
+      "scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "1963ac01f64294505b66f9e09263388af8567a6d2ee6a9431eb6a95d7158b6be",
+      "reproduced_structural_fingerprint": "1963ac01f64294505b66f9e09263388af8567a6d2ee6a9431eb6a95d7158b6be",
+      "scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d9482d7a6e0be37ceb819767e50f99d7352bfd2dcc33372055a1c5c3c49cc80f",
+      "reproduced_structural_fingerprint": "d9482d7a6e0be37ceb819767e50f99d7352bfd2dcc33372055a1c5c3c49cc80f",
+      "scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "2b95715965565e81ee869fc53bad47b85703ff8d54f5fb77a6fe500da9a6df85",
+      "reproduced_structural_fingerprint": "2b95715965565e81ee869fc53bad47b85703ff8d54f5fb77a6fe500da9a6df85",
+      "scenario_id": "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "74cf0d25c24ff593f5993e452d6d9d012bc9cd6e2b0096e30e1772c572bdf597",
+      "reproduced_structural_fingerprint": "74cf0d25c24ff593f5993e452d6d9d012bc9cd6e2b0096e30e1772c572bdf597",
+      "scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3556a6534d76327656f51aa55e2b43641f60c9730934f3ddbce345f8319c1a92",
+      "reproduced_structural_fingerprint": "3556a6534d76327656f51aa55e2b43641f60c9730934f3ddbce345f8319c1a92",
+      "scenario_id": "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "27c6841adf5fdfef3e1812297367d5f6dcf6c821716224e9db887c5fff39b3a5",
+      "reproduced_structural_fingerprint": "27c6841adf5fdfef3e1812297367d5f6dcf6c821716224e9db887c5fff39b3a5",
+      "scenario_id": "ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "575a1c2e04aa28cbeac0f4c78a8b29be96ee5216f67ed365262751091276d7f5",
+      "reproduced_structural_fingerprint": "575a1c2e04aa28cbeac0f4c78a8b29be96ee5216f67ed365262751091276d7f5",
+      "scenario_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9b30359f9de85e55ad59c2f4ea1ea176415dfb221a4eaef652d5fec378294773",
+      "reproduced_structural_fingerprint": "9b30359f9de85e55ad59c2f4ea1ea176415dfb221a4eaef652d5fec378294773",
+      "scenario_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "963f29e0a6a2b331fc231b133950557c7a9ea1d08c9c8b4f62942882ab78c795",
+      "reproduced_structural_fingerprint": "963f29e0a6a2b331fc231b133950557c7a9ea1d08c9c8b4f62942882ab78c795",
+      "scenario_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d73c1859e5ca8027fc541a80348e1652b9f782a93ebed758d4db7f0ea48896cd",
+      "reproduced_structural_fingerprint": "d73c1859e5ca8027fc541a80348e1652b9f782a93ebed758d4db7f0ea48896cd",
+      "scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "26c4109b7d4a701a74786ee38fac5ec6d772fa966b6fdd87e8f81ec61cd67319",
+      "reproduced_structural_fingerprint": "26c4109b7d4a701a74786ee38fac5ec6d772fa966b6fdd87e8f81ec61cd67319",
+      "scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "55d3cc95d7fdc2b382709ff94c551ef2d7b8d1ec2e415c6952bf11040131debb",
+      "reproduced_structural_fingerprint": "55d3cc95d7fdc2b382709ff94c551ef2d7b8d1ec2e415c6952bf11040131debb",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "36a5f84f5220e802fe6033976f0b53803f97b7a48e51e80c7aaf9d1021bf5580",
+      "reproduced_structural_fingerprint": "36a5f84f5220e802fe6033976f0b53803f97b7a48e51e80c7aaf9d1021bf5580",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "2a3c0405290494cd79701e2f86a7ba2ec8f255463f382397601389982be458ac",
+      "reproduced_structural_fingerprint": "2a3c0405290494cd79701e2f86a7ba2ec8f255463f382397601389982be458ac",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "fd807deb0fcebd1b22c6de643fd01698ad90976a79e042d767076b9c3e2828b2",
+      "reproduced_structural_fingerprint": "fd807deb0fcebd1b22c6de643fd01698ad90976a79e042d767076b9c3e2828b2",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7690d4a75eac5aab9c355f4a5b490a2a3e8abb80e1bfbaca96fd6714d51c4cd4",
+      "reproduced_structural_fingerprint": "7690d4a75eac5aab9c355f4a5b490a2a3e8abb80e1bfbaca96fd6714d51c4cd4",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f46668e28a99bef74e02a012d4284dd01a654b7c4b281c17404de2bddde9cb79",
+      "reproduced_structural_fingerprint": "f46668e28a99bef74e02a012d4284dd01a654b7c4b281c17404de2bddde9cb79",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0d47267cd45fb7d192b65423e9acf3352a1aabb43b4a1b7413c6730346241f1c",
+      "reproduced_structural_fingerprint": "0d47267cd45fb7d192b65423e9acf3352a1aabb43b4a1b7413c6730346241f1c",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "4583e6448c8ca4d85ba63cf3d60102a38437a2d4f8584d086834154eb88b43fb",
+      "reproduced_structural_fingerprint": "4583e6448c8ca4d85ba63cf3d60102a38437a2d4f8584d086834154eb88b43fb",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f7b4925f206f8b00284026fbc8ca29fc44d3924fa8e357c1e0f52f8c24e176e1",
+      "reproduced_structural_fingerprint": "f7b4925f206f8b00284026fbc8ca29fc44d3924fa8e357c1e0f52f8c24e176e1",
+      "scenario_id": "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3d7be28d5ad09f77bb249520ab4af514aea68e65437ab5e56799d9bcf40959b3",
+      "reproduced_structural_fingerprint": "3d7be28d5ad09f77bb249520ab4af514aea68e65437ab5e56799d9bcf40959b3",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "27c59ab9018aa42ff082abc94449cae5f5e82d3e0413734b6c820353f2b71ddb",
+      "reproduced_structural_fingerprint": "27c59ab9018aa42ff082abc94449cae5f5e82d3e0413734b6c820353f2b71ddb",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "da598711475f04af241bfa20bfc6528fce102f201c521c31468ab8696a649c26",
+      "reproduced_structural_fingerprint": "da598711475f04af241bfa20bfc6528fce102f201c521c31468ab8696a649c26",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d42c2c23cc5987fd0a0135f91846c29c38d9f444f52b313a5a734b824d59b8b2",
+      "reproduced_structural_fingerprint": "d42c2c23cc5987fd0a0135f91846c29c38d9f444f52b313a5a734b824d59b8b2",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "20d0799b188ae9762333b9fcedcdd4cc7a59683fb1c36ca5b5740317ec5217ed",
+      "reproduced_structural_fingerprint": "20d0799b188ae9762333b9fcedcdd4cc7a59683fb1c36ca5b5740317ec5217ed",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "4b5d1340c54085610b9ad47f09120303dbab64986f28e84ffcef056db1140765",
+      "reproduced_structural_fingerprint": "4b5d1340c54085610b9ad47f09120303dbab64986f28e84ffcef056db1140765",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "527f8326e8c77c7e350fe34be9c11a126cb702b091f9bf362dc45863cedac12f",
+      "reproduced_structural_fingerprint": "527f8326e8c77c7e350fe34be9c11a126cb702b091f9bf362dc45863cedac12f",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f362119b6290c0914acc71597a801e2951c228078a181fffe0db98842cc1a3a5",
+      "reproduced_structural_fingerprint": "f362119b6290c0914acc71597a801e2951c228078a181fffe0db98842cc1a3a5",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "af1676e07d34e955d1093917520ab5dbfc58f88b311b37c316805f6328927632",
+      "reproduced_structural_fingerprint": "af1676e07d34e955d1093917520ab5dbfc58f88b311b37c316805f6328927632",
+      "scenario_id": "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "03c806215bb8f9590ffbc92fe26fad7bcd6bb389ba2f40ae4b53e47cc32bf2a0",
+      "reproduced_structural_fingerprint": "03c806215bb8f9590ffbc92fe26fad7bcd6bb389ba2f40ae4b53e47cc32bf2a0",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a2fdf74e73b6b86df782d670d3a21239786545e9929ba1c0b809c2ac192663eb",
+      "reproduced_structural_fingerprint": "a2fdf74e73b6b86df782d670d3a21239786545e9929ba1c0b809c2ac192663eb",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "35c3f225fd76bcbd1baf4b0b5432cb73b9a718fcccd64bb4cbed469f163bc27f",
+      "reproduced_structural_fingerprint": "35c3f225fd76bcbd1baf4b0b5432cb73b9a718fcccd64bb4cbed469f163bc27f",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "6ce2a7028a2e1ac9fe39a13ec81ea88b9069eb60ee76eea97d14af3adfc9f035",
+      "reproduced_structural_fingerprint": "6ce2a7028a2e1ac9fe39a13ec81ea88b9069eb60ee76eea97d14af3adfc9f035",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "2f13cea47c5cadbb2a4eb769a96d542a59c4786ac07dfbd3278a2824d33926b9",
+      "reproduced_structural_fingerprint": "2f13cea47c5cadbb2a4eb769a96d542a59c4786ac07dfbd3278a2824d33926b9",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "41a286458577b10a03f0337bb1d12cc76bc7f2e849a11790fb85280d30932304",
+      "reproduced_structural_fingerprint": "41a286458577b10a03f0337bb1d12cc76bc7f2e849a11790fb85280d30932304",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "08d686fee321caf1ca1e9dd452c108c615b12e6a023aa099f35aae3f17379063",
+      "reproduced_structural_fingerprint": "08d686fee321caf1ca1e9dd452c108c615b12e6a023aa099f35aae3f17379063",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "55a39f560a2d8534afe5cccf6e009600ac15e790c8e6572f03dbffde76d0124b",
+      "reproduced_structural_fingerprint": "55a39f560a2d8534afe5cccf6e009600ac15e790c8e6572f03dbffde76d0124b",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3e614b92d27f9c2365067f30545d2add8557c3ca8c0f330844ee3516828082ae",
+      "reproduced_structural_fingerprint": "3e614b92d27f9c2365067f30545d2add8557c3ca8c0f330844ee3516828082ae",
+      "scenario_id": "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "1df21af0476b3163a36a5a1110683ed7d106002d959a0aa17596052645e511ba",
+      "reproduced_structural_fingerprint": "1df21af0476b3163a36a5a1110683ed7d106002d959a0aa17596052645e511ba",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "43ac2e4b5c9a9f1620659603dd96eeaacc2ee92c7243510e96d314d6fffc497e",
+      "reproduced_structural_fingerprint": "43ac2e4b5c9a9f1620659603dd96eeaacc2ee92c7243510e96d314d6fffc497e",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "31da9bf8e71eac0c6d3af6c6aa8334ef5f46313d91155fd9a1992a1a5f28b104",
+      "reproduced_structural_fingerprint": "31da9bf8e71eac0c6d3af6c6aa8334ef5f46313d91155fd9a1992a1a5f28b104",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "653f3c276a3b1423d22ed813e0ed9a8c42ddf768d6c1ebdf852af7779482bb59",
+      "reproduced_structural_fingerprint": "653f3c276a3b1423d22ed813e0ed9a8c42ddf768d6c1ebdf852af7779482bb59",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9a393504ea4cabcf8aba430083999840163f1a780bfe75acb7356e97c1898ba2",
+      "reproduced_structural_fingerprint": "9a393504ea4cabcf8aba430083999840163f1a780bfe75acb7356e97c1898ba2",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0673aa9797960a7cfea9c44bc748ac7527ec999aea6f7aa92fc5a8aa6da7a467",
+      "reproduced_structural_fingerprint": "0673aa9797960a7cfea9c44bc748ac7527ec999aea6f7aa92fc5a8aa6da7a467",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3c98a3d757c68f561551aa1c1e3da7e4217119ff82d31af21f8eb903862d154b",
+      "reproduced_structural_fingerprint": "3c98a3d757c68f561551aa1c1e3da7e4217119ff82d31af21f8eb903862d154b",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0ff9a18d375776f1ef239ddb88b49d1cd6decf23646857c34566e7e9a14753d2",
+      "reproduced_structural_fingerprint": "0ff9a18d375776f1ef239ddb88b49d1cd6decf23646857c34566e7e9a14753d2",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0aa62b129b8bd74617333d8fe751603ee858f91fb584bd26cefb28a680777a43",
+      "reproduced_structural_fingerprint": "0aa62b129b8bd74617333d8fe751603ee858f91fb584bd26cefb28a680777a43",
+      "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "81daf63c21e4220be916a2d8c3d7bee51df862148b445cae7000bf305abad6d3",
+      "reproduced_structural_fingerprint": "81daf63c21e4220be916a2d8c3d7bee51df862148b445cae7000bf305abad6d3",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9d2f6ad279110a63933c77bd138e19c6b0d06d62e383e06b9b69e8beca5b04f9",
+      "reproduced_structural_fingerprint": "9d2f6ad279110a63933c77bd138e19c6b0d06d62e383e06b9b69e8beca5b04f9",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3ca4cf82fb91fc777f2e7373b0440d65e10d87d7b2a8930639750c9b93048d84",
+      "reproduced_structural_fingerprint": "3ca4cf82fb91fc777f2e7373b0440d65e10d87d7b2a8930639750c9b93048d84",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "5ede3f8aa9e1e96deda62bcae9e06df798dc14989c8b44e1a189bd367a1dad4a",
+      "reproduced_structural_fingerprint": "5ede3f8aa9e1e96deda62bcae9e06df798dc14989c8b44e1a189bd367a1dad4a",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a910ef36ef60624138a149c1327e6b0cbe6ceeae5a4507d6c28850181251b226",
+      "reproduced_structural_fingerprint": "a910ef36ef60624138a149c1327e6b0cbe6ceeae5a4507d6c28850181251b226",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c332735b4b3ee3f3832ec3ea2f1dc5f5c1a1f95df25e7cc3ecd89a575d99d971",
+      "reproduced_structural_fingerprint": "c332735b4b3ee3f3832ec3ea2f1dc5f5c1a1f95df25e7cc3ecd89a575d99d971",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "93dfd93b9554f7805c3ca7be5ccc5c2347215c6e73b83b543a47010a0ee6ab1b",
+      "reproduced_structural_fingerprint": "93dfd93b9554f7805c3ca7be5ccc5c2347215c6e73b83b543a47010a0ee6ab1b",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "bb5bd1e43e04a4b9e5345cf56bdabacabb05360f3615920d71f05806f97c0a46",
+      "reproduced_structural_fingerprint": "bb5bd1e43e04a4b9e5345cf56bdabacabb05360f3615920d71f05806f97c0a46",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d43f9811c8135c2c215a1eaf8ef29b4d3f4f35f6b1505e132cc015a67e323939",
+      "reproduced_structural_fingerprint": "d43f9811c8135c2c215a1eaf8ef29b4d3f4f35f6b1505e132cc015a67e323939",
+      "scenario_id": "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "647550aeedfd9cb3817ac102d7b3f847063529c03921e2c010aea27f86447990",
+      "reproduced_structural_fingerprint": "647550aeedfd9cb3817ac102d7b3f847063529c03921e2c010aea27f86447990",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20211031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f3520cc0f584597e7ea5a2c6e618d556db401087799eb1686d9b1739a23f6860",
+      "reproduced_structural_fingerprint": "f3520cc0f584597e7ea5a2c6e618d556db401087799eb1686d9b1739a23f6860",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20220630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7f27e54aa1f501bc8d154dea0142474e97c69dadfbc9ad26bdc3f559ca2c51c3",
+      "reproduced_structural_fingerprint": "7f27e54aa1f501bc8d154dea0142474e97c69dadfbc9ad26bdc3f559ca2c51c3",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0a72cbf4ab21b6037129d201a7958fb41557878a1a096c5b3b9d117e70d7b9c4",
+      "reproduced_structural_fingerprint": "0a72cbf4ab21b6037129d201a7958fb41557878a1a096c5b3b9d117e70d7b9c4",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20230630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "bd836d80c60bebad3c99d38314f9268ffdee40db7e54e8d66466a6e0adc04df8",
+      "reproduced_structural_fingerprint": "bd836d80c60bebad3c99d38314f9268ffdee40db7e54e8d66466a6e0adc04df8",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20230930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "6785a20ea979e52fae2cdfae9c2c23cce45ee2014783dbfe0cd4e1e5520f11a7",
+      "reproduced_structural_fingerprint": "6785a20ea979e52fae2cdfae9c2c23cce45ee2014783dbfe0cd4e1e5520f11a7",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "bab4aa071189dcfa595809f0d133b8d82c4b98f24678139863b34ddbbead19fd",
+      "reproduced_structural_fingerprint": "bab4aa071189dcfa595809f0d133b8d82c4b98f24678139863b34ddbbead19fd",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "6649c1cf09e664fec5cf0fba64d1c8acff0617c4c172f9e022e8941487169b68",
+      "reproduced_structural_fingerprint": "6649c1cf09e664fec5cf0fba64d1c8acff0617c4c172f9e022e8941487169b68",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20250630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "15cf4ba5a9724aad214fc923dff290aaef665ddadcbd314e796c21bc1d626285",
+      "reproduced_structural_fingerprint": "15cf4ba5a9724aad214fc923dff290aaef665ddadcbd314e796c21bc1d626285",
+      "scenario_id": "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20250831",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "15f9c4da5db388610ac75e545ee859ab30a1e62a4f07eb3db29b4d13aabfb8cc",
+      "reproduced_structural_fingerprint": "15f9c4da5db388610ac75e545ee859ab30a1e62a4f07eb3db29b4d13aabfb8cc",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20220630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ddb443b99bbc3c2e9aa7b4548db65ebdf9ba6d06ba4240a7ff9eb5b844a44303",
+      "reproduced_structural_fingerprint": "ddb443b99bbc3c2e9aa7b4548db65ebdf9ba6d06ba4240a7ff9eb5b844a44303",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20220930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "2094d3c5d42ef6670dc0b72382c3cc9f0e409fe2d8e112938a8a6d73d5dcb220",
+      "reproduced_structural_fingerprint": "2094d3c5d42ef6670dc0b72382c3cc9f0e409fe2d8e112938a8a6d73d5dcb220",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "42192685f8dc6064512ab72ead14586a777772cfd5f0c2c5df93929475190432",
+      "reproduced_structural_fingerprint": "42192685f8dc6064512ab72ead14586a777772cfd5f0c2c5df93929475190432",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20230630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0244b079e661d00ef7796c00f7f4ab67e663b48d8ab9401a30968647fb2e9ff1",
+      "reproduced_structural_fingerprint": "0244b079e661d00ef7796c00f7f4ab67e663b48d8ab9401a30968647fb2e9ff1",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20230930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b5bb127467ff1ef237bc091f49f63601e81743cb4d6ff2020e9e68d9b20b8d26",
+      "reproduced_structural_fingerprint": "b5bb127467ff1ef237bc091f49f63601e81743cb4d6ff2020e9e68d9b20b8d26",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "755ecc146b1711c37c3d5824a5c46ba111d591e5f7670ba7575b5e571e710297",
+      "reproduced_structural_fingerprint": "755ecc146b1711c37c3d5824a5c46ba111d591e5f7670ba7575b5e571e710297",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20240630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "1c61fb05a2b63096eef920548623da3243f2de256d07a6f757b445be5ece4cef",
+      "reproduced_structural_fingerprint": "1c61fb05a2b63096eef920548623da3243f2de256d07a6f757b445be5ece4cef",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "880cb3523a174239f3f8c11e92cfcd3caadcbf3506fc8a9ab0cf28ae90455958",
+      "reproduced_structural_fingerprint": "880cb3523a174239f3f8c11e92cfcd3caadcbf3506fc8a9ab0cf28ae90455958",
+      "scenario_id": "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20250630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a19a7d80e772635efb3cf97d4d4351a2cf9e324a79185f1f9d51cbb28f1c2b9b",
+      "reproduced_structural_fingerprint": "a19a7d80e772635efb3cf97d4d4351a2cf9e324a79185f1f9d51cbb28f1c2b9b",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20220630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "04c00951d1ea07e21e308955c42aed11461ac26a3b75a550d011e975a9b84f1d",
+      "reproduced_structural_fingerprint": "04c00951d1ea07e21e308955c42aed11461ac26a3b75a550d011e975a9b84f1d",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20220930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "e920eb23e38ca6922e14cd3c6af41239258bc88c199d5c3582750313bd2b302c",
+      "reproduced_structural_fingerprint": "e920eb23e38ca6922e14cd3c6af41239258bc88c199d5c3582750313bd2b302c",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3a881dded4449c64f29d41997a7c92a36d77618c8c1b42b2ea9941179c9390b5",
+      "reproduced_structural_fingerprint": "3a881dded4449c64f29d41997a7c92a36d77618c8c1b42b2ea9941179c9390b5",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20230630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3318def4ca70805e7218f605aff652c39850648b7cdd298e144a6e1917aff1b5",
+      "reproduced_structural_fingerprint": "3318def4ca70805e7218f605aff652c39850648b7cdd298e144a6e1917aff1b5",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20230930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "4d8e81479ff1a82b11be3f4e6251bfa1cece1911fce60d3da1c8f87ed155fc1f",
+      "reproduced_structural_fingerprint": "4d8e81479ff1a82b11be3f4e6251bfa1cece1911fce60d3da1c8f87ed155fc1f",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ba64ff94aaba9488240707595259a9c3dc5dba33857ee276505db47e16496133",
+      "reproduced_structural_fingerprint": "ba64ff94aaba9488240707595259a9c3dc5dba33857ee276505db47e16496133",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20240630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7133547c3c522b76a02abfdfb08dad6e74aac2c8cc429aaaf34a3452ada72b09",
+      "reproduced_structural_fingerprint": "7133547c3c522b76a02abfdfb08dad6e74aac2c8cc429aaaf34a3452ada72b09",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "db75201c559846e2e4b901421134391077c92ed72a7e9a967e1cca04d859989f",
+      "reproduced_structural_fingerprint": "db75201c559846e2e4b901421134391077c92ed72a7e9a967e1cca04d859989f",
+      "scenario_id": "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20250630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ad94b497aa951e409c4a4912fbde96bc94a4c87fb32541aa1db462bee412b8e5",
+      "reproduced_structural_fingerprint": "ad94b497aa951e409c4a4912fbde96bc94a4c87fb32541aa1db462bee412b8e5",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20211031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b0e750c458a5b3794fcfc44158263d3a378603d8cbd24b72315b59c58341c688",
+      "reproduced_structural_fingerprint": "b0e750c458a5b3794fcfc44158263d3a378603d8cbd24b72315b59c58341c688",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20211130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "bf23c48801080706f935bb124c75b493a6a4c48f9a06162a3ad880260d0ae60d",
+      "reproduced_structural_fingerprint": "bf23c48801080706f935bb124c75b493a6a4c48f9a06162a3ad880260d0ae60d",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "1fd777a278e60fd4390e3ed61a260dbe35e652cb5108cbd1b5301c0736842ee9",
+      "reproduced_structural_fingerprint": "1fd777a278e60fd4390e3ed61a260dbe35e652cb5108cbd1b5301c0736842ee9",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20221130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "cb7a53e8d1c0794848cada720baa566228ef34850e5b43f0c97eb6bad0d2d68e",
+      "reproduced_structural_fingerprint": "cb7a53e8d1c0794848cada720baa566228ef34850e5b43f0c97eb6bad0d2d68e",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "1a33015a5d5ce44c269bde9c0eeefb1ab1b002db9e0d65b5231003a4eff21793",
+      "reproduced_structural_fingerprint": "1a33015a5d5ce44c269bde9c0eeefb1ab1b002db9e0d65b5231003a4eff21793",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20231130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "07f0fae259b364503a01cbe06abf3ccda5a2669923a0a35444420584416aad92",
+      "reproduced_structural_fingerprint": "07f0fae259b364503a01cbe06abf3ccda5a2669923a0a35444420584416aad92",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9ef26157591f3559fe028af8319df7395487f88c4c16051ff69a0f217df745c9",
+      "reproduced_structural_fingerprint": "9ef26157591f3559fe028af8319df7395487f88c4c16051ff69a0f217df745c9",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ac4065c15587a40f6747b5c35aa23f85575b0095d2bdecea43581d1883f8a024",
+      "reproduced_structural_fingerprint": "ac4065c15587a40f6747b5c35aa23f85575b0095d2bdecea43581d1883f8a024",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d83b6f66e165dffc05cf5f16cb611125d065fea8d930da4b4c8f815ad3f6de6b",
+      "reproduced_structural_fingerprint": "d83b6f66e165dffc05cf5f16cb611125d065fea8d930da4b4c8f815ad3f6de6b",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20180430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7a083be362f4c20b055852bbe7cf8aae697b78b1200ec4806b8990f0624b5a87",
+      "reproduced_structural_fingerprint": "7a083be362f4c20b055852bbe7cf8aae697b78b1200ec4806b8990f0624b5a87",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20190430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "75f322a722d28fc744bee4f90a2782f2b6865060003f909a20ee7aeec9470689",
+      "reproduced_structural_fingerprint": "75f322a722d28fc744bee4f90a2782f2b6865060003f909a20ee7aeec9470689",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20191130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ef56d5f1316b85a1adba558073bc2670973e40df86518664e2a91a34d04429a6",
+      "reproduced_structural_fingerprint": "ef56d5f1316b85a1adba558073bc2670973e40df86518664e2a91a34d04429a6",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20200430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f1bea276bfd71a82d736e809c8f098d870b4aad7af8123b4fe22d2d90e533565",
+      "reproduced_structural_fingerprint": "f1bea276bfd71a82d736e809c8f098d870b4aad7af8123b4fe22d2d90e533565",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20210430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "191e161e0c44a76d3dd253eb30742c64024c9f29ebd5ad166a9290d47f157b74",
+      "reproduced_structural_fingerprint": "191e161e0c44a76d3dd253eb30742c64024c9f29ebd5ad166a9290d47f157b74",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20220430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3e499c199ff119da361e09d8e42fea7c7227cafc496d4b21456567256ed2b6d3",
+      "reproduced_structural_fingerprint": "3e499c199ff119da361e09d8e42fea7c7227cafc496d4b21456567256ed2b6d3",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20230430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "701ea50dca8c49eb185d39ba205e716ef9770e09b86ddd4f92747ad36affec61",
+      "reproduced_structural_fingerprint": "701ea50dca8c49eb185d39ba205e716ef9770e09b86ddd4f92747ad36affec61",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "de3e9c13223a591c19905189346db7c066e51e7429ee3b9fccc716c3e2c05cbb",
+      "reproduced_structural_fingerprint": "de3e9c13223a591c19905189346db7c066e51e7429ee3b9fccc716c3e2c05cbb",
+      "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20250430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "110c54c33a649f15436714faf1aafcc085cc4d48f9ee2b721d759dbfb772db0b",
+      "reproduced_structural_fingerprint": "110c54c33a649f15436714faf1aafcc085cc4d48f9ee2b721d759dbfb772db0b",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20211130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "e165d3987d5c09e3e992df8412843a4994ad219b349c50a830f8bea6384ad65f",
+      "reproduced_structural_fingerprint": "e165d3987d5c09e3e992df8412843a4994ad219b349c50a830f8bea6384ad65f",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "95e3b67e657db54c33cb1241bcfc244213686ffc0e5ab54b635d1bd58bc369c7",
+      "reproduced_structural_fingerprint": "95e3b67e657db54c33cb1241bcfc244213686ffc0e5ab54b635d1bd58bc369c7",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20221130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "8629935ee1904746697c647e7ca6bdc13253e5ab10ea59215e042afa84536e77",
+      "reproduced_structural_fingerprint": "8629935ee1904746697c647e7ca6bdc13253e5ab10ea59215e042afa84536e77",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b5463c804d2d47f4af74dc8221e39be038bea59de44122437e0836449d2384b2",
+      "reproduced_structural_fingerprint": "b5463c804d2d47f4af74dc8221e39be038bea59de44122437e0836449d2384b2",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20231130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3303a983c226623021f1673f3ca56245a7392a254d1068af51554e5a7ac2ee5d",
+      "reproduced_structural_fingerprint": "3303a983c226623021f1673f3ca56245a7392a254d1068af51554e5a7ac2ee5d",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "5a7ddc409fd307f5fb888c7164df9cb2891737a5b893209e88e8ede3c769ac8c",
+      "reproduced_structural_fingerprint": "5a7ddc409fd307f5fb888c7164df9cb2891737a5b893209e88e8ede3c769ac8c",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20241130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a948bf2f401a8297311846cb40979fa5bbef5eecdc3ab21e6230193d8f7151b6",
+      "reproduced_structural_fingerprint": "a948bf2f401a8297311846cb40979fa5bbef5eecdc3ab21e6230193d8f7151b6",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20250930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "5baf0fd51afd3b17d85e8474cde16e855bb00c3e9e4f82f4c47dddc2ef69b7b0",
+      "reproduced_structural_fingerprint": "5baf0fd51afd3b17d85e8474cde16e855bb00c3e9e4f82f4c47dddc2ef69b7b0",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "15194d13d45fedeab861b5f629c19984aa8eb85a5faaa52f9b259773b5f4d948",
+      "reproduced_structural_fingerprint": "15194d13d45fedeab861b5f629c19984aa8eb85a5faaa52f9b259773b5f4d948",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20190131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "252bf9eb204da43d10f370872ed194cc74dc3bc68c3396ec4efcdbbecdeb06b6",
+      "reproduced_structural_fingerprint": "252bf9eb204da43d10f370872ed194cc74dc3bc68c3396ec4efcdbbecdeb06b6",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20190228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "5c153c4f909771b93f01b3fc67c2b459654b750c1d2e1768ed1d3ec54116d817",
+      "reproduced_structural_fingerprint": "5c153c4f909771b93f01b3fc67c2b459654b750c1d2e1768ed1d3ec54116d817",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20190430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c98cd658d670d30197edc29e61488abc076c43e97c1d75fecdb12b4ceb8651a4",
+      "reproduced_structural_fingerprint": "c98cd658d670d30197edc29e61488abc076c43e97c1d75fecdb12b4ceb8651a4",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20200430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0f17cc2a891b0493e29ab970babbd8297ee6ef7e08f190e514cd4f03f31f2b14",
+      "reproduced_structural_fingerprint": "0f17cc2a891b0493e29ab970babbd8297ee6ef7e08f190e514cd4f03f31f2b14",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20210430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b692ceaab8895c204d74afccb1a9b30360be94a0d419b4f059321111c1e811d2",
+      "reproduced_structural_fingerprint": "b692ceaab8895c204d74afccb1a9b30360be94a0d419b4f059321111c1e811d2",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20220430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b454a5dd9b3e2898138b2323dfa95e582b9669dc7142ff6dac63005caa5da222",
+      "reproduced_structural_fingerprint": "b454a5dd9b3e2898138b2323dfa95e582b9669dc7142ff6dac63005caa5da222",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20230430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "097a36bb8ebde23bee9064592062f9de25bb7388b3b304b6d1ba437ecb8a25a9",
+      "reproduced_structural_fingerprint": "097a36bb8ebde23bee9064592062f9de25bb7388b3b304b6d1ba437ecb8a25a9",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20240430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "397538499770248b249d812b4f1bd86067cca32a7697c8ecfd13d577bb172798",
+      "reproduced_structural_fingerprint": "397538499770248b249d812b4f1bd86067cca32a7697c8ecfd13d577bb172798",
+      "scenario_id": "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20250430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3f750b3ba54ebedafca09e18af8239eac5c986b1b510182b84b01d62afa2b819",
+      "reproduced_structural_fingerprint": "3f750b3ba54ebedafca09e18af8239eac5c986b1b510182b84b01d62afa2b819",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20211130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c0960261c7b68c080486eb9fe7d8168480cf8dbecea0fd65da394f740ef908ca",
+      "reproduced_structural_fingerprint": "c0960261c7b68c080486eb9fe7d8168480cf8dbecea0fd65da394f740ef908ca",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9d88fc68e8612807bc257a458ca10fd382d235fcd3abd8d65af53f80a238da0a",
+      "reproduced_structural_fingerprint": "9d88fc68e8612807bc257a458ca10fd382d235fcd3abd8d65af53f80a238da0a",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20221130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f6ef8a8dc4bf11954ff88faf93370d49fcd5c332e0dea99accceab7bfa44e616",
+      "reproduced_structural_fingerprint": "f6ef8a8dc4bf11954ff88faf93370d49fcd5c332e0dea99accceab7bfa44e616",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "cb1b99cd906b6b786eec73ff9ab376eae69326f2303c7d0f79bd39783a269edf",
+      "reproduced_structural_fingerprint": "cb1b99cd906b6b786eec73ff9ab376eae69326f2303c7d0f79bd39783a269edf",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20231130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d3375d60156c596891d846d707bcafbf2ac819b9cef261e4fdca31ddb8f9a1bd",
+      "reproduced_structural_fingerprint": "d3375d60156c596891d846d707bcafbf2ac819b9cef261e4fdca31ddb8f9a1bd",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ac0bd940f1e6d362c325623a8a2c890cd4ebc862a8433da98a2e251e2f0f8b3b",
+      "reproduced_structural_fingerprint": "ac0bd940f1e6d362c325623a8a2c890cd4ebc862a8433da98a2e251e2f0f8b3b",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20241130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "6d074e020cbc813cc7e4d453ba909f17c7e57c549a99a91e45cee26d59575525",
+      "reproduced_structural_fingerprint": "6d074e020cbc813cc7e4d453ba909f17c7e57c549a99a91e45cee26d59575525",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20250930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ec356f182950cef0bc31f52aab24e5ad356e7ca1d8c336899f4bb10c4f437ddb",
+      "reproduced_structural_fingerprint": "ec356f182950cef0bc31f52aab24e5ad356e7ca1d8c336899f4bb10c4f437ddb",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9da966fca04edc1da36fec34fa90e6bafebf16e884d193adaeb60f69c64cd8f3",
+      "reproduced_structural_fingerprint": "9da966fca04edc1da36fec34fa90e6bafebf16e884d193adaeb60f69c64cd8f3",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20170430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "cc569f78c2b51b43b5a7a5326b8223c5b56879a23adc06df4361dd82cedd4a43",
+      "reproduced_structural_fingerprint": "cc569f78c2b51b43b5a7a5326b8223c5b56879a23adc06df4361dd82cedd4a43",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20180430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d6c6ece5cc2db8810c9bec74f12c824f901f6755be7301d9bfea2e15786db5e7",
+      "reproduced_structural_fingerprint": "d6c6ece5cc2db8810c9bec74f12c824f901f6755be7301d9bfea2e15786db5e7",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20190430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "68ea614454a73d48171ce054094aadf7f9739830a924ec49075b1321e1e1a5de",
+      "reproduced_structural_fingerprint": "68ea614454a73d48171ce054094aadf7f9739830a924ec49075b1321e1e1a5de",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20200430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "e3bf7decdfa9a4b13cd5c881825a9cbb3c9035ede1fe023acbcdf4aca3836ce7",
+      "reproduced_structural_fingerprint": "e3bf7decdfa9a4b13cd5c881825a9cbb3c9035ede1fe023acbcdf4aca3836ce7",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20210430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f91bfd85f76c3938eb7b8697f2a6a8ca52b021efd31794b797b306201708e6c4",
+      "reproduced_structural_fingerprint": "f91bfd85f76c3938eb7b8697f2a6a8ca52b021efd31794b797b306201708e6c4",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20220430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "be49db3e00639a7a85a89d590f8cca865baaa6c7bea57d51fbe23f13993ee75d",
+      "reproduced_structural_fingerprint": "be49db3e00639a7a85a89d590f8cca865baaa6c7bea57d51fbe23f13993ee75d",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20230430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "58ac368519011f745ceb07d64125c082994a0ebb7b6cf4afc4d56f66cfb618aa",
+      "reproduced_structural_fingerprint": "58ac368519011f745ceb07d64125c082994a0ebb7b6cf4afc4d56f66cfb618aa",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20240430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "fb56b6df24a12360ebb5b199e9328bea947425c684c38c5181c67de3be4a653d",
+      "reproduced_structural_fingerprint": "fb56b6df24a12360ebb5b199e9328bea947425c684c38c5181c67de3be4a653d",
+      "scenario_id": "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20250430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "e77cde77802fbf68181a5fd36c688b68d07cc9120c757e73795737a7442d0d8b",
+      "reproduced_structural_fingerprint": "e77cde77802fbf68181a5fd36c688b68d07cc9120c757e73795737a7442d0d8b",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20211130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ea248cffdbfbecb8f86b03deda6660030a2a3a5ad96f7866648f017d6e843b68",
+      "reproduced_structural_fingerprint": "ea248cffdbfbecb8f86b03deda6660030a2a3a5ad96f7866648f017d6e843b68",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "2227fe7ee5dfa52211cf1d86ce38ca77a86811bbdc3cb31c70a33d103c3f4430",
+      "reproduced_structural_fingerprint": "2227fe7ee5dfa52211cf1d86ce38ca77a86811bbdc3cb31c70a33d103c3f4430",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20221130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f051646096d376035e2cd1657ac89426a95b39b5caeb66d2dde8f6c69ba72964",
+      "reproduced_structural_fingerprint": "f051646096d376035e2cd1657ac89426a95b39b5caeb66d2dde8f6c69ba72964",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "41beedf0f7a08d5477fbe0d966f4652abcf0091c008eafbf83545d5a44b34789",
+      "reproduced_structural_fingerprint": "41beedf0f7a08d5477fbe0d966f4652abcf0091c008eafbf83545d5a44b34789",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20231130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3c834944f5a215043e7b7e57e575e1409ab450c96c99ed0239bbea0defe1cc1d",
+      "reproduced_structural_fingerprint": "3c834944f5a215043e7b7e57e575e1409ab450c96c99ed0239bbea0defe1cc1d",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "6e17ab7f13e8d9c4d13a4fd3facc8326f63aab11de0f1d121341853f146efc1d",
+      "reproduced_structural_fingerprint": "6e17ab7f13e8d9c4d13a4fd3facc8326f63aab11de0f1d121341853f146efc1d",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20241130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "57e03a865b4f4a283ae7bcf45981a87c32e1311e5b63d0f5076b643a07370724",
+      "reproduced_structural_fingerprint": "57e03a865b4f4a283ae7bcf45981a87c32e1311e5b63d0f5076b643a07370724",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20250930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "5f7be9d9d37798cf04fb729680b8247b90074bdf21b3f212f95aef2da46acae3",
+      "reproduced_structural_fingerprint": "5f7be9d9d37798cf04fb729680b8247b90074bdf21b3f212f95aef2da46acae3",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d74535d48ac5b897f684681ce3832fcf02c58e8c83b3e7d3556ff116a626332e",
+      "reproduced_structural_fingerprint": "d74535d48ac5b897f684681ce3832fcf02c58e8c83b3e7d3556ff116a626332e",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20180430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "defba1c2652454412bd73980b11bc132b5a3e3e0573cfc3868d0ef80e209aedf",
+      "reproduced_structural_fingerprint": "defba1c2652454412bd73980b11bc132b5a3e3e0573cfc3868d0ef80e209aedf",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20190430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "2735770a6746e726192b758458aa5cb2d13feb8d0679dc79ea1bd5ffd28b8fb7",
+      "reproduced_structural_fingerprint": "2735770a6746e726192b758458aa5cb2d13feb8d0679dc79ea1bd5ffd28b8fb7",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20200430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "fa0f83759dd418b612101d6e887d5aefc967180d9bd6601cb5d1234a063599c1",
+      "reproduced_structural_fingerprint": "fa0f83759dd418b612101d6e887d5aefc967180d9bd6601cb5d1234a063599c1",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20210430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "446a21d40073268bbb858c226c1dba655eff5726240b395dc661b52da3542a1a",
+      "reproduced_structural_fingerprint": "446a21d40073268bbb858c226c1dba655eff5726240b395dc661b52da3542a1a",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20220430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "aa345c340600714d82a832af5e23531a52ba9a2a22a72c661d840a784788d266",
+      "reproduced_structural_fingerprint": "aa345c340600714d82a832af5e23531a52ba9a2a22a72c661d840a784788d266",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20230430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "25843d915727150f3a6fec3f28222e04202f869fc39d16021164206f2482cadc",
+      "reproduced_structural_fingerprint": "25843d915727150f3a6fec3f28222e04202f869fc39d16021164206f2482cadc",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20240430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "99c10a8fcaa7a384d74c958be9aedade4ca5b75d9828f444c3b71f77ce67b08c",
+      "reproduced_structural_fingerprint": "99c10a8fcaa7a384d74c958be9aedade4ca5b75d9828f444c3b71f77ce67b08c",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20250430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a0234bb7a8c43d815171c0983ea8f698dc03c49a8ca6f8314dca01c461ee0424",
+      "reproduced_structural_fingerprint": "a0234bb7a8c43d815171c0983ea8f698dc03c49a8ca6f8314dca01c461ee0424",
+      "scenario_id": "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ddc75499c8a9e88a6e10466eea676d9559ec72f5573bd3782ca879815310a2b9",
+      "reproduced_structural_fingerprint": "ddc75499c8a9e88a6e10466eea676d9559ec72f5573bd3782ca879815310a2b9",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20211130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "2f89fecbbc16b9a8307df9c2c4ee33cb3dd04fbda3dc08f26186a41dd81dbfaf",
+      "reproduced_structural_fingerprint": "2f89fecbbc16b9a8307df9c2c4ee33cb3dd04fbda3dc08f26186a41dd81dbfaf",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a458662526d899e06a13323ff0f9ae746bf547190ef586d892dd2cc373619687",
+      "reproduced_structural_fingerprint": "a458662526d899e06a13323ff0f9ae746bf547190ef586d892dd2cc373619687",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20221130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ed78cbcd6f67e09b536deb020b30685afbeeb20641f8e18889d6cbee2523c47d",
+      "reproduced_structural_fingerprint": "ed78cbcd6f67e09b536deb020b30685afbeeb20641f8e18889d6cbee2523c47d",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "14c1f9ad5a6fb91fdcbf58f4da04356ae085f915d7d5c46663fc225633f0e120",
+      "reproduced_structural_fingerprint": "14c1f9ad5a6fb91fdcbf58f4da04356ae085f915d7d5c46663fc225633f0e120",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20231130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "cc4f593aa2e3e01b974d65cb4f5fa603d093b080936d267b2965b4c37b981d84",
+      "reproduced_structural_fingerprint": "cc4f593aa2e3e01b974d65cb4f5fa603d093b080936d267b2965b4c37b981d84",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ef047e704d4c7bc5ef55c1c208fd1dca5742efd8a90a50cfba4749db72c40df2",
+      "reproduced_structural_fingerprint": "ef047e704d4c7bc5ef55c1c208fd1dca5742efd8a90a50cfba4749db72c40df2",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20241130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "66ca26ff7ac38d33137162b7ef73a8b584417e1b16b5acc2055791e23bc3f79c",
+      "reproduced_structural_fingerprint": "66ca26ff7ac38d33137162b7ef73a8b584417e1b16b5acc2055791e23bc3f79c",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20250930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7a37990cc59aa1943f433a7385f46673e2a6fb7efcdb0edbcd3c3e1a3acf27cf",
+      "reproduced_structural_fingerprint": "7a37990cc59aa1943f433a7385f46673e2a6fb7efcdb0edbcd3c3e1a3acf27cf",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "8055fdece7a7bea73313fc8b35b2b5f96043ab38a5557795c0b998dad25001ef",
+      "reproduced_structural_fingerprint": "8055fdece7a7bea73313fc8b35b2b5f96043ab38a5557795c0b998dad25001ef",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20170430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7f547f1e97ffc0342c6416f04ddc1c95ef85f1ecab76ffdef4cccf1721a213c9",
+      "reproduced_structural_fingerprint": "7f547f1e97ffc0342c6416f04ddc1c95ef85f1ecab76ffdef4cccf1721a213c9",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20180430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9e58d0a536139ec0ba868017dde922a27a4123976ac98ff377ed72f0a6f3e485",
+      "reproduced_structural_fingerprint": "9e58d0a536139ec0ba868017dde922a27a4123976ac98ff377ed72f0a6f3e485",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20190430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "786d87aac5f5dbf0b7b74f6ac6380adc3e76403bd617bb05b2dd3557286aa11a",
+      "reproduced_structural_fingerprint": "786d87aac5f5dbf0b7b74f6ac6380adc3e76403bd617bb05b2dd3557286aa11a",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20200430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c821d33ccec60dc7cb49ee860c12cc706e03a3beb0d84a1dbe0b077cec3337fb",
+      "reproduced_structural_fingerprint": "c821d33ccec60dc7cb49ee860c12cc706e03a3beb0d84a1dbe0b077cec3337fb",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20210430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "922e3a5675eddfefd0cd15b94ad4379f3929b54f079e5ffc3fd6cec85a919da5",
+      "reproduced_structural_fingerprint": "922e3a5675eddfefd0cd15b94ad4379f3929b54f079e5ffc3fd6cec85a919da5",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "fb6a4a67e811740a92221567521d0fb00223f72f810e6cb027f3d3369fe26f75",
+      "reproduced_structural_fingerprint": "fb6a4a67e811740a92221567521d0fb00223f72f810e6cb027f3d3369fe26f75",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20230430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "eff6a03f25280973231b473185e0f0734e7afbad34a7990b3d3e1e2d74209683",
+      "reproduced_structural_fingerprint": "eff6a03f25280973231b473185e0f0734e7afbad34a7990b3d3e1e2d74209683",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20240430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f00d602946192e3500681a8c31ecb98cc47fc6b09392870d52201e386612a862",
+      "reproduced_structural_fingerprint": "f00d602946192e3500681a8c31ecb98cc47fc6b09392870d52201e386612a862",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20250430",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c932ba7479144891864b6520a24a2438282859130147d2af8606dec294e95f2a",
+      "reproduced_structural_fingerprint": "c932ba7479144891864b6520a24a2438282859130147d2af8606dec294e95f2a",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "8009140075105a14d3a2dc25f7a0bbbe78567d0a67917eed8b0e0712c99ad943",
+      "reproduced_structural_fingerprint": "8009140075105a14d3a2dc25f7a0bbbe78567d0a67917eed8b0e0712c99ad943",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20230630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b0593a7413db201be948d07a4dade9bfef4f1cc39c5d46abbfff686d03cbdd5d",
+      "reproduced_structural_fingerprint": "b0593a7413db201be948d07a4dade9bfef4f1cc39c5d46abbfff686d03cbdd5d",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20230930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7d796eccf2c8192d57e66b68717ee10ca263965bce8154b1523b50bfa8173b81",
+      "reproduced_structural_fingerprint": "7d796eccf2c8192d57e66b68717ee10ca263965bce8154b1523b50bfa8173b81",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0fe6de64a39764a7055310aeade5b33b7c9ae34a24983274cb81ca749d97f786",
+      "reproduced_structural_fingerprint": "0fe6de64a39764a7055310aeade5b33b7c9ae34a24983274cb81ca749d97f786",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20240630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "e376077efae2857aa6b001d7145fe22ea4b1fd376bc0c8c7b83a7d533dc7e3f0",
+      "reproduced_structural_fingerprint": "e376077efae2857aa6b001d7145fe22ea4b1fd376bc0c8c7b83a7d533dc7e3f0",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20240930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3d5fa99444688c2c3d966c97a5fe263d7dbaa63ea11fe7780dc81c28bdbe467f",
+      "reproduced_structural_fingerprint": "3d5fa99444688c2c3d966c97a5fe263d7dbaa63ea11fe7780dc81c28bdbe467f",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "04365b4df18ce07f4872acaa8dd5631276212380dc4413e318be15d6f3c8105f",
+      "reproduced_structural_fingerprint": "04365b4df18ce07f4872acaa8dd5631276212380dc4413e318be15d6f3c8105f",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20250630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "5fccc516f2b6c420209db90a2a20e611c34be8e77d58d31087c55741f953593a",
+      "reproduced_structural_fingerprint": "5fccc516f2b6c420209db90a2a20e611c34be8e77d58d31087c55741f953593a",
+      "scenario_id": "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20250930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f365be33918ade63d1cbc1c1c00df98d2c71ade1504dd770bfbe6b3b3ace6f95",
+      "reproduced_structural_fingerprint": "f365be33918ade63d1cbc1c1c00df98d2c71ade1504dd770bfbe6b3b3ace6f95",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20220930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "fefd1c03ee68fafe1f616c82e12d684d7060382b7feb09ae667d3ac579d139d9",
+      "reproduced_structural_fingerprint": "fefd1c03ee68fafe1f616c82e12d684d7060382b7feb09ae667d3ac579d139d9",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20221031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b319ad440e5531a263f402e2c26c9612c8b31f3a6d210fd023cdffa74e2e3300",
+      "reproduced_structural_fingerprint": "b319ad440e5531a263f402e2c26c9612c8b31f3a6d210fd023cdffa74e2e3300",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20230630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d29b1f37b85ba05b5ddc36c2ce2a6fb565818340100fb2c7adfce7a1204e9cf6",
+      "reproduced_structural_fingerprint": "d29b1f37b85ba05b5ddc36c2ce2a6fb565818340100fb2c7adfce7a1204e9cf6",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20230930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f86d3b364808d049c16b6c4e10c30c558466cd2ff2833026ef021e83357b51f4",
+      "reproduced_structural_fingerprint": "f86d3b364808d049c16b6c4e10c30c558466cd2ff2833026ef021e83357b51f4",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "4087d62d061aacf61c9d3b11b79668a270ab22ee088db31db6032db33fb3472d",
+      "reproduced_structural_fingerprint": "4087d62d061aacf61c9d3b11b79668a270ab22ee088db31db6032db33fb3472d",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20240630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a7bd3c470640a168204dfa51cbe5fbc63352670e6dcd853c106fc8619cd5ad36",
+      "reproduced_structural_fingerprint": "a7bd3c470640a168204dfa51cbe5fbc63352670e6dcd853c106fc8619cd5ad36",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a79552992c9c23cae5a23c355151a1da6407adf577d913108c05b6d07fb40eab",
+      "reproduced_structural_fingerprint": "a79552992c9c23cae5a23c355151a1da6407adf577d913108c05b6d07fb40eab",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20250630",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "8334312b1f4a00107e46e120a642ee1d812e6b9662859c1dab8353f378732b18",
+      "reproduced_structural_fingerprint": "8334312b1f4a00107e46e120a642ee1d812e6b9662859c1dab8353f378732b18",
+      "scenario_id": "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20250930",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a57131312b19bf47e41573aa57308a2dba92709408b947d5d2460b0717f538db",
+      "reproduced_structural_fingerprint": "a57131312b19bf47e41573aa57308a2dba92709408b947d5d2460b0717f538db",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20221231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f38b3fbc8e9dd1d6633d56388aca4eb8a31457c4a0b2c45418c85396d17848d0",
+      "reproduced_structural_fingerprint": "f38b3fbc8e9dd1d6633d56388aca4eb8a31457c4a0b2c45418c85396d17848d0",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20230131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7fd1de4f259e0f7404a9e71cb8cd9c1b9182aa069810895f1d5a77d8b344df9f",
+      "reproduced_structural_fingerprint": "7fd1de4f259e0f7404a9e71cb8cd9c1b9182aa069810895f1d5a77d8b344df9f",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20230228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "bb5a13ba563d6e5c53ea7de4d9799b8b73a8d1be3be9db63f9c643c232caa661",
+      "reproduced_structural_fingerprint": "bb5a13ba563d6e5c53ea7de4d9799b8b73a8d1be3be9db63f9c643c232caa661",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20230331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d5ac5e7f6566a585913023a9422517513e0a99466f261a82144bfbde54ae61b9",
+      "reproduced_structural_fingerprint": "d5ac5e7f6566a585913023a9422517513e0a99466f261a82144bfbde54ae61b9",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ba667b8183042ef6c5c78f5e8f1ef5b1874ad3943d2b91761147a4b9f3d8d233",
+      "reproduced_structural_fingerprint": "ba667b8183042ef6c5c78f5e8f1ef5b1874ad3943d2b91761147a4b9f3d8d233",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "cbf7e92bbd4de3d77b237f4b2b2b5df7220ae25cd0228fbce2538d6b950f82ca",
+      "reproduced_structural_fingerprint": "cbf7e92bbd4de3d77b237f4b2b2b5df7220ae25cd0228fbce2538d6b950f82ca",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "34f6b9b7d5034eddac4684e74318e10a18880ac97ac41b0c88104f7a0ab219e9",
+      "reproduced_structural_fingerprint": "34f6b9b7d5034eddac4684e74318e10a18880ac97ac41b0c88104f7a0ab219e9",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20240229",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f907824bb133238c8e4312584b11945faf53a051bfe38b9dfc4c06f79aed4de7",
+      "reproduced_structural_fingerprint": "f907824bb133238c8e4312584b11945faf53a051bfe38b9dfc4c06f79aed4de7",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20240331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3ff2eb16a0bbe85bad4368a63b13f797eda6ef4576ebcbce689104a92e3b70b1",
+      "reproduced_structural_fingerprint": "3ff2eb16a0bbe85bad4368a63b13f797eda6ef4576ebcbce689104a92e3b70b1",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "68bc47d9d280850fc0568554a7325cb10c7b27dc10dfb3ca7927542d307cfda6",
+      "reproduced_structural_fingerprint": "68bc47d9d280850fc0568554a7325cb10c7b27dc10dfb3ca7927542d307cfda6",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0cdfd7ba250e26d844398a5ea6f89d5656e77ff4da7c218478cc7d4ff460183c",
+      "reproduced_structural_fingerprint": "0cdfd7ba250e26d844398a5ea6f89d5656e77ff4da7c218478cc7d4ff460183c",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9f6a292408fa8c26dbc6a0985489b6e53d4e828ae0fcfb0030a16fdaa15493c1",
+      "reproduced_structural_fingerprint": "9f6a292408fa8c26dbc6a0985489b6e53d4e828ae0fcfb0030a16fdaa15493c1",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a9e595d191eed02fc4b027a75da3ba655e1b80c948db263edf6e3d45aeac6242",
+      "reproduced_structural_fingerprint": "a9e595d191eed02fc4b027a75da3ba655e1b80c948db263edf6e3d45aeac6242",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "aed0b9c06c89f8c4aa1cd6710197c924c9a7e182e7c617975e5c49f388d67f91",
+      "reproduced_structural_fingerprint": "aed0b9c06c89f8c4aa1cd6710197c924c9a7e182e7c617975e5c49f388d67f91",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "304a5a8272a8b23c0b1b067c747c256bdc01b7bb1b2c3403925be18492a23dca",
+      "reproduced_structural_fingerprint": "304a5a8272a8b23c0b1b067c747c256bdc01b7bb1b2c3403925be18492a23dca",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "58e93c685dbf87d116ed63fb89b2641b6cfb296506e08dc897068240196460fc",
+      "reproduced_structural_fingerprint": "58e93c685dbf87d116ed63fb89b2641b6cfb296506e08dc897068240196460fc",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "2846d6f40ce645c12c6dc63ba91cc766935e3795cadb5a9045643a130798560f",
+      "reproduced_structural_fingerprint": "2846d6f40ce645c12c6dc63ba91cc766935e3795cadb5a9045643a130798560f",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "8be519f68a9bf46cf22bf719e20ed958e14e9fe32de4498d6d57066ebbee49a2",
+      "reproduced_structural_fingerprint": "8be519f68a9bf46cf22bf719e20ed958e14e9fe32de4498d6d57066ebbee49a2",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "10100a6469e658aafff0d7eb318ca4efb14de83d68fa1dc892e6d45e7f5d4a73",
+      "reproduced_structural_fingerprint": "10100a6469e658aafff0d7eb318ca4efb14de83d68fa1dc892e6d45e7f5d4a73",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9fea1c8e1a28bce961c5208418ae6f1747ad76f6f961650869e54d0d4a6db9ba",
+      "reproduced_structural_fingerprint": "9fea1c8e1a28bce961c5208418ae6f1747ad76f6f961650869e54d0d4a6db9ba",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f8ebe46e9d1efe2f7d2916e5ac6760f8b0211707369266d1688fb7f6854d153b",
+      "reproduced_structural_fingerprint": "f8ebe46e9d1efe2f7d2916e5ac6760f8b0211707369266d1688fb7f6854d153b",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "abf86f8650789f7f1413664a65a2a236170f692fbd8ca8c02a1a5ef390f15fe6",
+      "reproduced_structural_fingerprint": "abf86f8650789f7f1413664a65a2a236170f692fbd8ca8c02a1a5ef390f15fe6",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b4b6084d38af6d4216985d85fd0feb90fb1d117ed7e3852917a2fd227592b28e",
+      "reproduced_structural_fingerprint": "b4b6084d38af6d4216985d85fd0feb90fb1d117ed7e3852917a2fd227592b28e",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "1e6a75ee59eadfd7ff98fc7e30dc3c635a58f1cb224f878d3fe53cfac0b628aa",
+      "reproduced_structural_fingerprint": "1e6a75ee59eadfd7ff98fc7e30dc3c635a58f1cb224f878d3fe53cfac0b628aa",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d3e4cfc165fdb51150ba48bdec2ed4c0846abdc10ba2c9770453cf0855829db0",
+      "reproduced_structural_fingerprint": "d3e4cfc165fdb51150ba48bdec2ed4c0846abdc10ba2c9770453cf0855829db0",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "e61b8e2843ec09de0047e949adb89ab177c4513996b15133dd3dc67ee07d2c78",
+      "reproduced_structural_fingerprint": "e61b8e2843ec09de0047e949adb89ab177c4513996b15133dd3dc67ee07d2c78",
+      "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "66363b7578689b9d155706518a920b2c62badbdb4fe4fc032da61470398a8551",
+      "reproduced_structural_fingerprint": "66363b7578689b9d155706518a920b2c62badbdb4fe4fc032da61470398a8551",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "fc79a721c162507f6ba318477a1af7a5bf91e9fe66ddb548e2535adbf89a91e1",
+      "reproduced_structural_fingerprint": "fc79a721c162507f6ba318477a1af7a5bf91e9fe66ddb548e2535adbf89a91e1",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "7aacb0743cf7c20d3efe53e653c8a17810bdc5e61cd72871d3f5ec26960a4d1e",
+      "reproduced_structural_fingerprint": "7aacb0743cf7c20d3efe53e653c8a17810bdc5e61cd72871d3f5ec26960a4d1e",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "55d996828c1ebbe6ea40b7877615e4a05d9b690f5af8a8b493da713493568de2",
+      "reproduced_structural_fingerprint": "55d996828c1ebbe6ea40b7877615e4a05d9b690f5af8a8b493da713493568de2",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3bfb221a4dff5f47e4b3a14387cbb853a0e4357f9f5a98f6286f30963f3c0701",
+      "reproduced_structural_fingerprint": "3bfb221a4dff5f47e4b3a14387cbb853a0e4357f9f5a98f6286f30963f3c0701",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d00780f2216f16977b58a738fb6030c6bd330ca789a9287e5bfef8d2a774fa7c",
+      "reproduced_structural_fingerprint": "d00780f2216f16977b58a738fb6030c6bd330ca789a9287e5bfef8d2a774fa7c",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3da9f0d31a7ca1d72ab3d47b897adafd556575be846a5303d97859761ea1d100",
+      "reproduced_structural_fingerprint": "3da9f0d31a7ca1d72ab3d47b897adafd556575be846a5303d97859761ea1d100",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "5df5fb688c7303f92f529bef3ca7debfac45050de27376f249f8c524829e797f",
+      "reproduced_structural_fingerprint": "5df5fb688c7303f92f529bef3ca7debfac45050de27376f249f8c524829e797f",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "80a0cb39f594133a93818f6201e10a1e8c735a293bfa4c0ff0988142b0a566fd",
+      "reproduced_structural_fingerprint": "80a0cb39f594133a93818f6201e10a1e8c735a293bfa4c0ff0988142b0a566fd",
+      "scenario_id": "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c199a8dd52d351bf154e9d4d2e3809ce93f5586c50be78899bbbdeef2c6b8c75",
+      "reproduced_structural_fingerprint": "c199a8dd52d351bf154e9d4d2e3809ce93f5586c50be78899bbbdeef2c6b8c75",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "6f21b2a3982589e28120dce960ab51488645064587b026428405f1979fa08dce",
+      "reproduced_structural_fingerprint": "6f21b2a3982589e28120dce960ab51488645064587b026428405f1979fa08dce",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "5070108a6f214486e9b7b9d65270cd5eaa260cab11b25ebd9fdc260974feade0",
+      "reproduced_structural_fingerprint": "5070108a6f214486e9b7b9d65270cd5eaa260cab11b25ebd9fdc260974feade0",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "4286b92c98735ada588da18248d87352ce0a740164b055523b74262d9af443a6",
+      "reproduced_structural_fingerprint": "4286b92c98735ada588da18248d87352ce0a740164b055523b74262d9af443a6",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "70b843ab648b8f7f595ce382e9d7ed3be9e27a50b9709402d29e94b2a19161f0",
+      "reproduced_structural_fingerprint": "70b843ab648b8f7f595ce382e9d7ed3be9e27a50b9709402d29e94b2a19161f0",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3c35fb088993e05bf350a9465b7793c741982a5d7d35dd4db3f1877e05322b05",
+      "reproduced_structural_fingerprint": "3c35fb088993e05bf350a9465b7793c741982a5d7d35dd4db3f1877e05322b05",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c4f93383abde9360a99fb18f62b609a80e861493c41406759ad58bcfcd92ffc2",
+      "reproduced_structural_fingerprint": "c4f93383abde9360a99fb18f62b609a80e861493c41406759ad58bcfcd92ffc2",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "8d458c544fced46aaa504d2e6f3a2ad0d3fc6d4a4e26aad491ca444b45ca6a8a",
+      "reproduced_structural_fingerprint": "8d458c544fced46aaa504d2e6f3a2ad0d3fc6d4a4e26aad491ca444b45ca6a8a",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f9549e1ac93910277f414c04f4996a041f43c8c759eb27aa851be29d951f91c8",
+      "reproduced_structural_fingerprint": "f9549e1ac93910277f414c04f4996a041f43c8c759eb27aa851be29d951f91c8",
+      "scenario_id": "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "08abcacf408ca9117ef5b8100c684ab8d68aae8f4e15c19f908c0f5770f8c017",
+      "reproduced_structural_fingerprint": "08abcacf408ca9117ef5b8100c684ab8d68aae8f4e15c19f908c0f5770f8c017",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "727922a25c9db497a9447ac03c95341bd794e211bdaeebff4f11967295c7d226",
+      "reproduced_structural_fingerprint": "727922a25c9db497a9447ac03c95341bd794e211bdaeebff4f11967295c7d226",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9c33a11f143a74e21b7a5929b1b7a52400d075b2fd8c8b1197dcf34722e41878",
+      "reproduced_structural_fingerprint": "9c33a11f143a74e21b7a5929b1b7a52400d075b2fd8c8b1197dcf34722e41878",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "d7696efd1216b5b1a3fb3476d2d7cfc3e45a21f6ef35c88a573b34413966a529",
+      "reproduced_structural_fingerprint": "d7696efd1216b5b1a3fb3476d2d7cfc3e45a21f6ef35c88a573b34413966a529",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "6142f4e2dabefddd21867f4b04dc89d3a460ab0bf2b57cb689b4c05acfc9c9b8",
+      "reproduced_structural_fingerprint": "6142f4e2dabefddd21867f4b04dc89d3a460ab0bf2b57cb689b4c05acfc9c9b8",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b22a266afc1958f9c26ec7f1c779b5ab9d6f920058700fcd10fe38e5e104e611",
+      "reproduced_structural_fingerprint": "b22a266afc1958f9c26ec7f1c779b5ab9d6f920058700fcd10fe38e5e104e611",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "bac67ace8037cc84e29a658d3c3f53664d3172e27876778574cc6df6fa4905f6",
+      "reproduced_structural_fingerprint": "bac67ace8037cc84e29a658d3c3f53664d3172e27876778574cc6df6fa4905f6",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "edbf575f5e31394b87f7159d00f73e9a4c95d5044076c78425c67e3e3aa72fef",
+      "reproduced_structural_fingerprint": "edbf575f5e31394b87f7159d00f73e9a4c95d5044076c78425c67e3e3aa72fef",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "372d5ac6b350ee76b2c82d9a513bb2624487d9decf405fd89325ea845325549b",
+      "reproduced_structural_fingerprint": "372d5ac6b350ee76b2c82d9a513bb2624487d9decf405fd89325ea845325549b",
+      "scenario_id": "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "698ee9d1752ba858462d00403330b433511d84523d3deb9a1fc4bf733ef0cd27",
+      "reproduced_structural_fingerprint": "698ee9d1752ba858462d00403330b433511d84523d3deb9a1fc4bf733ef0cd27",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "13df286219271fd31feb0aee911cfc724d38bcef777ef805243104f32bfc0db6",
+      "reproduced_structural_fingerprint": "13df286219271fd31feb0aee911cfc724d38bcef777ef805243104f32bfc0db6",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ceb0f2e8e7a1141b385ca4450a5e484f5d0892b14b048b53c5f2aed96f091d40",
+      "reproduced_structural_fingerprint": "ceb0f2e8e7a1141b385ca4450a5e484f5d0892b14b048b53c5f2aed96f091d40",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "91377b086edeadbfc8fcc39081ea0951dba76e3cf2207eb32bcaf09a9e1c08ca",
+      "reproduced_structural_fingerprint": "91377b086edeadbfc8fcc39081ea0951dba76e3cf2207eb32bcaf09a9e1c08ca",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "e46bb2166b54da0086b0693e9e8e294a5217b37eff80ab4cbeb553e779cfdbfa",
+      "reproduced_structural_fingerprint": "e46bb2166b54da0086b0693e9e8e294a5217b37eff80ab4cbeb553e779cfdbfa",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "187fb28dd97ac740306c99d95f1236f007706bb8806f3f8e3f38c55d7ee39ffb",
+      "reproduced_structural_fingerprint": "187fb28dd97ac740306c99d95f1236f007706bb8806f3f8e3f38c55d7ee39ffb",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b41e78e732008db6fbb11426a09cbd9a5f30dd74893ea211d65460d8e9fd67b6",
+      "reproduced_structural_fingerprint": "b41e78e732008db6fbb11426a09cbd9a5f30dd74893ea211d65460d8e9fd67b6",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9594aadd3909e00598bcd684a34f50b41de4b6ac1ba8760c5545d8eb07873575",
+      "reproduced_structural_fingerprint": "9594aadd3909e00598bcd684a34f50b41de4b6ac1ba8760c5545d8eb07873575",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "03ff8e7ff0ce763a21845f735d55a8d44640a51b779b969f1fa339513d14b083",
+      "reproduced_structural_fingerprint": "03ff8e7ff0ce763a21845f735d55a8d44640a51b779b969f1fa339513d14b083",
+      "scenario_id": "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "61b45bbad3d93557b5513f506a63f85d8f1a35166c9be6514cc2605acd186f8e",
+      "reproduced_structural_fingerprint": "61b45bbad3d93557b5513f506a63f85d8f1a35166c9be6514cc2605acd186f8e",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20241031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f197017758f852999447d6f98f63a96ad10f9e28eff18b8eaecc3ac59102dd64",
+      "reproduced_structural_fingerprint": "f197017758f852999447d6f98f63a96ad10f9e28eff18b8eaecc3ac59102dd64",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "1e203860290f9bc05b446661ecb69d4b1d45476024f0be34299a58a3165bd5c6",
+      "reproduced_structural_fingerprint": "1e203860290f9bc05b446661ecb69d4b1d45476024f0be34299a58a3165bd5c6",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "8d7f20b680a61ecff6130db34a48a04f90a427f63f297435cbbd9a7385698f14",
+      "reproduced_structural_fingerprint": "8d7f20b680a61ecff6130db34a48a04f90a427f63f297435cbbd9a7385698f14",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "be219b2f8226f67dbf954fd3d82037a25bcf9d5b13f05e1b330878a1c891132d",
+      "reproduced_structural_fingerprint": "be219b2f8226f67dbf954fd3d82037a25bcf9d5b13f05e1b330878a1c891132d",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f257ca351d58c4ebc2bee81526ae4ba4c0f97edc2245606e75e63fde45208325",
+      "reproduced_structural_fingerprint": "f257ca351d58c4ebc2bee81526ae4ba4c0f97edc2245606e75e63fde45208325",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "96c207d9acfa3e13b9f4aec01452442db0c95dab38603ef0eacc919ed847633a",
+      "reproduced_structural_fingerprint": "96c207d9acfa3e13b9f4aec01452442db0c95dab38603ef0eacc919ed847633a",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c2e6d506d71385ecae665ade7745a3311f50f5e5cf811701040426594b8250b3",
+      "reproduced_structural_fingerprint": "c2e6d506d71385ecae665ade7745a3311f50f5e5cf811701040426594b8250b3",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0e016d436b607d925e0abd3e6b770bdad32e69f15a0b3121138b3dd66ef1e6d5",
+      "reproduced_structural_fingerprint": "0e016d436b607d925e0abd3e6b770bdad32e69f15a0b3121138b3dd66ef1e6d5",
+      "scenario_id": "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "0403b2dd302e259fe1f666c9b5fc30342f842caac6fd64111d2d3b3468d58318",
+      "reproduced_structural_fingerprint": "0403b2dd302e259fe1f666c9b5fc30342f842caac6fd64111d2d3b3468d58318",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "95c19f887579b8bd042319968f3c5cd2bfeb644eb3cc566b1de5ad11cfdd0cb2",
+      "reproduced_structural_fingerprint": "95c19f887579b8bd042319968f3c5cd2bfeb644eb3cc566b1de5ad11cfdd0cb2",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "629b44dfc88af124dc5f39ef2a82a8384d3823700edaa53ecca9ea644e68fa1e",
+      "reproduced_structural_fingerprint": "629b44dfc88af124dc5f39ef2a82a8384d3823700edaa53ecca9ea644e68fa1e",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f3f1365639e5045423a9a2a5620b43adb0ed5abbf72c861b7f535797067a5c02",
+      "reproduced_structural_fingerprint": "f3f1365639e5045423a9a2a5620b43adb0ed5abbf72c861b7f535797067a5c02",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "ed0cbd65bbf9f9f50dd3e6c95336a830980b7bd6da7893ac08339d2caf6e37fe",
+      "reproduced_structural_fingerprint": "ed0cbd65bbf9f9f50dd3e6c95336a830980b7bd6da7893ac08339d2caf6e37fe",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "79628fe77791eaa0f3863740b87aa326a89896c5760a23c179bf3da951babf0d",
+      "reproduced_structural_fingerprint": "79628fe77791eaa0f3863740b87aa326a89896c5760a23c179bf3da951babf0d",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "f8abf487e309caa7394337da0484923c23063ca0ecb5cf53b540e920638c2e95",
+      "reproduced_structural_fingerprint": "f8abf487e309caa7394337da0484923c23063ca0ecb5cf53b540e920638c2e95",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20251231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "b8e2224eb56fe13bdbd9e58921c64479be29bb75bbd4817ea9aa38f22f84eb56",
+      "reproduced_structural_fingerprint": "b8e2224eb56fe13bdbd9e58921c64479be29bb75bbd4817ea9aa38f22f84eb56",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "a153442c14cf0d10f94542a1ea8eb19f98714ccf3907d6e67999ed07780cdd7a",
+      "reproduced_structural_fingerprint": "a153442c14cf0d10f94542a1ea8eb19f98714ccf3907d6e67999ed07780cdd7a",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "c96dc3f37a088086b63a9a12501e317d6471a5817648050678d173dd3153656f",
+      "reproduced_structural_fingerprint": "c96dc3f37a088086b63a9a12501e317d6471a5817648050678d173dd3153656f",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20241231",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "3f19b0f73bc7e69554d93b97189ed86c61ff8d6db058af6ea042805e66358ad3",
+      "reproduced_structural_fingerprint": "3f19b0f73bc7e69554d93b97189ed86c61ff8d6db058af6ea042805e66358ad3",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20250131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "9320943f06363ec912b2b50299b3e583db2b5afd2fc32e1f4d468baed8089f4f",
+      "reproduced_structural_fingerprint": "9320943f06363ec912b2b50299b3e583db2b5afd2fc32e1f4d468baed8089f4f",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20250228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "69e34038eee8ee4da6b5b2d04ad24a6048a167506b1685156b22c1cf00fc4b97",
+      "reproduced_structural_fingerprint": "69e34038eee8ee4da6b5b2d04ad24a6048a167506b1685156b22c1cf00fc4b97",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20250331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "885d38fc24a7310bc408af8d1eb27056917a54fa0cf4587052f6125465817baf",
+      "reproduced_structural_fingerprint": "885d38fc24a7310bc408af8d1eb27056917a54fa0cf4587052f6125465817baf",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20251031",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "20e8b79571455380442c22b13523787e68e2789afb2db4924001724b41db58d9",
+      "reproduced_structural_fingerprint": "20e8b79571455380442c22b13523787e68e2789afb2db4924001724b41db58d9",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20251130",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "6c213a3a28e93841e0a459a1ce34e14c9f3b43effb530eb5d126c60b2bdadec0",
+      "reproduced_structural_fingerprint": "6c213a3a28e93841e0a459a1ce34e14c9f3b43effb530eb5d126c60b2bdadec0",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20260131",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "e740c7f6505a3573d4ce5b1db3d64cff0593f7a8bf2093af731d603f38d99628",
+      "reproduced_structural_fingerprint": "e740c7f6505a3573d4ce5b1db3d64cff0593f7a8bf2093af731d603f38d99628",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20260228",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    },
+    {
+      "bounded_selection_match": null,
+      "farmer_decision_match": true,
+      "oracle_checks_match": true,
+      "reference_structural_fingerprint": "dd4d56f3112a38eef33c71849d65cf508368bd4c2fba17fff7c4b790cba88b6d",
+      "reproduced_structural_fingerprint": "dd4d56f3112a38eef33c71849d65cf508368bd4c2fba17fff7c4b790cba88b6d",
+      "scenario_id": "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20260331",
+      "semantic_trace_match": true,
+      "structural_fingerprint_match": true
+    }
+  ],
+  "reference_artifact_checks": [
+    {
+      "expected_sha256": "1462070d04ca149633fb229ff8db92c389a291e1e77ac5f710eee45969068dcc",
+      "observed_sha256": "1462070d04ca149633fb229ff8db92c389a291e1e77ac5f710eee45969068dcc",
+      "passed": true,
+      "path": "agents/benchmark/base.py"
+    },
+    {
+      "expected_sha256": "b36bcf848827be0fe7b248bfa0223a3f2e6404901c834288735285ae91326de4",
+      "observed_sha256": "b36bcf848827be0fe7b248bfa0223a3f2e6404901c834288735285ae91326de4",
+      "passed": true,
+      "path": "agents/benchmark/benchmark_evaluator.py"
+    },
+    {
+      "expected_sha256": "fcac7aff9f7fcc489ffd28a1bf2620cedde51a734976e558f7413fc266bc07dc",
+      "observed_sha256": "fcac7aff9f7fcc489ffd28a1bf2620cedde51a734976e558f7413fc266bc07dc",
+      "passed": true,
+      "path": "agents/benchmark/crop_district_season_alignment_validator.py"
+    },
+    {
+      "expected_sha256": "7d1cc8031a0c44644a0953b66fed017fe673474e18a4441d6def493c1be5739e",
+      "observed_sha256": "7d1cc8031a0c44644a0953b66fed017fe673474e18a4441d6def493c1be5739e",
+      "passed": true,
+      "path": "agents/benchmark/crop_protection_safety.py"
+    },
+    {
+      "expected_sha256": "b216ad63a02f2758acfab4d6561075564341ac3898adc262c244124fbb661dee",
+      "observed_sha256": "b216ad63a02f2758acfab4d6561075564341ac3898adc262c244124fbb661dee",
+      "passed": true,
+      "path": "agents/benchmark/evidence_provenance.py"
+    },
+    {
+      "expected_sha256": "c5be47dae63c4b6bde1306b198ed19f5750b135e0a989a3556af2eaf29d11797",
+      "observed_sha256": "c5be47dae63c4b6bde1306b198ed19f5750b135e0a989a3556af2eaf29d11797",
+      "passed": true,
+      "path": "agents/benchmark/farmer_explanation_citation.py"
+    },
+    {
+      "expected_sha256": "17ec0119d1be3ceb1729fa2ae8f68c7b05d7acd38c3b557df825fb6f647f80fd",
+      "observed_sha256": "17ec0119d1be3ceb1729fa2ae8f68c7b05d7acd38c3b557df825fb6f647f80fd",
+      "passed": true,
+      "path": "agents/benchmark/fertilizer_baseline.py"
+    },
+    {
+      "expected_sha256": "247b7422ddb5bd5900fc1ae9ba0f30b824d7d15f7c2e4748fccd4e54fe969dbb",
+      "observed_sha256": "247b7422ddb5bd5900fc1ae9ba0f30b824d7d15f7c2e4748fccd4e54fe969dbb",
+      "passed": true,
+      "path": "agents/benchmark/market_evidence.py"
+    },
+    {
+      "expected_sha256": "f526426e41ec87f9798406feb96613097543da0e24f54f320fba9028224b1b18",
+      "observed_sha256": "f526426e41ec87f9798406feb96613097543da0e24f54f320fba9028224b1b18",
+      "passed": true,
+      "path": "agents/benchmark/provenance_aware_coordinator.py"
+    },
+    {
+      "expected_sha256": "2b648feae270831cc27132359d7d22376adcc7030b9e7e74c0bf03b53715d2aa",
+      "observed_sha256": "2b648feae270831cc27132359d7d22376adcc7030b9e7e74c0bf03b53715d2aa",
+      "passed": true,
+      "path": "agents/benchmark/satellite_ndvi_context.py"
+    },
+    {
+      "expected_sha256": "48dfc4dec936109b8dedec2dedcf57319eae4ca90803ec3252180161a6e50648",
+      "observed_sha256": "48dfc4dec936109b8dedec2dedcf57319eae4ca90803ec3252180161a6e50648",
+      "passed": true,
+      "path": "agents/benchmark/scenario_evidence_router.py"
+    },
+    {
+      "expected_sha256": "c8289318416b9430ae9117371815f92d866f0ff0ba7ccfad95420a2533dcf96a",
+      "observed_sha256": "c8289318416b9430ae9117371815f92d866f0ff0ba7ccfad95420a2533dcf96a",
+      "passed": true,
+      "path": "data/benchmark_loader.py"
+    },
+    {
+      "expected_sha256": "2e5433fb4a1f32d0cda5d7fa34ee2e52fceae36d93db2baad0118487d760d601",
+      "observed_sha256": "2e5433fb4a1f32d0cda5d7fa34ee2e52fceae36d93db2baad0118487d760d601",
+      "passed": true,
+      "path": "data/conflict_fixture_registry/conflict_fixture_manifest.csv"
+    },
+    {
+      "expected_sha256": "8f97947a4c5ac06bcb80a7e3b12f0fa18a8b19069163d3bed3b9eba2f926fdcc",
+      "observed_sha256": "8f97947a4c5ac06bcb80a7e3b12f0fa18a8b19069163d3bed3b9eba2f926fdcc",
+      "passed": true,
+      "path": "data/llm_relevance_benchmark/manifest.json"
+    },
+    {
+      "expected_sha256": "d076e1801fdedf162ca9e90925f4144497ce85d868fd4a2be4cc0ccebd7f79e0",
+      "observed_sha256": "d076e1801fdedf162ca9e90925f4144497ce85d868fd4a2be4cc0ccebd7f79e0",
+      "passed": true,
+      "path": "data/llm_relevance_benchmark/relevance_questions.jsonl"
+    },
+    {
+      "expected_sha256": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+      "observed_sha256": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+      "passed": true,
+      "path": "data/pilot_sets/apple_gpu_30_anchor_scenarios/manifest.json"
+    },
+    {
+      "expected_sha256": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+      "observed_sha256": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+      "passed": true,
+      "path": "data/pilot_sets/apple_gpu_30_anchor_scenarios/scenario_ids.csv"
+    },
+    {
+      "expected_sha256": "25299d916ff4ab741afc3cd5e0afa462ed39459b107c20f565f34cd884563a6a",
+      "observed_sha256": "25299d916ff4ab741afc3cd5e0afa462ed39459b107c20f565f34cd884563a6a",
+      "passed": true,
+      "path": "data/registry/final_study_sites.csv"
+    },
+    {
+      "expected_sha256": "17421f3054739463d923caebbbd38f3b71c731d263ddc34b68c77346092340dc",
+      "observed_sha256": "17421f3054739463d923caebbbd38f3b71c731d263ddc34b68c77346092340dc",
+      "passed": true,
+      "path": "data/registry/source_scoped_final_site_admission.csv"
+    },
+    {
+      "expected_sha256": "a76571d9f3874e29e184d952b132525a79c43b5ae74ce2449421215943505987",
+      "observed_sha256": "a76571d9f3874e29e184d952b132525a79c43b5ae74ce2449421215943505987",
+      "passed": true,
+      "path": "data/scenarios/enriched/agmarknet_embedded_market_context_features.csv"
+    },
+    {
+      "expected_sha256": "5a8f88304365b1631e405de1aebfcefa73c0abdf2f1c3ab8eefd83f88c12e4d5",
+      "observed_sha256": "5a8f88304365b1631e405de1aebfcefa73c0abdf2f1c3ab8eefd83f88c12e4d5",
+      "passed": true,
+      "path": "data/scenarios/enriched/agmarknet_embedded_market_context_manifest.csv"
+    },
+    {
+      "expected_sha256": "bd3403287150588299e0e59c7ebada7a82354f8ddccd9f1b406467e85ef6f40f",
+      "observed_sha256": "bd3403287150588299e0e59c7ebada7a82354f8ddccd9f1b406467e85ef6f40f",
+      "passed": true,
+      "path": "data/scenarios/enriched/mas_enrichment_contract.csv"
+    },
+    {
+      "expected_sha256": "a6348b220ec896cf45a58b8d95a2c286c555246fca5b3067b3a79709044d1e84",
+      "observed_sha256": "a6348b220ec896cf45a58b8d95a2c286c555246fca5b3067b3a79709044d1e84",
+      "passed": true,
+      "path": "data/scenarios/enriched/nasa_power_water_context_features.csv"
+    },
+    {
+      "expected_sha256": "cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376",
+      "observed_sha256": "cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376",
+      "passed": true,
+      "path": "data/scenarios/enriched/official_action_records_all.csv"
+    },
+    {
+      "expected_sha256": "784a277a086bb6beacb02e9f7ad9c69f74afa99b3674cc27bfcbf05db79b5292",
+      "observed_sha256": "784a277a086bb6beacb02e9f7ad9c69f74afa99b3674cc27bfcbf05db79b5292",
+      "passed": true,
+      "path": "data/scenarios/enriched/official_rag_corpus_all_chunks.csv"
+    },
+    {
+      "expected_sha256": "7a5bb3b0843adb5488bad6cdf5e83f2928227e206d45d31b69955449a62b9e82",
+      "observed_sha256": "7a5bb3b0843adb5488bad6cdf5e83f2928227e206d45d31b69955449a62b9e82",
+      "passed": true,
+      "path": "data/scenarios/enriched/official_rag_corpus_catalog.csv"
+    },
+    {
+      "expected_sha256": "6ea7ae6b6103cbfd5f084d2db14ec41a18e44161fd990417a9b822b8a3a3c12d",
+      "observed_sha256": "6ea7ae6b6103cbfd5f084d2db14ec41a18e44161fd990417a9b822b8a3a3c12d",
+      "passed": true,
+      "path": "data/scenarios/enriched/postharvest_source_inventory.csv"
+    },
+    {
+      "expected_sha256": "a2da4712d9797f3d49417d3bd618997d1fd99c04fe7f452e6914d5f50b9c674a",
+      "observed_sha256": "a2da4712d9797f3d49417d3bd618997d1fd99c04fe7f452e6914d5f50b9c674a",
+      "passed": true,
+      "path": "data/scenarios/enriched/regional_operation_plan_items.csv"
+    },
+    {
+      "expected_sha256": "ea68448b1cc31b94d62c309820230e1835db0395d5544549b544e3d0b051187f",
+      "observed_sha256": "ea68448b1cc31b94d62c309820230e1835db0395d5544549b544e3d0b051187f",
+      "passed": true,
+      "path": "data/scenarios/enriched/regional_operation_plan_summary.csv"
+    },
+    {
+      "expected_sha256": "a4a76ec8627a45e28e84a1b4276b288d05a117e70751f12b4c4d497b508f99c6",
+      "observed_sha256": "a4a76ec8627a45e28e84a1b4276b288d05a117e70751f12b4c4d497b508f99c6",
+      "passed": true,
+      "path": "data/scenarios/enriched/regional_policy_detail_cards.csv"
+    },
+    {
+      "expected_sha256": "43b8f4dc95a2df74338675239904c21a6565925246b449f555e204723f0eff46",
+      "observed_sha256": "43b8f4dc95a2df74338675239904c21a6565925246b449f555e204723f0eff46",
+      "passed": true,
+      "path": "data/scenarios/enriched/scenario_official_action_bindings_all.csv"
+    },
+    {
+      "expected_sha256": "c7f8fa27934f6293cb207c46bbf582fba21c62ccc5a71734c348263eb7684dc5",
+      "observed_sha256": "c7f8fa27934f6293cb207c46bbf582fba21c62ccc5a71734c348263eb7684dc5",
+      "passed": true,
+      "path": "data/scenarios/enriched/scenario_official_rag_scope_all.csv"
+    },
+    {
+      "expected_sha256": "cdf3085088899b8409bcd4b95b0cd75afdf75cef810dd5c76563d777864369fa",
+      "observed_sha256": "cdf3085088899b8409bcd4b95b0cd75afdf75cef810dd5c76563d777864369fa",
+      "passed": true,
+      "path": "data/scenarios/enriched/scenario_postharvest_logistics_context.csv"
+    },
+    {
+      "expected_sha256": "57283b0c88a40d752d7d8f9eb64c77076b3f51f16702b1a908e5286617613533",
+      "observed_sha256": "57283b0c88a40d752d7d8f9eb64c77076b3f51f16702b1a908e5286617613533",
+      "passed": true,
+      "path": "data/scenarios/enriched/scenario_postharvest_plan_items.csv"
+    },
+    {
+      "expected_sha256": "4ab723195ab4764090ca95f993008a7d7ba960600c1ca9ff40618bf91b31dcc8",
+      "observed_sha256": "4ab723195ab4764090ca95f993008a7d7ba960600c1ca9ff40618bf91b31dcc8",
+      "passed": true,
+      "path": "data/scenarios/enriched/scenario_postharvest_rag_scope.csv"
+    },
+    {
+      "expected_sha256": "680af4ba94357ec8a02da4fa9c3121031cdc198ec49ade2707b19bed60259ab4",
+      "observed_sha256": "680af4ba94357ec8a02da4fa9c3121031cdc198ec49ade2707b19bed60259ab4",
+      "passed": true,
+      "path": "data/scenarios/enriched/sentinel_ndvi_context_features.csv"
+    },
+    {
+      "expected_sha256": "601999dbcb4dc1b68191f5eefd7ad9a8dadfb80984332460b312d17ca9059c45",
+      "observed_sha256": "601999dbcb4dc1b68191f5eefd7ad9a8dadfb80984332460b312d17ca9059c45",
+      "passed": true,
+      "path": "data/scenarios/enriched/sentinel_ndvi_context_manifest.csv"
+    },
+    {
+      "expected_sha256": "168c63b0aa9dacc56fc5b91052e006e9f7222ce1cdb06656fc394a0e4b20a87e",
+      "observed_sha256": "168c63b0aa9dacc56fc5b91052e006e9f7222ce1cdb06656fc394a0e4b20a87e",
+      "passed": true,
+      "path": "data/scenarios/enriched/sentinel_ndvi_timeseries_features.csv"
+    },
+    {
+      "expected_sha256": "40574caf600e5bb73af2abdb7282ca381ecc76055826eb592097b03c0702e115",
+      "observed_sha256": "40574caf600e5bb73af2abdb7282ca381ecc76055826eb592097b03c0702e115",
+      "passed": true,
+      "path": "data/scenarios/evidence/scenario_evidence_status.csv"
+    },
+    {
+      "expected_sha256": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284",
+      "observed_sha256": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284",
+      "passed": true,
+      "path": "data/scenarios/manifests/scenario_manifest.csv"
+    },
+    {
+      "expected_sha256": "5ce7a88a19eb659ffe7f7fd63ee9b91d235acf698166f1dcc44fd86de4f89f8a",
+      "observed_sha256": "5ce7a88a19eb659ffe7f7fd63ee9b91d235acf698166f1dcc44fd86de4f89f8a",
+      "passed": true,
+      "path": "data/scenarios/processed/scenario_features.csv"
+    },
+    {
+      "expected_sha256": "d5219004d87c465bf2d1df8ac18eec40d39f1d8f5611c67590067daf20eb20a2",
+      "observed_sha256": "d5219004d87c465bf2d1df8ac18eec40d39f1d8f5611c67590067daf20eb20a2",
+      "passed": true,
+      "path": "evaluation/apple_gpu_preflight.py"
+    },
+    {
+      "expected_sha256": "65d8c1fcdf7b67764611bb399dac0c8ada03fd012589c38bc7f167fde00a27bc",
+      "observed_sha256": "65d8c1fcdf7b67764611bb399dac0c8ada03fd012589c38bc7f167fde00a27bc",
+      "passed": true,
+      "path": "evaluation/benchmark_batch_runner.py"
+    },
+    {
+      "expected_sha256": "0ff17d730aa92ded352b7b7e559c0555efe5840dfd418359da52855cadf66a51",
+      "observed_sha256": "0ff17d730aa92ded352b7b7e559c0555efe5840dfd418359da52855cadf66a51",
+      "passed": true,
+      "path": "evaluation/benchmark_contract.py"
+    },
+    {
+      "expected_sha256": "70d295c850b132adab189bfd6a0c6cc7730a0db45615c3725c50235c91a1880f",
+      "observed_sha256": "70d295c850b132adab189bfd6a0c6cc7730a0db45615c3725c50235c91a1880f",
+      "passed": true,
+      "path": "evaluation/benchmark_oracle.py"
+    },
+    {
+      "expected_sha256": "c49778b4a4ebf28b900aeefc768c595dc5c68d5a44e65a22fbcf0799a4f4a0d5",
+      "observed_sha256": "c49778b4a4ebf28b900aeefc768c595dc5c68d5a44e65a22fbcf0799a4f4a0d5",
+      "passed": true,
+      "path": "evaluation/bounded_llm_relevance.py"
+    },
+    {
+      "expected_sha256": "e2c5e3a236ff805fd2db1e2ce94111f97ca9010ec3dc95d71d7a6d269ea75d25",
+      "observed_sha256": "e2c5e3a236ff805fd2db1e2ce94111f97ca9010ec3dc95d71d7a6d269ea75d25",
+      "passed": true,
+      "path": "evaluation/bounded_llm_relevance_v5_heldout.py"
+    },
+    {
+      "expected_sha256": "71b7134af848357be316741cce3a9d597c52d54d9a34819b11f821d9edb0b9b2",
+      "observed_sha256": "71b7134af848357be316741cce3a9d597c52d54d9a34819b11f821d9edb0b9b2",
+      "passed": true,
+      "path": "graph/benchmark_workflow.py"
+    },
+    {
+      "expected_sha256": "04806d9f9f73c3792ca530777fec102c8d141bce879175c966c035c779d23327",
+      "observed_sha256": "04806d9f9f73c3792ca530777fec102c8d141bce879175c966c035c779d23327",
+      "passed": true,
+      "path": "graph/benchmark_workflow_v5.py"
+    },
+    {
+      "expected_sha256": "6a349d6b8847e1c9be6b34f896c8dcd57713aecac6fd81c3908920931325ac66",
+      "observed_sha256": "6a349d6b8847e1c9be6b34f896c8dcd57713aecac6fd81c3908920931325ac66",
+      "passed": true,
+      "path": "llm/benchmark_llm_client.py"
+    },
+    {
+      "expected_sha256": "ad17c067d6897a8fe70b81803ed625df9457b10214532d09c02b713b52098af7",
+      "observed_sha256": "ad17c067d6897a8fe70b81803ed625df9457b10214532d09c02b713b52098af7",
+      "passed": true,
+      "path": "llm/bounded_selection_v5.py"
+    },
+    {
+      "expected_sha256": "5a53af5776c568a89cc0c1e187d6fa04489864289cc247b3340adf4a96d985b7",
+      "observed_sha256": "5a53af5776c568a89cc0c1e187d6fa04489864289cc247b3340adf4a96d985b7",
+      "passed": true,
+      "path": "results/e1-v5-heldout-final/aggregate_final_heldout_metrics.json"
+    },
+    {
+      "expected_sha256": "d263f14eb57e024f17127cac930c4ee96863f59a02a9563d78484e481758fa8d",
+      "observed_sha256": "d263f14eb57e024f17127cac930c4ee96863f59a02a9563d78484e481758fa8d",
+      "passed": true,
+      "path": "results/e1-v5-heldout-final/final_acceptance_report.json"
+    },
+    {
+      "expected_sha256": "de68cdc15054b5ab0e71bdd38ccd8f1d70e8475789285ed56f9eb52010bf695e",
+      "observed_sha256": "de68cdc15054b5ab0e71bdd38ccd8f1d70e8475789285ed56f9eb52010bf695e",
+      "passed": true,
+      "path": "results/e1-v5-heldout-final/run_manifest.json"
+    },
+    {
+      "expected_sha256": "07017dd4f9fc37e5caff2eee4731455e4dd7dd477229400b463662aba5e08026",
+      "observed_sha256": "07017dd4f9fc37e5caff2eee4731455e4dd7dd477229400b463662aba5e08026",
+      "passed": true,
+      "path": "results/e1-v5-heldout-preflight/experiment_manifest.json"
+    },
+    {
+      "expected_sha256": "abab81c5fd529651c0eb24a0e038c5f65300e03c6b36cd3399e14c33485e7007",
+      "observed_sha256": "abab81c5fd529651c0eb24a0e038c5f65300e03c6b36cd3399e14c33485e7007",
+      "passed": true,
+      "path": "scripts/build_apple_gpu_pilot_set.py"
+    },
+    {
+      "expected_sha256": "b53b4bb5567553cbff0ce6ef203d23a3c323082ac70f5fd5999faa07452a4c31",
+      "observed_sha256": "b53b4bb5567553cbff0ce6ef203d23a3c323082ac70f5fd5999faa07452a4c31",
+      "passed": true,
+      "path": "scripts/build_bounded_llm_relevance_benchmark.py"
+    }
+  ],
+  "reference_directory": "/Users/aryandhumal/Project/results/v2_2-e0-full-mas",
+  "reproduction_directory": "/private/tmp/mas-v2_2-final-repro.kep7Wp/e0-full-mas-reproduction",
+  "scenario_count": 300,
+  "scenario_population_match": true,
+  "semantic_trace_match_count": 300,
+  "structural_fingerprint_match_count": 300
+}

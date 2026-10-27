@@ -1,0 +1,28 @@
+# Large external datasets — download instructions in data/external/README.md
+data/external/*
+!data/external/README.md
+!data/external/crop_recommendation/
+data/external/crop_recommendation/*
+!data/external/crop_recommendation/Crop_recommendation.csv
+!data/external/market_prices/
+data/external/market_prices/*
+!data/external/market_prices/commodity_prices.csv
+
+# Reproducibility checkpoint used by the project.
+vision/checkpoints/*
+!vision/checkpoints/disease_model.pt
+
+# Paper-supporting evaluation outputs and visualizations are versioned.
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.venv-macos/
+venv312/
+.env
+
+# OS
+.DS_Store
+Thumbs.db

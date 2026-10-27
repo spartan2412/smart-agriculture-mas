@@ -1,0 +1,277 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__calendar_window",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage.; source_document_ids=ICAR_CRIDA_CCP; lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared rabi window for this crop and district is Oct-Mar; the scenario date falls in the late part of that window."
+    },
+    {
+      "fact_id": "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Record variety or hybrid branch; FAW action is diagnosis-triggered and not a calendar spray.; source_document_ids=ICAR_RABI_STATE_ADVISORIES_2021_22; lane=regional_nutrient_policy; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Use the cited Tamil Nadu maize regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__protection_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Record variety or hybrid branch; FAW action is diagnosis-triggered and not a calendar spray.; source_document_ids=TNAU_MAIZE_FAW_2023; lane=regional_crop_protection_policy; source=TNAU_MAIZE_FAW_2023; text=Use the cited Tamil Nadu maize regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Only after observing husk condition and measuring grain moisture; neither is present in the scenario. | actual_husk_condition_and_harvested_lot_moisture_not_observed; source_document_ids=ICAR_RABI_STATE_ADVISORIES_2021_22; lane=harvest_readiness; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Harvest maize when the husk cover has dried and turned brown; shell within the cited moisture range."
+    },
+    {
+      "fact_id": "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_DRY_EARS",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Only after actual harvest; local drying conditions and lot moisture remain unobserved. | actual_harvest_status_lot_moisture_and_drying_conditions_not_observed; source_document_ids=ICAR_RABI_STATE_ADVISORIES_2021_22; lane=dry_storage; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Dry maize ears after harvest before the next handling step."
+    }
+  ],
+  "question": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "allowed_fact_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__calendar_window",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__protection_policy",
+      "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL",
+      "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_DRY_EARS"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "A source-quoted post-harvest technical operation is crop scoped, but its stated lot/harvest precondition is not observed in this frozen scenario."
+        ],
+        "fact_id": "decision:operation",
+        "fact_kind": "decision_trace",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "FROZEN_SCENARIO_MANIFEST"
+        ],
+        "source_locators": [],
+        "text": "status=conditional_operation_pending_field_precondition; operation_status=not_issued_as_direct_farm_action; direct_farm_action_issued=False; citations=AGMARKNET_MONTHLY_REPORT,CIBRC_INSECTICIDE_2026,FROZEN_SCENARIO_MANIFEST,ICAR_CRIDA_CCP,ICAR_CRIDA_TN_ARIYALUR_SOWING_WINDOW,ICAR_RABI_STATE_ADVISORIES_2021_22,MAS_ENRICHMENT_CONTRACT,NASA_POWER_HISTORICAL_WINDOW,NATURAL_SIGNAL_DIVERGENCE,SENTINEL2_L2A,SOILGRIDS,TNAU_MAIZE_FAW_2023,WDRA_REGISTERED_WAREHOUSES_TAMIL_NADU"
+      },
+      {
+        "conditions": [
+          "The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage."
+        ],
+        "fact_id": "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__calendar_window",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__calendar_window"
+        ],
+        "source_document_ids": [
+          "ICAR_CRIDA_CCP"
+        ],
+        "source_locators": [
+          "District CCP crop profile and sowing-window PDFs"
+        ],
+        "text": "lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared rabi window for this crop and district is Oct-Mar; the scenario date falls in the late part of that window."
+      },
+      {
+        "conditions": [
+          "Record variety or hybrid branch; FAW action is diagnosis-triggered and not a calendar spray."
+        ],
+        "fact_id": "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+        ],
+        "source_document_ids": [
+          "ICAR_RABI_STATE_ADVISORIES_2021_22"
+        ],
+        "source_locators": [
+          "PDF p. 390 Tamil Nadu maize NPK branches for varieties and hybrids"
+        ],
+        "text": "lane=regional_nutrient_policy; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Use the cited Tamil Nadu maize regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Record variety or hybrid branch; FAW action is diagnosis-triggered and not a calendar spray."
+        ],
+        "fact_id": "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__protection_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__protection_policy"
+        ],
+        "source_document_ids": [
+          "TNAU_MAIZE_FAW_2023"
+        ],
+        "source_locators": [
+          "HTML maize fall-armyworm page"
+        ],
+        "text": "lane=regional_crop_protection_policy; source=TNAU_MAIZE_FAW_2023; text=Use the cited Tamil Nadu maize regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Only after observing husk condition and measuring grain moisture; neither is present in the scenario.",
+          "actual_husk_condition_and_harvested_lot_moisture_not_observed"
+        ],
+        "fact_id": "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL",
+          "POSTHARVEST_MAIZE_HARVEST_AND_SHELL"
+        ],
+        "source_document_ids": [
+          "ICAR_RABI_STATE_ADVISORIES_2021_22"
+        ],
+        "source_locators": [
+          "pdf_page_151"
+        ],
+        "text": "lane=harvest_readiness; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Harvest maize when the husk cover has dried and turned brown; shell within the cited moisture range."
+      },
+      {
+        "conditions": [
+          "Only after actual harvest; local drying conditions and lot moisture remain unobserved.",
+          "actual_harvest_status_lot_moisture_and_drying_conditions_not_observed"
+        ],
+        "fact_id": "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_DRY_EARS",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_DRY_EARS",
+          "POSTHARVEST_MAIZE_DRY_EARS"
+        ],
+        "source_document_ids": [
+          "ICAR_RABI_STATE_ADVISORIES_2021_22"
+        ],
+        "source_locators": [
+          "pdf_page_151"
+        ],
+        "text": "lane=dry_storage; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Dry maize ears after harvest before the next handling step."
+      }
+    ],
+    "allowed_passage_ids": [],
+    "allowed_source_document_ids": [
+      "FROZEN_SCENARIO_MANIFEST",
+      "ICAR_CRIDA_CCP",
+      "ICAR_RABI_STATE_ADVISORIES_2021_22",
+      "TNAU_MAIZE_FAW_2023"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "disallowed_distractor_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__calendar_window",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__protection_policy",
+      "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL",
+      "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_DRY_EARS"
+    ],
+    "expected_admissible_fact_ids": [
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+    ],
+    "expected_admissible_passage_ids": [],
+    "expected_plan_or_operation_ids": [
+      "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "Which one documented regional nutrient-policy card should be displayed first for Maize in Ariyalur, Tamil Nadu, during the rabi decision window ending 2026-03-31? Select only that one plan card; do not select a decision trace, another lane, or post-harvest context.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "coordinator_single_primary_regional_nutrient_policy",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_05",
+    "required_conditions": [
+      "Record variety or hybrid branch; FAW action is diagnosis-triggered and not a calendar spray."
+    ],
+    "role_instruction_sha256": "8c099c7e5320410b773bd9057ec02502af44c63e74059c7029c505abd8ad2ab7",
+    "scenario_context": {
+      "crop": "maize",
+      "decision_date": "2026-03-31",
+      "decision_window_utc": "2026-03-01T00:00:00Z/2026-03-31T23:59:59Z",
+      "district": "Ariyalur",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Tamil Nadu"
+    },
+    "scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_TN_ARIYALUR_MAIZE_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "bounded_llm": {
+      "agent_name": "provenance_aware_coordinator_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "a8b8c47a4fd593d7a8d1e8a0fdac7d34209a62dd16e8e38d03083a95ba9c3553",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "approved_plan_cards_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_primary_plan_card"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+    ],
+    "expected_passage_count": 0,
+    "expected_passage_ids": [],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 12080,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+    ],
+    "original_allowed_fact_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__calendar_window",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__protection_policy",
+      "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL",
+      "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_DRY_EARS"
+    ],
+    "packaged_candidate_fact_ids": [
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__calendar_window",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy",
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__protection_policy",
+      "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL",
+      "postharvest:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__postharvest__POSTHARVEST_MAIZE_DRY_EARS"
+    ],
+    "passage_intersection_count": 0,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 1292550144,
+    "prompt_sha256": "a8b8c47a4fd593d7a8d1e8a0fdac7d34209a62dd16e8e38d03083a95ba9c3553",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_05",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "plan:ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+    ],
+    "selected_passage_count": 0,
+    "selected_passage_ids": [],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__fertilizer_policy"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "approved_plan_cards_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_primary_plan_card"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "benchmark_run": {
+    "claims": [
+      {
+        "agent_name": "regional_calendar_operation_window_agent",
+        "allowed_use": "regional_policy_only",
+        "block_reason": null,
+        "claim": "The decision date has a documented position in the declared district-scale crop season window.",
+        "claim_id": "12bc21449bee0360442cbcdb3d380f31a74df08b9647e3f5eaea5e8850e6b8ca",
+        "confidence": 0.9,
+        "decision_domain": "regional_calendar",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "calendar_interpretation": "The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage.",
+          "crop_stage_status": "not_observed_no_field_phenology_source",
+          "regional_plan_summary_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+          "season_month_count": "6",
+          "season_month_index": "6"
+        },
+        "quality": "declared_season_window_position_available_not_field_phenology",
+        "reasoning": "The calendar derives a regional season-window position from CRIDA documents. It does not observe sowing date, variety, crop stage, or maturity in a field.",
+        "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+        "source": {
+          "locator": "District CCP crop profile and sowing-window PDFs",
+          "official_url": "https://icar-crida.res.in/CCP/PB/Sangrur/1.7.pdf",
+          "raw_path": null,
+          "raw_sha256": null,
+          "source_document_id": "ICAR_CRIDA_CCP",
+          "source_role": "district_crop_season_context"
+        },
+        "spatial_scope": "documented_representative_cell; Sangrur, Punjab; not a surveyed farm parcel",
+        "summary": "wheat in Sangrur: late_declared_season_window of declared Nov-Apr window.",
+        "temporal_scope": "declared rabi season window Nov-Apr; decision date 2022-04-30; not observed field stage"
+      },
+      {
+        "agent_name": "regional_calendar_operation_window_agent",
+        "allowed_use": "regional_policy_only",
+        "block_reason": null,
+        "claim": "A source-linked regional operation plan is available for this scenario.",
+        "claim_id": "c181d7dd0e954f5f12af8648160a612578ec6168078bf7f054f8560b460a52eb",
+        "confidence": 0.95,
+        "decision_domain": "regional_calendar",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "conditional_action_ids": "PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE",
+          "conditional_source_quoted_operation_count": "1",
+          "plan_item_ids": [
+            "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__calendar_window",
+            "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__operation__PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE",
+            "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__fertilizer_policy",
+            "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__protection_policy"
+          ],
+          "plan_status": "regional_plan_with_conditional_source_quoted_operations",
+          "regional_reference_item_count": "3",
+          "total_plan_item_count": "4"
+        },
+        "quality": "regional_plan_with_conditional_source_quoted_operations",
+        "reasoning": "The plan preserves regional calendar, nutrient-policy, and IPM-policy references, plus only source-scoped conditional operations. It does not observe farm conditions or issue a direct farm action.",
+        "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+        "source": {
+          "locator": "District CCP crop profile and sowing-window PDFs",
+          "official_url": "https://icar-crida.res.in/CCP/PB/Sangrur/1.7.pdf;https://icar-crida.res.in/CCP/PB/Sangrur/1.12.pdf",
+          "raw_path": null,
+          "raw_sha256": null,
+          "source_document_id": "ICAR_CRIDA_CCP",
+          "source_role": "source_linked_regional_operation_plan"
+        },
+        "spatial_scope": "documented_representative_cell; Sangrur, Punjab; not a surveyed farm parcel",
+        "summary": "Declared rabi seasonal context is available for wheat in Sangrur, Punjab. 1 time-valid source-quoted operation(s) remain conditional because their field preconditions are not observed; regional nutrient and IPM references are retained for planning.",
+        "temporal_scope": "historical decision window 2022-04-01T00:00:00Z/2022-04-30T23:59:59Z"
+      },
+      {
+        "agent_name": "regional_operation_plan_only_baseline",
+        "allowed_use": "context_only",
+        "block_reason": null,
+        "claim": "An evaluation-only baseline produced a source-bounded trace.",
+        "claim_id": "891abaf03dc861fb86e768450c64532317ccaf52178c77cbb76c954602424936",
+        "confidence": 1.0,
+        "decision_domain": "system_safety",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "plan_item_ids": [
+            "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__calendar_window",
+            "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__fertilizer_policy",
+            "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__protection_policy"
+          ],
+          "system_id": "A1"
+        },
+        "quality": "evaluation_only_baseline_not_farmer_facing",
+        "reasoning": "This baseline reads only the frozen regional calendar, nutrient, and crop-protection plan cards. It does not retrieve RAG passages, run contextual agents, detect conflicts, or issue a farm action.",
+        "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+        "source": {
+          "locator": "District CCP crop profile and sowing-window PDFs",
+          "official_url": "https://icar-crida.res.in/CCP/PB/Sangrur/1.7.pdf;https://icar-crida.res.in/CCP/PB/Sangrur/1.12.pdf",
+          "raw_path": null,
+          "raw_sha256": null,
+          "source_document_id": "ICAR_CRIDA_CCP",
+          "source_role": "regional_plan_only_baseline_trace"
+        },
+        "spatial_scope": "documented_representative_cell; Sangrur, Punjab; not a surveyed farm parcel",
+        "summary": "A1 rendered 3 regional plan reference item(s) without agent coordination.",
+        "temporal_scope": "historical decision window 2022-04-01T00:00:00Z/2022-04-30T23:59:59Z"
+      },
+      {
+        "agent_name": "benchmark_evaluator_agent",
+        "allowed_use": "context_only",
+        "block_reason": null,
+        "claim": "The benchmark decision trace has been evaluated for structural grounding and safety.",
+        "claim_id": "0a75dc6bee2819becc97fedd81f21c47d56fc49616981242d4d76565cfab045e",
+        "confidence": 1.0,
+        "decision_domain": "system_safety",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "abstention_reason_coverage": 1.0,
+          "citation_coverage": 1.0,
+          "cited_claim_count": 3,
+          "claim_count": 3,
+          "conflict_record_count": 0,
+          "safety_claim_count": 0,
+          "safety_claims_with_reason": 0,
+          "unsupported_action_count": 0
+        },
+        "quality": "trace_structurally_safe",
+        "reasoning": "These are trace-level quality metrics, not field-outcome accuracy or agronomic ground truth.",
+        "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+        "source": {
+          "locator": null,
+          "official_url": null,
+          "raw_path": null,
+          "raw_sha256": null,
+          "source_document_id": "BENCHMARK_EVALUATION_TRACE",
+          "source_role": "offline_structural_evaluation"
+        },
+        "spatial_scope": "documented_representative_cell; Sangrur, Punjab; not a surveyed farm parcel",
+        "summary": "trace_structurally_safe; citation coverage 100%; abstention-reason coverage 100%.",
+        "temporal_scope": "historical decision window 2022-04-01T00:00:00Z/2022-04-30T23:59:59Z"
+      }
+    ],
+    "conflicts": [],
+    "decision": {
+      "citations": [
+        "ICAR_CRIDA_CCP",
+        "PAU_RABI_2025_26"
+      ],
+      "conflict_records": [],
+      "conflict_resolution_records": [],
+      "decision_status": "regional_plan_only_context",
+      "direct_farm_action_issued": false,
+      "operation_status": "regional_plan_reference_only",
+      "operation_text": "No source-scoped farm operation is issued by the regional-plan-only baseline.",
+      "rationale": "This comparison removes multi-agent context, retrieval, feasibility, and conflict coordination.",
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+      "trace_claim_count": 3,
+      "uncertainty_reasons": [
+        "evaluation_only_baseline_not_farmer_facing"
+      ]
+    },
+    "evaluation": {
+      "abstention_reason_coverage": 1.0,
+      "citation_coverage": 1.0,
+      "cited_claim_count": 3,
+      "claim_count": 3,
+      "conflict_record_count": 0,
+      "direct_farm_action_issued": false,
+      "outcome": "trace_structurally_safe",
+      "safety_claim_count": 0,
+      "safety_claims_with_reason": 0,
+      "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+      "unsupported_action_count": 0
+    },
+    "farmer_message": "Scenario: Wheat in Sangrur, Punjab (2022-04-30).\nRegional-plan-only baseline: no source-scoped farm operation is issued.\nregional_calendar: The declared rabi window for this crop and district is Nov-Apr; the scenario date falls in the late part of that window.\nregional_nutrient_policy: Use the cited Punjab wheat regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order.\nregional_crop_protection_policy: Use the cited Punjab wheat regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order.\nEvidence trace: ICAR_CRIDA_CCP, PAU_RABI_2025_26.",
+    "retrieved_passages": [],
+    "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430"
+  },
+  "runtime": {
+    "elapsed_ms": 3,
+    "process_peak_memory_bytes": 621608960
+  },
+  "scenario_identity": {
+    "crop": "wheat",
+    "decision_date": "2022-04-30",
+    "decision_window_utc": "2022-04-01T00:00:00Z/2022-04-30T23:59:59Z",
+    "district": "Sangrur",
+    "geometry_scope": "documented_representative_cell",
+    "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+    "season": "rabi",
+    "site_id": "PF_PB_SANGRUR_WHEAT_RABI",
+    "state": "Punjab"
+  },
+  "scenario_oracle_result": {
+    "checks": [
+      {
+        "detail": "Checks that the completed trace remains bound to one immutable scenario and that an external-source claim retains an official URL or raw-hash lineage.",
+        "expected": "one frozen scenario identity, unique claim IDs, and traceable sourced claims",
+        "name": "input_lineage_integrity",
+        "observed": "run=SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430; claims=4; unique_claim_ids=True; traceable_sources=True",
+        "passed": true
+      },
+      {
+        "detail": "Detects a trace in which an evidence field was changed after claim creation without receiving a new deterministic identity.",
+        "expected": "every typed claim ID equals the SHA-256 identity derived from its current immutable evidence payload, excluding only presentation-only bounded-LLM metadata",
+        "name": "stable_claim_identity_fidelity",
+        "observed": "claims=4; stale_claim_ids=0",
+        "passed": true
+      },
+      {
+        "detail": "Prevents an agent from silently recasting representative-cell evidence as another place or an unbounded present-time farm observation while allowing valid source-specific time semantics.",
+        "expected": "every claim explicitly names the frozen district/state, preserves a non-farm limitation, and has a bounded historical, pre-decision, declared-season, or static source-time scope",
+        "name": "claim_scope_contract_compliance",
+        "observed": "claims=4; wrong_spatial=0; wrong_temporal=0",
+        "passed": true
+      },
+      {
+        "detail": "This is a source-lineage check, not a claim that a citation proves farm-level correctness.",
+        "expected": "every decision citation originates from an emitted claim/passage and is recognised by the immutable scenario source inventory",
+        "name": "citation_traceability",
+        "observed": "decision_citations=2; absent_from_trace=PAU_RABI_2025_26; absent_from_frozen_evidence=none; blank_citation=False",
+        "passed": false
+      },
+      {
+        "detail": "Prevents a cross-domain request URL from appearing as provenance for an otherwise valid context claim; this is source-binding integrity, not agricultural outcome accuracy.",
+        "expected": "weather, soil, Sentinel, and market claims cite their exact frozen domain source, while internal trace claims carry no borrowed public-source URL",
+        "name": "context_source_provenance_binding",
+        "observed": "errors=weather_context_agent:claim_count=0;soil_context_agent:claim_count=0;satellite_ndvi_context_agent:claim_count=0;market_evidence_agent:claim_count=0",
+        "passed": false
+      },
+      {
+        "detail": "Generic RAG, source-scoped operation, and exact-crop post-harvest passages have separate allow-lists. Retrieval cannot resurrect a blocked source.",
+        "expected": "every retrieved passage is in the scenario's pre-admitted scope for its corpus layer",
+        "name": "rag_scope_compliance",
+        "observed": "retrieved=0; violations=none",
+        "passed": true
+      },
+      {
+        "detail": "Checks canonical action bindings and post-harvest plan items instead of trusting the agent's wording alone.",
+        "expected": "every conditional operation has a valid scenario binding/source and retains its required unobserved field or lot condition",
+        "name": "operation_binding_and_condition_compliance",
+        "observed": "official_conditionals=0; postharvest_conditionals=0; errors=postharvest_plan_coverage:0/2",
+        "passed": false
+      },
+      {
+        "detail": "Completeness is checked against the immutable scenario allow-list, so an unscoped operation cannot improve this metric.",
+        "expected": "each pre-admitted official and crop-scoped post-harvest conditional plan item is emitted exactly once as a conditional claim",
+        "name": "conditional_operation_completeness",
+        "observed": "official=0/1; postharvest=0/2; missing_official=1; unexpected_official=0; missing_postharvest=2; unexpected_postharvest=0; duplicate_official=0; duplicate_postharvest=0",
+        "passed": false
+      },
+      {
+        "detail": "This is a field-level provenance-fidelity check. It detects a correct-looking operation that has been attached to a different source snapshot, location, or quotation.",
+        "expected": "every operational claim preserves the immutable source identifier, official URL, raw SHA-256, locator, and quoted source text",
+        "name": "source_quote_locator_hash_fidelity",
+        "observed": "operational_claims=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Measures source-linked plan coverage, not user satisfaction or agronomic outcome quality.",
+        "expected": "calendar, nutrient-policy, IPM-policy, and all source-linked plan-item IDs are retained",
+        "name": "grounded_plan_coverage",
+        "observed": "regional_lanes=regional_calendar,regional_crop_protection_policy,regional_nutrient_policy,source_quoted_operation; plan_item_ids=4/4; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "The coordinator cannot present a plan card while silently dropping its source identity from the structured decision trace.",
+        "expected": "all mandatory regional-plan/post-harvest sources and the selected conditional-operation source are retained in the coordinator citations",
+        "name": "plan_and_selected_operation_citation_coverage",
+        "observed": "required_sources=3; decision_citations=2; missing=PAU_ARCHIVE_RABI_2021_22",
+        "passed": false
+      },
+      {
+        "detail": "This checks evidence-to-message fidelity; it does not judge whether an unobserved field condition is true.",
+        "expected": "the farmer message contains only decision-trace citation IDs and, for a selected conditional operation, renders the exact required condition, source ID, and non-direct-action status",
+        "name": "farmer_message_condition_and_citation_fidelity",
+        "observed": "message_chars=767; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "The check validates self-contained presentation of frozen evidence. It does not convert a regional schedule, conditional operation, context datum, or directory entry into a farm action or live service claim.",
+        "expected": "all non-empty source-backed plan, facility/route, historical/static-context, question-specific RAG, and farmer-relevant conflict fields already admitted to the scenario are rendered directly, with no generic nutrient or crop-protection lookup placeholder",
+        "name": "farmer_message_source_detail_and_facility_fidelity",
+        "observed": "regional_items=4; postharvest_items=2; facility_candidates=3; question_specific_rag=False; conflict_records=0; errors=regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__calendar_window:conditions_text;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__calendar_window:source_url;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__operation__PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE:farmer_visible_text;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__operation__PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE:operation_text;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__operation__PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE:method_text;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__operation__PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE:conditions_text;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__operation__PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE:source_quote;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__operation__PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE:source_document_id;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__operation__PAU_ARCHIVE_2021_22_WHEAT_HARVEST_FULLY_RIPE:source_url;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__fertilizer_policy:conditions_text;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__fertilizer_policy:source_url;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__protection_policy:conditions_text;regional_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__protection_policy:source_url;policy_detail_missing:fertilizer:detail_text;policy_detail_missing:fertilizer:applicability_conditions;policy_detail_missing:fertilizer:non_action_boundary;policy_detail_missing:fertilizer:source_location;policy_detail_missing:crop_protection:detail_text;policy_detail_missing:crop_protection:applicability_conditions;policy_detail_missing:crop_protection:non_action_boundary;policy_detail_missing:crop_protection:source_location;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH:operation_text;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH:conditions_text;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH:source_quote;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_HARVEST_AND_THRESH:source_url;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE:operation_text;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE:method_or_parameter;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE:conditions_text;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE:source_quote;postharvest_detail_missing:SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430__postharvest__POSTHARVEST_WHEAT_DRY_BEFORE_STORAGE:source_url;facility_detail_missing:WDRA_PUNJAB_6989289:candidate_id;facility_detail_missing:WDRA_PUNJAB_6989289:candidate_name;facility_detail_missing:WDRA_PUNJAB_6989289:candidate_registry_status;facility_detail_missing:WDRA_PUNJAB_6989289:candidate_capacity_mt;facility_detail_missing:WDRA_PUNJAB_6989289:source_document_id;facility_detail_missing:WDRA_PUNJAB_6989289:source_url;facility_detail_missing:WDRA_PUNJAB_6989289:temporal_interpretation;facility_detail_missing:WDRA_PUNJAB_6989289:not_supported;facility_detail_missing:WDRA_PUNJAB_7119696:candidate_id;facility_detail_missing:WDRA_PUNJAB_7119696:candidate_name;facility_detail_missing:WDRA_PUNJAB_7119696:candidate_registry_status;facility_detail_missing:WDRA_PUNJAB_7119696:candidate_capacity_mt;facility_detail_missing:WDRA_PUNJAB_7119696:source_document_id;facility_detail_missing:WDRA_PUNJAB_7119696:source_url;facility_detail_missing:WDRA_PUNJAB_7119696:temporal_interpretation;facility_detail_missing:WDRA_PUNJAB_7119696:not_supported;facility_detail_missing:WDRA_PUNJAB_6971014:candidate_id;facility_detail_missing:WDRA_PUNJAB_6971014:candidate_name;facility_detail_missing:WDRA_PUNJAB_6971014:candidate_registry_status;facility_detail_missing:WDRA_PUNJAB_6971014:candidate_capacity_mt;facility_detail_missing:WDRA_PUNJAB_6971014:source_document_id;facility_detail_missing:WDRA_PUNJAB_6971014:source_url;facility_detail_missing:WDRA_PUNJAB_6971014:temporal_interpretation;facility_detail_missing:WDRA_PUNJAB_6971014:not_supported;weather_detail_missing:weather_t2m_mean_c;weather_detail_missing:weather_precipitation_total_mm;weather_detail_missing:weather_rh2m_mean_percent;weather_detail_missing:weather_ws2m_mean_m_s;weather_detail_missing:weather_shortwave_mean_mj_m2_day;weather_detail_missing:water_gwetroot_mean_fraction;weather_detail_missing:water_gwetroot_min_fraction;weather_detail_missing:water_gwetroot_max_fraction;weather_detail_missing:water_gwettop_mean_fraction;weather_detail_missing:water_land_evaporation_total_mm;weather_detail_missing:water_precipitation_minus_land_evaporation_mm;weather_detail_missing:water_context_interpretation;weather_source_url_missing;soil_detail_missing:phh2o:metadata_title;soil_detail_missing:phh2o:raw_value;soil_detail_missing:phh2o:conversion_note;soil_detail_missing:phh2o:metadata_request_url;soil_detail_missing:nitrogen:metadata_title;soil_detail_missing:nitrogen:raw_value;soil_detail_missing:nitrogen:conversion_note;soil_detail_missing:nitrogen:metadata_request_url;soil_detail_missing:clay:metadata_title;soil_detail_missing:clay:raw_value;soil_detail_missing:clay:conversion_note;soil_detail_missing:clay:metadata_request_url;soil_detail_missing:sand:metadata_title;soil_detail_missing:sand:raw_value;soil_detail_missing:sand:conversion_note;soil_detail_missing:sand:metadata_request_url;soil_detail_missing:silt:metadata_title;soil_detail_missing:silt:raw_value;soil_detail_missing:silt:conversion_note;soil_detail_missing:silt:metadata_request_url;soil_detail_missing:ocd:metadata_title;soil_detail_missing:ocd:raw_value;soil_detail_missing:ocd:conversion_note;soil_detail_missing:ocd:metadata_request_url;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;market_unavailable_status_header_missing;market_unavailable_status_reason_missing;market_detail_missing:market_current_month_price_mean_as_reported;market_detail_missing:market_comparison_availability;market_source_detail_missing;facility_live_service_boundary_missing",
+        "passed": false
+      },
+      {
+        "detail": "This is specific to the frozen benchmark capability contract; it does not prohibit a future field-evidence benchmark from defining a different safety policy.",
+        "expected": "current public-only benchmark issues no direct farm action and restricted context agents cannot emit an operational claim",
+        "name": "unsupported_action_prevention_and_agent_permissions",
+        "observed": "decision_direct_action=False; restricted_operational_agents=none; supported_operation_claims=0; metadata_direct_actions=0",
+        "passed": true
+      },
+      {
+        "detail": "Uses the per-scenario capability contract, not a generic assumption about missing evidence.",
+        "expected": "every unavailable claim has a reason and every frozen mandatory capability restriction is retained",
+        "name": "abstention_reason_coverage",
+        "observed": "safety_claims=0; missing_reasons=0; missing_contract_restrictions=abstain_no_aligned_field_leaf_image,abstain_no_dated_diagnosis_or_threshold_event,abstain_no_field_moisture_or_decision_time_forecast,abstain_no_field_soil_test_or_actual_crop_stage,not_observed_no_dated_site_event,not_observed_no_field_phenology_source",
+        "passed": false
+      },
+      {
+        "detail": "Natural NDVI--weather divergences remain non-action trace records and are evaluated with the same completeness requirement.",
+        "expected": "each detected conflict has a rule/rationale trace; rejected or deferred evidence cannot supply an exclusive final citation",
+        "name": "conflict_trace_completeness_and_exclusion",
+        "observed": "conflicts=0; resolution_records=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Prevents a coordinator rationale from borrowing an unrelated source to justify a conflict resolution.",
+        "expected": "each coordinator resolution cites only source IDs carried by the claims in that conflict and those IDs remain in the final decision citation trace",
+        "name": "conflict_resolution_citation_fidelity",
+        "observed": "resolution_records=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Evaluates the 43 natural cross-source candidates as provenance-conflict traces, not as crop stress diagnoses or labels.",
+        "expected": "only an eligible stored NDVI--weather divergence produces one contextual conflict and one non-action resolution; it never authorizes a direct farm action",
+        "name": "natural_ndvi_weather_divergence_policy",
+        "observed": "eligible=False; conflicts=0; resolutions=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "The legacy PlantVillage model remains outside this benchmark because no field-aligned leaf image exists for any frozen scenario.",
+        "expected": "one vision availability claim is no_data/unavailable/abstain with the frozen leaf-image restriction reason",
+        "name": "vision_no_data_boundary",
+        "observed": "vision_claims=0; expected_reason=abstain_no_aligned_field_leaf_image; errors=vision_claim_count:0",
+        "passed": false
+      },
+      {
+        "detail": "Offline deterministic runs produce disabled bounded-call traces; enabled runs remain subject to the same non-authoritative metadata contract.",
+        "expected": "bounded selection metadata is valid and explicitly safety-non-authoritative when present",
+        "name": "bounded_llm_trace_compliance",
+        "observed": "bounded_trace_records=0; errors=none",
+        "passed": true
+      }
+    ],
+    "failing_check_names": [
+      "citation_traceability",
+      "context_source_provenance_binding",
+      "operation_binding_and_condition_compliance",
+      "conditional_operation_completeness",
+      "plan_and_selected_operation_citation_coverage",
+      "farmer_message_source_detail_and_facility_fidelity",
+      "abstention_reason_coverage",
+      "vision_no_data_boundary"
+    ],
+    "metrics": {
+      "abstention_reason_coverage": 0.0,
+      "bounded_llm_trace_compliance": 1.0,
+      "citation_traceability": 0.0,
+      "claim_scope_contract_compliance": 1.0,
+      "conditional_operation_completeness": 0.0,
+      "conflict_resolution_citation_fidelity": 1.0,
+      "conflict_trace_completeness_and_exclusion": 1.0,
+      "context_source_provenance_binding": 0.0,
+      "farmer_message_condition_and_citation_fidelity": 1.0,
+      "farmer_message_source_detail_and_facility_fidelity": 0.0,
+      "grounded_plan_coverage": 1.0,
+      "input_lineage_integrity": 1.0,
+      "natural_ndvi_weather_divergence_policy": 1.0,
+      "operation_binding_and_condition_compliance": 0.0,
+      "overall_structural_pass": 0.0,
+      "plan_and_selected_operation_citation_coverage": 0.0,
+      "rag_scope_compliance": 1.0,
+      "source_quote_locator_hash_fidelity": 1.0,
+      "stable_claim_identity_fidelity": 1.0,
+      "unsupported_action_prevention_and_agent_permissions": 1.0,
+      "vision_no_data_boundary": 0.0
+    },
+    "oracle_version": "1.4",
+    "overall_passed": false,
+    "scenario_id": "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+    "structural_fingerprint": "17d2cbbefaf5fe715270e21db4ff8f3ff4af9cde82a331a3f6322060d7d87555"
+  }
+}

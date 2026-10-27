@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "soybean",
+    "decision_date": "2025-10-31",
+    "district": "Dewas",
+    "scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+    "season": "kharif",
+    "site_id": "PF_MP_DEWAS_SOYBEAN_KHARIF",
+    "state": "Madhya Pradesh"
+  },
+  "base_source_reference": {
+    "source_document_id": "FROZEN_SCENARIO_MANIFEST",
+    "source_location": "raw/nasa_power/ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031.json",
+    "source_raw_sha256": "0db7b326e8e03d1edda5b31170865d319af9cc2669f75c15fb826f1797d0e0d7",
+    "source_url": ""
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_loader_payload_hash_verifier",
+    "a5_status": "blocked_by_loader_payload_hash_verifier",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "4e138beec023323b63487e6af34f1422cffbc64aaa77ed23e3f1e1462e873d24",
+  "fixture_family": "loader_payload_integrity_rejection",
+  "fixture_id": "PAF_1_06_WEATHER_PAYLOAD_HASH_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "weather_payload_hash_mismatch",
+  "overlay": {
+    "base_value": "0db7b326e8e03d1edda5b31170865d319af9cc2669f75c15fb826f1797d0e0d7",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "field": "weather_current_response_sha256",
+    "selector": {
+      "scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031"
+    },
+    "target_layer": "manifest"
+  }
+}

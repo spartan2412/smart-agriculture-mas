@@ -1,0 +1,11 @@
+{
+  "configuration_id": "E0",
+  "evaluation_only": true,
+  "fixture_count": 0,
+  "fully_passing_scenario_count": 71,
+  "overall_structural_pass_rate": 0.23666666666666666,
+  "run_id": "v2_2-a3-no-scoped-rag",
+  "scenario_count": 300,
+  "status": "completed_evaluation_only_with_oracle_failures",
+  "system_id": "A3"
+}

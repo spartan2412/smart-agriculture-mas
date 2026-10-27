@@ -1,0 +1,110 @@
+{
+  "base_scenario": {
+    "crop": "wheat",
+    "decision_date": "2026-04-30",
+    "district": "Mansa",
+    "scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+    "season": "rabi",
+    "site_id": "PF_PB_MANSA_WHEAT_RABI",
+    "state": "Punjab"
+  },
+  "base_source": {
+    "locator": "District CCP crop profile and sowing-window PDFs",
+    "official_url": "https://icar-crida.res.in/CCP/PB/Mansa/1.7.pdf;https://icar-crida.res.in/CCP/PB/Mansa/1.12.pdf",
+    "raw_sha256": "7135f9265f0a79f4e09984c75b794b083d4969e49a62156fcf72364d7ee59cb7",
+    "source_document_id": "ICAR_CRIDA_CCP"
+  },
+  "claims": [
+    {
+      "agent_name": "fixture_operation_agent",
+      "allowed_use": "conditional_operation_only",
+      "block_reason": null,
+      "claim": "Evaluation-only supports claim for deterministic provenance-conflict testing; not an agricultural instruction.",
+      "claim_role": "rejected",
+      "confidence": 0.5,
+      "decision_domain": "official_operation",
+      "disposition": "conditional_operation",
+      "gate_result": "abstain",
+      "metadata": {
+        "assertion_polarity": "supports",
+        "base_source_document_id": "ICAR_CRIDA_CCP",
+        "base_source_raw_sha256": "7135f9265f0a79f4e09984c75b794b083d4969e49a62156fcf72364d7ee59cb7",
+        "decision_target": "evaluation_only:ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430:safety_source_restriction",
+        "direct_farm_action_issued": false,
+        "fixture_claim_role": "rejected",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+        "resolution_source_rank": 5,
+        "resolution_spatial_rank": 4,
+        "resolution_temporal_rank": 4,
+        "safety_restriction": false
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "This claim changes only declared evidence scope, validity, provenance, or safety metadata. It does not add weather, disease, soil, market, maturity, or farm observations.",
+      "source": {
+        "locator": "District CCP crop profile and sowing-window PDFs",
+        "official_url": "https://icar-crida.res.in/CCP/PB/Mansa/1.7.pdf;https://icar-crida.res.in/CCP/PB/Mansa/1.12.pdf",
+        "raw_sha256": "7135f9265f0a79f4e09984c75b794b083d4969e49a62156fcf72364d7ee59cb7",
+        "source_document_id": "ICAR_CRIDA_CCP",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "district-scoped evaluation overlay for Mansa, Punjab",
+      "summary": "Controlled provenance/gate overlay over a real frozen scenario.",
+      "temporal_scope": "exact frozen decision window ending 2026-04-30"
+    },
+    {
+      "agent_name": "fixture_source_safety_agent",
+      "allowed_use": "unavailable",
+      "block_reason": "fixture_source_scope_restriction",
+      "claim": "Evaluation-only opposes claim for deterministic provenance-conflict testing; not an agricultural instruction.",
+      "claim_role": "preferred_safety",
+      "confidence": 0.5,
+      "decision_domain": "official_operation",
+      "disposition": "blocked",
+      "gate_result": "blocked",
+      "metadata": {
+        "assertion_polarity": "opposes",
+        "base_source_document_id": "ICAR_CRIDA_CCP",
+        "base_source_raw_sha256": "7135f9265f0a79f4e09984c75b794b083d4969e49a62156fcf72364d7ee59cb7",
+        "decision_target": "evaluation_only:ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430:safety_source_restriction",
+        "direct_farm_action_issued": false,
+        "fixture_claim_role": "preferred_safety",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+        "resolution_source_rank": 5,
+        "resolution_spatial_rank": 4,
+        "resolution_temporal_rank": 4,
+        "safety_restriction": true
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "This claim changes only declared evidence scope, validity, provenance, or safety metadata. It does not add weather, disease, soil, market, maturity, or farm observations.",
+      "source": {
+        "locator": null,
+        "official_url": null,
+        "raw_sha256": null,
+        "source_document_id": "EVALUATION_COUNTERFACTUAL_PROVENANCE_OVERLAY",
+        "source_role": "evaluation_only_counterfactual_provenance_overlay"
+      },
+      "spatial_scope": "district-scoped evaluation overlay for Mansa, Punjab",
+      "summary": "Controlled provenance/gate overlay over a real frozen scenario.",
+      "temporal_scope": "exact frozen decision window ending 2026-04-30"
+    }
+  ],
+  "controlled_change_only": true,
+  "decision_target": "evaluation_only:ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430:safety_source_restriction",
+  "expected": {
+    "accepted_roles": [
+      "preferred_safety"
+    ],
+    "conflict_count": 1,
+    "direct_farm_action_issued": false,
+    "rejected_roles": [
+      "rejected"
+    ],
+    "resolution_status": "resolved_by_safety_restriction"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "9f2ad338e6b45ad98d54e807e4360777ae954ac2c02edf017f673703fed2ec9a",
+  "fixture_family": "coordinator_resolution",
+  "fixture_id": "CF_WHEAT_06_SAFETY_SOURCE_RESTRICTION",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "safety_source_restriction"
+}

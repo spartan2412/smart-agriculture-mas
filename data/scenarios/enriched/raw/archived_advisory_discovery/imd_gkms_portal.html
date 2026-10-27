@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Agro Advisory</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="https://agromet.imd.gov.in/stylesheet/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="https://agromet.imd.gov.in/stylesheet/dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="https://agromet.imd.gov.in/stylesheet/dist/css/AdminLTE.css">
+        <!-- iCheck -->
+        <link rel="stylesheet" href="https://agromet.imd.gov.in/stylesheet/plugins/iCheck/square/blue.css">
+        <link rel="shortcut icon" href="https://agromet.imd.gov.in/stylesheet/images/rimes.ico">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+ <style>
+ .animate_blink{
+ -webkit-animation: glowing 500ms infinite;
+    -moz-animation: glowing 500ms infinite;
+    -o-animation: glowing 500ms infinite;
+    animation: glowing 500ms infinite;
+     
+    
+    }
+ @-webkit-keyframes glowing {
+  0% { background-color: #20b31b8c; -webkit-box-shadow: 0 0 13px #20b31b8c; }
+  50% { background-color: #fff000; -webkit-box-shadow: 0 0 5px #fff000; }
+  100% { background-color: #6aff05; -webkit-box-shadow: 0 0 13px #6aff05; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #20b31b8c; -moz-box-shadow: 0 0 13px #20b31b8c; }
+  50% { background-color: #fff000; -moz-box-shadow: 0 0 5px #fff000; }
+  100% { background-color: #6aff05; -moz-box-shadow: 0 0 13px #6aff05; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #20b31b8c; box-shadow: 0 0 13px #20b31b8c; }
+  50% { background-color: #fff000; box-shadow: 0 0 5px #fff000; }
+  100% { background-color: #6aff05; box-shadow: 0 0 13px #6aff05; }
+}
+
+@keyframes glowing {
+  0% { background-color: #20b31b8c; box-shadow: 0 0 13px #20b31b8c; }
+  50% { background-color: #fff000; box-shadow: 0 0 5px #fff000; }
+  100% { background-color: #6aff05; box-shadow: 0 0 13px #6aff05; }
+}
+
+.pdf-highlight-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pdf-highlight-icon {
+    width: 500px;
+    height: auto;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .pdf-highlight-icon:hover {
+    animation: none;
+    transform: scale(1.15);
+  }
+  .close-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e74c3c;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10000;
+    transition: all 0.3s ease;
+  }
+
+  .pdf-highlight-text {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+</style>
+ </style>
+    <body class="hold-transition login-page">
+        <div class="container-fluid" style="margin-top:50px">
+            <div class="col-md-12">
+                <div class="login-logo" style="border-bottom: 1px solid white; padding-bottom:10px;">
+                    <a href="#"><b>IMD</b> Agro Advisory</a>
+                </div>
+            </div>
+        <div class="col-md-8">
+                <div class="box box-default" style="border-radius:10px; border: 2px solid green; background-color: #ecf0f1;height: 400px;overflow-y: auto;">
+                    <div class="box-header with-border" style="color:green; border-top-right-radius:10px; border-top-left-radius:10px; border-bottom:2px solid green; background-color: #ecf0f1">
+                        <i class="fa fa-bullhorn"></i>
+                        <h1 class="box-title" style="font-weight:800">
+                            Latest Updates in Agromet-DSS <small style="color:black; font-weight:800" >News</small>
+                        </h1>
+                    </div>
+
+         <!--   <div class="box-body">
+                <div class="callout animate_blink" style="border-top: 2px solid orange; border-bottom: 2px solid orange; border-right:2px solid orange; border-left-color:orange; margin:0; padding:4px; background-color: #f3decf;">
+        
+
+ 
+ <p><b>
+       <span class="tab blink" style="color:red"><img src="https://agromet.imd.gov.in//assets/new.gif" alt="Girl in a jacket" ></span>
+                                <b>Urgent:Required to edit/Add Event Plan (From 20.12.2021 to 26.12.2021) Pertaining To GKMS in attached Google Sheet. Details are required to submit by 11:00 AM on 21.12.2020 to Ministry&#187;&#187;&nbsp;&nbsp;</b>
+        <a href="https://docs.google.com/spreadsheets/d/1-yxm3Gr8afqO7thV6mqvHla1hZbnITL6jPcLZdmR4P8/edit#gid=0" target="_blank"><font color=red>Click Here</font></a>
+              </p>
+
+                
+                      
+                    
+                    </div>
+                   
+                    
+                </div>-->
+                
+                    <div class="box-body" style="border-top:2px solid black;">
+                    <div class="callout" style="border-top: 2px solid orange; border-bottom: 2px solid orange; border-right:2px solid orange; border-left-color:orange; margin:0; padding:4px;  background-color: #f3decf;">
+               
+                <p><b><span class="tab blink" style="color:red"><img src="https://agromet.imd.gov.in//assets/new.gif" alt="Girl in a jacket" ></span> 
+                <b>UPDATE PASSWORD : Password must be at least 8 characters long, include at least one uppercase letter, one lowercase letter, one digit, and one special character.&#187;&#187;&nbsp;&nbsp;</b>
+                 </p><b>
+                
+                <!--<a href="?php echo base_url(); ?>/current_news/download/Extension.pdf" target="_blank"><font color=black>Click Here</font></a>
+              </p>
+                      
+           <p><b><span class="tab blink" style="color:red"><img src="https://agromet.imd.gov.in//assets/new.gif" alt="Girl in a jacket" ></span> 
+                <b>Download Excel Sheet to collect the real-time dynamic feedback &#187;&#187;&nbsp;&nbsp;</b>
+        <a href="?php echo base_url(); ?>/current_news/download/Dynamic Feedback Format.xlsx" target="_blank"><font color=black>Click Here</font></a>
+              </p> 
+                 
+                 <p><b>
+         <span class="tab blink" style="color:green">New**</span>
+                <b>Request to share real-time dynamic feedback through Google form on weekly basis&#187;&#187;&nbsp;&nbsp;</b> 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScYZOZPbnI8K4fDrn9AOqwv0b-hcoLx-_ha3IK6Pb0ZcTX3TA/viewform" target="_blank"><font color=black>Click Here</font></a>
+        </p>-->
+        
+        <p>
+        <span class="tab blink" style="color:green">New**</span>
+    <b>Dynamic Crop Weather Calendar Incorporated in Agromet DSS &raquo;&raquo;&nbsp;&nbsp;</b>
+    <a href="https://agromet.imd.gov.in/weather-crop-calendar/" 
+       target="_blank" 
+       style="color: black;">
+        Click Here
+    </a>
+</p>
+                           
+              <p>
+              
+    <b>Dynamic Crop Weather Calendar User Manual &raquo;&raquo;&nbsp;&nbsp;</b>
+    <a href="https://agromet.imd.gov.in/current_news/download/ManualDCWC.pdf"
+       target="_blank"
+       style="color: black;">
+        Click Here
+    </a>
+</p>
+         <!--<span class="tab blink" style="color:green">New**</span>--> 
+                <!--<b> Dynamic Crop Weather Calender in Agromet DSS https://agromet.imd.gov.in/weather-crop-calendar/ &#187;&#187;&nbsp;&nbsp;</b> 
+        <a href="?php echo base_url(); ?>/current_news/download/Manual_DCWC.pdf" target="_blank"><font color=black>Click Here</font></a>           </b>
+              </p>-->               
+                    </div>
+                </div>
+        
+      
+                   
+        <!--<div class="box-body" style="border-top:2px solid black;">
+                    <div class="callout" style="border-top: 2px solid orange; border-bottom: 2px solid orange; border-right:2px solid orange; border-left-color:orange; margin:0; padding:4px; background-color: #f3decf;">
+                
+                             <p>
+                            <b><span class="tab blink" style="color:green">New**</span> 
+                                <font color="#0000FF"><b> </font> All DAMUs are requested to sent the at APR 2020-21 asc_imd@yahoo.co.in.
+                            </b>
+                        </p>
+             <p><b><span class="tab blink" style="color:green">New**</span>
+            Template for sharing photos/videos captured under GKMS &#187;&#187;&nbsp;&nbsp;</b>
+                            <a href="https://agromet.imd.gov.in//current_news/download/GKMS_photo_template.pdf" target="_blank"><font color=black>Click Here</font></a>
+            </b>
+                        </p>        
+                </div>
+            </div>-->
+            </div>
+            </div>
+            
+            <div class="col-md-4">
+      <div class="login-box" style="margin:0 auto; max-width:100%;">
+                    <div class="login-box-body">
+               <h2 class="login-box-msg"><b>Sign in</b></h2>
+            
+                    <!--<form action="?php echo base_url(); ?>index.php/login/login_form" method="post">-->
+                    <form action="https://agromet.imd.gov.in/index.php/login/login_form" method="post">
+                    
+
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" placeholder="Username" id="username" name="username" />
+                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="password" class="form-control" placeholder="Password" id="password" name="password" />
+                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                                    </div>
+                        <div class="form-group has-feedback">
+                            <select class="form-control" id="role" name="role">
+                                <option value="1">Admin</option>
+                                <option value="2">AMFU</option>
+                                <option value="3">SAMC</option>
+                                <option value="4">DAMU</option>
+                                <option value="8">DEE</option>
+                                <option value="6">ATARI</option>
+                                <option value="7">ICAR</option>
+                                <option value="5">GUEST</option>
+                                <option value="10">DR</option>                                     
+                                <option value="9">PNO</option>
+              
+                            </select>
+                        </div>
+                    <div class="g-recaptcha" data-sitekey="6LeWFrgZAAAAAAJd3ia2zr3OFjjROtGKYmPElqLc"></div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="checkbox icheck">
+                                    <label>
+                                        <p>
+                                        <h6><a href="https://agromet.imd.gov.in/index.php/login/user_details"><i>Change/Forgotten Password</i></a></h6>
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-xs-4">
+                                <button type="submit" class="btn btn-success btn-block btn-flat">Sign In</button>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                    </form>
+                </div>
+                <!-- /.login-box-body -->
+            </div>
+        </div>
+        </div>
+        <!-- /.login-box -->
+   
+                    <!--<div class="box-body" style="border-top:2px solid black;">
+                    <div class="callout" style="border-top: 6px solid orange; border-bottom: 6px solid orange; border-right:6px solid orange; border-left-color:orange; margin:0; padding:4px;  background-color: #f3decf;">
+    <p><b><span class="" style="color:red"><img src="https://agromet.imd.gov.in//assets/AKMS.jpg" alt="Girl in a jacket" ></span>
+    <b>
+    <p>-->
+        <!-- jQuery 2.2.0 -->
+        <script src="https://agromet.imd.gov.in/stylesheet/plugins/jQuery/jQuery-2.2.0.min.js"></script>
+        <!-- Bootstrap 3.3.6 -->
+        <script src="https://agromet.imd.gov.in/stylesheet/bootstrap/js/bootstrap.min.js"></script>
+        <!-- iCheck -->
+        <!--<script src="https://agromet.imd.gov.in/plugins/iCheck/icheck.min.js"></script>-->
+        <!-- <script>
+            (unction () {
+                ('input').iCheck({
+                    checkboxClass: 'icheckbox_square-blue',
+                    radioClass: 'iradio_square-blue',
+                    increaseArea: '20%' // optional
+                });
+            });
+            </script>
+        <script>
+            // $('#myModal').modal({keyboard: true});
+            // Optional: Close when clicking outside the box
+            document.addEventListener('click', function(e) {
+                if (!document.getElementById('pdfPopup').contains(e.target)) {
+                document.getElementById('pdfPopup').style.display = 'none';
+                }
+            });
+        </script>
+        <div class="pdf-highlight-container" id="pdfPopup">
+        <span class="close-btn" onclick="document.getElementById('pdfPopup').style.display='none'">×</span>
+        <a href="https://agromet.imd.gov.in/assets/TS_lightning_feedback.pdf" target="_blank">
+            <img src="https://agromet.imd.gov.in/assets/pdf_icon.png" 
+                alt="Download Lightning Survey PDF" 
+                class="pdf-highlight-icon"
+                title="Click to download survey">
+        </a>
+        </div>-->
+    </body>
+</html>

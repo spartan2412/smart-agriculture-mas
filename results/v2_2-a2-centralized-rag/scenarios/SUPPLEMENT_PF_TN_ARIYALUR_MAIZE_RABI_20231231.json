@@ -1,0 +1,423 @@
+{
+  "benchmark_run": {
+    "claims": [
+      {
+        "agent_name": "official_operations_rag_agent",
+        "allowed_use": "conditional_operation_only",
+        "block_reason": null,
+        "claim": "Metadata-admitted official passages are available for controlled operational reasoning.",
+        "claim_id": "96d01088a18488c8a5fc856e0454eee908ace3bf9ecae1c58c527b573bfef36d",
+        "confidence": 0.9,
+        "decision_domain": "official_operation",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "blocked_scope_count": 89,
+          "passages": [
+            {
+              "corpus_layer": "official_rag",
+              "locator": "pdf_page_1",
+              "score": 0.4,
+              "source_document_id": "ICAR_CRIDA_TN_ARIYALUR_CROP_PROFILE"
+            },
+            {
+              "corpus_layer": "official_rag",
+              "locator": "pdf_page_1",
+              "score": 0.4,
+              "source_document_id": "ICAR_CRIDA_TN_ARIYALUR_SOWING_WINDOW"
+            },
+            {
+              "corpus_layer": "postharvest_exact_crop",
+              "locator": "pdf_page_151",
+              "score": 0.4,
+              "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22"
+            },
+            {
+              "corpus_layer": "postharvest_exact_crop",
+              "locator": "pdf_page_151",
+              "score": 0.4,
+              "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22"
+            },
+            {
+              "corpus_layer": "source_scoped_operation",
+              "locator": "html_document",
+              "score": 0.35,
+              "source_document_id": "TNAU_MAIZE_FAW_2023"
+            }
+          ],
+          "postharvest_exact_crop_passage_count": 2,
+          "postharvest_scope_decision_count": 2,
+          "question": "",
+          "source_scoped_operation_passage_count": 2
+        },
+        "quality": "metadata-admitted official RAG passages",
+        "reasoning": "Corpus chunks are metadata filtered first. Recovered operation passages enter only after their full source binding passes. Post-harvest passages require an exact-crop scenario scope; retrieval does not itself authorize a farm action, booking, or dispatch.",
+        "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+        "source": {
+          "locator": "pdf_page_1",
+          "official_url": "https://icar-crida.res.in/CCP/TN/Ariyalur/1.7.pdf",
+          "raw_path": null,
+          "raw_sha256": "0c812fd74eebd9793530bce320e6d8b08d6499d5a195dc5832bf65eddda27c62",
+          "source_document_id": "ICAR_CRIDA_TN_ARIYALUR_CROP_PROFILE",
+          "source_role": "metadata_admitted_official_rag"
+        },
+        "spatial_scope": "documented_representative_cell; Ariyalur, Tamil Nadu; not a surveyed farm parcel",
+        "summary": "Retrieved 5 scope-admitted passage(s) from 4 source(s).",
+        "temporal_scope": "historical decision window 2023-12-01T00:00:00Z/2023-12-31T23:59:59Z"
+      },
+      {
+        "agent_name": "centralized_source_filtered_rag_baseline",
+        "allowed_use": "context_only",
+        "block_reason": null,
+        "claim": "An evaluation-only baseline produced a source-bounded trace.",
+        "claim_id": "e042f845f254c3933594f898f13f25992dbc78267a42091eaddec4c88bda34db",
+        "confidence": 1.0,
+        "decision_domain": "system_safety",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "retrieved_source_ids": [
+            "ICAR_CRIDA_TN_ARIYALUR_CROP_PROFILE",
+            "ICAR_CRIDA_TN_ARIYALUR_SOWING_WINDOW",
+            "ICAR_RABI_STATE_ADVISORIES_2021_22",
+            "TNAU_MAIZE_FAW_2023"
+          ],
+          "system_id": "A2"
+        },
+        "quality": "evaluation_only_baseline_not_farmer_facing",
+        "reasoning": "This baseline retains the same prefiltered source scope but removes independent context agents, feasibility, conflict detection, and provenance-aware coordination. Retrieval never authorizes a farm action.",
+        "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+        "source": {
+          "locator": null,
+          "official_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CPRECTOTCORR%2CRH2M%2CWS2M&community=AG&longitude=79.225151&latitude=11.161771&start=20231201&end=20231231&format=JSON",
+          "raw_path": "raw/nasa_power/SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231.json",
+          "raw_sha256": "d815c101b6fed61f6b81e3d55e4d2d453fd42667b175513b8863bdc8eaea3d3a",
+          "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+          "source_role": "centralized_rag_baseline_trace"
+        },
+        "spatial_scope": "documented_representative_cell; Ariyalur, Tamil Nadu; not a surveyed farm parcel",
+        "summary": "A2 retrieved 5 already-admitted passage(s) in one centralized path.",
+        "temporal_scope": "historical decision window 2023-12-01T00:00:00Z/2023-12-31T23:59:59Z"
+      },
+      {
+        "agent_name": "benchmark_evaluator_agent",
+        "allowed_use": "context_only",
+        "block_reason": null,
+        "claim": "The benchmark decision trace has been evaluated for structural grounding and safety.",
+        "claim_id": "c72a583abc8e2450c6b83bb5b73cccbf927f16c433fd092c72c405e3a84dc09f",
+        "confidence": 1.0,
+        "decision_domain": "system_safety",
+        "disposition": "context",
+        "gate_result": "pass",
+        "metadata": {
+          "abstention_reason_coverage": 1.0,
+          "citation_coverage": 1.0,
+          "cited_claim_count": 2,
+          "claim_count": 2,
+          "conflict_record_count": 0,
+          "safety_claim_count": 0,
+          "safety_claims_with_reason": 0,
+          "unsupported_action_count": 0
+        },
+        "quality": "trace_structurally_safe",
+        "reasoning": "These are trace-level quality metrics, not field-outcome accuracy or agronomic ground truth.",
+        "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+        "source": {
+          "locator": null,
+          "official_url": null,
+          "raw_path": null,
+          "raw_sha256": null,
+          "source_document_id": "BENCHMARK_EVALUATION_TRACE",
+          "source_role": "offline_structural_evaluation"
+        },
+        "spatial_scope": "documented_representative_cell; Ariyalur, Tamil Nadu; not a surveyed farm parcel",
+        "summary": "trace_structurally_safe; citation coverage 100%; abstention-reason coverage 100%.",
+        "temporal_scope": "historical decision window 2023-12-01T00:00:00Z/2023-12-31T23:59:59Z"
+      }
+    ],
+    "conflicts": [],
+    "decision": {
+      "citations": [
+        "ICAR_CRIDA_TN_ARIYALUR_CROP_PROFILE",
+        "ICAR_CRIDA_TN_ARIYALUR_SOWING_WINDOW",
+        "ICAR_RABI_STATE_ADVISORIES_2021_22",
+        "TNAU_MAIZE_FAW_2023"
+      ],
+      "conflict_records": [],
+      "conflict_resolution_records": [],
+      "decision_status": "centralized_rag_context_only",
+      "direct_farm_action_issued": false,
+      "operation_status": "retrieval_context_only",
+      "operation_text": "No source-scoped farm operation is issued by the centralized RAG baseline.",
+      "rationale": "A single retriever can surface only already-admitted passages; it does not replace MAS safety gates.",
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+      "trace_claim_count": 2,
+      "uncertainty_reasons": [
+        "evaluation_only_baseline_not_farmer_facing"
+      ]
+    },
+    "evaluation": {
+      "abstention_reason_coverage": 1.0,
+      "citation_coverage": 1.0,
+      "cited_claim_count": 2,
+      "claim_count": 2,
+      "conflict_record_count": 0,
+      "direct_farm_action_issued": false,
+      "outcome": "trace_structurally_safe",
+      "safety_claim_count": 0,
+      "safety_claims_with_reason": 0,
+      "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+      "unsupported_action_count": 0
+    },
+    "farmer_message": "Scenario: Maize in Ariyalur, Tamil Nadu (2023-12-31).\nCentralized source-filtered RAG baseline: retrieval context only; no farm operation is issued.\nRetrieved source — ICAR_CRIDA_TN_ARIYALUR_CROP_PROFILE: 1.7 Major Field Crops cultivated Area (‘000 ha) Kharif Rabi Summer Total Irrigated Rainfed Irrigated Rainfed Rice - - - - - 29.1 Groundnut - - - - - 17.5 Sugarcane - -- - - - 12.2 Maize - - - - - 11.2 Sorghum - - - - - 4.1 Horticulture crops - Fruits Total area Mango - Guava - Banana - Horticultural crops - Vegetables Total area Chillies 1.5 Tapioca 0.2 Onion - Medicinal and Aromatic crops Total area Medicinal and Aromatic crops - Plantation crops/Spices Total area Turmeric 0.1 Coriander 0.3\nRetrieved source — ICAR_CRIDA_TN_ARIYALUR_SOWING_WINDOW: 1.12 Sowing window for 5 major crops (start and end of sowing period) Rice Groundnut Sugarcane Maize Sorghum Kharif- Rainfed 2nd week of July - 2nd week of August 2nd week of June - 2nd week of July - 2nd week of September - 2nd week of October 1st week of August- 2nd week of September Kharif-Irrigated 2nd week of June – 2nd week of July - 2nd week of December - 2nd week of January - - Rabi- Rainfed - - - - - Rabi-Irrigated 2nd week of October - February 2nd week of October - 2nd week of November - 1st week of January – 3rd week of February 2nd week of January - 2nd week of February\nRetrieved source — ICAR_RABI_STATE_ADVISORIES_2021_22: Maize is ready for harvesting even when the stacks and leaves are somewhat green, but the husk cover has dried and turned brown. Shell Maize when the moisture content ranges between 15-20%.\nRetrieved source — ICAR_RABI_STATE_ADVISORIES_2021_22: The Maize ears should preferably be dried for 3-4 days after harvesting to improve grain recoveries and reduce breakage losses.\nRetrieved source — TNAU_MAIZE_FAW_2023: Set up FAW pheromone traps. 12 traps/ha. Only for an existing maize crop when the implementation stage is documented. Set up FAW pheromone traps @ 12 nos./ha\nEvidence trace: ICAR_CRIDA_TN_ARIYALUR_CROP_PROFILE, ICAR_CRIDA_TN_ARIYALUR_SOWING_WINDOW, ICAR_RABI_STATE_ADVISORIES_2021_22, TNAU_MAIZE_FAW_2023.",
+    "retrieved_passages": [
+      {
+        "corpus_layer": "official_rag",
+        "locator": "pdf_page_1",
+        "official_url": "https://icar-crida.res.in/CCP/TN/Ariyalur/1.7.pdf",
+        "score": 0.4,
+        "source_document_id": "ICAR_CRIDA_TN_ARIYALUR_CROP_PROFILE",
+        "source_raw_sha256": "0c812fd74eebd9793530bce320e6d8b08d6499d5a195dc5832bf65eddda27c62",
+        "source_title": "ICAR-CRIDA district crop profile document — Ariyalur, Tamil Nadu",
+        "text": "1.7 Major Field Crops cultivated Area (‘000 ha) Kharif Rabi Summer Total Irrigated Rainfed Irrigated Rainfed Rice - - - - - 29.1 Groundnut - - - - - 17.5 Sugarcane - -- - - - 12.2 Maize - - - - - 11.2 Sorghum - - - - - 4.1 Horticulture crops - Fruits Total area Mango - Guava - Banana - Horticultural crops - Vegetables Total area Chillies 1.5 Tapioca 0.2 Onion - Medicinal and Aromatic crops Total area Medicinal and Aromatic crops - Plantation crops/Spices Total area Turmeric 0.1 Coriander 0.3"
+      },
+      {
+        "corpus_layer": "official_rag",
+        "locator": "pdf_page_1",
+        "official_url": "https://icar-crida.res.in/CCP/TN/Ariyalur/1.12.pdf",
+        "score": 0.4,
+        "source_document_id": "ICAR_CRIDA_TN_ARIYALUR_SOWING_WINDOW",
+        "source_raw_sha256": "c5acaa7ca8c0cbbb9490b889d681e7f802a7ae8cf490c38102c53ff47f759075",
+        "source_title": "ICAR-CRIDA district sowing window document — Ariyalur, Tamil Nadu",
+        "text": "1.12 Sowing window for 5 major crops (start and end of sowing period) Rice Groundnut Sugarcane Maize Sorghum Kharif- Rainfed 2nd week of July - 2nd week of August 2nd week of June - 2nd week of July - 2nd week of September - 2nd week of October 1st week of August- 2nd week of September Kharif-Irrigated 2nd week of June – 2nd week of July - 2nd week of December - 2nd week of January - - Rabi- Rainfed - - - - - Rabi-Irrigated 2nd week of October - February 2nd week of October - 2nd week of November - 1st week of January – 3rd week of February 2nd week of January - 2nd week of February"
+      },
+      {
+        "corpus_layer": "postharvest_exact_crop",
+        "locator": "pdf_page_151",
+        "official_url": "https://icar.org.in/sites/default/files/2022-09/Rabi-Agro-Advisory-2021-22_0.pdf",
+        "score": 0.4,
+        "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+        "source_raw_sha256": "8805e0a1c0bd67b175ebade41f798cfe3354a827b6d45b640a9d86fc3d29c7e5",
+        "source_title": "ICAR Rabi Agro-Advisory for Farmers 2021–22",
+        "text": "Maize is ready for harvesting even when the stacks and leaves are somewhat green, but the husk cover has dried and turned brown. Shell Maize when the moisture content ranges between 15-20%."
+      },
+      {
+        "corpus_layer": "postharvest_exact_crop",
+        "locator": "pdf_page_151",
+        "official_url": "https://icar.org.in/sites/default/files/2022-09/Rabi-Agro-Advisory-2021-22_0.pdf",
+        "score": 0.4,
+        "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+        "source_raw_sha256": "8805e0a1c0bd67b175ebade41f798cfe3354a827b6d45b640a9d86fc3d29c7e5",
+        "source_title": "ICAR Rabi Agro-Advisory for Farmers 2021–22",
+        "text": "The Maize ears should preferably be dried for 3-4 days after harvesting to improve grain recoveries and reduce breakage losses."
+      },
+      {
+        "corpus_layer": "source_scoped_operation",
+        "locator": "html_document",
+        "official_url": "https://agritech.tnau.ac.in/crop_protection/maize/crop_prot_maize_fall_armyworm.html",
+        "score": 0.35,
+        "source_document_id": "TNAU_MAIZE_FAW_2023",
+        "source_raw_sha256": "62250eb04f98ceb6572acd7276ba09f3cbcb0efc0b6a3f6af2ec8b167d059342",
+        "source_title": "TNAU fall-armyworm management in maize",
+        "text": "Set up FAW pheromone traps. 12 traps/ha. Only for an existing maize crop when the implementation stage is documented. Set up FAW pheromone traps @ 12 nos./ha"
+      }
+    ],
+    "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231"
+  },
+  "runtime": {
+    "elapsed_ms": 3,
+    "process_peak_memory_bytes": 634568704
+  },
+  "scenario_identity": {
+    "crop": "maize",
+    "decision_date": "2023-12-31",
+    "decision_window_utc": "2023-12-01T00:00:00Z/2023-12-31T23:59:59Z",
+    "district": "Ariyalur",
+    "geometry_scope": "documented_representative_cell",
+    "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+    "season": "rabi",
+    "site_id": "PF_TN_ARIYALUR_MAIZE_RABI",
+    "state": "Tamil Nadu"
+  },
+  "scenario_oracle_result": {
+    "checks": [
+      {
+        "detail": "Checks that the completed trace remains bound to one immutable scenario and that an external-source claim retains an official URL or raw-hash lineage.",
+        "expected": "one frozen scenario identity, unique claim IDs, and traceable sourced claims",
+        "name": "input_lineage_integrity",
+        "observed": "run=SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231; claims=3; unique_claim_ids=True; traceable_sources=True",
+        "passed": true
+      },
+      {
+        "detail": "Detects a trace in which an evidence field was changed after claim creation without receiving a new deterministic identity.",
+        "expected": "every typed claim ID equals the SHA-256 identity derived from its current immutable evidence payload, excluding only presentation-only bounded-LLM metadata",
+        "name": "stable_claim_identity_fidelity",
+        "observed": "claims=3; stale_claim_ids=0",
+        "passed": true
+      },
+      {
+        "detail": "Prevents an agent from silently recasting representative-cell evidence as another place or an unbounded present-time farm observation while allowing valid source-specific time semantics.",
+        "expected": "every claim explicitly names the frozen district/state, preserves a non-farm limitation, and has a bounded historical, pre-decision, declared-season, or static source-time scope",
+        "name": "claim_scope_contract_compliance",
+        "observed": "claims=3; wrong_spatial=0; wrong_temporal=0",
+        "passed": true
+      },
+      {
+        "detail": "This is a source-lineage check, not a claim that a citation proves farm-level correctness.",
+        "expected": "every decision citation originates from an emitted claim/passage and is recognised by the immutable scenario source inventory",
+        "name": "citation_traceability",
+        "observed": "decision_citations=4; absent_from_trace=none; absent_from_frozen_evidence=none; blank_citation=False",
+        "passed": true
+      },
+      {
+        "detail": "Prevents a cross-domain request URL from appearing as provenance for an otherwise valid context claim; this is source-binding integrity, not agricultural outcome accuracy.",
+        "expected": "weather, soil, Sentinel, and market claims cite their exact frozen domain source, while internal trace claims carry no borrowed public-source URL",
+        "name": "context_source_provenance_binding",
+        "observed": "errors=weather_context_agent:claim_count=0;soil_context_agent:claim_count=0;satellite_ndvi_context_agent:claim_count=0;market_evidence_agent:claim_count=0",
+        "passed": false
+      },
+      {
+        "detail": "Generic RAG, source-scoped operation, and exact-crop post-harvest passages have separate allow-lists. Retrieval cannot resurrect a blocked source.",
+        "expected": "every retrieved passage is in the scenario's pre-admitted scope for its corpus layer",
+        "name": "rag_scope_compliance",
+        "observed": "retrieved=5; violations=none",
+        "passed": true
+      },
+      {
+        "detail": "Checks canonical action bindings and post-harvest plan items instead of trusting the agent's wording alone.",
+        "expected": "every conditional operation has a valid scenario binding/source and retains its required unobserved field or lot condition",
+        "name": "operation_binding_and_condition_compliance",
+        "observed": "official_conditionals=0; postharvest_conditionals=0; errors=postharvest_plan_coverage:0/2",
+        "passed": false
+      },
+      {
+        "detail": "Completeness is checked against the immutable scenario allow-list, so an unscoped operation cannot improve this metric.",
+        "expected": "each pre-admitted official and crop-scoped post-harvest conditional plan item is emitted exactly once as a conditional claim",
+        "name": "conditional_operation_completeness",
+        "observed": "official=0/2; postharvest=0/2; missing_official=2; unexpected_official=0; missing_postharvest=2; unexpected_postharvest=0; duplicate_official=0; duplicate_postharvest=0",
+        "passed": false
+      },
+      {
+        "detail": "This is a field-level provenance-fidelity check. It detects a correct-looking operation that has been attached to a different source snapshot, location, or quotation.",
+        "expected": "every operational claim preserves the immutable source identifier, official URL, raw SHA-256, locator, and quoted source text",
+        "name": "source_quote_locator_hash_fidelity",
+        "observed": "operational_claims=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Measures source-linked plan coverage, not user satisfaction or agronomic outcome quality.",
+        "expected": "calendar, nutrient-policy, IPM-policy, and all source-linked plan-item IDs are retained",
+        "name": "grounded_plan_coverage",
+        "observed": "regional_lanes=regional_calendar,regional_crop_protection_policy,regional_nutrient_policy,source_quoted_operation; plan_item_ids=0/5; errors=regional_plan_item_exposure:0/5",
+        "passed": false
+      },
+      {
+        "detail": "The coordinator cannot present a plan card while silently dropping its source identity from the structured decision trace.",
+        "expected": "all mandatory regional-plan/post-harvest sources and the selected conditional-operation source are retained in the coordinator citations",
+        "name": "plan_and_selected_operation_citation_coverage",
+        "observed": "required_sources=3; decision_citations=4; missing=ICAR_CRIDA_CCP",
+        "passed": false
+      },
+      {
+        "detail": "This checks evidence-to-message fidelity; it does not judge whether an unobserved field condition is true.",
+        "expected": "the farmer message contains only decision-trace citation IDs and, for a selected conditional operation, renders the exact required condition, source ID, and non-direct-action status",
+        "name": "farmer_message_condition_and_citation_fidelity",
+        "observed": "message_chars=2122; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "The check validates self-contained presentation of frozen evidence. It does not convert a regional schedule, conditional operation, context datum, or directory entry into a farm action or live service claim.",
+        "expected": "all non-empty source-backed plan, facility/route, historical/static-context, question-specific RAG, and farmer-relevant conflict fields already admitted to the scenario are rendered directly, with no generic nutrient or crop-protection lookup placeholder",
+        "name": "farmer_message_source_detail_and_facility_fidelity",
+        "observed": "regional_items=5; postharvest_items=2; facility_candidates=3; question_specific_rag=False; conflict_records=0; errors=regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__calendar_window:farmer_visible_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__calendar_window:conditions_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__calendar_window:source_document_id;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__calendar_window:source_url;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__operation__TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT:farmer_visible_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__operation__TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT:operation_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__operation__TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT:method_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__operation__TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT:dose_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__operation__TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT:conditions_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__operation__TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT:source_quote;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__operation__TNAU_MAIZE_FAW_EARLY_STAGE_TREATMENT:source_url;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__operation__TNAU_MAIZE_FAW_PHEROMONE_TRAPS:source_url;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__fertilizer_policy:farmer_visible_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__fertilizer_policy:conditions_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__fertilizer_policy:source_url;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__protection_policy:farmer_visible_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__protection_policy:conditions_text;regional_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__protection_policy:source_url;policy_detail_missing:fertilizer:detail_text;policy_detail_missing:fertilizer:applicability_conditions;policy_detail_missing:fertilizer:non_action_boundary;policy_detail_missing:fertilizer:source_location;policy_detail_missing:crop_protection:detail_text;policy_detail_missing:crop_protection:applicability_conditions;policy_detail_missing:crop_protection:non_action_boundary;policy_detail_missing:crop_protection:source_location;postharvest_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL:operation_text;postharvest_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL:method_or_parameter;postharvest_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL:conditions_text;postharvest_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__postharvest__POSTHARVEST_MAIZE_HARVEST_AND_SHELL:source_url;postharvest_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__postharvest__POSTHARVEST_MAIZE_DRY_EARS:operation_text;postharvest_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__postharvest__POSTHARVEST_MAIZE_DRY_EARS:method_or_parameter;postharvest_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__postharvest__POSTHARVEST_MAIZE_DRY_EARS:conditions_text;postharvest_detail_missing:SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231__postharvest__POSTHARVEST_MAIZE_DRY_EARS:source_url;facility_detail_missing:WDRA_TAMIL_NADU_6629018:candidate_id;facility_detail_missing:WDRA_TAMIL_NADU_6629018:candidate_name;facility_detail_missing:WDRA_TAMIL_NADU_6629018:candidate_registry_status;facility_detail_missing:WDRA_TAMIL_NADU_6629018:candidate_capacity_mt;facility_detail_missing:WDRA_TAMIL_NADU_6629018:source_document_id;facility_detail_missing:WDRA_TAMIL_NADU_6629018:source_url;facility_detail_missing:WDRA_TAMIL_NADU_6629018:temporal_interpretation;facility_detail_missing:WDRA_TAMIL_NADU_6629018:not_supported;facility_detail_missing:WDRA_TAMIL_NADU_6631535:candidate_id;facility_detail_missing:WDRA_TAMIL_NADU_6631535:candidate_name;facility_detail_missing:WDRA_TAMIL_NADU_6631535:candidate_registry_status;facility_detail_missing:WDRA_TAMIL_NADU_6631535:candidate_capacity_mt;facility_detail_missing:WDRA_TAMIL_NADU_6631535:source_document_id;facility_detail_missing:WDRA_TAMIL_NADU_6631535:source_url;facility_detail_missing:WDRA_TAMIL_NADU_6631535:temporal_interpretation;facility_detail_missing:WDRA_TAMIL_NADU_6631535:not_supported;facility_detail_missing:WDRA_TAMIL_NADU_4560574:candidate_id;facility_detail_missing:WDRA_TAMIL_NADU_4560574:candidate_name;facility_detail_missing:WDRA_TAMIL_NADU_4560574:candidate_registry_status;facility_detail_missing:WDRA_TAMIL_NADU_4560574:candidate_capacity_mt;facility_detail_missing:WDRA_TAMIL_NADU_4560574:source_document_id;facility_detail_missing:WDRA_TAMIL_NADU_4560574:source_url;facility_detail_missing:WDRA_TAMIL_NADU_4560574:temporal_interpretation;facility_detail_missing:WDRA_TAMIL_NADU_4560574:not_supported;weather_detail_missing:weather_t2m_mean_c;weather_detail_missing:weather_precipitation_total_mm;weather_detail_missing:weather_rh2m_mean_percent;weather_detail_missing:weather_ws2m_mean_m_s;weather_detail_missing:weather_shortwave_mean_mj_m2_day;weather_detail_missing:water_gwetroot_mean_fraction;weather_detail_missing:water_gwetroot_min_fraction;weather_detail_missing:water_gwetroot_max_fraction;weather_detail_missing:water_gwettop_mean_fraction;weather_detail_missing:water_land_evaporation_total_mm;weather_detail_missing:water_precipitation_minus_land_evaporation_mm;weather_detail_missing:water_context_interpretation;weather_source_url_missing;soil_detail_missing:phh2o:metadata_title;soil_detail_missing:phh2o:raw_value;soil_detail_missing:phh2o:conversion_note;soil_detail_missing:phh2o:metadata_request_url;soil_detail_missing:nitrogen:metadata_title;soil_detail_missing:nitrogen:raw_value;soil_detail_missing:nitrogen:conversion_note;soil_detail_missing:nitrogen:metadata_request_url;soil_detail_missing:clay:metadata_title;soil_detail_missing:clay:raw_value;soil_detail_missing:clay:conversion_note;soil_detail_missing:clay:metadata_request_url;soil_detail_missing:sand:metadata_title;soil_detail_missing:sand:raw_value;soil_detail_missing:sand:conversion_note;soil_detail_missing:sand:metadata_request_url;soil_detail_missing:silt:metadata_title;soil_detail_missing:silt:raw_value;soil_detail_missing:silt:conversion_note;soil_detail_missing:silt:metadata_request_url;soil_detail_missing:ocd:metadata_title;soil_detail_missing:ocd:raw_value;soil_detail_missing:ocd:conversion_note;soil_detail_missing:ocd:metadata_request_url;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;satellite_unavailable_status_detail_missing;market_unavailable_status_header_missing;market_unavailable_status_reason_missing;market_detail_missing:market_current_month_price_mean_as_reported;market_detail_missing:market_comparison_availability;market_source_detail_missing;facility_live_service_boundary_missing",
+        "passed": false
+      },
+      {
+        "detail": "This is specific to the frozen benchmark capability contract; it does not prohibit a future field-evidence benchmark from defining a different safety policy.",
+        "expected": "current public-only benchmark issues no direct farm action and restricted context agents cannot emit an operational claim",
+        "name": "unsupported_action_prevention_and_agent_permissions",
+        "observed": "decision_direct_action=False; restricted_operational_agents=none; supported_operation_claims=0; metadata_direct_actions=0",
+        "passed": true
+      },
+      {
+        "detail": "Uses the per-scenario capability contract, not a generic assumption about missing evidence.",
+        "expected": "every unavailable claim has a reason and every frozen mandatory capability restriction is retained",
+        "name": "abstention_reason_coverage",
+        "observed": "safety_claims=0; missing_reasons=0; missing_contract_restrictions=abstain_no_aligned_field_leaf_image,abstain_no_dated_diagnosis_or_threshold_event,abstain_no_field_moisture_or_decision_time_forecast,abstain_no_field_soil_test_or_actual_crop_stage,not_observed_no_dated_site_event,not_observed_no_field_phenology_source",
+        "passed": false
+      },
+      {
+        "detail": "Natural NDVI--weather divergences remain non-action trace records and are evaluated with the same completeness requirement.",
+        "expected": "each detected conflict has a rule/rationale trace; rejected or deferred evidence cannot supply an exclusive final citation",
+        "name": "conflict_trace_completeness_and_exclusion",
+        "observed": "conflicts=0; resolution_records=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Prevents a coordinator rationale from borrowing an unrelated source to justify a conflict resolution.",
+        "expected": "each coordinator resolution cites only source IDs carried by the claims in that conflict and those IDs remain in the final decision citation trace",
+        "name": "conflict_resolution_citation_fidelity",
+        "observed": "resolution_records=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "Evaluates the 43 natural cross-source candidates as provenance-conflict traces, not as crop stress diagnoses or labels.",
+        "expected": "only an eligible stored NDVI--weather divergence produces one contextual conflict and one non-action resolution; it never authorizes a direct farm action",
+        "name": "natural_ndvi_weather_divergence_policy",
+        "observed": "eligible=False; conflicts=0; resolutions=0; errors=none",
+        "passed": true
+      },
+      {
+        "detail": "The legacy PlantVillage model remains outside this benchmark because no field-aligned leaf image exists for any frozen scenario.",
+        "expected": "one vision availability claim is no_data/unavailable/abstain with the frozen leaf-image restriction reason",
+        "name": "vision_no_data_boundary",
+        "observed": "vision_claims=0; expected_reason=abstain_no_aligned_field_leaf_image; errors=vision_claim_count:0",
+        "passed": false
+      },
+      {
+        "detail": "Offline deterministic runs produce disabled bounded-call traces; enabled runs remain subject to the same non-authoritative metadata contract.",
+        "expected": "bounded selection metadata is valid and explicitly safety-non-authoritative when present",
+        "name": "bounded_llm_trace_compliance",
+        "observed": "bounded_trace_records=0; errors=none",
+        "passed": true
+      }
+    ],
+    "failing_check_names": [
+      "context_source_provenance_binding",
+      "operation_binding_and_condition_compliance",
+      "conditional_operation_completeness",
+      "grounded_plan_coverage",
+      "plan_and_selected_operation_citation_coverage",
+      "farmer_message_source_detail_and_facility_fidelity",
+      "abstention_reason_coverage",
+      "vision_no_data_boundary"
+    ],
+    "metrics": {
+      "abstention_reason_coverage": 0.0,
+      "bounded_llm_trace_compliance": 1.0,
+      "citation_traceability": 1.0,
+      "claim_scope_contract_compliance": 1.0,
+      "conditional_operation_completeness": 0.0,
+      "conflict_resolution_citation_fidelity": 1.0,
+      "conflict_trace_completeness_and_exclusion": 1.0,
+      "context_source_provenance_binding": 0.0,
+      "farmer_message_condition_and_citation_fidelity": 1.0,
+      "farmer_message_source_detail_and_facility_fidelity": 0.0,
+      "grounded_plan_coverage": 0.0,
+      "input_lineage_integrity": 1.0,
+      "natural_ndvi_weather_divergence_policy": 1.0,
+      "operation_binding_and_condition_compliance": 0.0,
+      "overall_structural_pass": 0.0,
+      "plan_and_selected_operation_citation_coverage": 0.0,
+      "rag_scope_compliance": 1.0,
+      "source_quote_locator_hash_fidelity": 1.0,
+      "stable_claim_identity_fidelity": 1.0,
+      "unsupported_action_prevention_and_agent_permissions": 1.0,
+      "vision_no_data_boundary": 0.0
+    },
+    "oracle_version": "1.4",
+    "overall_passed": false,
+    "scenario_id": "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+    "structural_fingerprint": "1c63f7ce4daf6e5987412c6a45988ab98ca9f782001291da92da0ed80fdf5b4d"
+  }
+}

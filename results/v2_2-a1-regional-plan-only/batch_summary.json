@@ -1,0 +1,11 @@
+{
+  "configuration_id": "E0",
+  "evaluation_only": true,
+  "fixture_count": 0,
+  "fully_passing_scenario_count": 0,
+  "overall_structural_pass_rate": 0.0,
+  "run_id": "v2_2-a1-regional-plan-only",
+  "scenario_count": 300,
+  "status": "completed_evaluation_only_with_oracle_failures",
+  "system_id": "A1"
+}

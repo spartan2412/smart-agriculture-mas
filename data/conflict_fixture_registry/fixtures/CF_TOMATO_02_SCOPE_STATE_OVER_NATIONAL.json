@@ -1,0 +1,110 @@
+{
+  "base_scenario": {
+    "crop": "tomato",
+    "decision_date": "2025-12-31",
+    "district": "Coimbatore",
+    "scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+    "season": "rabi",
+    "site_id": "PF_TN_COIMBATORE_TOMATO_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source": {
+    "locator": "PDF pp. 388 and 394-395 Tamil Nadu and Puducherry Rabi tomato chapter",
+    "official_url": "https://icar-crida.res.in/CCP/TN/Coimbatore/1.7.pdf;https://icar-crida.res.in/CCP/TN/Coimbatore/1.12.pdf",
+    "raw_sha256": "f193fa2960b55c08a75efdcdd3342d8828ca5cf63a39bfdb4b55a2f80d2dd995",
+    "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22"
+  },
+  "claims": [
+    {
+      "agent_name": "fixture_state_source_agent",
+      "allowed_use": "conditional_operation_only",
+      "block_reason": null,
+      "claim": "Evaluation-only supports claim for deterministic provenance-conflict testing; not an agricultural instruction.",
+      "claim_role": "preferred",
+      "confidence": 0.5,
+      "decision_domain": "official_operation",
+      "disposition": "conditional_operation",
+      "gate_result": "abstain",
+      "metadata": {
+        "assertion_polarity": "supports",
+        "base_source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+        "base_source_raw_sha256": "f193fa2960b55c08a75efdcdd3342d8828ca5cf63a39bfdb4b55a2f80d2dd995",
+        "decision_target": "evaluation_only:ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231:scope_state_over_national",
+        "direct_farm_action_issued": false,
+        "fixture_claim_role": "preferred",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+        "resolution_source_rank": 5,
+        "resolution_spatial_rank": 3,
+        "resolution_temporal_rank": 4,
+        "safety_restriction": false
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "This claim changes only declared evidence scope, validity, provenance, or safety metadata. It does not add weather, disease, soil, market, maturity, or farm observations.",
+      "source": {
+        "locator": "PDF pp. 388 and 394-395 Tamil Nadu and Puducherry Rabi tomato chapter",
+        "official_url": "https://icar-crida.res.in/CCP/TN/Coimbatore/1.7.pdf;https://icar-crida.res.in/CCP/TN/Coimbatore/1.12.pdf",
+        "raw_sha256": "f193fa2960b55c08a75efdcdd3342d8828ca5cf63a39bfdb4b55a2f80d2dd995",
+        "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "state-scoped evaluation overlay for Tamil Nadu",
+      "summary": "Controlled provenance/gate overlay over a real frozen scenario.",
+      "temporal_scope": "exact frozen decision window ending 2025-12-31"
+    },
+    {
+      "agent_name": "fixture_national_source_agent",
+      "allowed_use": "conditional_operation_only",
+      "block_reason": null,
+      "claim": "Evaluation-only opposes claim for deterministic provenance-conflict testing; not an agricultural instruction.",
+      "claim_role": "rejected",
+      "confidence": 0.5,
+      "decision_domain": "official_operation",
+      "disposition": "conditional_operation",
+      "gate_result": "abstain",
+      "metadata": {
+        "assertion_polarity": "opposes",
+        "base_source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+        "base_source_raw_sha256": "f193fa2960b55c08a75efdcdd3342d8828ca5cf63a39bfdb4b55a2f80d2dd995",
+        "decision_target": "evaluation_only:ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231:scope_state_over_national",
+        "direct_farm_action_issued": false,
+        "fixture_claim_role": "rejected",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+        "resolution_source_rank": 4,
+        "resolution_spatial_rank": 1,
+        "resolution_temporal_rank": 4,
+        "safety_restriction": false
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "This claim changes only declared evidence scope, validity, provenance, or safety metadata. It does not add weather, disease, soil, market, maturity, or farm observations.",
+      "source": {
+        "locator": null,
+        "official_url": null,
+        "raw_sha256": null,
+        "source_document_id": "EVALUATION_COUNTERFACTUAL_PROVENANCE_OVERLAY",
+        "source_role": "evaluation_only_counterfactual_provenance_overlay"
+      },
+      "spatial_scope": "national evaluation overlay; deliberately broader than the frozen district",
+      "summary": "Controlled provenance/gate overlay over a real frozen scenario.",
+      "temporal_scope": "exact frozen decision window ending 2025-12-31"
+    }
+  ],
+  "controlled_change_only": true,
+  "decision_target": "evaluation_only:ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231:scope_state_over_national",
+  "expected": {
+    "accepted_roles": [
+      "preferred"
+    ],
+    "conflict_count": 1,
+    "direct_farm_action_issued": false,
+    "rejected_roles": [
+      "rejected"
+    ],
+    "resolution_status": "resolved_by_provenance_precedence"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "dbb267167fd8ab3bbac196c64e05c1f25b015ec835fbff0bcc1d122d7de45ba8",
+  "fixture_family": "coordinator_resolution",
+  "fixture_id": "CF_TOMATO_02_SCOPE_STATE_OVER_NATIONAL",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "scope_state_over_national"
+}

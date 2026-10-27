@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "maize",
+    "decision_date": "2026-03-31",
+    "district": "Namakkal",
+    "scenario_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_TN_NAMAKKAL_MAIZE_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "8f70fee68941bfe8c0b0f3758e1c7971c30b108361b63c0ee893309b952ddd2a;4aed78c83dfc7e1f86f5a9328756dbc225d934e4dcc780d17c686fa17bf99426",
+    "source_url": "https://icar-crida.res.in/CCP/TN/Namakkal/1.7.pdf;https://icar-crida.res.in/CCP/TN/Namakkal/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "e8d8c8106a42b092f49a338811f6f9e2120aa1d827843ff2c108d87c11550981",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_28_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_crop_scope_mismatch",
+  "overlay": {
+    "base_value": "maize",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "rice",
+    "field": "crop",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

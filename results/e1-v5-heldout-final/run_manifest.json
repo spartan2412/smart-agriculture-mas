@@ -1,0 +1,33 @@
+{
+  "all_relevance_thresholds_pass": true,
+  "bounded_llm_invocation_count": 96,
+  "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+  "completed_at_utc": "2026-10-10T07:50:28Z",
+  "experiment_boundary_git": {
+    "clean": true,
+    "commit": "0f3ec6db2d0f25cc886764c3cc444a89c18f7074"
+  },
+  "experiment_manifest_path": "results/e1-v5-heldout-preflight/experiment_manifest.json",
+  "experiment_manifest_sha256": "07017dd4f9fc37e5caff2eee4731455e4dd7dd477229400b463662aba5e08026",
+  "final_research_result_permitted": true,
+  "git": {
+    "clean": "true",
+    "commit": "b7be4091a279af8203a4b6274b78f61439949cd5"
+  },
+  "heldout_acceptance_criteria_sha256": "d4bb0868de88ea09ca41930086f7aabec500e7f5007b6b86b2ab74457bbc08b6",
+  "heldout_manifest_sha256": "b983736f110ca1f28debf91c97d160ce0f6b080c7b6ea896593e7a0a8dbffc0c",
+  "heldout_question_sha256": "9759733f8a45f9a577a826c68e4d307a77eb067ca8c831bc27bba2e37918bcf3",
+  "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+  "question_count": 96,
+  "run_type": "final_v5_heldout_bounded_llm_relevance_evaluation",
+  "runner_sha256": "e2c5e3a236ff805fd2db1e2ce94111f97ca9010ec3dc95d71d7a6d269ea75d25",
+  "runner_version": "1.0",
+  "runtime_configuration": {
+    "backend": "ollama",
+    "maximum_tokens_per_call": 200,
+    "ollama_model": "qwen2.5:7b-instruct",
+    "temperature": 0.0
+  },
+  "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+  "usage": "final_heldout_evaluation_after_v5_development_freeze"
+}

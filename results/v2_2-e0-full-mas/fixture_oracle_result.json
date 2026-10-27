@@ -1,0 +1,435 @@
+{
+  "all_passed": true,
+  "compliance_rate": 1.0,
+  "coverage_passed": true,
+  "family_counts": {
+    "coordinator_resolution": 48,
+    "negative_control_no_comparable_conflict": 6,
+    "pre_resolution_integrity_rejection": 6
+  },
+  "fixture_count": 60,
+  "oracle_version": "1.4",
+  "passed_fixture_count": 60,
+  "records": [
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_RICE_01_SCOPE_DISTRICT_OVER_STATE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_RICE_02_SCOPE_STATE_OVER_NATIONAL",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_RICE_03_TEMPORAL_EXACT_WEEK_OVER_SEASON",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_RICE_04_TEMPORAL_CURRENT_OVER_EXPIRED",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_RICE_05_SAFETY_MISSING_FIELD_CONDITION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_RICE_06_SAFETY_SOURCE_RESTRICTION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_RICE_07_PROVENANCE_VERIFIED_OVER_INCOMPLETE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_RICE_08_EQUAL_PRECEDENCE_SAFE_DEFER",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+      "detail": "runner_status=blocked_before_conflict_detection_and_coordination; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "pre_resolution_integrity_rejection",
+      "fixture_id": "CF_RICE_09_INTEGRITY_CROP",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "negative_control_no_comparable_conflict",
+      "fixture_id": "CF_RICE_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_WHEAT_01_SCOPE_DISTRICT_OVER_STATE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_WHEAT_02_SCOPE_STATE_OVER_NATIONAL",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_WHEAT_03_TEMPORAL_EXACT_WEEK_OVER_SEASON",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_WHEAT_04_TEMPORAL_CURRENT_OVER_EXPIRED",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_WHEAT_05_SAFETY_MISSING_FIELD_CONDITION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_WHEAT_06_SAFETY_SOURCE_RESTRICTION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_WHEAT_07_PROVENANCE_VERIFIED_OVER_INCOMPLETE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_WHEAT_08_EQUAL_PRECEDENCE_SAFE_DEFER",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+      "detail": "runner_status=blocked_before_conflict_detection_and_coordination; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "pre_resolution_integrity_rejection",
+      "fixture_id": "CF_WHEAT_09_INTEGRITY_DISTRICT",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "negative_control_no_comparable_conflict",
+      "fixture_id": "CF_WHEAT_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_MAIZE_01_SCOPE_DISTRICT_OVER_STATE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_MAIZE_02_SCOPE_STATE_OVER_NATIONAL",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_MAIZE_03_TEMPORAL_EXACT_WEEK_OVER_SEASON",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_MAIZE_04_TEMPORAL_CURRENT_OVER_EXPIRED",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_MAIZE_05_SAFETY_MISSING_FIELD_CONDITION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_MAIZE_06_SAFETY_SOURCE_RESTRICTION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_MAIZE_07_PROVENANCE_VERIFIED_OVER_INCOMPLETE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_MAIZE_08_EQUAL_PRECEDENCE_SAFE_DEFER",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+      "detail": "runner_status=blocked_before_conflict_detection_and_coordination; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "pre_resolution_integrity_rejection",
+      "fixture_id": "CF_MAIZE_09_INTEGRITY_DECISION_DATE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "negative_control_no_comparable_conflict",
+      "fixture_id": "CF_MAIZE_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_CHICKPEA_01_SCOPE_DISTRICT_OVER_STATE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_CHICKPEA_02_SCOPE_STATE_OVER_NATIONAL",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_CHICKPEA_03_TEMPORAL_EXACT_WEEK_OVER_SEASON",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_CHICKPEA_04_TEMPORAL_CURRENT_OVER_EXPIRED",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_CHICKPEA_05_SAFETY_MISSING_FIELD_CONDITION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_CHICKPEA_06_SAFETY_SOURCE_RESTRICTION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_CHICKPEA_07_PROVENANCE_VERIFIED_OVER_INCOMPLETE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_CHICKPEA_08_EQUAL_PRECEDENCE_SAFE_DEFER",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=blocked_before_conflict_detection_and_coordination; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "pre_resolution_integrity_rejection",
+      "fixture_id": "CF_CHICKPEA_09_INTEGRITY_WEATHER_CURRENT_RESPONSE_SHA256",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "negative_control_no_comparable_conflict",
+      "fixture_id": "CF_CHICKPEA_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_SOYBEAN_01_SCOPE_DISTRICT_OVER_STATE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_SOYBEAN_02_SCOPE_STATE_OVER_NATIONAL",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_SOYBEAN_03_TEMPORAL_EXACT_WEEK_OVER_SEASON",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_SOYBEAN_04_TEMPORAL_CURRENT_OVER_EXPIRED",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_SOYBEAN_05_SAFETY_MISSING_FIELD_CONDITION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_SOYBEAN_06_SAFETY_SOURCE_RESTRICTION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_SOYBEAN_07_PROVENANCE_VERIFIED_OVER_INCOMPLETE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_SOYBEAN_08_EQUAL_PRECEDENCE_SAFE_DEFER",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=blocked_before_conflict_detection_and_coordination; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "pre_resolution_integrity_rejection",
+      "fixture_id": "CF_SOYBEAN_09_INTEGRITY_STATE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "negative_control_no_comparable_conflict",
+      "fixture_id": "CF_SOYBEAN_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_TOMATO_01_SCOPE_DISTRICT_OVER_STATE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_TOMATO_02_SCOPE_STATE_OVER_NATIONAL",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_TOMATO_03_TEMPORAL_EXACT_WEEK_OVER_SEASON",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_TOMATO_04_TEMPORAL_CURRENT_OVER_EXPIRED",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_TOMATO_05_SAFETY_MISSING_FIELD_CONDITION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_TOMATO_06_SAFETY_SOURCE_RESTRICTION",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_TOMATO_07_PROVENANCE_VERIFIED_OVER_INCOMPLETE",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "coordinator_resolution",
+      "fixture_id": "CF_TOMATO_08_EQUAL_PRECEDENCE_SAFE_DEFER",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+      "detail": "runner_status=blocked_before_conflict_detection_and_coordination; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "pre_resolution_integrity_rejection",
+      "fixture_id": "CF_TOMATO_09_INTEGRITY_MARKET_CURRENT_PAYLOAD_SHA256",
+      "passed": true
+    },
+    {
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+      "detail": "runner_status=passed; expected_match=True; direct_farm_action_issued=False",
+      "fixture_family": "negative_control_no_comparable_conflict",
+      "fixture_id": "CF_TOMATO_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+      "passed": true
+    }
+  ]
+}

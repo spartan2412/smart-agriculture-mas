@@ -1,0 +1,29 @@
+{
+  "anchor_manifest_path": "data/scenarios/manifests/anchor_scenario_manifest.csv",
+  "anchor_manifest_sha256": "55f7ffa3adb12cac57cfa24738bb899a4f5d45de2ec0be16d5d654110deb0d87",
+  "builder": {
+    "git": {
+      "clean": "false",
+      "commit": "f1f95904192c7ffe92846f31498839ed409dbe2e"
+    },
+    "module": "evaluation/apple_gpu_preflight.py",
+    "module_sha256": "7adda3277d19cc2ebd6ff2a42418654d888aed328bc66af84e239e03940448ac"
+  },
+  "focused_crops": [
+    "rice",
+    "wheat",
+    "maize",
+    "chickpea",
+    "soybean",
+    "tomato"
+  ],
+  "per_crop_site_count": 5,
+  "pilot_identity_sha256": "412888ee276374880c439c6263ef2d7252fa0c936e14a7d6c95b7d37bcc0840e",
+  "pilot_set_version": "1.0",
+  "scenario_count": 30,
+  "scenario_file": "scenario_ids.csv",
+  "scenario_file_sha256": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+  "selection_rule": "one_verified_anchor_per_final_study_site",
+  "status": "frozen_one_anchor_per_verified_site",
+  "unique_site_count": 30
+}

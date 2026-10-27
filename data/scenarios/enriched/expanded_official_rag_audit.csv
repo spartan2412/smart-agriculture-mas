@@ -1,0 +1,4 @@
+check,expected,actual,result,detail
+expanded_source_candidate_coverage,120,120,pass,validated
+expanded_source_hashes_and_roles,78,78,pass,validated
+expanded_metadata_filtered_scenario_scope,23400,23400,pass,validated

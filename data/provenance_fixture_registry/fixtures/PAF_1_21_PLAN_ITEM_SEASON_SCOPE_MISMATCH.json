@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "maize",
+    "decision_date": "2026-03-31",
+    "district": "Ariyalur",
+    "scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_TN_ARIYALUR_MAIZE_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "0c812fd74eebd9793530bce320e6d8b08d6499d5a195dc5832bf65eddda27c62;c5acaa7ca8c0cbbb9490b889d681e7f802a7ae8cf490c38102c53ff47f759075",
+    "source_url": "https://icar-crida.res.in/CCP/TN/Ariyalur/1.7.pdf;https://icar-crida.res.in/CCP/TN/Ariyalur/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "c4241ca7cf0d17f12dddff4886db294b950cdf3267f4ff0b9cd8e673176fef49",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_21_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_season_scope_mismatch",
+  "overlay": {
+    "base_value": "rabi",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "kharif",
+    "field": "season",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

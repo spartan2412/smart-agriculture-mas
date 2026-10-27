@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "wheat",
+    "decision_date": "2026-04-30",
+    "district": "Ludhiana",
+    "scenario_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+    "season": "rabi",
+    "site_id": "PF_PB_LUDHIANA_WHEAT_RABI",
+    "state": "Punjab"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "8fde5d7127e0ab3f5ec0104ac25ad0b24e7811ff1b248831c16e97a2a85cc443;9b96b7eef5df86778e085161fde7f98ebcb042f27ac092ec9dc356c373cceaa1",
+    "source_url": "https://icar-crida.res.in/CCP/PB/Ludhiana/1.7.pdf;https://icar-crida.res.in/CCP/PB/Ludhiana/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "18c657c85b6e96f9ecdc49d3116db92a164bb2616b6c0938e1a8a7d38d7c8ecf",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_12_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_season_scope_mismatch",
+  "overlay": {
+    "base_value": "rabi",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "kharif",
+    "field": "season",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

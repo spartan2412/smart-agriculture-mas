@@ -1,0 +1,342 @@
+{
+  "protocol_version": "1.5",
+  "protocol_status": "frozen_farmer_output_v2_2_source_recorded_policy_detail_pending_regeneration",
+  "effective_rule": "This protocol becomes executable only from a clean Git commit containing this file. Every batch run must record that commit and must fail if any listed artifact hash differs. Historical v1.1 archives remain immutable and are not overwritten.",
+  "benchmark": {
+    "normal_scenario_count": 300,
+    "final_site_count": 30,
+    "focused_crops": ["rice", "wheat", "maize", "chickpea", "soybean", "tomato"],
+    "scenario_loader": "data.benchmark_loader.FrozenBenchmarkLoader",
+    "workflow": "graph.benchmark_workflow.BenchmarkMASWorkflow",
+    "raw_source_hash_verification": true,
+    "direct_farm_actions_permitted": false
+  },
+  "conflict_evaluation": {
+    "fixture_count": 60,
+    "fixture_type": "evaluation_only_counterfactual_not_real_farm_evidence",
+    "runner": "evaluation.conflict_fixture_runner.ConflictFixtureRunner",
+    "normal_scenario_ndvi_weather_divergence_count": 43,
+    "execution_frequency": "once per clean code commit; not once per LLM backend"
+  },
+  "oracle": {
+    "implementation": "evaluation.benchmark_oracle.BenchmarkEvaluationOracle",
+    "oracle_version": "1.4",
+    "evaluation_contract_version": "1.1",
+    "normal_scenario_check_count": 20,
+    "required_outputs": [
+      "per_scenario_oracle_results",
+      "aggregate_oracle_result",
+      "stratified_oracle_result",
+      "fixture_oracle_result"
+    ],
+    "prohibited_claims": [
+      "field_action_accuracy",
+      "farm_irrigation_accuracy",
+      "fertilizer_dose_accuracy",
+      "pesticide_treatment_accuracy",
+      "disease_diagnosis_accuracy",
+      "yield_impact",
+      "brier_score_or_calibration_without_outcome_labels"
+    ]
+  },
+  "farmer_output_contract": {
+    "version": "2.2",
+    "renderer": "agents.benchmark.farmer_explanation_citation.FarmerExplanationCitationAgent",
+    "scope": "deterministic self-contained rendering of already-admitted frozen evidence only",
+    "required_rendered_detail": [
+      "regional plan text, method, source-recorded dose, conditions, source wording, and citation where present",
+      "the exact source-recorded regional nutrient schedule or branch, its applicability conditions, safety boundary, and detail locator",
+      "the exact source-recorded regional IPM method or option, its applicability conditions, safety boundary, and detail locator",
+      "crop-scoped post-harvest operation, method/parameter, conditions, source wording, and citation where present",
+      "each retained facility candidate and static-route field where present",
+      "complete frozen historical weather/water, static SoilGrids, Sentinel/NDVI, and historical market context with their domain-specific source provenance",
+      "up to two already-admitted question-specific official RAG excerpts when the caller asks a question",
+      "a concise farmer-relevant conclusion for a retained conflict resolution, while preserving the full record in the technical trace"
+    ],
+    "forbidden_rendered_claims": [
+      "farm-specific fertilizer dose",
+      "irrigate now",
+      "diagnosis or threshold not present in the scenario",
+      "chemical treatment order without its recorded condition",
+      "live facility availability, vacancy, booking, commodity acceptance, freight, dispatch, or traffic"
+    ],
+    "bounded_llm_interface_change": false,
+    "heldout_relevance_interpretation": "The v5.1 held-out relevance result remains a selector-quality result because the prompt templates, candidate packaging, and selection contract are unchanged. It is not reused as a farmer-output quality measurement."
+  },
+  "bounded_llm_policy": {
+    "enabled_agent_count": 8,
+    "prompt_template_version": "bounded-selection-v4-structured-relevance-prompts",
+    "temperature": 0.0,
+    "max_tokens_per_call": 200,
+    "max_selected_facts": 3,
+    "allowed_effect": "rank or present only supplied admitted fact IDs",
+    "forbidden_effect": "change a gate, source, citation, action, condition, direct-action permission, or conflict resolution"
+  },
+  "experiment_configurations": {
+    "E0": {
+      "label": "deterministic-only full MAS",
+      "backend": "none",
+      "benchmark_llm_enabled": false,
+      "benchmark_llm_required": false,
+      "population": "all_300_normal_scenarios",
+      "purpose": "Reference conformance, reproducibility, and value-of-bounded-LLM control."
+    },
+    "E1": {
+      "label": "Ollama local-model v5.1 bounded-selector evaluation",
+      "backend": "ollama",
+      "benchmark_llm_enabled": true,
+      "benchmark_llm_required": false,
+      "bounded_llm_runtime": "v5.1",
+      "workflow": "graph.benchmark_workflow_v5.BenchmarkMASWorkflowV5",
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "model_family": "Qwen2.5-7B-Instruct",
+      "ollama_tag": "qwen2.5:7b-instruct",
+      "installed_model_blob_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+      "installed_ollama_model_id_prefix": "845dbda0ea48",
+      "quantization": "Q4_K_M",
+      "acceleration_requirement": "Ollama Metal/Apple-GPU use must be verified in the 30-scenario pilot.",
+      "population": "all_300_normal_scenarios_after_pilot",
+      "purpose": "Current local bounded-LLM baseline."
+    },
+    "E2": {
+      "label": "Ollama stronger-capacity model",
+      "backend": "ollama",
+      "benchmark_llm_enabled": true,
+      "benchmark_llm_required": false,
+      "model_family": "Qwen2.5-14B-Instruct",
+      "artifact_binding_status": "required_before_execution",
+      "acceleration_requirement": "Ollama Metal/Apple-GPU use must be verified in the 30-scenario pilot.",
+      "population": "all_300_normal_scenarios_after_pilot",
+      "purpose": "Bounded-LLM capacity comparison against E1."
+    },
+    "E3": {
+      "label": "MLX-LM deployment-runtime comparison",
+      "backend": "mlx-lm",
+      "benchmark_llm_enabled": true,
+      "benchmark_llm_required": false,
+      "model_family": "Qwen2.5-14B-Instruct",
+      "artifact_binding_status": "required_before_execution",
+      "acceleration_requirement": "MLX Apple-GPU use must be verified in the 30-scenario pilot.",
+      "population": "all_300_normal_scenarios_after_pilot",
+      "purpose": "Deployment-runtime comparison against E2, subject to the identical-artifact gate."
+    }
+  },
+  "e2_e3_identical_artifact_gate": {
+    "binding_document_shape": "{\"configurations\": {\"E2\": {...}, \"E3\": {...}}}",
+    "required_fields": [
+      "base_model_repository",
+      "base_model_revision_or_commit",
+      "tokenizer_hash",
+      "parameter_count",
+      "quantization_method",
+      "quantization_level",
+      "model_artifact_sha256",
+      "generation_parameters"
+    ],
+    "rule": "Call E2-versus-E3 a runtime-only comparison only when all required fields are identical. If backend-specific converted or quantized artifacts differ, report it as a deployment-backend comparison and do not attribute differences solely to runtime."
+  },
+  "architecture_comparisons": [
+    {
+      "id": "A0",
+      "label": "full deterministic MAS",
+      "purpose": "Reference architecture for structural comparisons.",
+      "execution_boundary": "proposed farmer-facing system"
+    },
+    {
+      "id": "A1",
+      "label": "regional-operation-plan-only baseline",
+      "purpose": "Measures the contribution of coordinated multi-agent evidence handling.",
+      "execution_boundary": "offline evaluation only"
+    },
+    {
+      "id": "A2",
+      "label": "centralized source-filtered RAG planner",
+      "purpose": "Measures the contribution of multi-agent decomposition.",
+      "execution_boundary": "offline evaluation only"
+    },
+    {
+      "id": "A3",
+      "label": "MAS without scoped RAG and source-quoted operation retrieval",
+      "purpose": "Measures the contribution of scoped official retrieval and operation recovery.",
+      "execution_boundary": "offline evaluation only"
+    },
+    {
+      "id": "A4",
+      "label": "MAS without regional operation plans",
+      "purpose": "Measures the contribution of the third enrichment.",
+      "execution_boundary": "offline evaluation only"
+    },
+    {
+      "id": "A5",
+      "label": "MAS without provenance and alignment gates",
+      "purpose": "Measures the contribution of strict identity and source boundaries.",
+      "execution_boundary": "offline evaluation only; never a farmer-facing deployment path"
+    },
+    {
+      "id": "A6",
+      "label": "MAS without conflict resolution",
+      "purpose": "Measures the contribution of deterministic conflict handling.",
+      "execution_boundary": "offline evaluation only; never a farmer-facing deployment path"
+    }
+  ],
+  "source_derived_relevance_benchmark": {
+    "status": "frozen_source_derived_questions_pending_model_runs",
+    "benchmark_version": "1.0",
+    "manifest_path": "data/llm_relevance_benchmark/manifest.json",
+    "question_path": "data/llm_relevance_benchmark/relevance_questions.jsonl",
+    "question_count": 96,
+    "questions_per_role": 12,
+    "canonical_scenario_count": 12,
+    "focused_crop_count": 6,
+    "prompt_template_version": "bounded-selection-v4-structured-relevance-prompts",
+    "label_boundary": "source_backed_candidates_and_same_scenario_distractors_only_not_farm_outcome_ground_truth",
+    "required_label_fields": [
+      "question_id",
+      "scenario_id",
+      "allowed_source_document_ids",
+      "expected_admissible_passage_ids",
+      "expected_admissible_fact_ids",
+      "expected_plan_or_operation_ids",
+      "required_conditions",
+      "disallowed_distractor_ids"
+    ],
+    "metrics": [
+      "passage_precision",
+      "passage_recall",
+      "top_k_recall",
+      "fact_selection_precision",
+      "fact_selection_recall",
+      "plan_item_selection_accuracy",
+      "invalid_structured_output_rate",
+      "fallback_rate",
+      "latency",
+      "memory"
+    ]
+  },
+  "final_v51_relevance_gate": {
+    "status": "accepted_final_heldout_result",
+    "acceptance_report_path": "results/e1-v5-heldout-final/final_acceptance_report.json",
+    "acceptance_report_sha256": "d263f14eb57e024f17127cac930c4ee96863f59a02a9563d78484e481758fa8d",
+    "run_manifest_path": "results/e1-v5-heldout-final/run_manifest.json",
+    "run_manifest_sha256": "de68cdc15054b5ab0e71bdd38ccd8f1d70e8475789285ed56f9eb52010bf695e",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "rule": "E1 may execute only after this immutable final held-out result passes every pre-registered relevance threshold."
+  },
+  "apple_gpu_pilot_preflight": {
+    "pilot_set_version": "1.0",
+    "pilot_set_directory": "data/pilot_sets/apple_gpu_30_anchor_scenarios",
+    "pilot_scenario_path": "data/pilot_sets/apple_gpu_30_anchor_scenarios/scenario_ids.csv",
+    "pilot_manifest_path": "data/pilot_sets/apple_gpu_30_anchor_scenarios/manifest.json",
+    "selection_rule": "one_verified_anchor_per_final_study_site",
+    "pilot_scenario_count": 30,
+    "pilot_unique_site_count": 30,
+    "e1_hardware_preflight_status": "v5_1_preflight_required_before_30_scenario_mas_pilot_for_farmer_output_v2_2",
+    "e1_acceleration_evidence_path": "results/v2_2-e1-v5-apple-gpu-preflight/acceleration_evidence.json",
+    "ollama_acceleration_rule": "A successful local Ollama JSON probe followed by /api/ps for the same configured model with size_vram greater than zero is required. PyTorch MPS availability is not accepted as Ollama acceleration proof.",
+    "e2_status": "pending_installation_and_model_artifact_binding",
+    "e3_status": "pending_mlx_lm_adapter_and_identical_artifact_binding"
+  },
+  "persistent_run_output_contract": {
+    "one_record_per": "scenario_id and configuration_id",
+    "required_artifacts": [
+      "benchmark_run_trace",
+      "farmer_facing_message",
+      "scenario_oracle_result",
+      "configuration_and_hardware_manifest",
+      "aggregate_oracle_result",
+      "stratified_oracle_result",
+      "counterfactual_decision_trace_when_applicable"
+    ],
+    "required_runtime_fields": [
+      "git_commit",
+      "git_clean_status",
+      "scenario_manifest_sha256",
+      "protocol_sha256",
+      "prompt_sha256_values",
+      "backend",
+      "model_artifact_identity",
+      "quantization",
+      "hardware_details",
+      "apple_gpu_acceleration_evidence",
+      "latency_ms",
+      "peak_memory_bytes",
+      "invalid_output_count",
+      "fallback_count"
+    ]
+  },
+  "execution_order": [
+    "validate_frozen_hashes_and_clean_commit",
+    "implement_persistent_batch_runner",
+    "run_E0_on_300_normal_scenarios",
+    "run_60_conflict_fixtures_once",
+    "implement_and_run_A0_to_A6_architecture_comparisons",
+    "freeze_source_derived_relevance_benchmark",
+    "complete_30_scenario_apple_gpu_pilots_for_E1_E2_E3",
+    "bind_E2_and_E3_artifacts_and_apply_identical_artifact_gate",
+    "run_full_E1_E2_E3_benchmarks",
+    "generate_tables_figures_and_clean_checkout_reproduction"
+  ],
+  "frozen_artifact_sha256": {
+    "agents/benchmark/base.py": "1462070d04ca149633fb229ff8db92c389a291e1e77ac5f710eee45969068dcc",
+    "agents/benchmark/benchmark_evaluator.py": "b36bcf848827be0fe7b248bfa0223a3f2e6404901c834288735285ae91326de4",
+    "agents/benchmark/crop_district_season_alignment_validator.py": "fcac7aff9f7fcc489ffd28a1bf2620cedde51a734976e558f7413fc266bc07dc",
+    "agents/benchmark/evidence_provenance.py": "b216ad63a02f2758acfab4d6561075564341ac3898adc262c244124fbb661dee",
+    "agents/benchmark/crop_protection_safety.py": "7d1cc8031a0c44644a0953b66fed017fe673474e18a4441d6def493c1be5739e",
+    "agents/benchmark/farmer_explanation_citation.py": "c5be47dae63c4b6bde1306b198ed19f5750b135e0a989a3556af2eaf29d11797",
+    "agents/benchmark/fertilizer_baseline.py": "17ec0119d1be3ceb1729fa2ae8f68c7b05d7acd38c3b557df825fb6f647f80fd",
+    "agents/benchmark/market_evidence.py": "247b7422ddb5bd5900fc1ae9ba0f30b824d7d15f7c2e4748fccd4e54fe969dbb",
+    "agents/benchmark/provenance_aware_coordinator.py": "f526426e41ec87f9798406feb96613097543da0e24f54f320fba9028224b1b18",
+    "agents/benchmark/satellite_ndvi_context.py": "2b648feae270831cc27132359d7d22376adcc7030b9e7e74c0bf03b53715d2aa",
+    "agents/benchmark/scenario_evidence_router.py": "48dfc4dec936109b8dedec2dedcf57319eae4ca90803ec3252180161a6e50648",
+    "data/benchmark_loader.py": "c8289318416b9430ae9117371815f92d866f0ff0ba7ccfad95420a2533dcf96a",
+    "data/registry/final_study_sites.csv": "25299d916ff4ab741afc3cd5e0afa462ed39459b107c20f565f34cd884563a6a",
+    "data/registry/source_scoped_final_site_admission.csv": "17421f3054739463d923caebbbd38f3b71c731d263ddc34b68c77346092340dc",
+    "data/scenarios/manifests/scenario_manifest.csv": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284",
+    "data/scenarios/processed/scenario_features.csv": "5ce7a88a19eb659ffe7f7fd63ee9b91d235acf698166f1dcc44fd86de4f89f8a",
+    "data/scenarios/evidence/scenario_evidence_status.csv": "40574caf600e5bb73af2abdb7282ca381ecc76055826eb592097b03c0702e115",
+    "data/scenarios/enriched/mas_enrichment_contract.csv": "bd3403287150588299e0e59c7ebada7a82354f8ddccd9f1b406467e85ef6f40f",
+    "data/scenarios/enriched/regional_policy_detail_cards.csv": "a4a76ec8627a45e28e84a1b4276b288d05a117e70751f12b4c4d497b508f99c6",
+    "data/scenarios/enriched/nasa_power_water_context_features.csv": "a6348b220ec896cf45a58b8d95a2c286c555246fca5b3067b3a79709044d1e84",
+    "data/scenarios/enriched/sentinel_ndvi_context_manifest.csv": "601999dbcb4dc1b68191f5eefd7ad9a8dadfb80984332460b312d17ca9059c45",
+    "data/scenarios/enriched/sentinel_ndvi_context_features.csv": "680af4ba94357ec8a02da4fa9c3121031cdc198ec49ade2707b19bed60259ab4",
+    "data/scenarios/enriched/sentinel_ndvi_timeseries_features.csv": "168c63b0aa9dacc56fc5b91052e006e9f7222ce1cdb06656fc394a0e4b20a87e",
+    "data/scenarios/enriched/agmarknet_embedded_market_context_features.csv": "a76571d9f3874e29e184d952b132525a79c43b5ae74ce2449421215943505987",
+    "data/scenarios/enriched/agmarknet_embedded_market_context_manifest.csv": "5a8f88304365b1631e405de1aebfcefa73c0abdf2f1c3ab8eefd83f88c12e4d5",
+    "data/scenarios/enriched/official_rag_corpus_catalog.csv": "7a5bb3b0843adb5488bad6cdf5e83f2928227e206d45d31b69955449a62b9e82",
+    "data/scenarios/enriched/official_rag_corpus_all_chunks.csv": "784a277a086bb6beacb02e9f7ad9c69f74afa99b3674cc27bfcbf05db79b5292",
+    "data/scenarios/enriched/scenario_official_rag_scope_all.csv": "c7f8fa27934f6293cb207c46bbf582fba21c62ccc5a71734c348263eb7684dc5",
+    "data/scenarios/enriched/official_action_records_all.csv": "cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376",
+    "data/scenarios/enriched/scenario_official_action_bindings_all.csv": "43b8f4dc95a2df74338675239904c21a6565925246b449f555e204723f0eff46",
+    "data/scenarios/enriched/regional_operation_plan_summary.csv": "ea68448b1cc31b94d62c309820230e1835db0395d5544549b544e3d0b051187f",
+    "data/scenarios/enriched/regional_operation_plan_items.csv": "a2da4712d9797f3d49417d3bd618997d1fd99c04fe7f452e6914d5f50b9c674a",
+    "data/scenarios/enriched/postharvest_source_inventory.csv": "6ea7ae6b6103cbfd5f084d2db14ec41a18e44161fd990417a9b822b8a3a3c12d",
+    "data/scenarios/enriched/scenario_postharvest_logistics_context.csv": "cdf3085088899b8409bcd4b95b0cd75afdf75cef810dd5c76563d777864369fa",
+    "data/scenarios/enriched/scenario_postharvest_plan_items.csv": "57283b0c88a40d752d7d8f9eb64c77076b3f51f16702b1a908e5286617613533",
+    "data/scenarios/enriched/scenario_postharvest_rag_scope.csv": "4ab723195ab4764090ca95f993008a7d7ba960600c1ca9ff40618bf91b31dcc8",
+    "data/conflict_fixture_registry/conflict_fixture_manifest.csv": "2e5433fb4a1f32d0cda5d7fa34ee2e52fceae36d93db2baad0118487d760d601",
+    "data/llm_relevance_benchmark/manifest.json": "8f97947a4c5ac06bcb80a7e3b12f0fa18a8b19069163d3bed3b9eba2f926fdcc",
+    "data/llm_relevance_benchmark/relevance_questions.jsonl": "d076e1801fdedf162ca9e90925f4144497ce85d868fd4a2be4cc0ccebd7f79e0",
+    "data/pilot_sets/apple_gpu_30_anchor_scenarios/manifest.json": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+    "data/pilot_sets/apple_gpu_30_anchor_scenarios/scenario_ids.csv": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+    "evaluation/benchmark_contract.py": "0ff17d730aa92ded352b7b7e559c0555efe5840dfd418359da52855cadf66a51",
+    "evaluation/apple_gpu_preflight.py": "d5219004d87c465bf2d1df8ac18eec40d39f1d8f5611c67590067daf20eb20a2",
+    "evaluation/bounded_llm_relevance.py": "c49778b4a4ebf28b900aeefc768c595dc5c68d5a44e65a22fbcf0799a4f4a0d5",
+    "evaluation/benchmark_oracle.py": "70d295c850b132adab189bfd6a0c6cc7730a0db45615c3725c50235c91a1880f",
+    "evaluation/benchmark_batch_runner.py": "65d8c1fcdf7b67764611bb399dac0c8ada03fd012589c38bc7f167fde00a27bc",
+    "evaluation/bounded_llm_relevance_v5_heldout.py": "e2c5e3a236ff805fd2db1e2ce94111f97ca9010ec3dc95d71d7a6d269ea75d25",
+    "llm/benchmark_llm_client.py": "6a349d6b8847e1c9be6b34f896c8dcd57713aecac6fd81c3908920931325ac66",
+    "llm/bounded_selection_v5.py": "ad17c067d6897a8fe70b81803ed625df9457b10214532d09c02b713b52098af7",
+    "graph/benchmark_workflow.py": "71b7134af848357be316741cce3a9d597c52d54d9a34819b11f821d9edb0b9b2",
+    "graph/benchmark_workflow_v5.py": "04806d9f9f73c3792ca530777fec102c8d141bce879175c966c035c779d23327",
+    "results/e1-v5-heldout-preflight/experiment_manifest.json": "07017dd4f9fc37e5caff2eee4731455e4dd7dd477229400b463662aba5e08026",
+    "results/e1-v5-heldout-final/aggregate_final_heldout_metrics.json": "5a53af5776c568a89cc0c1e187d6fa04489864289cc247b3340adf4a96d985b7",
+    "results/e1-v5-heldout-final/final_acceptance_report.json": "d263f14eb57e024f17127cac930c4ee96863f59a02a9563d78484e481758fa8d",
+    "results/e1-v5-heldout-final/run_manifest.json": "de68cdc15054b5ab0e71bdd38ccd8f1d70e8475789285ed56f9eb52010bf695e",
+    "scripts/build_apple_gpu_pilot_set.py": "abab81c5fd529651c0eb24a0e038c5f65300e03c6b36cd3399e14c33485e7007",
+    "scripts/build_bounded_llm_relevance_benchmark.py": "b53b4bb5567553cbff0ce6ef203d23a3c323082ac70f5fd5999faa07452a4c31"
+  }
+}

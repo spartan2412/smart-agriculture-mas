@@ -1,0 +1,6 @@
+check,expected,actual,result,detail
+official_pdf_and_hash_linked_visual_provenance,1,1,pass,validated
+source_quoted_operation_and_field_condition_gates,1,1,pass,validated
+full_scope_matrix_and_50_stage_gated_bindings,300,300,pass,validated
+combined_catalog_projection,301,301,pass,validated
+no_direct_farm_action,0,0,pass,validated

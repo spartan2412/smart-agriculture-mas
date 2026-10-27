@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "soybean",
+    "decision_date": "2025-10-31",
+    "district": "Ujjain",
+    "scenario_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+    "season": "kharif",
+    "site_id": "PF_MP_UJJAIN_SOYBEAN_KHARIF",
+    "state": "Madhya Pradesh"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "8dd41014d7eab88b52a8139b19aa10cc260ec7cded88aab8974b3dfe6a1fb6ce;b7a2936991cec7cd405675323978f32bdd820b1b2ff45beea7d326c0a85c3ad7",
+    "source_url": "https://icar-crida.res.in/CCP/MP/Ujjain/1.7.pdf;https://icar-crida.res.in/CCP/MP/Ujjain/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "8320f99b35d82d884a30fa6c05c4fd826a691988f5e78b9bfadf511b4194d450",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_08_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_scenario_binding_mismatch",
+  "overlay": {
+    "base_value": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+    "field": "scenario_id",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

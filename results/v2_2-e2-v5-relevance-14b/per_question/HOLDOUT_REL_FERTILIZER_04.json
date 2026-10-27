@@ -1,0 +1,222 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "fertilizer:field_dose_boundary",
+      "text": "candidate_kind=mandatory_safety_boundary; selection_priority=must_retain_before_policy; allowed_use=unavailable; does_not_establish=not_issued_regional_baseline_is_not_a_field_prescription; source_document_ids=PAU_RABI_2025_26; domain=fertilizer_baseline; disposition=abstain; allowed_use=unavailable; summary=Regional fertilizer guidance is retained, but a personalized prescription is blocked.; citation=PAU_RABI_2025_26"
+    },
+    {
+      "fact_id": "fertilizer:regional_policy",
+      "text": "candidate_kind=regional_nutrient_policy; selection_priority=secondary_after_safety_boundary; selection_pair=when_the_question_requests_both_policy_and_restriction_select_with_mandatory_boundary; allowed_use=regional_policy_only; does_not_establish=The source is a regional baseline. It must not be converted into a farm-specific dose because the frozen scenario lacks a field soil test and observed crop stage.; source_document_ids=PAU_RABI_2025_26; domain=fertilizer_baseline; disposition=context; allowed_use=regional_policy_only; summary=Regional source PAU_RABI_2025_26 is verified for wheat in Punjab.; citation=PAU_RABI_2025_26"
+    }
+  ],
+  "question": {
+    "agent_name": "fertilizer_baseline_agent",
+    "allowed_fact_ids": [
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__calendar_window",
+      "fertilizer:regional_policy",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__protection_policy",
+      "fertilizer:field_dose_boundary"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage."
+        ],
+        "fact_id": "plan:SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__calendar_window",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__calendar_window"
+        ],
+        "source_document_ids": [
+          "ICAR_CRIDA_CCP"
+        ],
+        "source_locators": [
+          "District CCP crop profile and sowing-window PDFs"
+        ],
+        "text": "lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared rabi window for this crop and district is Nov-Apr; the scenario date falls in the late part of that window."
+      },
+      {
+        "conditions": [
+          "The source is a regional baseline. It must not be converted into a farm-specific dose because the frozen scenario lacks a field soil test and observed crop stage."
+        ],
+        "fact_id": "fertilizer:regional_policy",
+        "fact_kind": "typed_claim",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__fertilizer_policy"
+        ],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "PDF pp. 9-10 wheat nutrient schedule"
+        ],
+        "text": "domain=fertilizer_baseline; disposition=context; allowed_use=regional_policy_only; summary=Regional source PAU_RABI_2025_26 is verified for wheat in Punjab.; citation=PAU_RABI_2025_26"
+      },
+      {
+        "conditions": [
+          "Regional fallback only; potassium and treatment decisions retain their source conditions."
+        ],
+        "fact_id": "plan:SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__protection_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__protection_policy"
+        ],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "PDF pp. 19-20 yellow-rust action"
+        ],
+        "text": "lane=regional_crop_protection_policy; source=PAU_RABI_2025_26; text=Use the cited Punjab wheat regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "not_issued_regional_baseline_is_not_a_field_prescription"
+        ],
+        "fact_id": "fertilizer:field_dose_boundary",
+        "fact_kind": "typed_claim",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "PAU_RABI_2025_26"
+        ],
+        "source_locators": [
+          "PDF pp. 9-10 wheat nutrient schedule"
+        ],
+        "text": "domain=fertilizer_baseline; disposition=abstain; allowed_use=unavailable; summary=Regional fertilizer guidance is retained, but a personalized prescription is blocked.; citation=PAU_RABI_2025_26"
+      }
+    ],
+    "allowed_passage_ids": [],
+    "allowed_source_document_ids": [
+      "ICAR_CRIDA_CCP",
+      "PAU_RABI_2025_26"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_fertilizer_policy_and_boundary",
+    "disallowed_distractor_ids": [
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__calendar_window",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__protection_policy"
+    ],
+    "expected_admissible_fact_ids": [
+      "fertilizer:regional_policy",
+      "fertilizer:field_dose_boundary"
+    ],
+    "expected_admissible_passage_ids": [],
+    "expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__fertilizer_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "Which two candidates jointly retain the regional nutrient-policy scope and the exact farm-dose restriction for Wheat in Bathinda, Punjab, during the rabi decision window ending 2024-04-30? The dose boundary is mandatory.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "fertilizer_boundary_priority",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_FERTILIZER_04",
+    "required_conditions": [
+      "The source is a regional baseline. It must not be converted into a farm-specific dose because the frozen scenario lacks a field soil test and observed crop stage.",
+      "not_issued_regional_baseline_is_not_a_field_prescription"
+    ],
+    "role_instruction_sha256": "d7dab93c64799114c0e2e2f395db6fc86a6286988bd7c0a1547bfa00e4cf5961",
+    "scenario_context": {
+      "crop": "wheat",
+      "decision_date": "2024-04-30",
+      "decision_window_utc": "2024-04-01T00:00:00Z/2024-04-30T23:59:59Z",
+      "district": "Bathinda",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Punjab"
+    },
+    "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_PB_BATHINDA_WHEAT_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "fertilizer_baseline_agent",
+    "bounded_llm": {
+      "agent_name": "fertilizer_baseline_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "c2002955fdc71547564770542657f9e0e245d59b31f9c27cd3fe25f4802d3ed4",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "fertilizer:field_dose_boundary",
+        "fertilizer:regional_policy"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "fertilizer_scope_only",
+        "maximum_selected_fact_ids": 2,
+        "selection_mode": "mandatory_boundary_then_policy"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_fertilizer_policy_and_boundary",
+    "expected_fact_count": 2,
+    "expected_fact_ids": [
+      "fertilizer:regional_policy",
+      "fertilizer:field_dose_boundary"
+    ],
+    "expected_passage_count": 0,
+    "expected_passage_ids": [],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__fertilizer_policy"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 2,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 5147,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__fertilizer_policy"
+    ],
+    "original_allowed_fact_ids": [
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__calendar_window",
+      "fertilizer:regional_policy",
+      "plan:SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__protection_policy",
+      "fertilizer:field_dose_boundary"
+    ],
+    "packaged_candidate_fact_ids": [
+      "fertilizer:field_dose_boundary",
+      "fertilizer:regional_policy"
+    ],
+    "passage_intersection_count": 0,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 108773376,
+    "prompt_sha256": "c2002955fdc71547564770542657f9e0e245d59b31f9c27cd3fe25f4802d3ed4",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_FERTILIZER_04",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430",
+    "selected_fact_count": 2,
+    "selected_fact_ids": [
+      "fertilizer:field_dose_boundary",
+      "fertilizer:regional_policy"
+    ],
+    "selected_passage_count": 0,
+    "selected_passage_ids": [],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430__fertilizer_policy"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "fertilizer_scope_only",
+      "maximum_selected_fact_ids": 2,
+      "selection_mode": "mandatory_boundary_then_policy"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

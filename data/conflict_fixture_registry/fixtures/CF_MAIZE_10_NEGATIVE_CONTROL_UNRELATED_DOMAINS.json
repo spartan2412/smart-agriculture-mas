@@ -1,0 +1,85 @@
+{
+  "base_scenario": {
+    "crop": "maize",
+    "decision_date": "2026-03-31",
+    "district": "Salem",
+    "scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_TN_SALEM_MAIZE_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source": {
+    "locator": "District CCP crop profile and sowing-window PDFs",
+    "official_url": "https://icar-crida.res.in/CCP/TN/Salem/1.7.pdf;https://icar-crida.res.in/CCP/TN/Salem/1.12.pdf",
+    "raw_sha256": "7be168116f2d598ffa3fd02e08ea20a642ed9cf307aee0663ff4eb6bcaa80839",
+    "source_document_id": "ICAR_CRIDA_CCP"
+  },
+  "claims": [
+    {
+      "agent_name": "fixture_weather_context_agent",
+      "allowed_use": "context_only",
+      "block_reason": null,
+      "claim": "Evaluation-only weather context claim; not an agricultural instruction.",
+      "claim_role": "weather_context",
+      "confidence": 0.5,
+      "decision_domain": "weather_context",
+      "disposition": "context",
+      "gate_result": "pass",
+      "metadata": {
+        "fixture_claim_role": "weather_context",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence"
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "Weather and market are distinct decision domains and must not be manufactured into a conflict.",
+      "source": {
+        "locator": "District CCP crop profile and sowing-window PDFs",
+        "official_url": "https://icar-crida.res.in/CCP/TN/Salem/1.7.pdf;https://icar-crida.res.in/CCP/TN/Salem/1.12.pdf",
+        "raw_sha256": "7be168116f2d598ffa3fd02e08ea20a642ed9cf307aee0663ff4eb6bcaa80839",
+        "source_document_id": "ICAR_CRIDA_CCP",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "representative-cell context in Salem, Tamil Nadu",
+      "summary": "Controlled non-comparable weather context.",
+      "temporal_scope": "historical frozen decision window ending 2026-03-31"
+    },
+    {
+      "agent_name": "fixture_market_context_agent",
+      "allowed_use": "context_only",
+      "block_reason": null,
+      "claim": "Evaluation-only market context claim; not an agricultural instruction.",
+      "claim_role": "market_context",
+      "confidence": 0.5,
+      "decision_domain": "market_context",
+      "disposition": "context",
+      "gate_result": "pass",
+      "metadata": {
+        "fixture_claim_role": "market_context",
+        "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence"
+      },
+      "quality": "evaluation_only_counterfactual_not_real_farm_evidence",
+      "reasoning": "Historical market context is not an action conflict with weather context.",
+      "source": {
+        "locator": "District CCP crop profile and sowing-window PDFs",
+        "official_url": "https://icar-crida.res.in/CCP/TN/Salem/1.7.pdf;https://icar-crida.res.in/CCP/TN/Salem/1.12.pdf",
+        "raw_sha256": "7be168116f2d598ffa3fd02e08ea20a642ed9cf307aee0663ff4eb6bcaa80839",
+        "source_document_id": "ICAR_CRIDA_CCP",
+        "source_role": "real_frozen_source_referenced_by_evaluation_fixture"
+      },
+      "spatial_scope": "historical nearest-mandi context for Salem, Tamil Nadu",
+      "summary": "Controlled non-comparable market context.",
+      "temporal_scope": "historical frozen decision window ending 2026-03-31"
+    }
+  ],
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "decision_status": "context_only_no_direct_farm_action",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "069743fdbbd79387699004c545889494c8943629936b3184bc23a0edf0f32e1b",
+  "fixture_family": "negative_control_no_comparable_conflict",
+  "fixture_id": "CF_MAIZE_10_NEGATIVE_CONTROL_UNRELATED_DOMAINS",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "unrelated_weather_and_market_context_not_conflict"
+}

@@ -1,0 +1,11 @@
+{
+  "configuration_id": "E0",
+  "evaluation_only": true,
+  "fixture_count": 0,
+  "fully_passing_scenario_count": 300,
+  "overall_structural_pass_rate": 1.0,
+  "run_id": "v2_2-a5-no-provenance-gates",
+  "scenario_count": 300,
+  "status": "completed",
+  "system_id": "A5"
+}

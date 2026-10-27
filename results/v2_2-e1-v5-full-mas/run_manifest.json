@@ -1,0 +1,748 @@
+{
+  "apple_gpu_acceleration": {
+    "artifact_integrity": {
+      "git": {
+        "clean": "true",
+        "commit": "42a2518f47b78bc7fbaaa912053d15158cdc6902"
+      },
+      "preflight_module": "evaluation/apple_gpu_preflight.py",
+      "preflight_module_sha256": "d5219004d87c465bf2d1df8ac18eec40d39f1d8f5611c67590067daf20eb20a2",
+      "protocol_path": "evaluation/experiment_protocol.json",
+      "protocol_sha256": "9197b8b544479998378c0d7bcce4dd398b8091a440e3c1352d0c59242c0e4554"
+    },
+    "backend_evidence": {
+      "acceleration": {
+        "evidence": "Ollama /api/ps reported size_vram > 0 for the just-probed configured model.",
+        "observed_context_length": 4096,
+        "observed_gpu_resident_bytes": 4638040390,
+        "observed_model_bytes": 4638040390,
+        "observed_model_resident_in_gpu_memory": true,
+        "pytorch_mps_is_not_runtime_proof": true,
+        "requested_runtime": "Ollama Metal / Apple GPU"
+      },
+      "backend": "ollama",
+      "checks": {
+        "apple_silicon_host": true,
+        "gpu_residency_observed": true,
+        "model_loaded_in_ollama": true,
+        "probe_completed": true,
+        "protocol_blob_hash_matches": true,
+        "protocol_model_digest_prefix_matches": true,
+        "protocol_quantization_matches": true
+      },
+      "generation_parameters": {
+        "benchmark_max_selected_facts": 3,
+        "benchmark_max_tokens_per_call": 200,
+        "benchmark_temperature": 0.0,
+        "probe_keep_alive": "5m",
+        "probe_num_predict": 16,
+        "probe_temperature": 0.0
+      },
+      "model": {
+        "base_model_name": "Qwen2.5 7B",
+        "base_model_repository": "https://huggingface.co/Qwen/Qwen2.5-7B",
+        "format": "gguf",
+        "model_blob_file_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+        "model_blob_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+        "model_revision_or_commit": "not_exposed_by_local_ollama_metadata",
+        "model_revision_status": "unavailable_not_inferred",
+        "ollama_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "ollama_digest_prefix": "845dbda0ea48",
+        "parameter_count": 7615616512,
+        "parameter_size": "7.6B",
+        "quantization": "Q4_K_M",
+        "tag": "qwen2.5:7b-instruct"
+      },
+      "probe": {
+        "done": true,
+        "eval_count": 7,
+        "load_duration_ns": 795987542,
+        "prompt_eval_count": 42,
+        "response_json_valid": true,
+        "response_sha256": "c5f966c4d5f7c275b37c2aa91e9e27835665d8416e01f31ac181a098b3d0f35c",
+        "total_duration_ns": 1246025459
+      },
+      "runtime": {
+        "host": "http://localhost:11434",
+        "probe_elapsed_ms": 3854,
+        "runtime_name": "Ollama",
+        "runtime_version": "0.34.2",
+        "verification_method": "local_api_generate_then_api_ps_size_vram"
+      }
+    },
+    "configuration": {
+      "acceleration_requirement": "Ollama Metal/Apple-GPU use must be verified in the 30-scenario pilot.",
+      "backend": "ollama",
+      "benchmark_llm_enabled": true,
+      "benchmark_llm_required": false,
+      "bounded_llm_runtime": "v5.1",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "installed_model_blob_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+      "installed_ollama_model_id_prefix": "845dbda0ea48",
+      "label": "Ollama local-model v5.1 bounded-selector evaluation",
+      "model_family": "Qwen2.5-7B-Instruct",
+      "ollama_tag": "qwen2.5:7b-instruct",
+      "population": "all_300_normal_scenarios_after_pilot",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "purpose": "Current local bounded-LLM baseline.",
+      "quantization": "Q4_K_M",
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "workflow": "graph.benchmark_workflow_v5.BenchmarkMASWorkflowV5"
+    },
+    "configuration_id": "E1",
+    "evidence_schema_version": "1.0",
+    "formal_boundary": {
+      "does_not_prove_pytorch_mps_for_ollama": true,
+      "next_required_run": "Run the fixed 30-scenario MAS pilot only from a clean committed worktree.",
+      "not_an_agricultural_benchmark_run": true
+    },
+    "hardware": {
+      "apple_soc": "Apple M5",
+      "hardware_model": "Mac17,3",
+      "machine": "arm64",
+      "pytorch_mps": {
+        "reason": "Ollama uses its own Metal runtime; only Ollama runtime residency is accepted for E1/E2.",
+        "used_as_ollama_acceleration_proof": false
+      },
+      "release": "25.6.0",
+      "system": "Darwin",
+      "unified_memory_bytes": 25769803776,
+      "unified_memory_gib": 24.0
+    },
+    "pilot_set": {
+      "focused_crops": [
+        "rice",
+        "wheat",
+        "maize",
+        "chickpea",
+        "soybean",
+        "tomato"
+      ],
+      "manifest_sha256": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+      "path": "data/pilot_sets/apple_gpu_30_anchor_scenarios",
+      "pilot_identity_sha256": "412888ee276374880c439c6263ef2d7252fa0c936e14a7d6c95b7d37bcc0840e",
+      "scenario_count": 30,
+      "scenario_file_sha256": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+      "unique_site_count": 30
+    },
+    "recorded_at_utc": "2026-10-11T09:00:33Z",
+    "status": "verified"
+  },
+  "bounded_llm": {
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "enabled": true,
+    "max_selected_facts": "role_specific_v5_policy",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "required": false,
+    "runtime": "v5.1",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2"
+  },
+  "bounded_llm_invocation_count": 2400,
+  "completed_at_utc": "2026-10-11T19:02:46Z",
+  "configuration": {
+    "acceleration_requirement": "Ollama Metal/Apple-GPU use must be verified in the 30-scenario pilot.",
+    "backend": "ollama",
+    "benchmark_llm_enabled": true,
+    "benchmark_llm_required": false,
+    "bounded_llm_runtime": "v5.1",
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "installed_model_blob_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+    "installed_ollama_model_id_prefix": "845dbda0ea48",
+    "label": "Ollama local-model v5.1 bounded-selector evaluation",
+    "model_family": "Qwen2.5-7B-Instruct",
+    "ollama_tag": "qwen2.5:7b-instruct",
+    "population": "all_300_normal_scenarios_after_pilot",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "purpose": "Current local bounded-LLM baseline.",
+    "quantization": "Q4_K_M",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "workflow": "graph.benchmark_workflow_v5.BenchmarkMASWorkflowV5"
+  },
+  "configuration_id": "E1",
+  "evaluation_only": false,
+  "fixture_count": 0,
+  "fully_passing_scenario_count": 300,
+  "git": {
+    "clean_at_start": true,
+    "commit": "03103bc3c05e602e7b7052a75dca9ad2a6c45c1c",
+    "status_at_start": ""
+  },
+  "hardware": {
+    "machine": "arm64",
+    "processor": "arm",
+    "python_version": "3.12.14",
+    "release": "25.6.0",
+    "system": "Darwin",
+    "torch_mps": {
+      "mps_available": true,
+      "mps_built": true,
+      "torch_version": "2.14.0"
+    }
+  },
+  "include_conflict_fixtures": false,
+  "model_artifact_binding": {
+    "bounded_llm_runtime": "v5.1",
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "model_artifact_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+    "ollama_tag": "qwen2.5:7b-instruct",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "quantization": "Q4_K_M",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2"
+  },
+  "normal_scenario_count": 300,
+  "normal_scenario_ids": [
+    "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+    "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+    "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+    "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+    "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+    "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+    "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+    "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+    "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+    "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+    "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+    "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+    "ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130",
+    "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+    "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+    "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+    "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+    "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+    "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+    "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+    "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+    "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+    "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+    "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231",
+    "ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231",
+    "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+    "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+    "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+    "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+    "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20241231",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20250131",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20250228",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20250331",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20251031",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20251130",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20251231",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20260131",
+    "SUPPLEMENT_PF_MH_BEED_CHICKPEA_RABI_20260228",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20241231",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20250131",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20250228",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20250331",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20251031",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20251130",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20251231",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20260131",
+    "SUPPLEMENT_PF_MH_JALNA_CHICKPEA_RABI_20260228",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20241231",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20250131",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20250228",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20250331",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20251031",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20251130",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20251231",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20260131",
+    "SUPPLEMENT_PF_MH_LATUR_CHICKPEA_RABI_20260228",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20241231",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20250131",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20250228",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20250331",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20251031",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20251130",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20251231",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20260131",
+    "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20260228",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20241231",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250131",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250228",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20250331",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20251031",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20251130",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20251231",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20260131",
+    "SUPPLEMENT_PF_MH_PARBHANI_CHICKPEA_RABI_20260228",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20211031",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20220630",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20221031",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20230630",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20230930",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20231031",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20241031",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20250630",
+    "SUPPLEMENT_PF_MP_DEWAS_SOYBEAN_KHARIF_20250831",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20220630",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20220930",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20221031",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20230630",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20230930",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20231031",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20240630",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20241031",
+    "SUPPLEMENT_PF_MP_INDORE_SOYBEAN_KHARIF_20250630",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20220630",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20220930",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20221031",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20230630",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20230930",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20231031",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20240630",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20241031",
+    "SUPPLEMENT_PF_MP_UJJAIN_SOYBEAN_KHARIF_20250630",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20211031",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20211130",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20221031",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20221130",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20231031",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20231130",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241031",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20241130",
+    "SUPPLEMENT_PF_PB_BATHINDA_RICE_KHARIF_20251031",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20180430",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20190430",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20191130",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20200430",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20210430",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20220430",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20230430",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20240430",
+    "SUPPLEMENT_PF_PB_BATHINDA_WHEAT_RABI_20250430",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20211130",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20221031",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20221130",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20231031",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20231130",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20241031",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20241130",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20250930",
+    "SUPPLEMENT_PF_PB_LUDHIANA_RICE_KHARIF_20251031",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20190131",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20190228",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20190430",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20200430",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20210430",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20220430",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20230430",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20240430",
+    "SUPPLEMENT_PF_PB_LUDHIANA_WHEAT_RABI_20250430",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20211130",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20221031",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20221130",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20231031",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20231130",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20241031",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20241130",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20250930",
+    "SUPPLEMENT_PF_PB_MANSA_RICE_KHARIF_20251031",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20170430",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20180430",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20190430",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20200430",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20210430",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20220430",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20230430",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20240430",
+    "SUPPLEMENT_PF_PB_MANSA_WHEAT_RABI_20250430",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20211130",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20221031",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20221130",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20231031",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20231130",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20241031",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20241130",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20250930",
+    "SUPPLEMENT_PF_PB_PATIALA_RICE_KHARIF_20251031",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20180430",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20190430",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20200430",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20210430",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20220430",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20230430",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20240430",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20250430",
+    "SUPPLEMENT_PF_PB_PATIALA_WHEAT_RABI_20260131",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20211130",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20221031",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20221130",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20231031",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20231130",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20241031",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20241130",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20250930",
+    "SUPPLEMENT_PF_PB_SANGRUR_RICE_KHARIF_20251031",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20170430",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20180430",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20190430",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20200430",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20210430",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20220430",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20230430",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20240430",
+    "SUPPLEMENT_PF_PB_SANGRUR_WHEAT_RABI_20250430",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20221031",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20230630",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20230930",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20231031",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20240630",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20240930",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20241031",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20250630",
+    "SUPPLEMENT_PF_RJ_BARAN_SOYBEAN_KHARIF_20250930",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20220930",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20221031",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20230630",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20230930",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20231031",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20240630",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20241031",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20250630",
+    "SUPPLEMENT_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20250930",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20221231",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20230131",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20230228",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20230331",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231031",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231130",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20231231",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20240229",
+    "SUPPLEMENT_PF_TN_ARIYALUR_MAIZE_RABI_20240331",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20241231",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20250131",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20250228",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20250331",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20251031",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20251130",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20251231",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20260131",
+    "SUPPLEMENT_PF_TN_COIMBATORE_MAIZE_RABI_20260228",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20250131",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20250228",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20250331",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20251031",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20251130",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20260131",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20260228",
+    "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20260331",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20241031",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20241231",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20250131",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20250228",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20250331",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20251130",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20260131",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20260228",
+    "SUPPLEMENT_PF_TN_DHARMAPURI_TOMATO_RABI_20260331",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20241231",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20250131",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20250228",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20250331",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20251031",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20251130",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20260131",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20260228",
+    "SUPPLEMENT_PF_TN_DINDIGUL_TOMATO_RABI_20260331",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20241231",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20250131",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20250228",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20250331",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20251031",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20251130",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20251231",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20260131",
+    "SUPPLEMENT_PF_TN_ERODE_MAIZE_RABI_20260228",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20241031",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20241231",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20250131",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20250228",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20250331",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251130",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20260131",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20260228",
+    "SUPPLEMENT_PF_TN_KRISHNAGIRI_TOMATO_RABI_20260331",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20241031",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20250131",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20250228",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20250331",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20251031",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20251130",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20251231",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20260131",
+    "SUPPLEMENT_PF_TN_NAMAKKAL_MAIZE_RABI_20260228",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20241231",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20250131",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20250228",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20250331",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20251031",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20251130",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20251231",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20260131",
+    "SUPPLEMENT_PF_TN_SALEM_MAIZE_RABI_20260228",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20241231",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20250131",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20250228",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20250331",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20251031",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20251130",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20260131",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20260228",
+    "SUPPLEMENT_PF_TN_SALEM_TOMATO_RABI_20260331"
+  ],
+  "protocol": {
+    "path": "evaluation/experiment_protocol.json",
+    "sha256": "9197b8b544479998378c0d7bcce4dd398b8091a440e3c1352d0c59242c0e4554",
+    "verified_artifacts": [
+      {
+        "path": "agents/benchmark/base.py",
+        "sha256": "1462070d04ca149633fb229ff8db92c389a291e1e77ac5f710eee45969068dcc"
+      },
+      {
+        "path": "agents/benchmark/benchmark_evaluator.py",
+        "sha256": "b36bcf848827be0fe7b248bfa0223a3f2e6404901c834288735285ae91326de4"
+      },
+      {
+        "path": "agents/benchmark/crop_district_season_alignment_validator.py",
+        "sha256": "fcac7aff9f7fcc489ffd28a1bf2620cedde51a734976e558f7413fc266bc07dc"
+      },
+      {
+        "path": "agents/benchmark/crop_protection_safety.py",
+        "sha256": "7d1cc8031a0c44644a0953b66fed017fe673474e18a4441d6def493c1be5739e"
+      },
+      {
+        "path": "agents/benchmark/evidence_provenance.py",
+        "sha256": "b216ad63a02f2758acfab4d6561075564341ac3898adc262c244124fbb661dee"
+      },
+      {
+        "path": "agents/benchmark/farmer_explanation_citation.py",
+        "sha256": "c5be47dae63c4b6bde1306b198ed19f5750b135e0a989a3556af2eaf29d11797"
+      },
+      {
+        "path": "agents/benchmark/fertilizer_baseline.py",
+        "sha256": "17ec0119d1be3ceb1729fa2ae8f68c7b05d7acd38c3b557df825fb6f647f80fd"
+      },
+      {
+        "path": "agents/benchmark/market_evidence.py",
+        "sha256": "247b7422ddb5bd5900fc1ae9ba0f30b824d7d15f7c2e4748fccd4e54fe969dbb"
+      },
+      {
+        "path": "agents/benchmark/provenance_aware_coordinator.py",
+        "sha256": "f526426e41ec87f9798406feb96613097543da0e24f54f320fba9028224b1b18"
+      },
+      {
+        "path": "agents/benchmark/satellite_ndvi_context.py",
+        "sha256": "2b648feae270831cc27132359d7d22376adcc7030b9e7e74c0bf03b53715d2aa"
+      },
+      {
+        "path": "agents/benchmark/scenario_evidence_router.py",
+        "sha256": "48dfc4dec936109b8dedec2dedcf57319eae4ca90803ec3252180161a6e50648"
+      },
+      {
+        "path": "data/benchmark_loader.py",
+        "sha256": "c8289318416b9430ae9117371815f92d866f0ff0ba7ccfad95420a2533dcf96a"
+      },
+      {
+        "path": "data/conflict_fixture_registry/conflict_fixture_manifest.csv",
+        "sha256": "2e5433fb4a1f32d0cda5d7fa34ee2e52fceae36d93db2baad0118487d760d601"
+      },
+      {
+        "path": "data/llm_relevance_benchmark/manifest.json",
+        "sha256": "8f97947a4c5ac06bcb80a7e3b12f0fa18a8b19069163d3bed3b9eba2f926fdcc"
+      },
+      {
+        "path": "data/llm_relevance_benchmark/relevance_questions.jsonl",
+        "sha256": "d076e1801fdedf162ca9e90925f4144497ce85d868fd4a2be4cc0ccebd7f79e0"
+      },
+      {
+        "path": "data/pilot_sets/apple_gpu_30_anchor_scenarios/manifest.json",
+        "sha256": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8"
+      },
+      {
+        "path": "data/pilot_sets/apple_gpu_30_anchor_scenarios/scenario_ids.csv",
+        "sha256": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f"
+      },
+      {
+        "path": "data/registry/final_study_sites.csv",
+        "sha256": "25299d916ff4ab741afc3cd5e0afa462ed39459b107c20f565f34cd884563a6a"
+      },
+      {
+        "path": "data/registry/source_scoped_final_site_admission.csv",
+        "sha256": "17421f3054739463d923caebbbd38f3b71c731d263ddc34b68c77346092340dc"
+      },
+      {
+        "path": "data/scenarios/enriched/agmarknet_embedded_market_context_features.csv",
+        "sha256": "a76571d9f3874e29e184d952b132525a79c43b5ae74ce2449421215943505987"
+      },
+      {
+        "path": "data/scenarios/enriched/agmarknet_embedded_market_context_manifest.csv",
+        "sha256": "5a8f88304365b1631e405de1aebfcefa73c0abdf2f1c3ab8eefd83f88c12e4d5"
+      },
+      {
+        "path": "data/scenarios/enriched/mas_enrichment_contract.csv",
+        "sha256": "bd3403287150588299e0e59c7ebada7a82354f8ddccd9f1b406467e85ef6f40f"
+      },
+      {
+        "path": "data/scenarios/enriched/nasa_power_water_context_features.csv",
+        "sha256": "a6348b220ec896cf45a58b8d95a2c286c555246fca5b3067b3a79709044d1e84"
+      },
+      {
+        "path": "data/scenarios/enriched/official_action_records_all.csv",
+        "sha256": "cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376"
+      },
+      {
+        "path": "data/scenarios/enriched/official_rag_corpus_all_chunks.csv",
+        "sha256": "784a277a086bb6beacb02e9f7ad9c69f74afa99b3674cc27bfcbf05db79b5292"
+      },
+      {
+        "path": "data/scenarios/enriched/official_rag_corpus_catalog.csv",
+        "sha256": "7a5bb3b0843adb5488bad6cdf5e83f2928227e206d45d31b69955449a62b9e82"
+      },
+      {
+        "path": "data/scenarios/enriched/postharvest_source_inventory.csv",
+        "sha256": "6ea7ae6b6103cbfd5f084d2db14ec41a18e44161fd990417a9b822b8a3a3c12d"
+      },
+      {
+        "path": "data/scenarios/enriched/regional_operation_plan_items.csv",
+        "sha256": "a2da4712d9797f3d49417d3bd618997d1fd99c04fe7f452e6914d5f50b9c674a"
+      },
+      {
+        "path": "data/scenarios/enriched/regional_operation_plan_summary.csv",
+        "sha256": "ea68448b1cc31b94d62c309820230e1835db0395d5544549b544e3d0b051187f"
+      },
+      {
+        "path": "data/scenarios/enriched/regional_policy_detail_cards.csv",
+        "sha256": "a4a76ec8627a45e28e84a1b4276b288d05a117e70751f12b4c4d497b508f99c6"
+      },
+      {
+        "path": "data/scenarios/enriched/scenario_official_action_bindings_all.csv",
+        "sha256": "43b8f4dc95a2df74338675239904c21a6565925246b449f555e204723f0eff46"
+      },
+      {
+        "path": "data/scenarios/enriched/scenario_official_rag_scope_all.csv",
+        "sha256": "c7f8fa27934f6293cb207c46bbf582fba21c62ccc5a71734c348263eb7684dc5"
+      },
+      {
+        "path": "data/scenarios/enriched/scenario_postharvest_logistics_context.csv",
+        "sha256": "cdf3085088899b8409bcd4b95b0cd75afdf75cef810dd5c76563d777864369fa"
+      },
+      {
+        "path": "data/scenarios/enriched/scenario_postharvest_plan_items.csv",
+        "sha256": "57283b0c88a40d752d7d8f9eb64c77076b3f51f16702b1a908e5286617613533"
+      },
+      {
+        "path": "data/scenarios/enriched/scenario_postharvest_rag_scope.csv",
+        "sha256": "4ab723195ab4764090ca95f993008a7d7ba960600c1ca9ff40618bf91b31dcc8"
+      },
+      {
+        "path": "data/scenarios/enriched/sentinel_ndvi_context_features.csv",
+        "sha256": "680af4ba94357ec8a02da4fa9c3121031cdc198ec49ade2707b19bed60259ab4"
+      },
+      {
+        "path": "data/scenarios/enriched/sentinel_ndvi_context_manifest.csv",
+        "sha256": "601999dbcb4dc1b68191f5eefd7ad9a8dadfb80984332460b312d17ca9059c45"
+      },
+      {
+        "path": "data/scenarios/enriched/sentinel_ndvi_timeseries_features.csv",
+        "sha256": "168c63b0aa9dacc56fc5b91052e006e9f7222ce1cdb06656fc394a0e4b20a87e"
+      },
+      {
+        "path": "data/scenarios/evidence/scenario_evidence_status.csv",
+        "sha256": "40574caf600e5bb73af2abdb7282ca381ecc76055826eb592097b03c0702e115"
+      },
+      {
+        "path": "data/scenarios/manifests/scenario_manifest.csv",
+        "sha256": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284"
+      },
+      {
+        "path": "data/scenarios/processed/scenario_features.csv",
+        "sha256": "5ce7a88a19eb659ffe7f7fd63ee9b91d235acf698166f1dcc44fd86de4f89f8a"
+      },
+      {
+        "path": "evaluation/apple_gpu_preflight.py",
+        "sha256": "d5219004d87c465bf2d1df8ac18eec40d39f1d8f5611c67590067daf20eb20a2"
+      },
+      {
+        "path": "evaluation/benchmark_batch_runner.py",
+        "sha256": "65d8c1fcdf7b67764611bb399dac0c8ada03fd012589c38bc7f167fde00a27bc"
+      },
+      {
+        "path": "evaluation/benchmark_contract.py",
+        "sha256": "0ff17d730aa92ded352b7b7e559c0555efe5840dfd418359da52855cadf66a51"
+      },
+      {
+        "path": "evaluation/benchmark_oracle.py",
+        "sha256": "70d295c850b132adab189bfd6a0c6cc7730a0db45615c3725c50235c91a1880f"
+      },
+      {
+        "path": "evaluation/bounded_llm_relevance.py",
+        "sha256": "c49778b4a4ebf28b900aeefc768c595dc5c68d5a44e65a22fbcf0799a4f4a0d5"
+      },
+      {
+        "path": "evaluation/bounded_llm_relevance_v5_heldout.py",
+        "sha256": "e2c5e3a236ff805fd2db1e2ce94111f97ca9010ec3dc95d71d7a6d269ea75d25"
+      },
+      {
+        "path": "graph/benchmark_workflow.py",
+        "sha256": "71b7134af848357be316741cce3a9d597c52d54d9a34819b11f821d9edb0b9b2"
+      },
+      {
+        "path": "graph/benchmark_workflow_v5.py",
+        "sha256": "04806d9f9f73c3792ca530777fec102c8d141bce879175c966c035c779d23327"
+      },
+      {
+        "path": "llm/benchmark_llm_client.py",
+        "sha256": "6a349d6b8847e1c9be6b34f896c8dcd57713aecac6fd81c3908920931325ac66"
+      },
+      {
+        "path": "llm/bounded_selection_v5.py",
+        "sha256": "ad17c067d6897a8fe70b81803ed625df9457b10214532d09c02b713b52098af7"
+      },
+      {
+        "path": "results/e1-v5-heldout-final/aggregate_final_heldout_metrics.json",
+        "sha256": "5a53af5776c568a89cc0c1e187d6fa04489864289cc247b3340adf4a96d985b7"
+      },
+      {
+        "path": "results/e1-v5-heldout-final/final_acceptance_report.json",
+        "sha256": "d263f14eb57e024f17127cac930c4ee96863f59a02a9563d78484e481758fa8d"
+      },
+      {
+        "path": "results/e1-v5-heldout-final/run_manifest.json",
+        "sha256": "de68cdc15054b5ab0e71bdd38ccd8f1d70e8475789285ed56f9eb52010bf695e"
+      },
+      {
+        "path": "results/e1-v5-heldout-preflight/experiment_manifest.json",
+        "sha256": "07017dd4f9fc37e5caff2eee4731455e4dd7dd477229400b463662aba5e08026"
+      },
+      {
+        "path": "scripts/build_apple_gpu_pilot_set.py",
+        "sha256": "abab81c5fd529651c0eb24a0e038c5f65300e03c6b36cd3399e14c33485e7007"
+      },
+      {
+        "path": "scripts/build_bounded_llm_relevance_benchmark.py",
+        "sha256": "b53b4bb5567553cbff0ce6ef203d23a3c323082ac70f5fd5999faa07452a4c31"
+      }
+    ],
+    "version": "1.5"
+  },
+  "run_id": "v2_2-e1-v5-full-mas",
+  "runtime_environment": {
+    "BENCHMARK_LLM_ENABLED": true,
+    "BENCHMARK_LLM_MAX_SELECTED_FACTS": 3,
+    "BENCHMARK_LLM_REQUIRED": true,
+    "LLM_BACKEND": "ollama",
+    "OLLAMA_MODEL": "qwen2.5:7b-instruct",
+    "RAG_TOP_K": 4
+  },
+  "started_at_utc": "2026-10-11T17:24:37Z",
+  "status": "completed",
+  "system": {
+    "execution_boundary": "proposed farmer-facing system",
+    "id": "A0",
+    "label": "full deterministic MAS",
+    "purpose": "Reference architecture for structural comparisons."
+  },
+  "system_id": "A0"
+}

@@ -1,0 +1,208 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "context:weather",
+      "text": "candidate_kind=source_backed_context; selection_priority=normal; allowed_use=context_only; does_not_establish=These are exact-window public observations/model outputs for the representative cell. They do not establish current field moisture, irrigation history, or a forecast.; source_document_ids=NASA_POWER_HISTORICAL_WINDOW; domain=weather_context; disposition=context; allowed_use=context_only; summary=Historical mean temperature 30.395 °C; precipitation 5.160 mm; modelled root-zone wetness mean 0.562.; citation=NASA_POWER_HISTORICAL_WINDOW"
+    },
+    {
+      "fact_id": "context:soil",
+      "text": "candidate_kind=source_backed_context; selection_priority=normal; allowed_use=context_only; does_not_establish=The values are static gridded predictors for a representative cell. They are not a field soil test, current soil moisture, or available farm N/P/K measurement.; source_document_ids=SOILGRIDS; domain=soil_context; disposition=context; allowed_use=context_only; summary=Six frozen 0–5 cm SoilGrids properties are present: clay, nitrogen, ocd, phh2o, sand, silt.; citation=SOILGRIDS"
+    },
+    {
+      "fact_id": "context:satellite",
+      "text": "candidate_kind=source_backed_context; selection_priority=normal; allowed_use=context_only; does_not_establish=This is a clear-pixel signal at a documented cropland cell. It is not evidence of crop identity, field-average condition, crop stage, disease, or irrigation need.; source_document_ids=SENTINEL2_L2A; domain=satellite_context; disposition=context; allowed_use=context_only; summary=NDVI 0.111111; pre-decision series has 4 clear observations and trend decrease_at_least_0_05_ndvi.; citation=SENTINEL2_L2A"
+    },
+    {
+      "fact_id": "context:market",
+      "text": "candidate_kind=source_backed_context; selection_priority=normal; allowed_use=context_only; does_not_establish=The comparison comes from the same frozen official report. It contains no current lot quality, storage cost, quantity, or forecast and cannot issue sell/hold advice.; source_document_ids=AGMARKNET_MONTHLY_REPORT; domain=market_context; disposition=context; allowed_use=context_only; summary=Reported monthly mean 5250.395; prior-month change -0.751% and year-over-year change -4.661%.; citation=AGMARKNET_MONTHLY_REPORT"
+    }
+  ],
+  "question": {
+    "agent_name": "market_evidence_agent",
+    "allowed_fact_ids": [
+      "context:weather",
+      "context:soil",
+      "context:satellite",
+      "context:market"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "These are exact-window public observations/model outputs for the representative cell. They do not establish current field moisture, irrigation history, or a forecast."
+        ],
+        "fact_id": "context:weather",
+        "fact_kind": "typed_claim",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "NASA_POWER_HISTORICAL_WINDOW"
+        ],
+        "source_locators": [],
+        "text": "domain=weather_context; disposition=context; allowed_use=context_only; summary=Historical mean temperature 30.395 °C; precipitation 5.160 mm; modelled root-zone wetness mean 0.562.; citation=NASA_POWER_HISTORICAL_WINDOW"
+      },
+      {
+        "conditions": [
+          "The values are static gridded predictors for a representative cell. They are not a field soil test, current soil moisture, or available farm N/P/K measurement."
+        ],
+        "fact_id": "context:soil",
+        "fact_kind": "typed_claim",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "SOILGRIDS"
+        ],
+        "source_locators": [],
+        "text": "domain=soil_context; disposition=context; allowed_use=context_only; summary=Six frozen 0–5 cm SoilGrids properties are present: clay, nitrogen, ocd, phh2o, sand, silt.; citation=SOILGRIDS"
+      },
+      {
+        "conditions": [
+          "This is a clear-pixel signal at a documented cropland cell. It is not evidence of crop identity, field-average condition, crop stage, disease, or irrigation need."
+        ],
+        "fact_id": "context:satellite",
+        "fact_kind": "typed_claim",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "SENTINEL2_L2A"
+        ],
+        "source_locators": [],
+        "text": "domain=satellite_context; disposition=context; allowed_use=context_only; summary=NDVI 0.111111; pre-decision series has 4 clear observations and trend decrease_at_least_0_05_ndvi.; citation=SENTINEL2_L2A"
+      },
+      {
+        "conditions": [
+          "The comparison comes from the same frozen official report. It contains no current lot quality, storage cost, quantity, or forecast and cannot issue sell/hold advice."
+        ],
+        "fact_id": "context:market",
+        "fact_kind": "typed_claim",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "AGMARKNET_MONTHLY_REPORT"
+        ],
+        "source_locators": [],
+        "text": "domain=market_context; disposition=context; allowed_use=context_only; summary=Reported monthly mean 5250.395; prior-month change -0.751% and year-over-year change -4.661%.; citation=AGMARKNET_MONTHLY_REPORT"
+      }
+    ],
+    "allowed_passage_ids": [],
+    "allowed_source_document_ids": [
+      "AGMARKNET_MONTHLY_REPORT",
+      "NASA_POWER_HISTORICAL_WINDOW",
+      "SENTINEL2_L2A",
+      "SOILGRIDS"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_market_context_exact_match",
+    "disallowed_distractor_ids": [
+      "context:weather",
+      "context:soil",
+      "context:satellite"
+    ],
+    "expected_admissible_fact_ids": [
+      "context:market"
+    ],
+    "expected_admissible_passage_ids": [],
+    "expected_plan_or_operation_ids": [],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "Which source-backed candidate is the historical market context alongside the regional plan for Chickpea in Nanded, Maharashtra, during the rabi decision window ending 2025-03-31?",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "context_relevance",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_MARKET_08",
+    "required_conditions": [
+      "The comparison comes from the same frozen official report. It contains no current lot quality, storage cost, quantity, or forecast and cannot issue sell/hold advice."
+    ],
+    "role_instruction_sha256": "970068f27d2e2ad36c56a5900dff2fa0b04cfd7e539f867f681cc8d576723a62",
+    "scenario_context": {
+      "crop": "chickpea",
+      "decision_date": "2025-03-31",
+      "decision_window_utc": "2025-03-01T00:00:00Z/2025-03-31T23:59:59Z",
+      "district": "Nanded",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Maharashtra"
+    },
+    "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20250331",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_MH_NANDED_CHICKPEA_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "market_evidence_agent",
+    "bounded_llm": {
+      "agent_name": "market_evidence_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "47545c13b91345c2ab75a7cb4c8d18f939343a6c009383a669a37c12e209b92c",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "context:market"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "context_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "sufficiency_before_context"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_market_context_exact_match",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "context:market"
+    ],
+    "expected_passage_count": 0,
+    "expected_passage_ids": [],
+    "expected_plan_count": 0,
+    "expected_plan_or_operation_ids": [],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 7734,
+    "legacy_declared_expected_plan_or_operation_ids": [],
+    "original_allowed_fact_ids": [
+      "context:weather",
+      "context:soil",
+      "context:satellite",
+      "context:market"
+    ],
+    "packaged_candidate_fact_ids": [
+      "context:weather",
+      "context:soil",
+      "context:satellite",
+      "context:market"
+    ],
+    "passage_intersection_count": 0,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 0,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 1292550144,
+    "prompt_sha256": "47545c13b91345c2ab75a7cb4c8d18f939343a6c009383a669a37c12e209b92c",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_MARKET_08",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "SUPPLEMENT_PF_MH_NANDED_CHICKPEA_RABI_20250331",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "context:market"
+    ],
+    "selected_passage_count": 0,
+    "selected_passage_ids": [],
+    "selected_plan_count": 0,
+    "selected_plan_or_operation_ids": [],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "context_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "sufficiency_before_context"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

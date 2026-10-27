@@ -1,0 +1,29 @@
+{
+  "base_scenario": {
+    "crop": "rice",
+    "decision_date": "2025-11-30",
+    "district": "Sangrur",
+    "scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+    "season": "kharif",
+    "site_id": "PF_PB_SANGRUR_RICE_KHARIF",
+    "state": "Punjab"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "direct_farm_action_issued": false,
+    "integrity_status": "blocked_before_conflict_detection_and_coordination"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "eaf868e7710447b5ca67a905c3492f814364cdff356387cbac1f2649a071db86",
+  "fixture_family": "pre_resolution_integrity_rejection",
+  "fixture_id": "CF_RICE_09_INTEGRITY_CROP",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "wrong_crop_blocked_before_coordination",
+  "integrity_overlay": {
+    "base_value": "rice",
+    "classification": "controlled_identity_or_hash_mutation_not_real_evidence",
+    "counterfactual_value": "counterfactual_invalid_crop",
+    "field": "crop"
+  }
+}

@@ -1,0 +1,561 @@
+{
+  "a0_alignment_validator_blocked_count": 50,
+  "a5_alignment_validator_exposure_count": 50,
+  "all_passed": true,
+  "coverage_passed": true,
+  "direct_farm_action_fixture_count": 0,
+  "fixture_count": 60,
+  "oracle_version": "1.0",
+  "passed_fixture_count": 60,
+  "records": [
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_01_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_02_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_03_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_04_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_05_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_06_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_07_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_08_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_09_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_10_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_11_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_12_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_13_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_14_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_15_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_16_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_17_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_18_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_19_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_20_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_21_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_22_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_23_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_24_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_25_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_26_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_27_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_28_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_29_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_1_30_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_01_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_02_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_03_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_04_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_05_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_06_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_07_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_08_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_09_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_10_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_11_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_12_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_13_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_14_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_15_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_16_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_17_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_18_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_19_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_20_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_21_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_22_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_23_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_24_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_25_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_26_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_27_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_28_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_29_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "passed": true
+    },
+    {
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+      "detail": "a0_expected_match=True; a5_expected_match=True; direct_farm_action_issued=False",
+      "fixture_id": "PAF_2_30_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "passed": true
+    }
+  ],
+  "shared_loader_payload_hash_blocked_count": 10,
+  "type_counts": {
+    "plan_item_crop_scope_mismatch": 10,
+    "plan_item_decision_date_scope_mismatch": 10,
+    "plan_item_district_scope_mismatch": 10,
+    "plan_item_scenario_binding_mismatch": 10,
+    "plan_item_season_scope_mismatch": 10,
+    "weather_payload_hash_mismatch": 10
+  }
+}

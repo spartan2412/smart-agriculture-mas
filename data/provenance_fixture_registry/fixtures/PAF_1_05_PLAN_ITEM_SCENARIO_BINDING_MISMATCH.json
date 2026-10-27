@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "chickpea",
+    "decision_date": "2026-03-31",
+    "district": "Parbhani",
+    "scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_MH_PARBHANI_CHICKPEA_RABI",
+    "state": "Maharashtra"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "d32272bfc7b9505bd9f67f37d892e1ba626e3771581beaf864d884d3558157cb;8b8af9ade03b3f1c169a0270e7eee44b0c5816949d678cdf2a6b656d5da693b4",
+    "source_url": "https://icar-crida.res.in/CCP/MH/Parbhani/1.7.pdf;https://icar-crida.res.in/CCP/MH/Parbhani/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "d449be1631a5fab7424bf796427391452e11ca02040c509513f1b40bfa7cfcfc",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_05_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_scenario_binding_mismatch",
+  "overlay": {
+    "base_value": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+    "field": "scenario_id",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

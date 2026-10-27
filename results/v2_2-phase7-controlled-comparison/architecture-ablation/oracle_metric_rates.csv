@@ -1,0 +1,148 @@
+system_id,label,metric,metric_label,passed,total,rate,percentage,delta_vs_a0_percentage_points
+A0,A0 Full MAS,abstention_reason_coverage,Abstention reason,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,bounded_llm_trace_compliance,bounded llm trace compliance,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,citation_traceability,Citation traceability,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,claim_scope_contract_compliance,claim scope contract compliance,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,conditional_operation_completeness,Conditional operations,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,conflict_resolution_citation_fidelity,conflict resolution citation fidelity,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,conflict_trace_completeness_and_exclusion,Conflict trace,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,context_source_provenance_binding,context source provenance binding,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,farmer_message_condition_and_citation_fidelity,farmer message condition and citation fidelity,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,farmer_message_source_detail_and_facility_fidelity,farmer message source detail and facility fidelity,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,grounded_plan_coverage,Grounded plan coverage,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,input_lineage_integrity,input lineage integrity,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,natural_ndvi_weather_divergence_policy,natural ndvi weather divergence policy,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,operation_binding_and_condition_compliance,Operation binding + condition,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,overall_structural_pass,All structural checks,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,plan_and_selected_operation_citation_coverage,Plan citation coverage,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,rag_scope_compliance,RAG scope,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,source_quote_locator_hash_fidelity,source quote locator hash fidelity,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,stable_claim_identity_fidelity,stable claim identity fidelity,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,unsupported_action_prevention_and_agent_permissions,Safety / permissions,300,300,1.0,100.0,0.0
+A0,A0 Full MAS,vision_no_data_boundary,Vision no-data boundary,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,abstention_reason_coverage,Abstention reason,0,300,0.0,0.0,-100.0
+A1,A1 Regional plan only,bounded_llm_trace_compliance,bounded llm trace compliance,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,citation_traceability,Citation traceability,0,300,0.0,0.0,-100.0
+A1,A1 Regional plan only,claim_scope_contract_compliance,claim scope contract compliance,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,conditional_operation_completeness,Conditional operations,0,300,0.0,0.0,-100.0
+A1,A1 Regional plan only,conflict_resolution_citation_fidelity,conflict resolution citation fidelity,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,conflict_trace_completeness_and_exclusion,Conflict trace,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,context_source_provenance_binding,context source provenance binding,0,300,0.0,0.0,-100.0
+A1,A1 Regional plan only,farmer_message_condition_and_citation_fidelity,farmer message condition and citation fidelity,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,farmer_message_source_detail_and_facility_fidelity,farmer message source detail and facility fidelity,0,300,0.0,0.0,-100.0
+A1,A1 Regional plan only,grounded_plan_coverage,Grounded plan coverage,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,input_lineage_integrity,input lineage integrity,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,natural_ndvi_weather_divergence_policy,natural ndvi weather divergence policy,257,300,0.8566666666666667,85.66666666666667,-14.333333333333332
+A1,A1 Regional plan only,operation_binding_and_condition_compliance,Operation binding + condition,0,300,0.0,0.0,-100.0
+A1,A1 Regional plan only,overall_structural_pass,All structural checks,0,300,0.0,0.0,-100.0
+A1,A1 Regional plan only,plan_and_selected_operation_citation_coverage,Plan citation coverage,101,300,0.33666666666666667,33.666666666666664,-66.33333333333333
+A1,A1 Regional plan only,rag_scope_compliance,RAG scope,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,source_quote_locator_hash_fidelity,source quote locator hash fidelity,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,stable_claim_identity_fidelity,stable claim identity fidelity,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,unsupported_action_prevention_and_agent_permissions,Safety / permissions,300,300,1.0,100.0,0.0
+A1,A1 Regional plan only,vision_no_data_boundary,Vision no-data boundary,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,abstention_reason_coverage,Abstention reason,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,bounded_llm_trace_compliance,bounded llm trace compliance,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,citation_traceability,Citation traceability,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,claim_scope_contract_compliance,claim scope contract compliance,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,conditional_operation_completeness,Conditional operations,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,conflict_resolution_citation_fidelity,conflict resolution citation fidelity,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,conflict_trace_completeness_and_exclusion,Conflict trace,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,context_source_provenance_binding,context source provenance binding,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,farmer_message_condition_and_citation_fidelity,farmer message condition and citation fidelity,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,farmer_message_source_detail_and_facility_fidelity,farmer message source detail and facility fidelity,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,grounded_plan_coverage,Grounded plan coverage,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,input_lineage_integrity,input lineage integrity,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,natural_ndvi_weather_divergence_policy,natural ndvi weather divergence policy,257,300,0.8566666666666667,85.66666666666667,-14.333333333333332
+A2,A2 Centralized RAG,operation_binding_and_condition_compliance,Operation binding + condition,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,overall_structural_pass,All structural checks,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,plan_and_selected_operation_citation_coverage,Plan citation coverage,0,300,0.0,0.0,-100.0
+A2,A2 Centralized RAG,rag_scope_compliance,RAG scope,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,source_quote_locator_hash_fidelity,source quote locator hash fidelity,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,stable_claim_identity_fidelity,stable claim identity fidelity,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,unsupported_action_prevention_and_agent_permissions,Safety / permissions,300,300,1.0,100.0,0.0
+A2,A2 Centralized RAG,vision_no_data_boundary,Vision no-data boundary,0,300,0.0,0.0,-100.0
+A3,A3 No scoped RAG,abstention_reason_coverage,Abstention reason,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,bounded_llm_trace_compliance,bounded llm trace compliance,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,citation_traceability,Citation traceability,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,claim_scope_contract_compliance,claim scope contract compliance,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,conditional_operation_completeness,Conditional operations,71,300,0.23666666666666666,23.666666666666668,-76.33333333333333
+A3,A3 No scoped RAG,conflict_resolution_citation_fidelity,conflict resolution citation fidelity,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,conflict_trace_completeness_and_exclusion,Conflict trace,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,context_source_provenance_binding,context source provenance binding,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,farmer_message_condition_and_citation_fidelity,farmer message condition and citation fidelity,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,farmer_message_source_detail_and_facility_fidelity,farmer message source detail and facility fidelity,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,grounded_plan_coverage,Grounded plan coverage,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,input_lineage_integrity,input lineage integrity,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,natural_ndvi_weather_divergence_policy,natural ndvi weather divergence policy,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,operation_binding_and_condition_compliance,Operation binding + condition,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,overall_structural_pass,All structural checks,71,300,0.23666666666666666,23.666666666666668,-76.33333333333333
+A3,A3 No scoped RAG,plan_and_selected_operation_citation_coverage,Plan citation coverage,197,300,0.6566666666666666,65.66666666666666,-34.333333333333336
+A3,A3 No scoped RAG,rag_scope_compliance,RAG scope,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,source_quote_locator_hash_fidelity,source quote locator hash fidelity,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,stable_claim_identity_fidelity,stable claim identity fidelity,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,unsupported_action_prevention_and_agent_permissions,Safety / permissions,300,300,1.0,100.0,0.0
+A3,A3 No scoped RAG,vision_no_data_boundary,Vision no-data boundary,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,abstention_reason_coverage,Abstention reason,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,bounded_llm_trace_compliance,bounded llm trace compliance,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,citation_traceability,Citation traceability,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,claim_scope_contract_compliance,claim scope contract compliance,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,conditional_operation_completeness,Conditional operations,71,300,0.23666666666666666,23.666666666666668,-76.33333333333333
+A4,A4 No regional plans,conflict_resolution_citation_fidelity,conflict resolution citation fidelity,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,conflict_trace_completeness_and_exclusion,Conflict trace,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,context_source_provenance_binding,context source provenance binding,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,farmer_message_condition_and_citation_fidelity,farmer message condition and citation fidelity,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,farmer_message_source_detail_and_facility_fidelity,farmer message source detail and facility fidelity,0,300,0.0,0.0,-100.0
+A4,A4 No regional plans,grounded_plan_coverage,Grounded plan coverage,0,300,0.0,0.0,-100.0
+A4,A4 No regional plans,input_lineage_integrity,input lineage integrity,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,natural_ndvi_weather_divergence_policy,natural ndvi weather divergence policy,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,operation_binding_and_condition_compliance,Operation binding + condition,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,overall_structural_pass,All structural checks,0,300,0.0,0.0,-100.0
+A4,A4 No regional plans,plan_and_selected_operation_citation_coverage,Plan citation coverage,0,300,0.0,0.0,-100.0
+A4,A4 No regional plans,rag_scope_compliance,RAG scope,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,source_quote_locator_hash_fidelity,source quote locator hash fidelity,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,stable_claim_identity_fidelity,stable claim identity fidelity,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,unsupported_action_prevention_and_agent_permissions,Safety / permissions,300,300,1.0,100.0,0.0
+A4,A4 No regional plans,vision_no_data_boundary,Vision no-data boundary,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,abstention_reason_coverage,Abstention reason,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,bounded_llm_trace_compliance,bounded llm trace compliance,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,citation_traceability,Citation traceability,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,claim_scope_contract_compliance,claim scope contract compliance,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,conditional_operation_completeness,Conditional operations,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,conflict_resolution_citation_fidelity,conflict resolution citation fidelity,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,conflict_trace_completeness_and_exclusion,Conflict trace,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,context_source_provenance_binding,context source provenance binding,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,farmer_message_condition_and_citation_fidelity,farmer message condition and citation fidelity,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,farmer_message_source_detail_and_facility_fidelity,farmer message source detail and facility fidelity,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,grounded_plan_coverage,Grounded plan coverage,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,input_lineage_integrity,input lineage integrity,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,natural_ndvi_weather_divergence_policy,natural ndvi weather divergence policy,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,operation_binding_and_condition_compliance,Operation binding + condition,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,overall_structural_pass,All structural checks,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,plan_and_selected_operation_citation_coverage,Plan citation coverage,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,rag_scope_compliance,RAG scope,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,source_quote_locator_hash_fidelity,source quote locator hash fidelity,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,stable_claim_identity_fidelity,stable claim identity fidelity,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,unsupported_action_prevention_and_agent_permissions,Safety / permissions,300,300,1.0,100.0,0.0
+A5,A5 No alignment gates,vision_no_data_boundary,Vision no-data boundary,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,abstention_reason_coverage,Abstention reason,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,bounded_llm_trace_compliance,bounded llm trace compliance,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,citation_traceability,Citation traceability,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,claim_scope_contract_compliance,claim scope contract compliance,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,conditional_operation_completeness,Conditional operations,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,conflict_resolution_citation_fidelity,conflict resolution citation fidelity,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,conflict_trace_completeness_and_exclusion,Conflict trace,257,300,0.8566666666666667,85.66666666666667,-14.333333333333332
+A6,A6 No conflict coordinator,context_source_provenance_binding,context source provenance binding,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,farmer_message_condition_and_citation_fidelity,farmer message condition and citation fidelity,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,farmer_message_source_detail_and_facility_fidelity,farmer message source detail and facility fidelity,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,grounded_plan_coverage,Grounded plan coverage,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,input_lineage_integrity,input lineage integrity,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,natural_ndvi_weather_divergence_policy,natural ndvi weather divergence policy,257,300,0.8566666666666667,85.66666666666667,-14.333333333333332
+A6,A6 No conflict coordinator,operation_binding_and_condition_compliance,Operation binding + condition,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,overall_structural_pass,All structural checks,257,300,0.8566666666666667,85.66666666666667,-14.333333333333332
+A6,A6 No conflict coordinator,plan_and_selected_operation_citation_coverage,Plan citation coverage,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,rag_scope_compliance,RAG scope,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,source_quote_locator_hash_fidelity,source quote locator hash fidelity,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,stable_claim_identity_fidelity,stable claim identity fidelity,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,unsupported_action_prevention_and_agent_permissions,Safety / permissions,300,300,1.0,100.0,0.0
+A6,A6 No conflict coordinator,vision_no_data_boundary,Vision no-data boundary,300,300,1.0,100.0,0.0

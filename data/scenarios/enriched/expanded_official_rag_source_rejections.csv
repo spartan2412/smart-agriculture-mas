@@ -1,0 +1,5 @@
+source_family,official_url,source_label,rejection_status,reason
+ICAR_IISR_WEEKLY_ARCHIVE,"https://icar-nsri.res.in/pdfdoc/Advisory2023/11-17 Sept, 2023.pdf",11-12 September,rejected_internally_ambiguous_archive_date,Archive label and filename give incompatible issue-end dates.
+ICAR_IISR_WEEKLY_ARCHIVE,https://icar-nsri.res.in/pdfdoc/Advisory2024/May 2024.pdf,MAY 2024,rejected_no_exact_week_range,A date range could not be parsed without guessing.
+ICAR_IISR_WEEKLY_ARCHIVE,https://icar-nsri.res.in/pdfdoc/Advisory2024/May_2024_2.pdf,MAY 2024,rejected_no_exact_week_range,A date range could not be parsed without guessing.
+ICAR_IISR_WEEKLY_ARCHIVE,"https://icar-nsri.res.in/pdfdoc/Advisory2024/Aug,5-11,2024.pdf",12-18 August,rejected_duplicate_archive_url,The official archive links this same PDF for more than one issue period; no unverified second period is asserted.

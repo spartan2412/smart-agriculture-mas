@@ -1,0 +1,248 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage.; source_document_ids=ICAR_CRIDA_CCP; lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared rabi window for this crop and district is Oct-Mar; the scenario date falls in the late part of that window."
+    },
+    {
+      "fact_id": "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__fertilizer_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Regional fallback only; pheromone-trap and NSKE prerequisites remain part of the source IPM bundle.; source_document_ids=ICAR_RABI_STATE_ADVISORIES_2021_22; lane=regional_nutrient_policy; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Use the cited Maharashtra chickpea regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__protection_policy",
+      "text": "candidate_kind=approved_regional_plan_card; selection_priority=single_primary_card; allowed_use=regional_policy_only; does_not_establish=Regional fallback only; pheromone-trap and NSKE prerequisites remain part of the source IPM bundle.; source_document_ids=ICAR_RABI_STATE_ADVISORIES_2021_22; lane=regional_crop_protection_policy; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Use the cited Maharashtra chickpea regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+    },
+    {
+      "fact_id": "postharvest:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS",
+      "text": "candidate_kind=postharvest_plan_card; selection_priority=postharvest_only_when_requested; allowed_use=conditional_operation_only; does_not_establish=Only when hard pods and crop dryness are actually observed. | actual_pod_hardness_and_crop_dryness_not_observed; source_document_ids=MPKV_KRISHI_DARSHANI_2023; lane=harvest_readiness; source=MPKV_KRISHI_DARSHANI_2023; text=Harvest and thresh chickpea only after pods are hard; do not harvest while the crop is wet."
+    }
+  ],
+  "question": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "allowed_fact_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__fertilizer_policy",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__protection_policy",
+      "postharvest:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "A source-quoted post-harvest technical operation is crop scoped, but its stated lot/harvest precondition is not observed in this frozen scenario."
+        ],
+        "fact_id": "decision:operation",
+        "fact_kind": "decision_trace",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "FROZEN_SCENARIO_MANIFEST"
+        ],
+        "source_locators": [],
+        "text": "status=conditional_operation_pending_field_precondition; operation_status=not_issued_as_direct_farm_action; direct_farm_action_issued=False; citations=AGMARKNET_MONTHLY_REPORT,CIBRC_INSECTICIDE_2026,FROZEN_SCENARIO_MANIFEST,ICAR_CRIDA_CCP,ICAR_CRIDA_MH_NANDED_CROP_PROFILE,ICAR_CRIDA_MH_NANDED_SOWING_WINDOW,ICAR_RABI_STATE_ADVISORIES_2021_22,MAS_ENRICHMENT_CONTRACT,MPKV_KRISHI_DARSHANI_2023,NASA_POWER_HISTORICAL_WINDOW,NATURAL_SIGNAL_DIVERGENCE,SENTINEL2_L2A,SOILGRIDS,WDRA_REGISTERED_WAREHOUSES_MAHARASHTRA"
+      },
+      {
+        "conditions": [
+          "The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage."
+        ],
+        "fact_id": "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+        ],
+        "source_document_ids": [
+          "ICAR_CRIDA_CCP"
+        ],
+        "source_locators": [
+          "District CCP crop profile and sowing-window PDFs"
+        ],
+        "text": "lane=regional_calendar; source=ICAR_CRIDA_CCP; text=The declared rabi window for this crop and district is Oct-Mar; the scenario date falls in the late part of that window."
+      },
+      {
+        "conditions": [
+          "Regional fallback only; pheromone-trap and NSKE prerequisites remain part of the source IPM bundle."
+        ],
+        "fact_id": "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__fertilizer_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__fertilizer_policy"
+        ],
+        "source_document_ids": [
+          "ICAR_RABI_STATE_ADVISORIES_2021_22"
+        ],
+        "source_locators": [
+          "PDF p. 315 Maharashtra chickpea basal NPK"
+        ],
+        "text": "lane=regional_nutrient_policy; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Use the cited Maharashtra chickpea regional fertilizer source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Regional fallback only; pheromone-trap and NSKE prerequisites remain part of the source IPM bundle."
+        ],
+        "fact_id": "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__protection_policy",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__protection_policy"
+        ],
+        "source_document_ids": [
+          "ICAR_RABI_STATE_ADVISORIES_2021_22"
+        ],
+        "source_locators": [
+          "PDF p. 315 ETL-based pod-borer IPM option"
+        ],
+        "text": "lane=regional_crop_protection_policy; source=ICAR_RABI_STATE_ADVISORIES_2021_22; text=Use the cited Maharashtra chickpea regional protection source as a planning reference. The system preserves the documented scope and does not convert it into a farm-specific prescription or treatment order."
+      },
+      {
+        "conditions": [
+          "Only when hard pods and crop dryness are actually observed.",
+          "actual_pod_hardness_and_crop_dryness_not_observed"
+        ],
+        "fact_id": "postharvest:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS",
+        "fact_kind": "plan_card",
+        "plan_or_operation_ids": [
+          "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS",
+          "POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS"
+        ],
+        "source_document_ids": [
+          "MPKV_KRISHI_DARSHANI_2023"
+        ],
+        "source_locators": [
+          "pdf_page_90_visual_operation_transcription"
+        ],
+        "text": "lane=harvest_readiness; source=MPKV_KRISHI_DARSHANI_2023; text=Harvest and thresh chickpea only after pods are hard; do not harvest while the crop is wet."
+      }
+    ],
+    "allowed_passage_ids": [],
+    "allowed_source_document_ids": [
+      "FROZEN_SCENARIO_MANIFEST",
+      "ICAR_CRIDA_CCP",
+      "ICAR_RABI_STATE_ADVISORIES_2021_22",
+      "MPKV_KRISHI_DARSHANI_2023"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "disallowed_distractor_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__fertilizer_policy",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__protection_policy",
+      "postharvest:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS"
+    ],
+    "expected_admissible_fact_ids": [
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+    ],
+    "expected_admissible_passage_ids": [],
+    "expected_plan_or_operation_ids": [
+      "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "Which one documented seasonal calendar card should be displayed first for Chickpea in Nanded, Maharashtra, during the rabi decision window ending 2026-03-31? Select only that one plan card; do not select a decision trace, another lane, or post-harvest context.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "coordinator_single_primary_regional_calendar",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_07",
+    "required_conditions": [
+      "The position is derived only from the declared district-scale season window and decision month. It is not an observed sowing date or field phenology stage."
+    ],
+    "role_instruction_sha256": "8c099c7e5320410b773bd9057ec02502af44c63e74059c7029c505abd8ad2ab7",
+    "scenario_context": {
+      "crop": "chickpea",
+      "decision_date": "2026-03-31",
+      "decision_window_utc": "2026-03-01T00:00:00Z/2026-03-31T23:59:59Z",
+      "district": "Nanded",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Maharashtra"
+    },
+    "scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_MH_NANDED_CHICKPEA_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "provenance_aware_coordinator_agent",
+    "bounded_llm": {
+      "agent_name": "provenance_aware_coordinator_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "a23c8fd14f088f074560f4a4df72847a57710097edd9fd887447b1bd9d7e65dc",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "approved_plan_cards_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_primary_plan_card"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_single_primary_plan_card",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+    ],
+    "expected_passage_count": 0,
+    "expected_passage_ids": [],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "latency_ms": 3970,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+    ],
+    "original_allowed_fact_ids": [
+      "decision:operation",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__fertilizer_policy",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__protection_policy",
+      "postharvest:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS"
+    ],
+    "packaged_candidate_fact_ids": [
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__fertilizer_policy",
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__protection_policy",
+      "postharvest:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__postharvest__POSTHARVEST_CHICKPEA_HARVEST_DRY_HARD_PODS"
+    ],
+    "passage_intersection_count": 0,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 102219776,
+    "prompt_sha256": "a23c8fd14f088f074560f4a4df72847a57710097edd9fd887447b1bd9d7e65dc",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_COORDINATOR_07",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "plan:ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+    ],
+    "selected_passage_count": 0,
+    "selected_passage_ids": [],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "approved_plan_cards_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_primary_plan_card"
+    },
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  }
+}

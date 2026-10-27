@@ -1,0 +1,6 @@
+check,expected,actual,result,detail
+summary_coverage,300,300,pass,validated
+plan_item_coverage_and_uniqueness,1507,1507,pass,validated
+baseline_reference_provenance,900,900,pass,validated
+conditional_operation_scope_and_provenance,607,607,pass,validated
+content_hashes_and_direct_action_guard,1807,1807,pass,validated

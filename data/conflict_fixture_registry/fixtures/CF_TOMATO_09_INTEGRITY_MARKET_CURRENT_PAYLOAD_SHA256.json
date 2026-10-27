@@ -1,0 +1,29 @@
+{
+  "base_scenario": {
+    "crop": "tomato",
+    "decision_date": "2025-12-31",
+    "district": "Salem",
+    "scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+    "season": "rabi",
+    "site_id": "PF_TN_SALEM_TOMATO_RABI",
+    "state": "Tamil Nadu"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "direct_farm_action_issued": false,
+    "integrity_status": "blocked_before_conflict_detection_and_coordination"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "a9bbc80c7b69b377686c04b778f4a9eeab459eb905a35352e88ead5461010952",
+  "fixture_family": "pre_resolution_integrity_rejection",
+  "fixture_id": "CF_TOMATO_09_INTEGRITY_MARKET_CURRENT_PAYLOAD_SHA256",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "wrong_market_current_payload_sha256_blocked_before_coordination",
+  "integrity_overlay": {
+    "base_value": "9abae0d7f0a937c76c28a39c2a10521697c3bd59f6563f327f77f23e82412487",
+    "classification": "controlled_identity_or_hash_mutation_not_real_evidence",
+    "counterfactual_value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "field": "market_current_payload_sha256"
+  }
+}

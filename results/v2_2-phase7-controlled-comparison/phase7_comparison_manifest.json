@@ -1,0 +1,281 @@
+{
+  "architecture_ablation_summary": {
+    "a0_full_pass_count": 300,
+    "a3_full_pass_count": 71,
+    "a5_full_pass_count": 300,
+    "figure_count": 3,
+    "figure_files": [
+      "FIGURE_1_ORACLE_METRIC_HEATMAP.png",
+      "FIGURE_1_ORACLE_METRIC_HEATMAP.pdf",
+      "FIGURE_2_KEY_ABLATION_METRICS.png",
+      "FIGURE_2_KEY_ABLATION_METRICS.pdf",
+      "FIGURE_3_CONTROLLED_FIXTURE_PROTOCOLS.png",
+      "FIGURE_3_CONTROLLED_FIXTURE_PROTOCOLS.pdf"
+    ],
+    "output_dir": "/Users/aryandhumal/Project/results/v2_2-phase7-controlled-comparison/architecture-ablation",
+    "scenario_count": 300,
+    "system_count": 7,
+    "table_count": 6
+  },
+  "e0": {
+    "directory": "v2_2-e0-full-mas",
+    "git_commit": "636254d97ee6bfcb5cd62925560256e8861e7a7f",
+    "run_id": "v2_2-e0-full-mas"
+  },
+  "e1_v5": {
+    "apple_gpu_acceleration": {
+      "artifact_integrity": {
+        "git": {
+          "clean": "true",
+          "commit": "42a2518f47b78bc7fbaaa912053d15158cdc6902"
+        },
+        "preflight_module": "evaluation/apple_gpu_preflight.py",
+        "preflight_module_sha256": "d5219004d87c465bf2d1df8ac18eec40d39f1d8f5611c67590067daf20eb20a2",
+        "protocol_path": "evaluation/experiment_protocol.json",
+        "protocol_sha256": "9197b8b544479998378c0d7bcce4dd398b8091a440e3c1352d0c59242c0e4554"
+      },
+      "backend_evidence": {
+        "acceleration": {
+          "evidence": "Ollama /api/ps reported size_vram > 0 for the just-probed configured model.",
+          "observed_context_length": 4096,
+          "observed_gpu_resident_bytes": 4638040390,
+          "observed_model_bytes": 4638040390,
+          "observed_model_resident_in_gpu_memory": true,
+          "pytorch_mps_is_not_runtime_proof": true,
+          "requested_runtime": "Ollama Metal / Apple GPU"
+        },
+        "backend": "ollama",
+        "checks": {
+          "apple_silicon_host": true,
+          "gpu_residency_observed": true,
+          "model_loaded_in_ollama": true,
+          "probe_completed": true,
+          "protocol_blob_hash_matches": true,
+          "protocol_model_digest_prefix_matches": true,
+          "protocol_quantization_matches": true
+        },
+        "generation_parameters": {
+          "benchmark_max_selected_facts": 3,
+          "benchmark_max_tokens_per_call": 200,
+          "benchmark_temperature": 0.0,
+          "probe_keep_alive": "5m",
+          "probe_num_predict": 16,
+          "probe_temperature": 0.0
+        },
+        "model": {
+          "base_model_name": "Qwen2.5 7B",
+          "base_model_repository": "https://huggingface.co/Qwen/Qwen2.5-7B",
+          "format": "gguf",
+          "model_blob_file_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+          "model_blob_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+          "model_revision_or_commit": "not_exposed_by_local_ollama_metadata",
+          "model_revision_status": "unavailable_not_inferred",
+          "ollama_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_digest_prefix": "845dbda0ea48",
+          "parameter_count": 7615616512,
+          "parameter_size": "7.6B",
+          "quantization": "Q4_K_M",
+          "tag": "qwen2.5:7b-instruct"
+        },
+        "probe": {
+          "done": true,
+          "eval_count": 7,
+          "load_duration_ns": 795987542,
+          "prompt_eval_count": 42,
+          "response_json_valid": true,
+          "response_sha256": "c5f966c4d5f7c275b37c2aa91e9e27835665d8416e01f31ac181a098b3d0f35c",
+          "total_duration_ns": 1246025459
+        },
+        "runtime": {
+          "host": "http://localhost:11434",
+          "probe_elapsed_ms": 3854,
+          "runtime_name": "Ollama",
+          "runtime_version": "0.34.2",
+          "verification_method": "local_api_generate_then_api_ps_size_vram"
+        }
+      },
+      "configuration": {
+        "acceleration_requirement": "Ollama Metal/Apple-GPU use must be verified in the 30-scenario pilot.",
+        "backend": "ollama",
+        "benchmark_llm_enabled": true,
+        "benchmark_llm_required": false,
+        "bounded_llm_runtime": "v5.1",
+        "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+        "installed_model_blob_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+        "installed_ollama_model_id_prefix": "845dbda0ea48",
+        "label": "Ollama local-model v5.1 bounded-selector evaluation",
+        "model_family": "Qwen2.5-7B-Instruct",
+        "ollama_tag": "qwen2.5:7b-instruct",
+        "population": "all_300_normal_scenarios_after_pilot",
+        "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+        "purpose": "Current local bounded-LLM baseline.",
+        "quantization": "Q4_K_M",
+        "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+        "workflow": "graph.benchmark_workflow_v5.BenchmarkMASWorkflowV5"
+      },
+      "configuration_id": "E1",
+      "evidence_schema_version": "1.0",
+      "formal_boundary": {
+        "does_not_prove_pytorch_mps_for_ollama": true,
+        "next_required_run": "Run the fixed 30-scenario MAS pilot only from a clean committed worktree.",
+        "not_an_agricultural_benchmark_run": true
+      },
+      "hardware": {
+        "apple_soc": "Apple M5",
+        "hardware_model": "Mac17,3",
+        "machine": "arm64",
+        "pytorch_mps": {
+          "reason": "Ollama uses its own Metal runtime; only Ollama runtime residency is accepted for E1/E2.",
+          "used_as_ollama_acceleration_proof": false
+        },
+        "release": "25.6.0",
+        "system": "Darwin",
+        "unified_memory_bytes": 25769803776,
+        "unified_memory_gib": 24.0
+      },
+      "pilot_set": {
+        "focused_crops": [
+          "rice",
+          "wheat",
+          "maize",
+          "chickpea",
+          "soybean",
+          "tomato"
+        ],
+        "manifest_sha256": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+        "path": "data/pilot_sets/apple_gpu_30_anchor_scenarios",
+        "pilot_identity_sha256": "412888ee276374880c439c6263ef2d7252fa0c936e14a7d6c95b7d37bcc0840e",
+        "scenario_count": 30,
+        "scenario_file_sha256": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+        "unique_site_count": 30
+      },
+      "recorded_at_utc": "2026-10-11T09:00:33Z",
+      "status": "verified"
+    },
+    "directory": "v2_2-e1-v5-full-mas",
+    "git_commit": "03103bc3c05e602e7b7052a75dca9ad2a6c45c1c",
+    "model_artifact_binding": {
+      "bounded_llm_runtime": "v5.1",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "model_artifact_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+      "ollama_tag": "qwen2.5:7b-instruct",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "quantization": "Q4_K_M",
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2"
+    },
+    "run_id": "v2_2-e1-v5-full-mas"
+  },
+  "final_heldout_relevance": {
+    "acceptance_passed": true,
+    "directory": "e1-v5-heldout-final",
+    "question_count": 96
+  },
+  "generation_git": {
+    "clean": true,
+    "commit": "d396cdaeda630faa8ab2ac3e02c99bc2ee0c1a98",
+    "status": ""
+  },
+  "interpretation_boundary": {
+    "fixture_protocols": "Controlled software/provenance policy tests, not agricultural outcomes.",
+    "heldout_relevance": "Selection quality over frozen admitted facts/passages only.",
+    "qualitative_messages": "Reader inspection only; no subjective score or model tuning.",
+    "structural_oracle": "Source/provenance/safety compliance, not farm-outcome accuracy."
+  },
+  "paired_output_summary": {
+    "e1_accepted_bounded_selection_count": 2400,
+    "e1_empty_accepted_selection_count": 20,
+    "e1_fallback_count": 0,
+    "e1_invalid_or_rejected_output_count": 0,
+    "farmer_message_exact_match_count": 0,
+    "same_citation_set_count": 300,
+    "same_decision_status_count": 300,
+    "same_direct_action_flag_count": 300,
+    "same_operation_status_count": 300,
+    "same_operation_text_count": 300
+  },
+  "phase": "phase_7_controlled_comparisons",
+  "population": "same_frozen_300_scenarios_for_E0_and_E1",
+  "schema_version": "1.0",
+  "shared_frozen_data_hashes": {
+    "data/benchmark_loader.py": "c8289318416b9430ae9117371815f92d866f0ff0ba7ccfad95420a2533dcf96a",
+    "data/conflict_fixture_registry/conflict_fixture_manifest.csv": "2e5433fb4a1f32d0cda5d7fa34ee2e52fceae36d93db2baad0118487d760d601",
+    "data/llm_relevance_benchmark/manifest.json": "8f97947a4c5ac06bcb80a7e3b12f0fa18a8b19069163d3bed3b9eba2f926fdcc",
+    "data/llm_relevance_benchmark/relevance_questions.jsonl": "d076e1801fdedf162ca9e90925f4144497ce85d868fd4a2be4cc0ccebd7f79e0",
+    "data/pilot_sets/apple_gpu_30_anchor_scenarios/manifest.json": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+    "data/pilot_sets/apple_gpu_30_anchor_scenarios/scenario_ids.csv": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+    "data/registry/final_study_sites.csv": "25299d916ff4ab741afc3cd5e0afa462ed39459b107c20f565f34cd884563a6a",
+    "data/registry/source_scoped_final_site_admission.csv": "17421f3054739463d923caebbbd38f3b71c731d263ddc34b68c77346092340dc",
+    "data/scenarios/enriched/agmarknet_embedded_market_context_features.csv": "a76571d9f3874e29e184d952b132525a79c43b5ae74ce2449421215943505987",
+    "data/scenarios/enriched/agmarknet_embedded_market_context_manifest.csv": "5a8f88304365b1631e405de1aebfcefa73c0abdf2f1c3ab8eefd83f88c12e4d5",
+    "data/scenarios/enriched/mas_enrichment_contract.csv": "bd3403287150588299e0e59c7ebada7a82354f8ddccd9f1b406467e85ef6f40f",
+    "data/scenarios/enriched/nasa_power_water_context_features.csv": "a6348b220ec896cf45a58b8d95a2c286c555246fca5b3067b3a79709044d1e84",
+    "data/scenarios/enriched/official_action_records_all.csv": "cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376",
+    "data/scenarios/enriched/official_rag_corpus_all_chunks.csv": "784a277a086bb6beacb02e9f7ad9c69f74afa99b3674cc27bfcbf05db79b5292",
+    "data/scenarios/enriched/official_rag_corpus_catalog.csv": "7a5bb3b0843adb5488bad6cdf5e83f2928227e206d45d31b69955449a62b9e82",
+    "data/scenarios/enriched/postharvest_source_inventory.csv": "6ea7ae6b6103cbfd5f084d2db14ec41a18e44161fd990417a9b822b8a3a3c12d",
+    "data/scenarios/enriched/regional_operation_plan_items.csv": "a2da4712d9797f3d49417d3bd618997d1fd99c04fe7f452e6914d5f50b9c674a",
+    "data/scenarios/enriched/regional_operation_plan_summary.csv": "ea68448b1cc31b94d62c309820230e1835db0395d5544549b544e3d0b051187f",
+    "data/scenarios/enriched/regional_policy_detail_cards.csv": "a4a76ec8627a45e28e84a1b4276b288d05a117e70751f12b4c4d497b508f99c6",
+    "data/scenarios/enriched/scenario_official_action_bindings_all.csv": "43b8f4dc95a2df74338675239904c21a6565925246b449f555e204723f0eff46",
+    "data/scenarios/enriched/scenario_official_rag_scope_all.csv": "c7f8fa27934f6293cb207c46bbf582fba21c62ccc5a71734c348263eb7684dc5",
+    "data/scenarios/enriched/scenario_postharvest_logistics_context.csv": "cdf3085088899b8409bcd4b95b0cd75afdf75cef810dd5c76563d777864369fa",
+    "data/scenarios/enriched/scenario_postharvest_plan_items.csv": "57283b0c88a40d752d7d8f9eb64c77076b3f51f16702b1a908e5286617613533",
+    "data/scenarios/enriched/scenario_postharvest_rag_scope.csv": "4ab723195ab4764090ca95f993008a7d7ba960600c1ca9ff40618bf91b31dcc8",
+    "data/scenarios/enriched/sentinel_ndvi_context_features.csv": "680af4ba94357ec8a02da4fa9c3121031cdc198ec49ade2707b19bed60259ab4",
+    "data/scenarios/enriched/sentinel_ndvi_context_manifest.csv": "601999dbcb4dc1b68191f5eefd7ad9a8dadfb80984332460b312d17ca9059c45",
+    "data/scenarios/enriched/sentinel_ndvi_timeseries_features.csv": "168c63b0aa9dacc56fc5b91052e006e9f7222ce1cdb06656fc394a0e4b20a87e",
+    "data/scenarios/evidence/scenario_evidence_status.csv": "40574caf600e5bb73af2abdb7282ca381ecc76055826eb592097b03c0702e115",
+    "data/scenarios/manifests/scenario_manifest.csv": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284",
+    "data/scenarios/processed/scenario_features.csv": "5ce7a88a19eb659ffe7f7fd63ee9b91d235acf698166f1dcc44fd86de4f89f8a"
+  },
+  "source_artifacts": [
+    {
+      "path": "results/v2_2-e0-full-mas/run_manifest.json",
+      "sha256": "5558291fd5cb66f18dbc776fe0eb2a29aac8c0b1bbabbaf7a42a17778ec4f474"
+    },
+    {
+      "path": "results/v2_2-e0-full-mas/aggregate_oracle_result.json",
+      "sha256": "92019d5ff0922a2b32ac08dd3c50378e1164ff840fbd38679aafcfe5a6b57c13"
+    },
+    {
+      "path": "results/v2_2-e0-full-mas/stratified_oracle_result.json",
+      "sha256": "fca51a8297b4b21a0a9f12fd94e5a2fb00b55b58cda7522f6f0c76903831af19"
+    },
+    {
+      "path": "results/v2_2-e0-full-mas/batch_summary.json",
+      "sha256": "953f5d320e0758fc2f6cca12bfbeb54463fb860a78906758514c18ede4cbcc93"
+    },
+    {
+      "path": "results/v2_2-e1-v5-full-mas/run_manifest.json",
+      "sha256": "1cbcfa0ddfdc3fa9ba67b66531a21065e5d5bbbc98c5f6e530948ec8044c0c60"
+    },
+    {
+      "path": "results/v2_2-e1-v5-full-mas/aggregate_oracle_result.json",
+      "sha256": "92019d5ff0922a2b32ac08dd3c50378e1164ff840fbd38679aafcfe5a6b57c13"
+    },
+    {
+      "path": "results/v2_2-e1-v5-full-mas/stratified_oracle_result.json",
+      "sha256": "fca51a8297b4b21a0a9f12fd94e5a2fb00b55b58cda7522f6f0c76903831af19"
+    },
+    {
+      "path": "results/v2_2-e1-v5-full-mas/batch_summary.json",
+      "sha256": "88e3651c63db0a4cb71bc80c668ffc867040096bcc77a51a75f2cc453c89f816"
+    },
+    {
+      "path": "results/e1-v5-heldout-final/aggregate_final_heldout_metrics.json",
+      "sha256": "5a53af5776c568a89cc0c1e187d6fa04489864289cc247b3340adf4a96d985b7"
+    },
+    {
+      "path": "results/e1-v5-heldout-final/final_acceptance_report.json",
+      "sha256": "d263f14eb57e024f17127cac930c4ee96863f59a02a9563d78484e481758fa8d"
+    },
+    {
+      "path": "results/v2_2-e1-v5-apple-gpu-preflight/acceleration_evidence.json",
+      "sha256": "2beba46373b4dcb3ccc320b0633f5b7cb4e76d2500f9e65fbb4834a271b1f70a"
+    },
+    {
+      "path": "evaluation/final_phase7_comparison.py",
+      "sha256": "675d95d78e14e38b6a4067bed3c1ca83c76fc3450285a75eb8b79db3cd8cd319"
+    }
+  ]
+}

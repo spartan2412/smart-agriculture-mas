@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "rice",
+    "decision_date": "2025-11-30",
+    "district": "Ludhiana",
+    "scenario_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+    "season": "kharif",
+    "site_id": "PF_PB_LUDHIANA_RICE_KHARIF",
+    "state": "Punjab"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "8fde5d7127e0ab3f5ec0104ac25ad0b24e7811ff1b248831c16e97a2a85cc443;9b96b7eef5df86778e085161fde7f98ebcb042f27ac092ec9dc356c373cceaa1",
+    "source_url": "https://icar-crida.res.in/CCP/PB/Ludhiana/1.7.pdf;https://icar-crida.res.in/CCP/PB/Ludhiana/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "288c70292a7a195b2026f410e93cb6f98d41958adf1746335753b4ae37655ec9",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_11_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_scenario_binding_mismatch",
+  "overlay": {
+    "base_value": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+    "field": "scenario_id",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

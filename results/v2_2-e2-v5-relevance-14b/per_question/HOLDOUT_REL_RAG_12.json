@@ -1,0 +1,251 @@
+{
+  "packaged_candidates": [
+    {
+      "fact_id": "passage_1",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only after a supported early-blight diagnosis and applicable labelled/regulatory verification.; source_document_ids=TNAU_TOMATO_EARLY_BLIGHT_2023; source=TNAU_TOMATO_EARLY_BLIGHT_2023; locator=html_document; layer=source_scoped_operation; text=Use only the documented early-blight fungicide alternatives after a supported diagnosis. Spray one of the source-listed formulations. Iprodione 50% WP 600 g/ac; or Azoxystrobin 23% SC 200 ml/ac; or Mancozeb 35% SC 1 kg/ac. Only after a supported early-blight diagnosis and applicable labelled/regulatory verification. Spray Iprodione 50% WP @ 600 g/ac or Azoxystrobin 23% SC @ 200 ml/ac or Mancozeb 35% SC @ 1 kg/ac"
+    },
+    {
+      "fact_id": "passage_2",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only for documented tomato hybrids under the documented drip-fertigation system and known crop stage.; source_document_ids=TNAU_TOMATO_FERTIGATION_2014; source=TNAU_TOMATO_FERTIGATION_2014; locator=pdf_page_1; layer=source_scoped_operation; text=Use the documented hybrid-tomato drip-fertigation schedule. The source applies 75% of P as basal and the remaining nutrients through fertigation in stage-specific splits. 200:250:250 kg NPK/ha for hybrids. Only for documented tomato hybrids under the documented drip-fertigation system and known crop stage. The nutrient requirement for hybrids is 200:250:250 kg of NPK per ha."
+    },
+    {
+      "fact_id": "passage_3",
+      "text": "candidate_kind=source_scoped_operation; selection_priority=highest_exact_match; allowed_use=conditional_operation_only; does_not_establish=Only for an existing tomato crop when the implementation stage is documented.; source_document_ids=TNAU_TOMATO_FRUIT_BORER_2023; source=TNAU_TOMATO_FRUIT_BORER_2023; locator=html_document; layer=source_scoped_operation; text=Set up Helilure pheromone traps. 12 traps/ha. Only for an existing tomato crop when the implementation stage is documented. Setup pheromone trap with Helilure at 12/ha"
+    }
+  ],
+  "question": {
+    "agent_name": "official_operations_rag_agent",
+    "allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_facts": [
+      {
+        "conditions": [
+          "Only after a supported early-blight diagnosis and applicable labelled/regulatory verification."
+        ],
+        "fact_id": "passage_1",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "TNAU_TOMATO_EARLY_BLIGHT_FUNGICIDE"
+        ],
+        "source_document_ids": [
+          "TNAU_TOMATO_EARLY_BLIGHT_2023"
+        ],
+        "source_locators": [
+          "html_document"
+        ],
+        "text": "source=TNAU_TOMATO_EARLY_BLIGHT_2023; locator=html_document; layer=source_scoped_operation; text=Use only the documented early-blight fungicide alternatives after a supported diagnosis. Spray one of the source-listed formulations. Iprodione 50% WP 600 g/ac; or Azoxystrobin 23% SC 200 ml/ac; or Mancozeb 35% SC 1 kg/ac. Only after a supported early-blight diagnosis and applicable labelled/regulatory verification. Spray Iprodione 50% WP @ 600 g/ac or Azoxystrobin 23% SC @ 200 ml/ac or Mancozeb 35% SC @ 1 kg/ac"
+      },
+      {
+        "conditions": [
+          "Only for documented tomato hybrids under the documented drip-fertigation system and known crop stage."
+        ],
+        "fact_id": "passage_2",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "TNAU_TOMATO_HYBRID_DRIP_FERTIGATION"
+        ],
+        "source_document_ids": [
+          "TNAU_TOMATO_FERTIGATION_2014"
+        ],
+        "source_locators": [
+          "pdf_page_1"
+        ],
+        "text": "source=TNAU_TOMATO_FERTIGATION_2014; locator=pdf_page_1; layer=source_scoped_operation; text=Use the documented hybrid-tomato drip-fertigation schedule. The source applies 75% of P as basal and the remaining nutrients through fertigation in stage-specific splits. 200:250:250 kg NPK/ha for hybrids. Only for documented tomato hybrids under the documented drip-fertigation system and known crop stage. The nutrient requirement for hybrids is 200:250:250 kg of NPK per ha."
+      },
+      {
+        "conditions": [
+          "Only for an existing tomato crop when the implementation stage is documented."
+        ],
+        "fact_id": "passage_3",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [
+          "TNAU_TOMATO_FRUIT_BORER_PHEROMONE_TRAPS"
+        ],
+        "source_document_ids": [
+          "TNAU_TOMATO_FRUIT_BORER_2023"
+        ],
+        "source_locators": [
+          "html_document"
+        ],
+        "text": "source=TNAU_TOMATO_FRUIT_BORER_2023; locator=html_document; layer=source_scoped_operation; text=Set up Helilure pheromone traps. 12 traps/ha. Only for an existing tomato crop when the implementation stage is documented. Setup pheromone trap with Helilure at 12/ha"
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_4",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "TNAU_TOMATO_POSTHARVEST_HARVESTING"
+        ],
+        "source_locators": [
+          "html_paragraph_178"
+        ],
+        "text": "source=TNAU_TOMATO_POSTHARVEST_HARVESTING; locator=html_paragraph_178; layer=postharvest_exact_crop; text=Plastic crates are more convenient for handling since they can be stacked one above the other. The contoured rim keeps the product safe and allows sufficient air circulation. The packing should be rigid enough to protect the fruits from being crushed."
+      },
+      {
+        "conditions": [],
+        "fact_id": "passage_5",
+        "fact_kind": "official_passage",
+        "plan_or_operation_ids": [],
+        "source_document_ids": [
+          "TNAU_TOMATO_POSTHARVEST_HARVESTING"
+        ],
+        "source_locators": [
+          "html_paragraph_180"
+        ],
+        "text": "source=TNAU_TOMATO_POSTHARVEST_HARVESTING; locator=html_paragraph_180; layer=postharvest_exact_crop; text=Temperature between 12–15 oC is ideal for storage. A temperature of 13 oC and 90–95% relative humidity is recommended to slow down ripening."
+      }
+    ],
+    "allowed_passage_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "allowed_source_document_ids": [
+      "TNAU_TOMATO_EARLY_BLIGHT_2023",
+      "TNAU_TOMATO_FERTIGATION_2014",
+      "TNAU_TOMATO_FRUIT_BORER_2023",
+      "TNAU_TOMATO_POSTHARVEST_HARVESTING"
+    ],
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "disallowed_distractor_ids": [
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "expected_admissible_fact_ids": [
+      "passage_1"
+    ],
+    "expected_admissible_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_or_operation_ids": [
+      "TNAU_TOMATO_EARLY_BLIGHT_FUNGICIDE"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "farmer_question": "For Tomato in Coimbatore, Tamil Nadu, during the rabi decision window ending 2024-12-31, which exact source-scoped official passage records this operation: ‘Use only the documented early-blight fungicide alternatives after a supported diagnosis.’? Select the passage that retains this required condition: ‘Only after a supported early-blight diagnosis and applicable labelled/regulatory verification.’. Do not select a neighboring operation, generic context, or a second passage.",
+    "heldout_set_version": "1.0",
+    "label_derivation": "Expected IDs are derived only from this scenario's immutable source-backed claims, admitted passages, or plan cards. Distractors are source-backed candidates from the same scenario. This record is a final held-out evaluation item and must not be used for v5 prompt or candidate-packaging changes.",
+    "label_family": "exact_named_source_scoped_operation_selection",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_12",
+    "required_conditions": [
+      "Only after a supported early-blight diagnosis and applicable labelled/regulatory verification."
+    ],
+    "role_instruction_sha256": "f7ccf98792aba075f0537b87aeb2c34b16a5630a09166dadfe94881bb789fde9",
+    "scenario_context": {
+      "crop": "tomato",
+      "decision_date": "2024-12-31",
+      "decision_window_utc": "2024-12-01T00:00:00Z/2024-12-31T23:59:59Z",
+      "district": "Coimbatore",
+      "geometry_scope": "documented_representative_cell",
+      "season": "rabi",
+      "state": "Tamil Nadu"
+    },
+    "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_limit": 3,
+    "site_id": "PF_TN_COIMBATORE_TOMATO_RABI",
+    "usage": "final_heldout_evaluation_after_v5_development_freeze"
+  },
+  "result": {
+    "agent_name": "official_operations_rag_agent",
+    "bounded_llm": {
+      "agent_name": "official_operations_rag_agent",
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "error": null,
+      "mode": "bounded_llm",
+      "prompt_sha256": "679ed9c1617b6bc66ac8cf2aa83eeb6ff52ecb97432222e2b3f3c3b67aa5a9ea",
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "request_sufficiency": "selection_must_follow_role_scope",
+      "selected_fact_ids": [
+        "passage_1"
+      ],
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "selection_is_safety_non_authoritative": true,
+      "selection_policy": {
+        "candidate_scope": "admitted_passages_only",
+        "maximum_selected_fact_ids": 1,
+        "selection_mode": "one_exact_source_scoped_operation"
+      },
+      "status": "accepted"
+    },
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "challenge_tag": "heldout_exact_named_source_scoped_operation",
+    "expected_fact_count": 1,
+    "expected_fact_ids": [
+      "passage_1"
+    ],
+    "expected_passage_count": 1,
+    "expected_passage_ids": [
+      "passage_1"
+    ],
+    "expected_plan_count": 1,
+    "expected_plan_or_operation_ids": [
+      "TNAU_TOMATO_EARLY_BLIGHT_FUNGICIDE"
+    ],
+    "expected_selection_mode": "select_relevant_facts",
+    "fact_intersection_count": 1,
+    "fallback": false,
+    "final_research_result_permitted": true,
+    "invalid_structured_output": false,
+    "is_new_heldout_protocol": false,
+    "latency_ms": 3670,
+    "legacy_declared_expected_plan_or_operation_ids": [
+      "TNAU_TOMATO_EARLY_BLIGHT_FUNGICIDE"
+    ],
+    "original_allowed_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3",
+      "passage_4",
+      "passage_5"
+    ],
+    "packaged_candidate_fact_ids": [
+      "passage_1",
+      "passage_2",
+      "passage_3"
+    ],
+    "passage_intersection_count": 1,
+    "phase8_prompt_or_candidate_tuning_permitted": false,
+    "plan_intersection_count": 1,
+    "plan_or_operation_metric_version": "source_fact_projection_v1",
+    "process_peak_memory_bytes": 108773376,
+    "prompt_sha256": "679ed9c1617b6bc66ac8cf2aa83eeb6ff52ecb97432222e2b3f3c3b67aa5a9ea",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "question_id": "HOLDOUT_REL_RAG_12",
+    "request_sufficiency": "selection_must_follow_role_scope",
+    "result_error": null,
+    "result_status": "accepted",
+    "safe_empty_selection_correct": false,
+    "scenario_id": "SUPPLEMENT_PF_TN_COIMBATORE_TOMATO_RABI_20241231",
+    "selected_fact_count": 1,
+    "selected_fact_ids": [
+      "passage_1"
+    ],
+    "selected_passage_count": 1,
+    "selected_passage_ids": [
+      "passage_1"
+    ],
+    "selected_plan_count": 1,
+    "selected_plan_or_operation_ids": [
+      "TNAU_TOMATO_EARLY_BLIGHT_FUNGICIDE"
+    ],
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+    "selection_policy": {
+      "candidate_scope": "admitted_passages_only",
+      "maximum_selected_fact_ids": 1,
+      "selection_mode": "one_exact_source_scoped_operation"
+    },
+    "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+  }
+}

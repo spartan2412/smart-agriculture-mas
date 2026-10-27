@@ -1,0 +1,286 @@
+{
+  "artifact_version": "phase10-paper-artifacts-v2-v2_2-inputs",
+  "derived_counts": {
+    "conditional_operation_item_count": 607,
+    "crop_count": 6,
+    "district_count": 23,
+    "enrichment_contract_count": 300,
+    "operation_covered_scenario_count": 229,
+    "operation_record_count": 41,
+    "postharvest_context_count": 300,
+    "postharvest_item_count": 700,
+    "postharvest_passage_count": 14,
+    "rag_chunk_count": 4582,
+    "rag_document_count": 92,
+    "regional_plan_count": 1507,
+    "scenario_count": 300,
+    "site_count": 30,
+    "state_count": 5
+  },
+  "generated_at_utc": "2026-10-12T02:03:56.757674+00:00",
+  "generated_outputs": [
+    {
+      "path": "FIGURE_1_SYSTEM_ARCHITECTURE.pdf",
+      "sha256": "3dff10c567f3f3cf053c39b229dab78338af726b9e706c7749f18d21caa8d0de"
+    },
+    {
+      "path": "FIGURE_1_SYSTEM_ARCHITECTURE.png",
+      "sha256": "7c5fdff5251f0957ffc98bb136236a4810f618801a64fdf209273d3ab39d80d7"
+    },
+    {
+      "path": "FIGURE_2_STRUCTURAL_ABLATIONS.pdf",
+      "sha256": "2aa58523f93a2765ef26fcaba96d542b0cb4e777e11c448e75d48d954e368e02"
+    },
+    {
+      "path": "FIGURE_2_STRUCTURAL_ABLATIONS.png",
+      "sha256": "e40514af2d9950655297f49843ec3c4a76d8cf7b8f5133ca9dfd694296c919ee"
+    },
+    {
+      "path": "FIGURE_3_CONTROLLED_FIXTURES.pdf",
+      "sha256": "203a9c8302a014d0da3cc922303819179422b49a71bbe7eb7115eacbe05a2233"
+    },
+    {
+      "path": "FIGURE_3_CONTROLLED_FIXTURES.png",
+      "sha256": "37cf15a6384c55da6d4e2c2b1dc0f015ca443ccf1cebeba56f971ebc98509e72"
+    },
+    {
+      "path": "FIGURE_4_RUNTIME_AND_RELIABILITY.pdf",
+      "sha256": "0092053e23033f8d47ae5df9bc128bb66096f6475a83fd9bb52e0693733807a6"
+    },
+    {
+      "path": "FIGURE_4_RUNTIME_AND_RELIABILITY.png",
+      "sha256": "72b64b338441b3ea947d2dfeb9f92b8c8cd2bd6113e835443a125073960988eb"
+    },
+    {
+      "path": "README.md",
+      "sha256": "2d42fcfe8fd76ab7c540e931235e8a9afd1cd1adeb75f13b487e8fd365685369"
+    },
+    {
+      "path": "TABLE_10_14B_TRANSFER_NEGATIVE_RESULTS.md",
+      "sha256": "35209d21383d2acb3a8d4c6d5644aefe7ecf68347f71e5f2c5b29a75f1844402"
+    },
+    {
+      "path": "TABLE_1_DATASET_COMPOSITION.md",
+      "sha256": "9316db1dc97612b3ac0e26613cac3704a4c1957691d69131851a0fb3f975e9a5"
+    },
+    {
+      "path": "TABLE_2_AGENT_RESPONSIBILITIES.md",
+      "sha256": "ead50e810836926ebbd4b5c0d4a8e694784db6fa44c7396dd5bdbb30393f0369"
+    },
+    {
+      "path": "TABLE_3_MAIN_STRUCTURAL_RESULTS.md",
+      "sha256": "9b3e6b885002cd8ffda665c4fb5a8e6cb5cbc6a2a77a1551d2154e7f9a3a4c67"
+    },
+    {
+      "path": "TABLE_4_BOUNDED_LLM_RELEVANCE.md",
+      "sha256": "4865c99db92b060107a8099efb35771420b2d22c9cb701e3239e1cf28b23f25d"
+    },
+    {
+      "path": "TABLE_5_CONFLICT_RESOLUTION.md",
+      "sha256": "f8a62f95d067131275ea0655b836747ba248552717ebcf77323073bb73758b49"
+    },
+    {
+      "path": "TABLE_6_PROVENANCE_GATE.md",
+      "sha256": "beb43ceafc7134c398ee7da1e29879660129af3f7ee64c448c5e2be93ccfb743"
+    },
+    {
+      "path": "TABLE_7_STRATIFIED_CONFORMANCE.md",
+      "sha256": "a3c0d4c2e9b93d7359c6d7b8b46d62c89892f319e9591b2b5c292449466b0292"
+    },
+    {
+      "path": "TABLE_8_CASE_STUDIES.md",
+      "sha256": "67a1643875448ad0b0839433f8af439df631fe07a6226ec488704eb8bf2e191c"
+    },
+    {
+      "path": "TABLE_9_RUNTIME_AND_BACKEND.md",
+      "sha256": "bb045611cda4e64ecf88b6eb78e719505b8db33eb1fc0314656b6239b5f56d63"
+    },
+    {
+      "path": "agent_responsibilities.csv",
+      "sha256": "119e86119ae5882ff66f67a9ff0e27d2a6a4203b80f73194f4aa5c729a587a13"
+    },
+    {
+      "path": "bounded_llm_relevance_by_role.csv",
+      "sha256": "296137c953598cef9ca27ad539bb4854604c7a9122e2e9ade093c5cd277c2ac6"
+    },
+    {
+      "path": "dataset_composition.csv",
+      "sha256": "424b5eb4ade3e5d5aaffd0f5ea5597b4fe2056a368210cf26e0bc1c451a93ec3"
+    },
+    {
+      "path": "e2_e3_transfer_negative_results.csv",
+      "sha256": "facc7cbd04059b88630e313aab7a4e6358755b2306688be8f4afaf2e3a02cd8c"
+    },
+    {
+      "path": "runtime_and_backend.csv",
+      "sha256": "b5f4bffe737ce515d5c862a5dcba0c7402f268fd4a738e4a36b6685b5eb470c5"
+    }
+  ],
+  "generation_git": {
+    "commit": "49a376f65a9644b4e5e6a59e79ec1022b488c48a",
+    "status": "",
+    "worktree_clean": true
+  },
+  "generator": {
+    "path": "evaluation/paper_artifacts.py",
+    "sha256": "a1a43e7a6cbb352b21062f0c38503763ce4a473beb30129b1cd05c53ac849020"
+  },
+  "input_artifacts": [
+    {
+      "label": "canonical scenario manifest",
+      "path": "data/scenarios/manifests/scenario_manifest.csv",
+      "sha256": "d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284"
+    },
+    {
+      "label": "final registry",
+      "path": "data/registry/final_study_sites.csv",
+      "sha256": "25299d916ff4ab741afc3cd5e0afa462ed39459b107c20f565f34cd884563a6a"
+    },
+    {
+      "label": "MAS enrichment contract",
+      "path": "data/scenarios/enriched/mas_enrichment_contract.csv",
+      "sha256": "bd3403287150588299e0e59c7ebada7a82354f8ddccd9f1b406467e85ef6f40f"
+    },
+    {
+      "label": "regional operation plan items",
+      "path": "data/scenarios/enriched/regional_operation_plan_items.csv",
+      "sha256": "a2da4712d9797f3d49417d3bd618997d1fd99c04fe7f452e6914d5f50b9c674a"
+    },
+    {
+      "label": "official action records",
+      "path": "data/scenarios/enriched/official_action_records_all.csv",
+      "sha256": "cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376"
+    },
+    {
+      "label": "official RAG catalog",
+      "path": "data/scenarios/enriched/official_rag_corpus_catalog.csv",
+      "sha256": "7a5bb3b0843adb5488bad6cdf5e83f2928227e206d45d31b69955449a62b9e82"
+    },
+    {
+      "label": "official RAG chunks",
+      "path": "data/scenarios/enriched/official_rag_corpus_all_chunks.csv",
+      "sha256": "784a277a086bb6beacb02e9f7ad9c69f74afa99b3674cc27bfcbf05db79b5292"
+    },
+    {
+      "label": "post-harvest plan items",
+      "path": "data/scenarios/enriched/scenario_postharvest_plan_items.csv",
+      "sha256": "57283b0c88a40d752d7d8f9eb64c77076b3f51f16702b1a908e5286617613533"
+    },
+    {
+      "label": "post-harvest RAG passages",
+      "path": "data/scenarios/enriched/postharvest_rag_passages.csv",
+      "sha256": "44905d550ab961c838fae635d7cf0a00be549cef2857e2ae8932384d07d5810a"
+    },
+    {
+      "label": "post-harvest logistics context",
+      "path": "data/scenarios/enriched/scenario_postharvest_logistics_context.csv",
+      "sha256": "cdf3085088899b8409bcd4b95b0cd75afdf75cef810dd5c76563d777864369fa"
+    },
+    {
+      "label": "agent contract",
+      "path": "Documentation/AGENTS.md",
+      "sha256": "b48551910ff989d5fd3668347c0a4ef304419ed95da240e9144dfe2e8e1ecf52"
+    },
+    {
+      "label": "A0-A6 system summary",
+      "path": "results/v2_2-phase7-controlled-comparison/architecture-ablation/system_summary.csv",
+      "sha256": "c005a0dba224a28cd7f7625a732dffc460a4fc4556844183bb8566e5ae7810dd"
+    },
+    {
+      "label": "A0-A6 metric rates",
+      "path": "results/v2_2-phase7-controlled-comparison/architecture-ablation/oracle_metric_rates.csv",
+      "sha256": "9858d3fdde4cf76688b110e22dc4a152f898a0c048614c61b8c94b9ad03fbe72"
+    },
+    {
+      "label": "controlled fixture outcomes",
+      "path": "results/v2_2-phase7-controlled-comparison/architecture-ablation/fixture_protocol_results.csv",
+      "sha256": "ee47f3db7843ac9c95e143f177605ac74d3a8daed868d8b5b30114bce399fd4f"
+    },
+    {
+      "label": "crop-stratified outcomes",
+      "path": "results/v2_2-phase7-controlled-comparison/architecture-ablation/crop_stratified_key_metrics.csv",
+      "sha256": "e77e9a3cee80a607cd253993f2a9afb70c8cfd297710563ad150763c8dfce212"
+    },
+    {
+      "label": "district-stratified outcomes",
+      "path": "results/v2_2-phase7-controlled-comparison/architecture-ablation/district_stratified_key_metrics.csv",
+      "sha256": "a0a0c7d57708e519bd98264c2d8ef764f8e21f7a99ca7461ca0d654326ac5f2f"
+    },
+    {
+      "label": "E0/E1 runtime comparison",
+      "path": "results/v2_2-phase7-controlled-comparison/e0_e1_runtime_and_safety.csv",
+      "sha256": "080f0082f7c9ba96e9e411478bee56c227ad964cc964339c005a014932944e96"
+    },
+    {
+      "label": "E1 per-role runtime",
+      "path": "results/v2_2-phase7-controlled-comparison/e1_v5_bounded_llm_role_behavior.csv",
+      "sha256": "0fe8009d07b9de9ac7301e5ae266285c8abf6b6d9b58f6b6cbafaf42cfbd913e"
+    },
+    {
+      "label": "E1 final held-out metrics",
+      "path": "results/e1-v5-heldout-final/aggregate_final_heldout_metrics.json",
+      "sha256": "5a53af5776c568a89cc0c1e187d6fa04489864289cc247b3340adf4a96d985b7"
+    },
+    {
+      "label": "E1 held-out acceptance report",
+      "path": "results/v2_2-phase7-controlled-comparison/e1_v5_final_heldout_relevance.csv",
+      "sha256": "1ab0516b394433ee99ccce22977b669bc52153c5d9408c98400593cdefee10d3"
+    },
+    {
+      "label": "E1 case-study index",
+      "path": "results/v2_2-phase7-controlled-comparison/qualitative_farmer_message_cases.csv",
+      "sha256": "66965a9d8112aebd1f45576217fd484e303e749f13faae6a60dc1f1dd4f42d8f"
+    },
+    {
+      "label": "E1 full-MAS manifest",
+      "path": "results/v2_2-e1-v5-full-mas/run_manifest.json",
+      "sha256": "1cbcfa0ddfdc3fa9ba67b66531a21065e5d5bbbc98c5f6e530948ec8044c0c60"
+    },
+    {
+      "label": "E2 relevance aggregate",
+      "path": "results/v2_2-e2-v5-relevance-14b/aggregate_relevance_metrics.json",
+      "sha256": "df8bd0f8cbdcee2b080525fe5e4e27e6423b215253029a666bad37c1a2c5120d"
+    },
+    {
+      "label": "E2 relevance manifest",
+      "path": "results/v2_2-e2-v5-relevance-14b/run_manifest.json",
+      "sha256": "cfa4a4d06750e7ff580af8d62a39697d9fa207f24d2672ee65f22fc7839dcab7"
+    },
+    {
+      "label": "E2 acceptance report",
+      "path": "results/v2_2-e2-v5-relevance-14b/acceptance_report.json",
+      "sha256": "3150356535b81072de0cf25a9747410238bcab21769c98eb0d6fb2547e895bf5"
+    },
+    {
+      "label": "E2 Metal preflight",
+      "path": "results/v2_2-e2-apple-gpu-preflight/acceleration_evidence.json",
+      "sha256": "b25188b94634e19f06bacff733609c102a539d943e22708c2e94b6855d2f0610"
+    },
+    {
+      "label": "E3 relevance aggregate",
+      "path": "results/v2_2-e3-v5-relevance-14b-mlx/aggregate_relevance_metrics.json",
+      "sha256": "5d370aab9a9b8cfccfa1f3ded6ceaa76c6706ae30ca6844631e1d006734b1489"
+    },
+    {
+      "label": "E3 relevance manifest",
+      "path": "results/v2_2-e3-v5-relevance-14b-mlx/run_manifest.json",
+      "sha256": "c23ad440f64bd7885c97f8f3caad59983db11ef549443dc2d777dd2d4fc8a56a"
+    },
+    {
+      "label": "E3 acceptance report",
+      "path": "results/v2_2-e3-v5-relevance-14b-mlx/acceptance_report.json",
+      "sha256": "5e07ea143da474e6c08d49e0b076d119620defe9555438f6e0e8ab966b62ac58"
+    },
+    {
+      "label": "E3 Metal preflight",
+      "path": "results/v2_2-e3-apple-gpu-preflight/acceleration_evidence.json",
+      "sha256": "c3b0274173ae910aace292c51b2d84bc6e66c444117ca8f9916c2954640d8e44"
+    },
+    {
+      "label": "provenance fixture outcome",
+      "path": "results/v2_2-provenance-gate-fixtures/provenance_fixture_oracle_result.json",
+      "sha256": "e578057fea2427844efc48fd140227e3c73f3586a7f51a44bbf28108ef18158e"
+    }
+  ],
+  "interpretation_boundary": "All reported rates are frozen-benchmark structural, evidence-selection, or runtime measurements; they are not agricultural outcome accuracy or field-trial results."
+}

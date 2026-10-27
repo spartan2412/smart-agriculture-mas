@@ -1,0 +1,9 @@
+role,accepted_selection_count,fact_selection_precision,fact_selection_recall,fallback_count,fallback_rate,invalid_structured_output_count,invalid_structured_output_rate,max_process_peak_memory_bytes,mean_latency_ms,median_latency_ms,p95_latency_ms,passage_precision,passage_recall,plan_or_operation_selection_accuracy,question_count,safe_empty_selection_accuracy,top_k_recall
+farmer_explanation_citation_agent,12,0.8333333333333334,0.8333333333333334,0,0.0,0,0.0,102219776,2484.0,2349.5,3482,,,,12,1.0,0.8333333333333334
+fertilizer_baseline_agent,12,1.0,1.0,0,0.0,0,0.0,102219776,1989.0833333333333,1823.0,2986,,,1.0,12,,1.0
+market_evidence_agent,12,1.0,1.0,0,0.0,0,0.0,102219776,2310.0,2189.5,3151,,,,12,1.0,1.0
+official_operations_rag_agent,12,1.0,1.0,0,0.0,0,0.0,102219776,2023.6666666666667,1933.5,3243,1.0,1.0,1.0,12,,1.0
+provenance_aware_coordinator_agent,12,1.0,1.0,0,0.0,0,0.0,102219776,4393.833333333333,4384.0,5150,,,1.0,12,,1.0
+satellite_ndvi_context_agent,12,1.0,1.0,0,0.0,0,0.0,102219776,2281.0,2190.5,3082,,,,12,1.0,1.0
+soil_context_agent,12,1.0,1.0,0,0.0,0,0.0,102219776,2136.25,2081.5,2915,,,,12,1.0,1.0
+weather_context_agent,12,1.0,1.0,0,0.0,0,0.0,102219776,2146.0833333333335,1901.0,4823,,,,12,1.0,1.0

@@ -1,0 +1,3 @@
+configuration,system,label,scenario_count,fully_passing_oracle_count,overall_structural_oracle_rate,direct_farm_action_count,bounded_llm_call_count,mean_trace_latency_ms,max_trace_latency_ms,max_process_peak_memory_bytes,wall_clock_elapsed_seconds,comparison_boundary
+E0,A0,Deterministic full MAS,300,300,1.0,0,0,10.823,106,651476992,4.0,"Same 300 scenario IDs, shared frozen data hashes, and shared oracle schema."
+E1-v5,A0,Bounded-LLM full MAS,300,300,1.0,0,2400,19621.03,25958,488079360,5889.0,"Same 300 scenario IDs, shared frozen data hashes, and shared oracle schema."

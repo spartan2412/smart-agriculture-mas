@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "tomato",
+    "decision_date": "2025-12-31",
+    "district": "Salem",
+    "scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+    "season": "rabi",
+    "site_id": "PF_TN_SALEM_TOMATO_RABI",
+    "state": "Tamil Nadu"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_RABI_STATE_ADVISORIES_2021_22",
+    "source_location": "PDF pp. 388 and 394-395 Tamil Nadu and Puducherry Rabi tomato chapter",
+    "source_raw_sha256": "7be168116f2d598ffa3fd02e08ea20a642ed9cf307aee0663ff4eb6bcaa80839;4368a36cca91beea3c2ced69828a3069f5b225b870a3c28d05ab21f32069d075",
+    "source_url": "https://icar-crida.res.in/CCP/TN/Salem/1.7.pdf;https://icar-crida.res.in/CCP/TN/Salem/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "7b5fa7f3e89d20ff8f3c97c44b070781295d21db04fee824c5191f8370096d24",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_30_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_season_scope_mismatch",
+  "overlay": {
+    "base_value": "rabi",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "kharif",
+    "field": "season",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

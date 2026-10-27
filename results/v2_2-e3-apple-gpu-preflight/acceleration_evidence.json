@@ -1,0 +1,135 @@
+{
+  "artifact_integrity": {
+    "frozen_e1_protocol_path": "evaluation/experiment_protocol.json",
+    "frozen_e1_protocol_sha256": "9197b8b544479998378c0d7bcce4dd398b8091a440e3c1352d0c59242c0e4554",
+    "git": {
+      "clean": "true",
+      "commit": "152e0f89308bdf5ca3031e9ee2dd0bf550eb3a42"
+    },
+    "phase8_batch_runner_sha256": "40d865ba24a2ed499c5f443f6be9560cdceb068f3aae704a032132bef6085c3a",
+    "preflight_module": "evaluation/phase8_preflight.py",
+    "preflight_module_sha256": "593c1c42992e38293feb2dc8110f0ac7bed15030e567f18d85718c779c4f8ad7"
+  },
+  "backend_evidence": {
+    "acceleration": {
+      "active_gpu_bytes_after_probe": 8309352456,
+      "active_gpu_bytes_before_probe": 0,
+      "evidence": "MLX Metal active/peak allocation was observed after loading and generating with the bound model.",
+      "observed_gpu_resident_bytes": 8441014600,
+      "observed_model_resident_in_gpu_memory": true,
+      "peak_gpu_bytes_during_probe": 8441014600,
+      "pytorch_mps_is_not_runtime_proof": true,
+      "requested_runtime": "MLX-LM / Apple GPU"
+    },
+    "backend": "mlx-lm",
+    "checks": {
+      "apple_silicon_host": true,
+      "artifact_hash_matches_binding": true,
+      "gpu_memory_observed": true,
+      "model_json_probe_completed": true
+    },
+    "generation_parameters": {
+      "benchmark_max_selected_facts": 3,
+      "benchmark_max_tokens_per_call": 200,
+      "benchmark_temperature": 0.0,
+      "probe_max_tokens": 16,
+      "probe_temperature": 0.0
+    },
+    "model": {
+      "base_model_repository": "Qwen/Qwen2.5-14B-Instruct",
+      "base_model_revision_or_commit": "dad510143ae5cdb1466778bde3161460f9e9f604",
+      "model_artifact_sha256": "44a25640b3b049f1d4b8ccceaf3d4779b2cffb75343a1fd430a1ba64115a02a2",
+      "quantization_level": "4-bit",
+      "runtime_model_identifier": "/Users/aryandhumal/Project/data/external/models/mlx-community--Qwen2.5-14B-Instruct-4bit"
+    },
+    "probe": {
+      "response": {
+        "preflight": "ok"
+      }
+    },
+    "runtime": {
+      "default_device": "Device(gpu, 0)",
+      "mlx_version": "0.32.3",
+      "runtime_name": "MLX-LM",
+      "verification_method": "mlx_generate_then_metal_active_or_peak_memory"
+    }
+  },
+  "comparison_type": "deployment_backend",
+  "configuration": {
+    "acceleration_requirement": "MLX Apple-GPU use must be verified in the 30-scenario pilot.",
+    "artifact_binding_status": "required_before_execution",
+    "backend": "mlx-lm",
+    "benchmark_llm_enabled": true,
+    "benchmark_llm_required": false,
+    "bounded_llm_runtime": "v5.1",
+    "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+    "label": "MLX-LM deployment-runtime comparison",
+    "model_family": "Qwen2.5-14B-Instruct",
+    "population": "all_300_normal_scenarios_after_pilot",
+    "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+    "purpose": "Deployment-runtime comparison against E2, subject to the identical-artifact gate.",
+    "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2"
+  },
+  "configuration_id": "E3",
+  "evidence_schema_version": "phase8-1.0",
+  "formal_boundary": {
+    "does_not_prove_pytorch_mps_for_ollama": true,
+    "next_required_run": "Run the matching Phase 8 relevance transfer evaluation and 30-site MAS pilot from a clean committed worktree.",
+    "not_an_agricultural_benchmark_run": true
+  },
+  "hardware": {
+    "apple_soc": "Apple M5",
+    "hardware_model": "Mac17,3",
+    "machine": "arm64",
+    "pytorch_mps": {
+      "reason": "Ollama uses its own Metal runtime; only Ollama runtime residency is accepted for E1/E2.",
+      "used_as_ollama_acceleration_proof": false
+    },
+    "release": "25.6.0",
+    "system": "Darwin",
+    "unified_memory_bytes": 25769803776,
+    "unified_memory_gib": 24.0
+  },
+  "model_artifact_binding": {
+    "artifact_origin": {
+      "download_repository": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+      "download_revision": "dad510143ae5cdb1466778bde3161460f9e9f604",
+      "published_model_page": "https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-4bit"
+    },
+    "base_model_repository": "Qwen/Qwen2.5-14B-Instruct",
+    "base_model_revision_or_commit": "dad510143ae5cdb1466778bde3161460f9e9f604",
+    "generation_parameters": {
+      "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+      "maximum_selected_facts": 3,
+      "maximum_tokens_per_call": 200,
+      "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+      "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+      "temperature": 0.0
+    },
+    "model_artifact_sha256": "44a25640b3b049f1d4b8ccceaf3d4779b2cffb75343a1fd430a1ba64115a02a2",
+    "parameter_count": "14770033664",
+    "quantization_level": "4-bit",
+    "quantization_method": "MLX_4BIT",
+    "runtime_model_identifier": "/Users/aryandhumal/Project/data/external/models/mlx-community--Qwen2.5-14B-Instruct-4bit",
+    "tokenizer_hash": "a8506e7111b80c6d8635951a02eab0f4e1a8e4e5772da83846579e97b16f61bf"
+  },
+  "model_artifact_binding_sha256": "6e4ccd1fccc0bf3ff70047eb5fd742a0c202d9fa95ea220b3ad4c83df2bc0215",
+  "pilot_set": {
+    "focused_crops": [
+      "rice",
+      "wheat",
+      "maize",
+      "chickpea",
+      "soybean",
+      "tomato"
+    ],
+    "manifest_sha256": "dd910ade90a5b2dede25a48579b7a602eec9125827647c79d126026ee64ba4d8",
+    "path": "data/pilot_sets/apple_gpu_30_anchor_scenarios",
+    "pilot_identity_sha256": "412888ee276374880c439c6263ef2d7252fa0c936e14a7d6c95b7d37bcc0840e",
+    "scenario_count": 30,
+    "scenario_file_sha256": "da9972b4ec12cc5a776497e0798b5b05a53a4bcb3474b327877a07dffdc8047f",
+    "unique_site_count": 30
+  },
+  "recorded_at_utc": "2026-10-11T19:14:46Z",
+  "status": "verified"
+}

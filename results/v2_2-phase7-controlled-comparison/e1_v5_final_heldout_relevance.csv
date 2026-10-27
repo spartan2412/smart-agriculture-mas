@@ -1,0 +1,8 @@
+measure,value,threshold,threshold_direction,passed
+Fact-selection precision,0.9861111111111112,0.8,minimum,True
+Fact-selection recall,0.9861111111111112,0.8,minimum,True
+Safe-empty accuracy,1.0,0.8,minimum,True
+Exact RAG passage precision,1.0,0.75,minimum,True
+Exact RAG passage recall,1.0,0.75,minimum,True
+Invalid structured-output rate,0.0,0.02,maximum,True
+Fallback rate,0.0,0.02,maximum,True

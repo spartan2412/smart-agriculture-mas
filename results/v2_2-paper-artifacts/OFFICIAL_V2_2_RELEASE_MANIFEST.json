@@ -1,0 +1,160 @@
+{
+  "excluded_self_file": "results/v2_2-paper-artifacts/OFFICIAL_V2_2_RELEASE_MANIFEST.json",
+  "generated_at_utc": "2026-10-12T02:07:34Z",
+  "generation_git": {
+    "commit": "1ef910dc85b042cd14e39ea8a429a8279a526b36",
+    "status": "",
+    "worktree_clean": true
+  },
+  "interpretation_boundary": "This is a reproducibility release manifest for persisted v2.2 benchmark evidence. It does not add agricultural observations, field-outcome labels, or agricultural outcome-accuracy claims.",
+  "official_archives": [
+    {
+      "content_sha256": "72d509765e698fc18a3029c892bbc8b0131b3a284213c70f68aa4795098e618e",
+      "file_count": 307,
+      "label": "E0 deterministic full MAS",
+      "path": "results/v2_2-e0-full-mas",
+      "total_size_bytes": 39171030
+    },
+    {
+      "content_sha256": "6771809f28efcaf0b16f1162a698c2055290ba426b11a1ebc24eb06575815f2e",
+      "file_count": 35,
+      "label": "E1-v5 30-site Apple-Metal pilot",
+      "path": "results/v2_2-e1-v5-30site-pilot",
+      "total_size_bytes": 4261799
+    },
+    {
+      "content_sha256": "63703905877177da5b78f2215cfec3232aa4758de5cf05f662506d7216c35d10",
+      "file_count": 1,
+      "label": "E1-v5 Apple-Metal preflight",
+      "path": "results/v2_2-e1-v5-apple-gpu-preflight",
+      "total_size_bytes": 5115
+    },
+    {
+      "content_sha256": "6e42f90deae1e9320dd9da320d1af9c5a2909920d131dc3fe023ece1c23c5c1d",
+      "file_count": 305,
+      "label": "E1-v5 full MAS",
+      "path": "results/v2_2-e1-v5-full-mas",
+      "total_size_bytes": 40026332
+    },
+    {
+      "content_sha256": "be889324a780bbab75abcb0adde5d9378300efbf575a043b9946e04be90ad20c",
+      "file_count": 305,
+      "label": "A1 regional-plan-only baseline",
+      "path": "results/v2_2-a1-regional-plan-only",
+      "total_size_bytes": 9638209
+    },
+    {
+      "content_sha256": "309ad66850df890993111a80ac6a2df114428af5c28eaee6878d7f1b72e4dbcf",
+      "file_count": 305,
+      "label": "A2 centralized scoped-RAG baseline",
+      "path": "results/v2_2-a2-centralized-rag",
+      "total_size_bytes": 11179214
+    },
+    {
+      "content_sha256": "ef699446e299d2fef33131750b446562957cb50a9f22f465fffd40fa9bb2916e",
+      "file_count": 305,
+      "label": "A3 no scoped-RAG/operation-recovery ablation",
+      "path": "results/v2_2-a3-no-scoped-rag",
+      "total_size_bytes": 34436597
+    },
+    {
+      "content_sha256": "936a770ef7ff458f0a6c8edf7dce133552244843df5c9cf4722feb20240b0b3d",
+      "file_count": 305,
+      "label": "A4 no regional-plan ablation",
+      "path": "results/v2_2-a4-no-regional-plans",
+      "total_size_bytes": 27198336
+    },
+    {
+      "content_sha256": "5779ed59da105f32fe5ee37bc72768e47e8f8f6e4687e9e80586864f6439383c",
+      "file_count": 305,
+      "label": "A5 no provenance/alignment-gate ablation",
+      "path": "results/v2_2-a5-no-provenance-gates",
+      "total_size_bytes": 34978696
+    },
+    {
+      "content_sha256": "ab58e0fbb7ba8376f0bf05315322c272b5ed1cc9a7122ea05d27b9d2d654e914",
+      "file_count": 307,
+      "label": "A6 no conflict-coordination ablation",
+      "path": "results/v2_2-a6-conflict-ablation",
+      "total_size_bytes": 39363578
+    },
+    {
+      "content_sha256": "0e97062c10936890dade3e523caaa9d42e666f3d213c9dfb7c653f4032e64fa2",
+      "file_count": 2,
+      "label": "Provenance/alignment fixture suite",
+      "path": "results/v2_2-provenance-gate-fixtures",
+      "total_size_bytes": 92555
+    },
+    {
+      "content_sha256": "2897137134eca3cd84bb23cd70057a3a4f8d407117e231ecae9b38549176c627",
+      "file_count": 32,
+      "label": "Controlled comparison package",
+      "path": "results/v2_2-phase7-controlled-comparison",
+      "total_size_bytes": 1320336
+    },
+    {
+      "content_sha256": "1136596d31fae4d2c44d85812c3a05ea7260bb50bfc2b9ceda6d21b975ebc0aa",
+      "file_count": 1,
+      "label": "E2 14B Ollama Metal preflight",
+      "path": "results/v2_2-e2-apple-gpu-preflight",
+      "total_size_bytes": 6476
+    },
+    {
+      "content_sha256": "d171a3a539fc53fe216d6593ea7c00e556685a7fa57f9286ff651dd756ed091e",
+      "file_count": 99,
+      "label": "E2 14B transfer result",
+      "path": "results/v2_2-e2-v5-relevance-14b",
+      "total_size_bytes": 1122990
+    },
+    {
+      "content_sha256": "034a7fee9e1c727a677d469df46c1f63ad654b4107bbf0923ab2cba794e64b95",
+      "file_count": 1,
+      "label": "E3 14B MLX Apple-GPU preflight",
+      "path": "results/v2_2-e3-apple-gpu-preflight",
+      "total_size_bytes": 5802
+    },
+    {
+      "content_sha256": "108e93e1c41327cb5e62207a29fb1e9385d2c2dc7d1473ec7608a73bef30c03b",
+      "file_count": 99,
+      "label": "E3 14B transfer result",
+      "path": "results/v2_2-e3-v5-relevance-14b-mlx",
+      "total_size_bytes": 1124645
+    },
+    {
+      "content_sha256": "c3366231f1539282a991cee1af1625d9858adf6366766e42d8d5c8c7aa66d998",
+      "file_count": 1,
+      "label": "E2/E3 transfer interpretation",
+      "path": "results/v2_2-phase8-e2-e3-relevance-transfer",
+      "total_size_bytes": 4263
+    },
+    {
+      "content_sha256": "50f788cb160206ab0ac9759b882d3e5b29000336972942005028d6c583a1a0d0",
+      "file_count": 314,
+      "label": "Final clean-checkout reproducibility archive",
+      "path": "results/v2_2-final-reproducibility-2026-10-12",
+      "total_size_bytes": 39441794
+    },
+    {
+      "content_sha256": "2b0c38779e7782528266575824cc5735b5b634564b889511675334b0754064a3",
+      "file_count": 25,
+      "label": "Phase 10 paper artifacts",
+      "path": "results/v2_2-paper-artifacts",
+      "total_size_bytes": 971851
+    }
+  ],
+  "official_evidence_tree_sha256": "69404d0d7e7b91b1e621410bc9229ec08903b989e91f376cfbac5c246cb8a802",
+  "official_file_count": 3054,
+  "official_total_size_bytes": 284349618,
+  "phase10_manifest": {
+    "path": "results/v2_2-paper-artifacts/paper_artifact_manifest.json",
+    "sha256": "7d0c8e12beb7cb045f421d9be531b17391b8d49e41c20962d58f3a6bd6c5fc1e"
+  },
+  "release_version": "v2.2-paper-evidence-release-1",
+  "scope": {
+    "historical_result_archives_included": false,
+    "historical_result_archives_policy": "Earlier result generations are recoverable but are not official paper evidence.",
+    "official_archive_count": 19,
+    "official_result_archive_prefix": "results/v2_2-",
+    "raw_data_policy": "Frozen registry/scenario/enrichment/RAG source artifacts are recorded separately by the Phase 10 paper artifact manifest; this release manifest covers persisted result evidence only."
+  }
+}

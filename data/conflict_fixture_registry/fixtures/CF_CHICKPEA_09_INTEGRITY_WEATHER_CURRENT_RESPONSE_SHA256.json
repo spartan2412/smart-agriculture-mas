@@ -1,0 +1,29 @@
+{
+  "base_scenario": {
+    "crop": "chickpea",
+    "decision_date": "2026-03-31",
+    "district": "Parbhani",
+    "scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_MH_PARBHANI_CHICKPEA_RABI",
+    "state": "Maharashtra"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "conflict_count": 0,
+    "direct_farm_action_issued": false,
+    "integrity_status": "blocked_before_conflict_detection_and_coordination"
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "a475efad6062cd467e31697de0a8d5580ad33b95a59854cedaf1150cdc683503",
+  "fixture_family": "pre_resolution_integrity_rejection",
+  "fixture_id": "CF_CHICKPEA_09_INTEGRITY_WEATHER_CURRENT_RESPONSE_SHA256",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "wrong_weather_current_response_sha256_blocked_before_coordination",
+  "integrity_overlay": {
+    "base_value": "583a8e046e70c01e7e82d5ff663c01a63bbdf2ffd2cdc1702112ec05e4ae6898",
+    "classification": "controlled_identity_or_hash_mutation_not_real_evidence",
+    "counterfactual_value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "field": "weather_current_response_sha256"
+  }
+}

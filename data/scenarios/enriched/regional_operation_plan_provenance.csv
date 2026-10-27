@@ -1,0 +1,6 @@
+generated_at_utc,artifact_role,input_path,input_sha256,input_row_count,notes
+2026-09-26T21:01:01+00:00,frozen_scenario_manifest,data/scenarios/manifests/scenario_manifest.csv,d35b3b52a9f5f4cc9573a20a67f5037884686657a0d0fe893631ec94bf40d284,300,Immutable scenario identity and decision date.
+2026-09-26T21:01:01+00:00,regional_calendar_features,data/scenarios/enriched/regional_calendar_features.csv,3c77f5db1e4706c7e54e9c47bb96b3ddadd4f6501d6c4c1231c507330e12a80a,300,"Declared calendar position, never observed crop stage."
+2026-09-26T21:01:01+00:00,management_policy_features,data/scenarios/enriched/management_policy_features.csv,1716a718feff0283434b08151ebd2ef468a717c3e4dbb489b30cb9a536edd473,300,Regional nutrient and IPM policy references with restrictions.
+2026-09-26T21:01:01+00:00,official_action_records,data/scenarios/enriched/official_action_records_all.csv,cc0cb3dcfa5203e9030a017bbad92c6bba48b7805aabab0c7e4069768b384376,41,Source-quoted operations and their source hashes.
+2026-09-26T21:01:01+00:00,scenario_official_action_bindings,data/scenarios/enriched/scenario_official_action_bindings_all.csv,43b8f4dc95a2df74338675239904c21a6565925246b449f555e204723f0eff46,12300,Full scope decisions; only conditional passes become operation-plan items.

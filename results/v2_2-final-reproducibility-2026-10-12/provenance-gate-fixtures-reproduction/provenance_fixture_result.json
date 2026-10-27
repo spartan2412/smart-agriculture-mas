@@ -1,0 +1,1126 @@
+{
+  "a0_alignment_validator_block_rate": 1.0,
+  "a0_alignment_validator_blocked_count": 50,
+  "a5_alignment_validator_exposure_count": 50,
+  "a5_alignment_validator_exposure_rate": 1.0,
+  "all_passed": true,
+  "direct_farm_action_fixture_count": 0,
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_count": 60,
+  "passed_fixture_count": 60,
+  "records": [
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331: regional_operation_plan.crop='rice', expected 'chickpea' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_01_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331: regional_operation_plan.district='Ludhiana', expected 'Jalna' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_02_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331: regional_operation_plan.season='kharif', expected 'rabi' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_03_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331: regional_operation_plan.decision_date='2025-11-30', expected '2026-03-31' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_04_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_05_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_1_06_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031: regional_operation_plan.crop='rice', expected 'soybean' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_07_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031: regional_operation_plan.district='Ludhiana', expected 'Ujjain' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_08_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130: regional_operation_plan.season='rabi', expected 'kharif' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_09_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430: regional_operation_plan.decision_date='2025-11-30', expected '2026-04-30' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_10_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130: regional_operation_plan.scenario_id='ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_11_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_1_12_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130: regional_operation_plan.crop='wheat', expected 'rice' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_13_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430: regional_operation_plan.district='Ludhiana', expected 'Mansa' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_14_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130: regional_operation_plan.season='rabi', expected 'kharif' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_15_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430: regional_operation_plan.decision_date='2025-11-30', expected '2026-04-30' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_16_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_17_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_1_18_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031: regional_operation_plan.crop='rice', expected 'soybean' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_19_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031: regional_operation_plan.district='Ludhiana', expected 'Jhalawar' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_20_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331: regional_operation_plan.season='kharif', expected 'rabi' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_21_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331: regional_operation_plan.decision_date='2025-11-30', expected '2026-03-31' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_22_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_23_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_1_24_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231: regional_operation_plan.crop='rice', expected 'tomato' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_25_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331: regional_operation_plan.district='Ludhiana', expected 'Erode' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_26_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231: regional_operation_plan.season='kharif', expected 'rabi' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_27_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331: regional_operation_plan.decision_date='2025-11-30', expected '2026-03-31' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_28_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_1_29_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_1_30_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331: regional_operation_plan.decision_date='2025-11-30', expected '2026-03-31' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_01_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_MH_JALNA_CHICKPEA_RABI_20260331' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_02_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_2_03_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331: regional_operation_plan.crop='rice', expected 'chickpea' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_04_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MH_PARBHANI_CHICKPEA_RABI_20260331: regional_operation_plan.district='Ludhiana', expected 'Parbhani' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_05_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031: regional_operation_plan.season='rabi', expected 'kharif' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_06_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MP_INDORE_SOYBEAN_KHARIF_20251031: regional_operation_plan.decision_date='2025-11-30', expected '2025-10-31' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_07_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_MP_UJJAIN_SOYBEAN_KHARIF_20251031' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_08_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_2_09_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430: regional_operation_plan.crop='rice', expected 'wheat' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_10_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130: regional_operation_plan.district='Patiala', expected 'Ludhiana' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_11_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_LUDHIANA_WHEAT_RABI_20260430: regional_operation_plan.season='kharif', expected 'rabi' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_12_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_MANSA_RICE_KHARIF_20251130: regional_operation_plan.decision_date='2026-04-30', expected '2025-11-30' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_13_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_PB_MANSA_WHEAT_RABI_20260430' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_14_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_2_15_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_PATIALA_WHEAT_RABI_20260430: regional_operation_plan.crop='rice', expected 'wheat' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_16_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_SANGRUR_RICE_KHARIF_20251130: regional_operation_plan.district='Ludhiana', expected 'Sangrur' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_17_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_PB_SANGRUR_WHEAT_RABI_20260430: regional_operation_plan.season='kharif', expected 'rabi' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_18_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_RJ_BARAN_SOYBEAN_KHARIF_20251031: regional_operation_plan.decision_date='2025-11-30', expected '2025-10-31' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_19_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_RJ_JHALAWAR_SOYBEAN_KHARIF_20251031' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_20_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_2_21_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_COIMBATORE_MAIZE_RABI_20260331: regional_operation_plan.crop='rice', expected 'maize' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_22_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231: regional_operation_plan.district='Ludhiana', expected 'Coimbatore' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_23_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_DHARMAPURI_TOMATO_RABI_20251231: regional_operation_plan.season='kharif', expected 'rabi' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_24_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_DINDIGUL_TOMATO_RABI_20251231: regional_operation_plan.decision_date='2025-11-30', expected '2025-12-31' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_25_PLAN_ITEM_DECISION_DATE_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_decision_date_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331: regional_operation_plan.scenario_id='ANCHOR_PF_PB_LUDHIANA_RICE_KHARIF_20251130', expected 'ANCHOR_PF_TN_ERODE_MAIZE_RABI_20260331' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_26_PLAN_ITEM_SCENARIO_BINDING_MISMATCH",
+      "fixture_type": "plan_item_scenario_binding_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_loader_payload_hash_verifier",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [],
+      "a5_status": "blocked_by_loader_payload_hash_verifier",
+      "base_scenario_id": "ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231",
+      "detail": "The shared frozen-loader raw-payload verifier runs before A0 or A5 workflow gates. ANCHOR_PF_TN_KRISHNAGIRI_TOMATO_RABI_20251231 raw payload hash mismatch for weather_raw_path.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "loader_payload_integrity_rejection",
+      "fixture_id": "PAF_2_27_WEATHER_PAYLOAD_HASH_MISMATCH",
+      "fixture_type": "weather_payload_hash_mismatch",
+      "target_layer": "manifest"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_NAMAKKAL_MAIZE_RABI_20260331: regional_operation_plan.crop='rice', expected 'maize' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_28_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_crop_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_SALEM_MAIZE_RABI_20260331: regional_operation_plan.district='Ludhiana', expected 'Salem' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_29_PLAN_ITEM_DISTRICT_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_district_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    },
+    {
+      "a0_expected_match": true,
+      "a0_gate_claim_agents": [],
+      "a0_status": "blocked_by_alignment_validator",
+      "a5_expected_match": true,
+      "a5_gate_claim_agents": [
+        "scenario_evidence_router",
+        "metadata_gate"
+      ],
+      "a5_status": "exposed_past_omitted_alignment_validator",
+      "base_scenario_id": "ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231",
+      "detail": "A0 gate result: Benchmark integrity gate crop_district_season_alignment_validator blocked ANCHOR_PF_TN_SALEM_TOMATO_RABI_20251231: regional_operation_plan.season='kharif', expected 'rabi' A5 gate result: No integrity gate rejected the controlled overlay. Evaluation stops at this boundary; no invalid bundle is sent to downstream agents, the coordinator, or the farmer renderer.",
+      "direct_farm_action_issued": false,
+      "expected_match": true,
+      "fixture_family": "alignment_validator_rejection",
+      "fixture_id": "PAF_2_30_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+      "fixture_type": "plan_item_season_scope_mismatch",
+      "target_layer": "regional_operation_plan_item"
+    }
+  ],
+  "schema_version": "1.0",
+  "shared_loader_payload_hash_block_rate": 1.0,
+  "shared_loader_payload_hash_blocked_count": 10
+}

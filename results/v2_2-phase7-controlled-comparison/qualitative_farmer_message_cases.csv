@@ -1,0 +1,7 @@
+scenario_id,crop,state,district,decision_date,decision_status_unchanged,direct_action_flag_unchanged,citation_set_unchanged,farmer_message_exact_match,e0_message_characters,e1_message_characters
+ANCHOR_PF_PB_BATHINDA_RICE_KHARIF_20251130,rice,Punjab,Bathinda,2025-11-30,True,True,True,False,16018,16018
+ANCHOR_PF_PB_BATHINDA_WHEAT_RABI_20260430,wheat,Punjab,Bathinda,2026-04-30,True,True,True,False,14908,14908
+ANCHOR_PF_TN_ARIYALUR_MAIZE_RABI_20260331,maize,Tamil Nadu,Ariyalur,2026-03-31,True,True,True,False,16718,16718
+ANCHOR_PF_MH_BEED_CHICKPEA_RABI_20260331,chickpea,Maharashtra,Beed,2026-03-31,True,True,True,False,14715,14715
+ANCHOR_PF_MP_DEWAS_SOYBEAN_KHARIF_20251031,soybean,Madhya Pradesh,Dewas,2025-10-31,True,True,True,False,18105,18105
+ANCHOR_PF_TN_COIMBATORE_TOMATO_RABI_20251231,tomato,Tamil Nadu,Coimbatore,2025-12-31,True,True,True,False,22107,22107

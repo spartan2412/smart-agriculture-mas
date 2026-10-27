@@ -1,0 +1,4 @@
+configuration,backend,model,question_count,mean_latency_ms,p95_latency_ms,fallback_rate,invalid_output_rate,accepted,max_process_peak_memory_bytes
+E1-v5.1,ollama,qwen2.5:7b-instruct,96,2470.4895833333335,4434.0,0.0,0.0,True,102219776
+E2,ollama,qwen2.5:14b,96,6431.177083333333,12402.0,0.0,0.09375,False,108773376
+E3,mlx-lm,/Users/aryandhumal/Project/data/external/models/mlx-community--Qwen2.5-14B-Instruct-4bit,96,7876.3125,12577.0,0.0,0.25,False,1292550144

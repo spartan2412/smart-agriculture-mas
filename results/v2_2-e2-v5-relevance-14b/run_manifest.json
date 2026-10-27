@@ -1,0 +1,88 @@
+{
+  "acceleration_evidence_sha256": "3feb7174126d17f05690d0dcd0b3e1b6e1e235c8220cae9ec02e1b92020ccf41",
+  "all_relevance_thresholds_pass": false,
+  "bounded_llm_invocation_count": 96,
+  "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+  "completed_at_utc": "2026-10-11T19:25:25Z",
+  "configuration_id": "E2",
+  "final_research_result_permitted": true,
+  "git": {
+    "clean": "true",
+    "commit": "152e0f89308bdf5ca3031e9ee2dd0bf550eb3a42"
+  },
+  "heldout_acceptance_criteria_sha256": "d4bb0868de88ea09ca41930086f7aabec500e7f5007b6b86b2ab74457bbc08b6",
+  "heldout_manifest_sha256": "b983736f110ca1f28debf91c97d160ce0f6b080c7b6ea896593e7a0a8dbffc0c",
+  "heldout_question_sha256": "9759733f8a45f9a577a826c68e4d307a77eb067ca8c831bc27bba2e37918bcf3",
+  "model_artifact_binding": {
+    "E2": {
+      "artifact_origin": {
+        "local_ollama_model_show": "qwen2.5:14b",
+        "published_model_page": "https://ollama.com/library/qwen2.5:14b"
+      },
+      "base_model_repository": "Qwen/Qwen2.5-14B-Instruct",
+      "base_model_revision_or_commit": "not_exposed_by_ollama_local_metadata",
+      "generation_parameters": {
+        "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+        "maximum_selected_facts": 3,
+        "maximum_tokens_per_call": 200,
+        "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+        "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+        "temperature": 0.0
+      },
+      "model_artifact_sha256": "2049f5674b1e92b4464e5729975c9689fcfbf0b0e4443ccf10b5339f370f9a54",
+      "parameter_count": "14770033664",
+      "quantization_level": "Q4_K_M",
+      "quantization_method": "GGUF",
+      "runtime_digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+      "runtime_model_identifier": "qwen2.5:14b",
+      "tokenizer_hash": "not_exposed_by_ollama_gguf_metadata"
+    },
+    "E3": {
+      "artifact_origin": {
+        "download_repository": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+        "download_revision": "dad510143ae5cdb1466778bde3161460f9e9f604",
+        "published_model_page": "https://huggingface.co/mlx-community/Qwen2.5-14B-Instruct-4bit"
+      },
+      "base_model_repository": "Qwen/Qwen2.5-14B-Instruct",
+      "base_model_revision_or_commit": "dad510143ae5cdb1466778bde3161460f9e9f604",
+      "generation_parameters": {
+        "candidate_packaging_version": "v5.1-role-aware-candidate-packaging-2",
+        "maximum_selected_facts": 3,
+        "maximum_tokens_per_call": 200,
+        "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+        "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+        "temperature": 0.0
+      },
+      "model_artifact_sha256": "44a25640b3b049f1d4b8ccceaf3d4779b2cffb75343a1fd430a1ba64115a02a2",
+      "parameter_count": "14770033664",
+      "quantization_level": "4-bit",
+      "quantization_method": "MLX_4BIT",
+      "runtime_model_identifier": "/Users/aryandhumal/Project/data/external/models/mlx-community--Qwen2.5-14B-Instruct-4bit",
+      "tokenizer_hash": "a8506e7111b80c6d8635951a02eab0f4e1a8e4e5772da83846579e97b16f61bf"
+    },
+    "binding_document_sha256": "6e4ccd1fccc0bf3ff70047eb5fd742a0c202d9fa95ea220b3ad4c83df2bc0215",
+    "comparison_limitations": [
+      "E2 uses an Ollama GGUF Q4_K_M artifact and E3 uses an MLX-LM 4-bit safetensors artifact; they are not runtime-only or byte-equivalent.",
+      "Ollama local metadata does not expose the upstream Qwen source commit or a standalone tokenizer-file hash. E2-versus-E3 differences must not be attributed solely to runtime."
+    ],
+    "comparison_type": "deployment_backend",
+    "phase8_runner_path": "evaluation/phase8_batch_runner.py",
+    "phase8_runner_sha256": "40d865ba24a2ed499c5f443f6be9560cdceb068f3aae704a032132bef6085c3a",
+    "phase8_runner_version": "1.0"
+  },
+  "new_heldout_protocol": false,
+  "phase8_batch_runner_sha256": "40d865ba24a2ed499c5f443f6be9560cdceb068f3aae704a032132bef6085c3a",
+  "phase8_runner_sha256": "026a4c06e286552d6e3ddbf186737a8d3a32662f83a238559ced86215fce15e9",
+  "prompt_template_version": "bounded-selection-v5.1-sufficiency-primary-candidate-contract",
+  "question_count": 96,
+  "run_type": "phase8_v51_frozen_relevance_transfer_evaluation",
+  "runner_version": "1.0",
+  "runtime_configuration": {
+    "backend": "ollama",
+    "maximum_tokens_per_call": 200,
+    "runtime_model_identifier": "qwen2.5:14b",
+    "temperature": 0.0
+  },
+  "selection_contract_version": "v5.1-sufficiency-primary-selection-contract-2",
+  "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+}

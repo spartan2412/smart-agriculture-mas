@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "chickpea",
+    "decision_date": "2026-03-31",
+    "district": "Nanded",
+    "scenario_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_MH_NANDED_CHICKPEA_RABI",
+    "state": "Maharashtra"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "4594bb8fd4872588ffe7698e05af7b3375a5f1c2efa1c7c41bf751859231c1f8;5c689a698ab3955be244f8b788c5547932b52e79d832888b1f8c05f213a54d45",
+    "source_url": "https://icar-crida.res.in/CCP/MH/Nanded/1.7.pdf;https://icar-crida.res.in/CCP/MH/Nanded/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "9105aa68d1d6becaa29fee6febfdafaf54f558bd5e7976c4cf385079c8420d05",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_2_04_PLAN_ITEM_CROP_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_crop_scope_mismatch",
+  "overlay": {
+    "base_value": "chickpea",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "rice",
+    "field": "crop",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_MH_NANDED_CHICKPEA_RABI_20260331__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}

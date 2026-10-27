@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "rice",
+    "decision_date": "2025-11-30",
+    "district": "Patiala",
+    "scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130",
+    "season": "kharif",
+    "site_id": "PF_PB_PATIALA_RICE_KHARIF",
+    "state": "Punjab"
+  },
+  "base_source_reference": {
+    "source_document_id": "FROZEN_SCENARIO_MANIFEST",
+    "source_location": "raw/nasa_power/ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130.json",
+    "source_raw_sha256": "c4ae50c388791277a7d56e66e731efb1b33562fb0b25dcf249fa8f193ab60eeb",
+    "source_url": ""
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_loader_payload_hash_verifier",
+    "a5_status": "blocked_by_loader_payload_hash_verifier",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "96cbe3d59513f2ce352effad6f4437b29852b589cc9c85462ac64c52064a11a6",
+  "fixture_family": "loader_payload_integrity_rejection",
+  "fixture_id": "PAF_2_15_WEATHER_PAYLOAD_HASH_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "weather_payload_hash_mismatch",
+  "overlay": {
+    "base_value": "c4ae50c388791277a7d56e66e731efb1b33562fb0b25dcf249fa8f193ab60eeb",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "field": "weather_current_response_sha256",
+    "selector": {
+      "scenario_id": "ANCHOR_PF_PB_PATIALA_RICE_KHARIF_20251130"
+    },
+    "target_layer": "manifest"
+  }
+}

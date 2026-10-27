@@ -1,0 +1,53 @@
+{
+  "acceptance_criteria": {
+    "policy_version": "v5.1-heldout-acceptance-1",
+    "post_relevance_pilot_gate": {
+      "maximum_structural_oracle_regressions": 0,
+      "required_configuration": "E1_V5",
+      "required_oracle_all_checks_pass_rate": 1.0,
+      "required_scenario_count": 30
+    },
+    "pre_registered_before_heldout_run": true,
+    "prohibited_interpretation": [
+      "farm_outcome_accuracy",
+      "irrigation_accuracy",
+      "fertilizer_dose_accuracy",
+      "disease_diagnosis_accuracy",
+      "yield_impact"
+    ],
+    "relevance_thresholds": {
+      "maximum_fallback_rate": 0.02,
+      "maximum_invalid_structured_output_rate": 0.02,
+      "minimum_fact_selection_precision": 0.8,
+      "minimum_fact_selection_recall": 0.8,
+      "minimum_passage_precision": 0.75,
+      "minimum_passage_recall": 0.75,
+      "minimum_safe_empty_selection_accuracy": 0.8
+    }
+  },
+  "all_relevance_thresholds_pass": false,
+  "artifact_type": "phase8_relevance_transfer_acceptance_report",
+  "checks": {
+    "fact_selection_precision": true,
+    "fact_selection_recall": true,
+    "fallback_rate": true,
+    "invalid_structured_output_rate": false,
+    "passage_precision": true,
+    "passage_recall": true,
+    "safe_empty_selection_accuracy": true
+  },
+  "configuration_id": "E3",
+  "new_heldout_protocol": false,
+  "next_step_if_fail": "Report the result; do not tune E2/E3 prompts or candidates against this set.",
+  "next_step_if_pass": "Run the matching Phase 8 30-site MAS pilot without changing the v5.1 system.",
+  "policy_version": "v5.1-heldout-acceptance-1",
+  "post_relevance_pilot_gate": {
+    "maximum_structural_oracle_regressions": 0,
+    "required_configuration": "E1_V5",
+    "required_oracle_all_checks_pass_rate": 1.0,
+    "required_scenario_count": 30
+  },
+  "question_count": 96,
+  "undefined_metric_policy": "fail_closed",
+  "usage": "frozen_e1_v51_heldout_set_transfer_evaluation_no_phase8_tuning"
+}

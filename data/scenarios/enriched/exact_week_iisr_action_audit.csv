@@ -1,0 +1,4 @@
+check,expected,actual,result,detail
+exact_week_source_quotes_and_hashes,13,13,pass,validated
+exact_week_action_scope_and_conditions,3900,3900,pass,validated
+exact_week_matching_scenario_operation_pairs,57,57,pass,validated

@@ -1,0 +1,39 @@
+{
+  "base_scenario": {
+    "crop": "chickpea",
+    "decision_date": "2026-03-31",
+    "district": "Latur",
+    "scenario_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331",
+    "season": "rabi",
+    "site_id": "PF_MH_LATUR_CHICKPEA_RABI",
+    "state": "Maharashtra"
+  },
+  "base_source_reference": {
+    "source_document_id": "ICAR_CRIDA_CCP",
+    "source_location": "District CCP crop profile and sowing-window PDFs",
+    "source_raw_sha256": "d45b56631a0138472215ad361520ac588bc02e2ff26e1001820172304cfa0b1b;de6c77daaedd2646253aac947403372d9a36d7c60cdb69be72827e7b8117a371",
+    "source_url": "https://icar-crida.res.in/CCP/MH/Latur/1.7.pdf;https://icar-crida.res.in/CCP/MH/Latur/1.12.pdf"
+  },
+  "controlled_change_only": true,
+  "expected": {
+    "a0_status": "blocked_by_alignment_validator",
+    "a5_status": "exposed_past_omitted_alignment_validator",
+    "direct_farm_action_issued": false
+  },
+  "fixture_classification": "evaluation_only_counterfactual_not_real_farm_evidence",
+  "fixture_content_sha256": "edba1c9a61dfad9bae8105e2d898ab1541c31d3cc0f047e0e69937c7b33bb9b6",
+  "fixture_family": "alignment_validator_rejection",
+  "fixture_id": "PAF_1_03_PLAN_ITEM_SEASON_SCOPE_MISMATCH",
+  "fixture_schema_version": "1.0",
+  "fixture_type": "plan_item_season_scope_mismatch",
+  "overlay": {
+    "base_value": "rabi",
+    "classification": "controlled_single_fault_not_real_evidence",
+    "counterfactual_value": "kharif",
+    "field": "season",
+    "selector": {
+      "plan_item_id": "ANCHOR_PF_MH_LATUR_CHICKPEA_RABI_20260331__calendar_window"
+    },
+    "target_layer": "regional_operation_plan_item"
+  }
+}
